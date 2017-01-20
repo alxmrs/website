@@ -1,2 +1,3 @@
 name: Alex Rosengarten, Software Engineer
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
