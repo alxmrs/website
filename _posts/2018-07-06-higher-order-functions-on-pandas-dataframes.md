@@ -1,5 +1,3 @@
-# Higher Order Functions on Pandas Dataframes in Python
-
 (Note: the following article is uneditied -- Proceed with caution).
 
 Pandas' documentation explains the similarities between their API
