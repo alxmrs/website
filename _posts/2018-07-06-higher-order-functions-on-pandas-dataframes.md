@@ -92,7 +92,7 @@ Name: tip, dtype: int64
 >>> # etc...
 ```
 
-Ah! So what's actually going on is we are taking advantage of dataframes capacity for (boolean indexing)[https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing].
+Ah! So what's actually going on is we are taking advantage of dataframes capacity for [boolean indexing](https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing).
 
 What if we could take advantage of this to abstract away which dataframe we are acting on?
 Certainly, we'd prefer only to focus on the filtering logic rather than housekeeping.
