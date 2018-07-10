@@ -36,3 +36,22 @@ After a little more discussion, the class waits for a definitive answer from Pro
 She explained, "The mind that got through the maze is a *system* that includes both people, the pen, and the maze."
 
 And with this moment, my perspective about the nature of consciousness forever changed.
+<<<<<<< HEAD:_posts/2017-10-21-thoughts-about-cognitive-ecology.md
+=======
+
+## Cognition as an Ecology
+
+It's been a while since my undergrad, especially taking that course. But I see Distributed Cognition (DCog)
+everywhere in technology (or life, really).
+
+DCog's central paradigm is that cognition, or consciousness, has no center. Instead, it can be thought of as an ecology.
+
+It's a biochauvinistic predjudice that the brain is the center of consciousness. This thought is reductive ad infinitum.
+If the brain is the center of consciousness, then isn't there a center of the brain that is the center of consciousness?
+It would be absurd to say that a particular region -- the thalamus, the prefrontal cortex, Broca or Wernicke's area -- is the definitive
+center of consciousness. They all work together in a complex, emergent system.
+
+Consciouness can't exist without the brain, surely, but could it exist without the rest of the central nervous system?
+Or what about perceptual systems? An agent must exist in some environemtn
+
+>>>>>>> 4ec0ad98e98690e44f5f75461be0afb3cdb8f52d:_posts/2017-10-21-about-to-start-at-aira.draft
