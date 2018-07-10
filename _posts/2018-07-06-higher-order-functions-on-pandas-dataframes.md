@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Higher Order Functions on Pandas Dataframes"
+date: 2018-07-06
+---
 (Note: the following article is uneditied -- Proceed with caution).
 
 Pandas' documentation explains the similarities between their API
