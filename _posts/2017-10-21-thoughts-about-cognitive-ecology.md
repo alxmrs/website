@@ -36,8 +36,7 @@ After a little more discussion, the class waits for a definitive answer from Pro
 She explained, "The mind that got through the maze is a *system* that includes both people, the pen, and the maze."
 
 And with this moment, my perspective about the nature of consciousness forever changed.
-<<<<<<< HEAD:_posts/2017-10-21-thoughts-about-cognitive-ecology.md
-=======
+
 
 ## Cognition as an Ecology
 
@@ -54,4 +53,3 @@ center of consciousness. They all work together in a complex, emergent system.
 Consciouness can't exist without the brain, surely, but could it exist without the rest of the central nervous system?
 Or what about perceptual systems? An agent must exist in some environemtn
 
->>>>>>> 4ec0ad98e98690e44f5f75461be0afb3cdb8f52d:_posts/2017-10-21-about-to-start-at-aira.draft
