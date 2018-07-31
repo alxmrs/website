@@ -268,3 +268,163 @@ WHERE size >= 5 OR total_bill > 45;
 
 Sure, we could have implemented the `union` and `intersection` cases by themselves, but the
 function `filter_reduce` offers us the luxury of adaptability later on.
+
+
+## Beyond querying
+Can this perspective help with other problems besides querying?
+
+Often, we need to mutate dataframes: a new column of derived values has to be added, or we want to change the type of a 
+column. Mutability comes with several challenges:
+What if we make a mistake when mutating the dataframe, and we would like to revert to the previous form? What if we 
+wanted to know what the original data looked like?
+
+In Pandas, we can simulate immutability by creating mapping functions that first perform a shallow copy of the input 
+dataframe and return a new result.
+
+{% highlight python %}
+>>> def add_subtotal(df):
+...     cp = pd.DataFrame(df, copy=True)
+...     cp['subtotal'] = cp['total_bill'] - cp['tip']
+...     return cp
+>>> tips1 = add_subtotal(tips)
+>>> tips1.head()
+   total_bill   tip     sex smoker  day    time  size  subtotal
+0       16.99  1.01  Female     No  Sun  Dinner     2     15.98
+1       10.34  1.66    Male     No  Sun  Dinner     3      8.68
+2       21.01  3.50    Male     No  Sun  Dinner     3     17.51
+3       23.68  3.31    Male     No  Sun  Dinner     2     20.37
+4       24.59  3.61  Female     No  Sun  Dinner     4     20.98
+>>> def add_avg_bill(df): 
+...     cp = pd.DataFrame(df, copy=True)
+...     cp['price_per_person'] = cp['subtotal'] / cp['size']
+...     return cp
+>>> tips2 = add_avg_bill(tips1)
+>>> tips2.head()
+   total_bill   tip     sex smoker  day    time  size  subtotal  \
+0       16.99  1.01  Female     No  Sun  Dinner     2     15.98   
+1       10.34  1.66    Male     No  Sun  Dinner     3      8.68   
+2       21.01  3.50    Male     No  Sun  Dinner     3     17.51   
+3       23.68  3.31    Male     No  Sun  Dinner     2     20.37   
+4       24.59  3.61  Female     No  Sun  Dinner     4     20.98   
+   price_per_person  
+0          7.990000  
+1          2.893333  
+2          5.836667  
+3         10.185000  
+4          5.245000  
+>>> def yesno_to_bool(df, column='smoker'):
+...     cp = pd.DataFrame(df, copy=True)
+...     cp[column] = cp[column].apply(lambda x: x == 'Yes')
+...     return cp
+>>> tips3 = yesno_to_bool(tips2, 'smoker')
+>>> tips3.head()
+Out[52]: 
+   total_bill   tip     sex  smoker  day    time  size  subtotal  \
+0       16.99  1.01  Female   False  Sun  Dinner     2     15.98   
+1       10.34  1.66    Male   False  Sun  Dinner     3      8.68   
+2       21.01  3.50    Male   False  Sun  Dinner     3     17.51   
+3       23.68  3.31    Male   False  Sun  Dinner     2     20.37   
+4       24.59  3.61  Female   False  Sun  Dinner     4     20.98   
+   price_per_person  
+0          7.990000  
+1          2.893333  
+2          5.836667  
+3         10.185000  
+4          5.245000  
+
+{% endhighlight %}
+
+...
+
+We can combine all of these -- and arbitrarily more operations -- through a higher order function called `compose`:
+
+{% highlight python %}
+>>> import functools
+>>> def compose(df, *mappers):
+...     return functools.reduce(lambda acc, x: x(acc), mappers, df)
+>>> tips_all = compose(tips, add_subtotal, add_avg_bill, lambda x: yesno_to_bool(x, 'smoker'))
+>>> tips_all.head()
+   total_bill   tip     sex  smoker  day    time  size  subtotal  \
+0       16.99  1.01  Female   False  Sun  Dinner     2     15.98   
+1       10.34  1.66    Male   False  Sun  Dinner     3      8.68   
+2       21.01  3.50    Male   False  Sun  Dinner     3     17.51   
+3       23.68  3.31    Male   False  Sun  Dinner     2     20.37   
+4       24.59  3.61  Female   False  Sun  Dinner     4     20.98   
+   price_per_person  
+0          7.990000  
+1          2.893333  
+2          5.836667  
+3         10.185000  
+4          5.245000  
+
+{% endhighlight %}
+
+One advantage of this approach is that mutating dataframes can be lazily evaluated: We can wait to modify the data only
+until it's needed (i.e. until we call `compose`).
+
+Another advantage is that we preserver all the intermediate states of the data. Further, we have complete flexibility 
+as to what mappings get applied. Decide that we want to keep the `smokers` column as strings again? Just remove the
+`yesno_to_bool` function. Decide that you'd rather map it to `int`s? Just swap out the function. Just like the filter
+functions, the mapper functions can be applied to any dataframe, provided it has the correct columns. 
+
+You may be wondering if copying all of the data is inefficient? Surely, you don't want to duplicate your data all over
+the place, especially if your data is large.
+
+Pandas is actually very clever when it comes to copying data. The copied dataframes store 
+references to the original values. Only when the data gets mutated does it decide to allocate new memory. 
+Only the *differences* from one dataframe to another are stored. Thus, representing transformations with copies remains
+efficient while promoting many other benefits. 
+
+Don't take my word for it! Let's prove that this is the case:
+
+{% highlight python %}
+>>> tips_ref_original = tips.applymap(id)
+>>> tips_ref_copied = tips_all.applymap(id)
+>>> tips_ref_original.head()
+    total_bill              tip              sex           smoker  \
+0  139919566582840  139919566583392  139919566677192  139919567009976   
+1  139919566584736  139919566583416  139919567011768  139919567009976   
+2  139919566584760  139919566583440  139919567011768  139919567009976   
+3  139919566584808  139919566583464  139919567011768  139919567009976   
+4  139919566584832  139919566583488  139919566677192  139919567009976   
+               day             time            size  
+0  139919567011600  139919567008184  94289170979360  
+1  139919567011600  139919567008184  94289170979392  
+2  139919567011600  139919567008184  94289170979392  
+3  139919567011600  139919567008184  94289170979360  
+4  139919567011600  139919567008184  94289170979424  
+>>> tips_ref_copied.head()
+        total_bill              tip              sex          smoker  \
+0  139919450679696  139919450735360  139919566677192  94289170711232   
+1  139919450679720  139919450735336  139919567011768  94289170711232   
+2  139919450679744  139919450735312  139919567011768  94289170711232   
+3  139919450679768  139919450735288  139919567011768  94289170711232   
+4  139919450679792  139919450735264  139919566677192  94289170711232   
+               day             time            size         subtotal  \
+0  139919567011600  139919567008184  94289170979360  139919450679696   
+1  139919567011600  139919567008184  94289170979392  139919450679720   
+2  139919567011600  139919567008184  94289170979392  139919450679744   
+3  139919567011600  139919567008184  94289170979360  139919450679768   
+4  139919567011600  139919567008184  94289170979424  139919450679792   
+   price_per_person  
+0   139919450735360  
+1   139919450735336  
+2   139919450735312  
+3   139919450735288  
+4   139919450735264  
+>>> tips_xor = tips_ref_original ^ tips_ref_copied
+>>> tips_xor.head()
+   day  price_per_person  sex  size          smoker  subtotal  time  \
+0    0               NaN    0     0  46733414398584       NaN     0   
+1    0               NaN    0     0  46733414398584       NaN     0   
+2    0               NaN    0     0  46733414398584       NaN     0   
+3    0               NaN    0     0  46733414398584       NaN     0   
+4    0               NaN    0     0  46733414398584       NaN     0   
+         tip  total_bill  
+0  423146848   423075240  
+1  423146640   423072264  
+2  423146560   423072376  
+3  423146512   423072304  
+4  423146592   423073264  
+
+{% endhighlight %}
