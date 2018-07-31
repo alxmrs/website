@@ -8,6 +8,24 @@ date: 2018-07-06
 
 (Last updated: 2018-07-31)
 
+## Motivation
+
+I wrote this article to capture a perspective on dataframes that I think most Python developers -- especially data 
+scientists -- overlook. 
+
+Working closely with data often lends itself to tight coupling to the structure of that data. With this comes messy, brittle code.
+
+I advocate that there is a better way; a way that promotes modular, flexible, and testable code; a method
+where we can automate away the boring parts and think clearly about the problem at hand.
+
+The core idea is to promote re-use of logic through composition. To this end, we treat functions as data. We must also try
+as much as possible to abstract away the unessential details of each operation.
+
+I'm getting ahead of myself. It's better to *show* rather than *tell*. 
+Let's explore the thought process of refactoring the standard process for querying data in Pandas.
+
+## The Conventional Way 
+
 The Pandas documentation explains the similarities between their API
 and SQL for querying tabular data. A SQL query with a compound `WHERE` clause,
  for instance, can be expressed as follows:
@@ -44,9 +62,7 @@ The equivalent Pandas syntax is as such:
 
 [(source)](https://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html#where)
 
-This example got me thinking, how can we generalize querying data from dataframes?
-What if we wanted to filter the rows of a table with an arbitrary number of
-conditions?
+What if we wanted to extend our query with an arbitrary number of conditions?
 
 Using the standard Pandas syntax, it would look something like this:
 
@@ -58,16 +74,17 @@ Using the standard Pandas syntax, it would look something like this:
 155       29.85  5.14  Female     No  Sun  Dinner     5
 {% endhighlight %}
 
-This does not seem ideal. Quickly as we add more filtering logic, the line of code gets
-longer and less maintainable. A lot of logic is repeated -- namely, we keep referring
-to the `tips` dataframe over and over.
+This does not seem ideal. Our line of code quickly gets longer as we add more filtering logic. This can't be 
+maintainable. A lot of logic is repeated -- namely, we keep referring to the `tips` dataframe over and over. What if the 
+dataframe name changed? Or we wanted to apply the same query to another, similar table? 
 
-What if we want to take the same filtering operations (e.g. query by a `time` and `tip` field) on another
-dataframe with a different name? We would need to re-write the whole line substituting one variable name for the
-other -- or worse, swap the data each variable refers to.
+This would double our work: We would need to re-write the whole line substituting one variable name for the
+other. Or worse, we could swap the data each variable refers to.
 
 How can we provide a more succinct interface for querying data? How can we make sure that
-it is flexible, general, and correct?
+it is intuitive, general, and correct?
+
+## Breaking down the problem 
 
 Let's break down what's going on in the above query:
 
@@ -135,6 +152,8 @@ However, I still am repeating the reference to `tips` as many times as I did bef
 How can I get rid of this grunt work? Ideally, I would like to refer to a dataframe once, mixing in the filter
 operations and I see fit.
 
+## Towards generalization 
+
 Why not use a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function)? Functions are first class citizens in python, after all. Let's abstract away
 the rote work of calling these filter functions with respect to a particular dataframe.
 
@@ -197,6 +216,9 @@ the following:
 {% endhighlight %}
 
 (Note: `fuzz.ratio()` returns an integer representing the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from one string to another)
+
+
+## How general can we go?
 
 Is our intersection general enough? What if we wanted to query our data but instead of using a SQL-like `AND` operation,
 we wanted an `OR` operation?
