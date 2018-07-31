@@ -3,9 +3,12 @@ layout: post
 title: "Higher Order Functions on Pandas Dataframes"
 date: 2018-07-06
 ---
+
 (Note: the following article is uneditied -- Proceed with caution).
 
-Pandas' documentation explains the similarities between their API
+(Last updated: 2018-07-31)
+
+The Pandas documentation explains the similarities between their API
 and SQL for querying tabular data. A SQL query with a compound `WHERE` clause,
  for instance, can be expressed as follows:
 
@@ -56,7 +59,7 @@ Using the standard Pandas syntax, it would look something like this:
 {% endhighlight %}
 
 This does not seem ideal. Quickly as we add more filtering logic, the line of code gets
-longer and less maintainable. Furthermore, a lot of logic is repeated -- namely, we keep referring
+longer and less maintainable. A lot of logic is repeated -- namely, we keep referring
 to the `tips` dataframe over and over.
 
 What if we want to take the same filtering operations (e.g. query by a `time` and `tip` field) on another
@@ -96,10 +99,10 @@ Name: tip, dtype: int64
 >>> # etc...
 {% endhighlight %}
 
-Ah! So what's actually going on is we are taking advantage of dataframes capacity for [boolean indexing](https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing).
+Ah! So what's actually going on is we are taking advantage of dataframe's capacity for [boolean indexing](https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing).
 
-What if we could take advantage of this to abstract away which dataframe we are acting on?
-Certainly, we'd prefer only to focus on the filtering logic rather than housekeeping.
+What if we could use this to abstract away which dataframe we are acting on?
+Certainly, we'd prefer to only focus on the filtering logic rather than housekeeping.
 Plus, we might like to reuse the query on different dataframes.
 
 Let's try this:
@@ -164,7 +167,7 @@ the rote work of calling these filter functions with respect to a particular dat
 Much better. Now, should we want to add additional fields in the table to filter on, we merely define more
 filter functions -- which, again, can be used for any table.
 
-Please note that the filter functions can be as complicated as we want, as long as they return a dataframe of
+Please note that each functions can be as complicated as we want, as long as they return a dataframe of
 booleans the same size of the input.
 
 For example, if we are querying string data that is messy, we could write a filter like
@@ -193,7 +196,7 @@ the following:
 
 {% endhighlight %}
 
-(Note: `fuzz.ratio()` returns an integer representing the [levinstine distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from one string to another)
+(Note: `fuzz.ratio()` returns an integer representing the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from one string to another)
 
 Is our intersection general enough? What if we wanted to query our data but instead of using a SQL-like `AND` operation,
 we wanted an `OR` operation?
