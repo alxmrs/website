@@ -15,11 +15,11 @@ scientists -- overlook.
 
 Working closely with data often lends itself to tight coupling to the structure of that data. With this comes messy, brittle code.
 
-I advocate that there is a better way; a way that promotes modular, flexible, and testable code; a method
+I contend that there is a better way; a way that promotes modular, flexible, and testable code; a method
 where we can automate away the boring parts and think clearly about the problem at hand.
 
 The core idea is to promote re-use of logic through composition. To this end, we treat functions as data. We must also try
-as much as possible to abstract away the unessential details of each operation.
+as much as possible to abstract away the nonessential details of each operation.
 
 I'm getting ahead of myself. It's better to *show* rather than *tell*. 
 Let's explore the thought process of refactoring the standard process for querying data in Pandas.
@@ -74,9 +74,9 @@ Using the standard Pandas syntax, it would look something like this:
 155       29.85  5.14  Female     No  Sun  Dinner     5
 {% endhighlight %}
 
-This does not seem ideal. Our line of code quickly gets longer as we add more filtering logic. This can't be 
-maintainable. A lot of logic is repeated -- namely, we keep referring to the `tips` dataframe over and over. What if the 
-dataframe name changed? Or we wanted to apply the same query to another, similar table? 
+This does not seem ideal. Our line of code quickly gets longer as we add more filtering logic. A lot of logic is 
+repeated -- namely, we keep referring to the `tips` dataframe over and over. What if the dataframe name changed? 
+Or we wanted to apply the same query to another, similar table? 
 
 This would double our work: We would need to re-write the whole line substituting one variable name for the
 other. Or worse, we could swap the data each variable refers to.
@@ -84,7 +84,7 @@ other. Or worse, we could swap the data each variable refers to.
 How can we provide a more succinct interface for querying data? How can we make sure that
 it is intuitive, general, and correct?
 
-## Breaking down the problem 
+## Breaking Down The Problem 
 
 Let's break down what's going on in the above query:
 
@@ -152,7 +152,7 @@ However, I still am repeating the reference to `tips` as many times as I did bef
 How can I get rid of this grunt work? Ideally, I would like to refer to a dataframe once, mixing in the filter
 operations and I see fit.
 
-## Towards generalization 
+## Towards Generalization 
 
 Why not use a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function)? Functions are first class citizens in python, after all. Let's abstract away
 the rote work of calling these filter functions with respect to a particular dataframe.
@@ -183,11 +183,11 @@ the rote work of calling these filter functions with respect to a particular dat
 
 {% endhighlight %}
 
-Much better. Now, should we want to add additional fields in the table to filter on, we merely define more
+Much better. Now, should we want to add additional fields in the table to filter with, we merely define more
 filter functions -- which, again, can be used for any table.
 
 Please note that each functions can be as complicated as we want, as long as they return a dataframe of
-booleans the same size of the input.
+booleans the same size as the input.
 
 For example, if we are querying string data that is messy, we could write a filter like
 the following:
@@ -218,7 +218,7 @@ the following:
 (Note: `fuzz.ratio()` returns an integer representing the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from one string to another)
 
 
-## How general can we go?
+## How General Can We Go?
 
 Is our intersection general enough? What if we wanted to query our data but instead of using a SQL-like `AND` operation,
 we wanted an `OR` operation?
@@ -270,13 +270,12 @@ Sure, we could have implemented the `union` and `intersection` cases by themselv
 function `filter_reduce` offers us the luxury of adaptability later on.
 
 
-## Beyond querying
+## Beyond Querying
 Can this perspective help with other problems besides querying?
 
-Often, we need to mutate dataframes: a new column of derived values has to be added, or we want to change the type of a 
-column. Mutability comes with several challenges:
-What if we make a mistake when mutating the dataframe, and we would like to revert to the previous form? What if we 
-wanted to know what the original data looked like?
+Often, we need to mutate dataframes. We might want to add a column of derived values, or change a column's data type.
+Mutability, however, comes with several challenges: What if we make a mistake when mutating the dataframe, and we would 
+like to revert to the previous form? What if we wanted to know what the original data looked like?
 
 In Pandas, we can simulate immutability by creating mapping functions that first perform a shallow copy of the input 
 dataframe and return a new result.
@@ -362,18 +361,18 @@ We can combine all of these -- and arbitrarily more operations -- through a high
 One advantage of this approach is that mutating dataframes can be lazily evaluated: We can wait to modify the data only
 until it's needed (i.e. until we call `compose`).
 
-Another advantage is that we preserver all the intermediate states of the data. Further, we have complete flexibility 
-as to what mappings get applied. Decide that we want to keep the `smokers` column as strings again? Just remove the
-`yesno_to_bool` function. Decide that you'd rather map it to `int`s? Just swap out the function. Just like the filter
-functions, the mapper functions can be applied to any dataframe, provided it has the correct columns. 
+Another advantage is that we preserve all the intermediate states of the data. Further, we have complete flexibility 
+as to what mappings get applied. Decide that we want to keep the `smokers` column as strings again? -- Just remove the
+`yesno_to_bool` function. Decide that you'd rather map it to `int`s? -- Simply swap out the function. Just like the filter
+functions, these mappers can be applied to any dataframe, provided they have the correct columns. 
 
-You may be wondering if copying all of the data is inefficient? Surely, you don't want to duplicate your data all over
-the place, especially if your data is large.
+It's worth wondering: Is copying all of the data inefficient? Surely, we don't want to duplicate the data all over
+the place, especially if the corpus is large.
 
-Pandas is actually very clever when it comes to copying data. The copied dataframes store 
+Pandas addresses this in a very clever manner. The constructor performs a lazy copy! The copied dataframes store 
 references to the original values. Only when the data gets mutated does it decide to allocate new memory. 
-Only the *differences* from one dataframe to another are stored. Thus, representing transformations with copies remains
-efficient while promoting many other benefits. 
+In other words, only the *differences* from one dataframe to another are stored. Thus, representing transformations 
+with copies remains efficient while promoting many other benefits. 
 
 Don't take my word for it! Let's prove that this is the case:
 
