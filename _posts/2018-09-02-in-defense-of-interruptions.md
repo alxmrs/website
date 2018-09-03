@@ -51,9 +51,15 @@ you gain future time-saving efficiencies by having a base level of tests by the 
 
 
 <b id="f1">1</b>. Lone Wolf Programmers (noun): extinct or mythical-beasts. [↩](#a1)
+
 <b id="f2">2</b>. I like the advice of setting agendas *before* meetings and ending early when possible. [↩](#a2)
+
 <b id="f3">3</b>. I hope you gathered by context that I'm not taking "interruptions" to their symantic extreme. [↩](#a3)
+
 <b id="f4">4</b>. See [here](/_assets/Code-Complete-Ch-5-Complexity.png). [↩](#a4)
+
 <b id="f5">5</b>. Or interpreter/linter. [↩](#a5)
+
 <b id="f6">5</b>. In my experience, life is better when you [go by the book](http://aroma.vn/web/wp-content/uploads/2016/11/code-complete-2nd-edition-v413hav.pdf) (see chapter 5.2/pg 82). [↩](#a6)
+
 
