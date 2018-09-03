@@ -4,14 +4,14 @@ title: "In Defense of Interruptions"
 date: 2018-09-02
 ---
 
-Many believe that minimizing interruptions is good for software development. I disagree, focusing on reducing 
-interruptions is problematic for two reasons: 1) Interruptions are inevitable and often useful. 2) It assumes a mindset
-that promotes bad software development.  
+Many believe that minimizing interruptions is good for software development. I disagree. This is problematic for two 
+reasons: First, interruptions are inevitable and often useful. Second, It assumes a mindset that promotes bad software 
+development.  
 
 ## "Interruption" Is A Slur For Collaboration
-First, interruptions are inevitable. In typical Agile shops, there are stand-ups, sprint plannings, retrospectives, and 
+First, interruptions are inevitable. In typical Agile shops, there are stand-ups, sprint-plannings, retrospectives, and 
 other corporate meetings. Communication takes place on Slack, HipChat, and the like. To butcher Kurt Vonnegut, being 
-anti-interruptions "is like being anti-glacier" (that's what Slaughter House Five was about -- Scrum. Right?).
+anti-interruptions "is like being anti-glacier" (that's what Slaughter House Five was about -- Scrum. *Right?*).
 
 But, are interruptions all bad? No!
 
@@ -24,12 +24,12 @@ interrupted for a `P0` bug? Of course you would.
 
 I think we should celebrate interruptions rather than demonize them. Yes, retrospectives are valuable even though I 
 haven't finished my current story. Of course I will teach you about mime types, rising sophomore intern, instead of just
-using the term in context. Give me a minutes to finish what I'm typing<sup id="a3">[3](#f3)</sup>, but then yes, I'll 
+using the term in context. Give me a minutes to finish what I'm typing<sup id="a3">[3](#f3)</sup>, but then *yes*, I'll 
 review your PR. 
 
 ## Vilifying Interruptions Reveals an Inability to Modularize Programs
 
-In the book Code Complete, Steven McConnel writes that software is the art of managing complexity. Only in software do 
+In the book *Code Complete*, Steven McConnel writes that software is the art of managing complexity. Only in software do 
 we have to deal with data from the bit to the peta- (or exbi-) byte level<sup id="a4">[4](#f4)</sup>.
 
 From this perspective, if interruptions like the ones listed above derails you, it represents an inefficiency at managing 
@@ -56,7 +56,7 @@ you gain future time-saving efficiencies by having a base level of tests by the 
 
 <b id="f3">3</b>. I hope you gathered by context that I'm not taking "interruptions" to their symantic extreme. [↩](#a3)
 
-<b id="f4">4</b>. See [here](/_assets/Code-Complete-Ch-5-Complexity.png). [↩](#a4)
+<b id="f4">4</b>. See ![alt text](/_assets/Code-Complete-Ch-5-Complexity.png "Managing complexity is the most important technical topic in software development. In my view, it’s so important that Software’s Primary Technical Imperative has to be managing complexity.    Complexity is not a new feature of software development. Computing pioneer Edsger Dijkstra pointed out that computing is the only profession in which a single mind is obliged to span the distance from a bit to a few hundred megabytes, a ratio of 1 to 10^9, or nine orders of magnitude (Dijkstra 1989).     This gigantic ratio is staggering. Dijkstra put it this way: “Compared to that number of semantic levels, the average mathematical theory is almost flat. By evoking the need for deep conceptual hierarchies, the automatic computer confronts us with a radically new intellectual challenge that has no precedent in our history.” Of course software has become even more complex since 1989, and Dijkstra’s ratio of 1 to 10^9 could easily be more like 1 to 10^15 today. "). [↩](#a4)
 
 <b id="f5">5</b>. Or interpreter/linter. [↩](#a5)
 
