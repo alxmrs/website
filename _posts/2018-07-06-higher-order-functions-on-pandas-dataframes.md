@@ -4,15 +4,17 @@ Pandas' documentation explains the similarities between their API
 and SQL for querying tabular data. A SQL query with a compound `WHERE` clause,
  for instance, can be expressed as follows:
 
-```
+{% highlight SQL %}
 -- tips of more than $5.00 at Dinner meals
 SELECT *
 FROM tips
 WHERE time = 'Dinner' AND tip > 5.00;
-```
+
+{% endhighlight %}
 
 The equivalent Pandas syntax is as such:
-```
+
+{% highlight python %}
 # tips of more than $5.00 at Dinner meals
 >>> In [11]: tips[(tips['time'] == 'Dinner') & (tips['tip'] > 5.00)]
      total_bill    tip     sex smoker  day    time  size
@@ -31,7 +33,8 @@ The equivalent Pandas syntax is as such:
 212       48.33   9.00    Male     No  Sat  Dinner     4
 214       28.17   6.50  Female    Yes  Sat  Dinner     3
 239       29.03   5.92    Male     No  Sat  Dinner     3
-```
+
+{% endhighlight %}
 
 [(source)](https://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html#where)
 
