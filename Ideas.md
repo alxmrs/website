@@ -2,7 +2,7 @@
 
 
 ## 2019-04-14 Algebra Book Exercise:
-Based on Printer's Algebra, pg 20, exercise C:
+Based on Printer's Algebra, pg 29, exercise C:
 Write a program that uses a unit tests approach to test if "operations" have certain qualities. The ones listed are communativity, associativity, identity, and invertability.
 The first set of operators are all the ops in a 2-valued set (should be 16 possible combinations). 
 
