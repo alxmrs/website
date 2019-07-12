@@ -1,5 +1,21 @@
 # Ideas for Posts/Projects
 
+## 2019-07-12 Structure site to abuse Jekyll
+I just realized that you don't need Jekyll to host githubpages sites. I can just write static assets and serve them. 
+I think there are some niceities to Jekyll. Well, the only one I can think of is a markdown --> HTML conversion. 
+
+I think What I'll do is try to keep that aspect of it and disreguard all the rest. 
+
+The benefit of using strait HTML is that I get a better dev cycle. I know exactly what the output can look like without
+installing anything. Maybe that's an argument to get rid of jekyll to begin with and just generate the static assets.
+
+Here's one option: Create a new repo that generates static assets, create a CICD rule that deploys the built files 
+to this repo. 
+
+If I was *really* cool, I would write the static website generator code in Rust or Kotlin, and compile it to WASM `:)`.
+
+Yeah. I think that's what I'll do. 
+
 ## 2019-07-10 Advice for undergraduates that emailed me.
 So far, I've been cold emailed by not one, but two (!) undergraduates from UCSD. Look, Ma, I'm famous!
 
