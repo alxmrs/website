@@ -19,7 +19,8 @@ When I started this site in 2017, that was the case. At least, I was focused on 
 and snoozed on adding that feature. Like most software engineering, building things you don't know how to do is just a 
 matter of Googling it and following directions. 
 
-As time has gone on, I've kept snoozing on adding this feature, despite knowing how. 
+As time has gone on, I've kept snoozing on adding this feature, despite 
+[learning how to implement it](https://github.blog/2018-05-01-github-pages-custom-domains-https/).
 I've avoided addressing anything to do with my domain due to an completely-avoidable predicament that I got 
 myself into all in the name of "security". Here I am today, writing support tickets to sort it all out.
 
@@ -36,8 +37,12 @@ So I replace a lot of information an various accounts with generated emails, cel
 
 Sometime around the end of high school or early college, after adopting MaskMe, I thought to myself, "I should buy my personal domain before [another Alex Rosengarten](https://www.facebook.com/public/Alex-Rosengarten) beats me to it."
 
+So I did. But I had the *brilliant* idea to make the account holding my domains as anonymous as possible. 
+You know, just in case I wanted to buy *other* domains where I would *need* anonymity (spoiler: this never happened). 
+I filled out my account information without my actual email, name, or phone number, but at least a real credit card.
 
 
+Fast forward several years. 
 
 
 
