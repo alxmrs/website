@@ -7,9 +7,8 @@ date: 2018-09-02
 (Much needed update on 2019-07-12)
 
 Many believe that the [global minimum number of interruptions](https://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/) 
-is good for software development. I disagree. This is problematic for three reasons: First, interruptions are inevitable 
-and often useful. Second, It assumes a mindset that promotes bad software development. Third, resistance to 
-interruptions often indicates the ability to learn quickly. 
+is good for software development. I disagree. This is problematic for two reasons: First, interruptions are inevitable 
+and often useful. Second, It assumes a mindset that promotes bad software development. 
 
 
 ## "Interruption" Is A Slur For Collaboration
@@ -62,19 +61,6 @@ details of it for later (e.g. for a particular implementation).
 
 If some or all of these approaches are employed, then the current state of the program is all the context that is 
 needed to get back your train of thought. 
-
-
-## Robustness to Interruptions is Comorbid with Rapid Adaptation
-
-Writing code is half of software. The other half is reading it. A totally valid skill worth fine-tuning is the ability 
-to understand *just* enough of a thing and intentionally ignore the rest. 
-
-If you've just started a project, or joined a team with a small codebase, it's reasonable to expect that you can 
-understand it all before contributing to it. This is quite often not the situation developers find themselves in: 
-Most companies and teams maintain legacy systems that can be millions of lines of code. Not all of these codebases 
-follow best practices and design. It's up to the developer to be able to quickly navigate unexplored territory, 
-diagnose the situation, and contribute a fix. 
-
 
 
 
