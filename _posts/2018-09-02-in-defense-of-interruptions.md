@@ -18,7 +18,7 @@ anti-interruptions "is like being anti-glacier" (that's what Slaughter House Fiv
 
 But, are interruptions all bad? No!
 
-In fact, in the cases listed here, they are merely the realities in working in a collaborative work environment
+In fact, in the cases listed here, they are merely the realities in working in a collaborative environment
 <sup id="a1">[1](#f1)</sup>. Can we not lend 15 minutes to perform a code review for a colleague? Should we skip 
 answering a question from an intern because it would interrupt our current work? 
 
