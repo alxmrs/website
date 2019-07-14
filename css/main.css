@@ -1,13 +1,13 @@
 body {
     font-family: sans-serif;
-}
-
-.wrap {
     margin: 0 auto;
     width: 70%;
 }
+
+.wrap {
+}
 @media screen and (max-width: 768px) {
-    .wrap {
+    body {
         width: 95%;
     }
 }
