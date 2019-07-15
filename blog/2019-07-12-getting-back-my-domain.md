@@ -31,8 +31,8 @@ email address per website, and automatically forwarding all the emails to your r
 
 "Great!" I thought. "I can't be subject to a [password-reuse attack](https://xkcd.com/792/) if every email I use is different, right?"
 
-It had services, totally for free, for replacing phone numbers and credit cards, so you never had to give up personal information. 
-So I replace a lot of information on various accounts with generated emails, cellphone numbers, and credit cards. 
+It had additional services, totally for free, for replacing phone numbers and credit cards, so you never had to give up personal information. 
+So I replaced a lot of information on various accounts with generated emails, cellphone numbers, and credit cards. 
 
 Sometime around the end of high school or early college, after adopting MaskMe, I thought to myself,
  "I should buy my personal domain before [another Alex Rosengarten](https://www.facebook.com/public/Alex-Rosengarten) beats me to it."
@@ -88,3 +88,12 @@ So much of software engineering is pure computer science theory, yet a great dea
 
 
 <!-- TODO: Talk about contingencies / where you are leaving things for now -->
+
+
+<!--
+Update: 
+- makedme got back. They said that numbers that haven't been used for a long time get deleted.
+- I had whoisguard for 1 year, but didn't renew it since I couldn't get into the account
+- whois revealed the phone number on the account
+- I was able to use that number, plus other payment information, to get back into the account
+-->
