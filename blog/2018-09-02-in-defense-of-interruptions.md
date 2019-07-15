@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "In Defense of Interruptions"
 date: 2018-09-02
 ---
