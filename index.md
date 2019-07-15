@@ -1,7 +1,12 @@
-## Hi there, I'm Alex Rosengarten!
+# Hi there, I'm Alex Rosengarten!
 
 My passion is learning about learning about learning. I aim to use machine learning to help human learning,
-computer vision to realize my vision for the world, and hopefully go on a few adventures along the way.
+computer vision to realize *my* vision, and hopefully go on a few adventures along the way.
 
 
-You can check out my public profiles or find out <a href="/blog">what I've been up to</a>.
+I currently work at Google on the [Arcs project](https://github.com/PolymerLabs/arcs). 
+Here, I'm building technology to protect user privacy in the AI era.
+
+Before this, I was a Machine Learning Engineer at [Aira.io](https://aira.io), a remote assistance platform for the blind. 
+
+You can check out my public profiles, email me, or read [some of my thoughts](/blog).
