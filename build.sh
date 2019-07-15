@@ -2,7 +2,7 @@
 
 # Inspired by Will Styler: http://wstyler.ucsd.edu/posts/lmimg/spcv.txt
 
-echo "Rendering Site"
+echo "Rendering site"
 find . -name "*.md" -type f -exec \
  pandoc -B includes/header.html \
         -A includes/footer.html \
