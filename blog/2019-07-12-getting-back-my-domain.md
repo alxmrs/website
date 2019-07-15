@@ -11,7 +11,7 @@ myself in to fix it.
 
 Check out the URL of this domain. Is it secure? How do you know? Let me show you how *I* know it's not as of writing: 
 
-[!I am not secure](../_assets/alex-is-not-secure.png)
+[!I am not secure](/assets/alex-is-not-secure.png)
 
 "How embarrassing. A software engineer who doesn't know how to set up HTTPS for his own personal site."
 
