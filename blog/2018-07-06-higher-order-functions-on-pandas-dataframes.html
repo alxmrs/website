@@ -84,6 +84,8 @@ code span.wa { color: #bf0303; } /* Warning */
   <![endif]-->
 </head>
 <body>
+<!-- Checking out my source, eh? Please, feel free to see how this was made here: https://github.com/alxrsngrtn/alxrsngrtn.github.io -->
+<!-- While I have you, why don't you say "Hi" to me on email or twitter? We can talk about tech, life, or whatever you'd like. -->
 <nav>
     <ul>
         <li><a href="/">Home</a></li>
@@ -94,14 +96,14 @@ code span.wa { color: #bf0303; } /* Warning */
 <h1 class="title">Higher Order Functions on Pandas Dataframes</h1>
 <p class="date">2018-07-06</p>
 </header>
-<p>(Note: the following article is uneditied – Proceed with caution).</p>
+<p>(Note: the following article is unedited – Proceed with caution).</p>
 <p>(Last updated: 2018-07-31)</p>
 <h2 id="motivation">Motivation</h2>
 <p>I wrote this article to capture a perspective on dataframes that I think most Python developers – especially data scientists – overlook.</p>
 <p>Working closely with data often lends itself to tight coupling to the structure of that data. With this comes messy, brittle code.</p>
 <p>I contend that there is a better way; a way that promotes modular, flexible, and testable code; a method where we can automate away the boring parts and think clearly about the problem at hand.</p>
 <p>The core idea is to promote re-use of logic through composition. To this end, we treat functions as data. We must also try as much as possible to abstract away the nonessential details of each operation.</p>
-<p>I’m getting ahead of myself. It’s better to <em>show</em> rather than <em>tell</em>. Let’s explore the thought process of refactoring the standard process for querying data in Pandas.</p>
+<p>I’m getting ahead of myself. It’s better to <em>show</em> rather than <em>tell</em>. Let’s explore the thought process of refactoring the standard method for querying data in Pandas.</p>
 <h2 id="the-conventional-way">The Conventional Way</h2>
 <p>The Pandas documentation explains the similarities between their API and SQL for querying tabular data. A SQL query with a compound <code>WHERE</code> clause, for instance, can be expressed as follows:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co">-- tips of more than $5.00 at Dinner meals</span></a>
