@@ -4,12 +4,29 @@ body {
     width: 70%;
 }
 
-.wrap {
+figure img {
+    max-width: 70%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .8em;
+    color: #666;
+}
+
+figure {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
     body {
         width: 95%;
+    }
+
+    figure img {
+        max-width: 95%;
     }
 }
 
@@ -26,19 +43,20 @@ nav ul li, footer ul li {
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #114e27;
 }
 
 a:hover {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #114e27;
 }
 
 a:active {
-    color: #999
+    color: #114e27
 }
 
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
 
