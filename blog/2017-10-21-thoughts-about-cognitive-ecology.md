@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Thoughts About Cognitive Ecology"
 date: 2017-01-19
 ---

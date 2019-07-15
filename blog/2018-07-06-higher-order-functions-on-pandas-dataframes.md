@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "Higher Order Functions on Pandas Dataframes"
 date: 2018-07-06
 ---
 
-(Note: the following article is uneditied -- Proceed with caution).
+(Note: the following article is unedited -- Proceed with caution).
 
 (Last updated: 2018-07-31)
 
@@ -22,7 +21,7 @@ The core idea is to promote re-use of logic through composition. To this end, we
 as much as possible to abstract away the nonessential details of each operation.
 
 I'm getting ahead of myself. It's better to *show* rather than *tell*. 
-Let's explore the thought process of refactoring the standard process for querying data in Pandas.
+Let's explore the thought process of refactoring the standard method for querying data in Pandas.
 
 ## The Conventional Way 
 
