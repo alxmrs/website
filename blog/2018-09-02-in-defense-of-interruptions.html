@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2018-09-02" />
+  <title>Alex Rosengarten</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="/css/main.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- Checking out my source, eh? Please, feel free to see how this was made here: https://github.com/alxrsngrtn/alxrsngrtn.github.io -->
+<!-- While I have you, why don't you say "Hi" to me on email or twitter? We can talk about tech, life, or whatever you'd like. -->
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+    </ul>
+</nav>
+<header>
+<h1 class="title">In Defense of Interruptions</h1>
+<p class="date">2018-09-02</p>
+</header>
+<p>(Much needed update on 2019-07-12)</p>
+<p>Many believe that the <a href="https://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/">global minimum number of interruptions</a> is good for software development. I disagree. This is problematic for two reasons: First, interruptions are inevitable and often useful. Second, It assumes a mindset that promotes bad software development.</p>
+<h2 id="interruption-is-a-slur-for-collaboration">“Interruption” Is A Slur For Collaboration</h2>
+<p>First, interruptions are inevitable. In typical agile shops, there are stand-ups, sprint-plannings, retrospectives, and other corporate meetings. Communication takes place on Slack, HipChat, and the like. To butcher Kurt Vonnegut, being anti-interruptions “is like being anti-glacier” (that’s what Slaughter House Five was about – Scrum. <em>Right?</em>).</p>
+<p>But, are interruptions all bad? No!</p>
+<p>In fact, in the cases listed here, they are merely the realities in working in a collaborative environment <sup id="a1"><a href="#f1">1</a></sup>. Can we not lend 15 minutes to perform a code review for a colleague? Should we skip answering a question from an intern because it would interrupt our current work?</p>
+<p>Even if meetings are a drag<sup id="a2"><a href="#f2">2</a></sup> and you don’t have any of the aforementioned, would you permit being interrupted for a <code>P0</code> bug? Of course you would.</p>
+<p>I think we should celebrate interruptions rather than demonize them. Yes, retrospectives are valuable even though I haven’t finished my current story. Of course I will teach you about mime types, rising sophomore intern, instead of just using the term in context. Give me a minutes to finish what I’m typing<sup id="a3"><a href="#f3">3</a></sup>, but then <em>yes</em>, I’ll review your PR.</p>
+<h2 id="vilifying-interruptions-reveals-an-inability-to-modularize-programs">Vilifying Interruptions Reveals an Inability to Modularize Programs</h2>
+<p>Dijkstra says that software is the art of managing complexity. Only in software do we have to deal with data from the bit to the peta- (or exbi-) byte level<sup id="a4"><a href="#f4">4</a></sup>.</p>
+<p>From this perspective, if interruptions like the ones listed above derail you, it represents an inefficiency at managing complexity. Try instead to break down the problem into small subcomponents that can reasoned about.</p>
+<p>Certain paradigms of software tend to relieve the mental burden of the programmer and let them be less vulnerable to the negative effects of interruptions:</p>
+<ul>
+<li><strong>Type-Driven Development</strong>: Simply using types reduces ~15% of all programming errors. Make the linter / compiler rule out classes of errors for free just by using types! Plus, typed code is basically self-documenting, making it easier to collaborate with team members and remember things post-interruption.<br />
+</li>
+<li><strong>Top-Down Development</strong>: Start by designing your system at the highest level, documenting, commenting, and stubbing out code all the way down. If you go by the book<sup id="a6"><a href="#f5">5</a></sup>, this means design the architecture first, then components within the architecture, then class diagrams within each component, and then the functions within each class. In general, a particular implementation comes last – at every step, you’re writing stubs of classes and routines in order to perfect the interfaces of your application. Each level of the hierarchy is reduced to a manageable amount of complexity. You don’t need to fit long branches of the tree into your working memory, just guarantee that the node plays well with it’s parent, and delegate dealing with the children until later.</li>
+<li><strong>Favor Composition</strong>: Composition is a great pattern that’s both functional and object-oriented. In OOP, it’s often seen as the “has-a” relationship. The <a href="https://en.wikipedia.org/wiki/Factory_method_pattern">Factory Pattern</a> and <a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle">Dependency Injection Pattern</a> are great examples of the great successes of composition. Within functional languages, composition is often expressed through <a href="https://en.wikipedia.org/wiki/Higher-order_function">higher-order functions</a>. The concept of the higher order function has certainly <a href="http://alexrosengarten.com/blog/2018/07/06/higher-order-functions-on-pandas-dataframes">helped me a lot in my own programming work</a>. Either way, the purpose of composition is often to isolate the logic you’re trying to express while delegating the details of it for later (e.g. for a particular implementation).</li>
+</ul>
+<p>If some or all of these approaches are employed, then the current state of the program is all the context that is needed to get back your train of thought.</p>
+<p><b id="f1">1</b>. Lone Wolf Programmers (noun): extinct or mythical-beasts. <a href="#a1">↩</a></p>
+<p><b id="f2">2</b>. I like the advice of setting agendas <em>before</em> meetings and ending early when possible. <a href="#a2">↩</a></p>
+<p><b id="f3">3</b>. I hope you gathered by context that I’m not taking “interruptions” to their semantic extreme. <a href="#a3">↩</a></p>
+<p><b id="f4">4</b>. <img src="../assets/Code-Complete-Ch-5-Complexity.png" title="Managing complexity is the most important technical topic in software development. In my view, it’s so important that Software’s Primary Technical Imperative has to be managing complexity. Complexity is not a new feature of software development. Computing pioneer Edsger Dijkstra pointed out that computing is the only profession in which a single mind is obliged to span the distance from a bit to a few hundred megabytes, a ratio of 1 to 10^9, or nine orders of magnitude (Dijkstra 1989). This gigantic ratio is staggering. Dijkstra put it this way: “Compared to that number of semantic levels, the average mathematical theory is almost flat. By evoking the need for deep conceptual hierarchies, the automatic computer confronts us with a radically new intellectual challenge that has no precedent in our history.” Of course software has become even more complex since 1989, and Dijkstra’s ratio of 1 to 10^9 could easily be more like 1 to 10^15 today." alt="See alt text" />. <a href="#a4">↩</a></p>
+<p><b id="f5">5</b>. <a href="http://aroma.vn/web/wp-content/uploads/2016/11/code-complete-2nd-edition-v413hav.pdf">See Chapter 5.2/pg 82</a>. <a href="#a5">↩</a></p>
+<footer>
+    <ul>
+        <li><script type="text/javascript">
+            <!--
+            h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#108;&#120;&#114;&#x73;&#110;&#x67;&#114;&#116;&#110;&#x2b;&#112;&#x77;';e=n+a+h;
+            document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'gmail'+'<\/'+'a'+'>');
+            // -->
+        </script><noscript>&#x61;&#108;&#120;&#114;&#x73;&#110;&#x67;&#114;&#116;&#110;&#x2b;&#112;&#x77;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript></li>
+        <li><script type="text/javascript">
+            <!--
+            h='&#x67;&#x6f;&#x6f;&#x67;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#108;&#120;&#114;';e=n+a+h;
+            document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'google'+'<\/'+'a'+'>');
+            // -->
+        </script><noscript>&#x61;&#108;&#120;&#114;&#32;&#x61;&#116;&#32;&#x67;&#x6f;&#x6f;&#x67;&#108;&#x65;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript></li>
+        </li>
+        <li><a href="https://github.com/alxrsngrtn">github</a></li>
+        <li><a href="https://twitter.com/alxrsngrtn">twitter</a></li>
+        <li><a href="https://github.com/alxrsngrtn/Resumes/releases/">resume</a></li>
+    </ul>
+</footer>
+</body>
+</html>

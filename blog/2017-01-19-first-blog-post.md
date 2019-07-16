@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "First Blog Post"
 date: 2017-01-19
 ---

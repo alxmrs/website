@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "Higher Order Functions on Pandas Dataframes"
 date: 2018-07-06
 ---
 
-(Note: the following article is uneditied -- Proceed with caution).
+(Note: the following article is unedited -- Proceed with caution).
 
 (Last updated: 2018-07-31)
 
@@ -22,7 +21,7 @@ The core idea is to promote re-use of logic through composition. To this end, we
 as much as possible to abstract away the nonessential details of each operation.
 
 I'm getting ahead of myself. It's better to *show* rather than *tell*. 
-Let's explore the thought process of refactoring the standard process for querying data in Pandas.
+Let's explore the thought process of refactoring the standard method for querying data in Pandas.
 
 ## The Conventional Way 
 
@@ -30,16 +29,16 @@ The Pandas documentation explains the similarities between their API
 and SQL for querying tabular data. A SQL query with a compound `WHERE` clause,
  for instance, can be expressed as follows:
 
-{% highlight SQL %}
+```SQL
 -- tips of more than $5.00 at Dinner meals
 SELECT *
 FROM tips
 WHERE time = 'Dinner' AND tip > 5.00;
-{% endhighlight %}
+```
 
 The equivalent Pandas syntax is as such:
 
-{% highlight python %}
+```python
 # tips of more than $5.00 at Dinner meals
 >>> In [11]: tips[(tips['time'] == 'Dinner') & (tips['tip'] > 5.00)]
      total_bill    tip     sex smoker  day    time  size
@@ -58,7 +57,7 @@ The equivalent Pandas syntax is as such:
 212       48.33   9.00    Male     No  Sat  Dinner     4
 214       28.17   6.50  Female    Yes  Sat  Dinner     3
 239       29.03   5.92    Male     No  Sat  Dinner     3
-{% endhighlight %}
+```
 
 [(source)](https://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html#where)
 
@@ -66,13 +65,13 @@ What if we wanted to extend our query with an arbitrary number of conditions?
 
 Using the standard Pandas syntax, it would look something like this:
 
-{% highlight python %}
+```python
 >>> tips[(tips['time'] == 'Dinner') & (tips['tip'] > 5.00) &
 ...      (tips['sex'] == 'Female')  & (tips['smoker'] == 'No')]
      total_bill   tip     sex smoker  day    time  size
 52        34.81  5.20  Female     No  Sun  Dinner     4
 155       29.85  5.14  Female     No  Sun  Dinner     5
-{% endhighlight %}
+```
 
 This does not seem ideal. Our line of code quickly gets longer as we add more filtering logic. A lot of logic is 
 repeated -- namely, we keep referring to the `tips` dataframe over and over. What if the dataframe name changed? 
@@ -88,7 +87,7 @@ it is intuitive, general, and correct?
 
 Let's break down what's going on in the above query:
 
-{% highlight python %}
+```python
 >>> is_dinner_time = (tips['time'] == 'Dinner')
 >>> is_dinner_time.head()
 0    True
@@ -114,7 +113,7 @@ False    226
 True      18
 Name: tip, dtype: int64
 >>> # etc...
-{% endhighlight %}
+```
 
 Ah! So what's actually going on is we are taking advantage of dataframe's capacity for [boolean indexing](https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing).
 
@@ -124,7 +123,7 @@ Plus, we might like to reuse the query on different dataframes.
 
 Let's try this:
 
-{% highlight python %}
+```python
 >>> is_dinner_time = lambda df: df['time'] == 'Dinner'
 >>> is_tip_above_five = lambda df: df['tip'] > 5.00
 >>> tips[is_dinner_time(tips) & is_tip_above_five(tips)]
@@ -144,8 +143,7 @@ Let's try this:
 212       48.33   9.00    Male     No  Sat  Dinner     4
 214       28.17   6.50  Female    Yes  Sat  Dinner     3
 239       29.03   5.92    Male     No  Sat  Dinner     3
-
-{% endhighlight %}
+```
 
 Great. I now have two functions `is_dinner_time` and `is_tip_above_five` which I could use on any other dataframe.
 However, I still am repeating the reference to `tips` as many times as I did before.
@@ -157,7 +155,7 @@ operations and I see fit.
 Why not use a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function)? Functions are first class citizens in python, after all. Let's abstract away
 the rote work of calling these filter functions with respect to a particular dataframe.
 
-{% highlight python %}
+```python
 >>> import functools
 >>> def intersection(df, *filters):
 ...    mapped_boolean_dfs = [f(df) for f in filters if callable(f)]
@@ -180,8 +178,7 @@ the rote work of calling these filter functions with respect to a particular dat
 212       48.33   9.00    Male     No  Sat  Dinner     4
 214       28.17   6.50  Female    Yes  Sat  Dinner     3
 239       29.03   5.92    Male     No  Sat  Dinner     3
-
-{% endhighlight %}
+```
 
 Much better. Now, should we want to add additional fields in the table to filter with, we merely define more
 filter functions -- which, again, can be used for any table.
@@ -192,7 +189,7 @@ booleans the same size as the input.
 For example, if we are querying string data that is messy, we could write a filter like
 the following:
 
-{% highlight python %}
+```python
 >>> def is_dinner_fuzzy(df):
 ...    return df['time'].apply(lambda x: fuzz.ratio(x, 'dinner')) >= 90
 >>> intersection(tips, is_dinner_fuzzy, is_tip_above_five)
@@ -212,8 +209,7 @@ the following:
 212       48.33   9.00    Male     No  Sat  Dinner     4
 214       28.17   6.50  Female    Yes  Sat  Dinner     3
 239       29.03   5.92    Male     No  Sat  Dinner     3
-
-{% endhighlight %}
+```
 
 (Note: `fuzz.ratio()` returns an integer representing the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) from one string to another)
 
@@ -225,7 +221,7 @@ we wanted an `OR` operation?
 
 Let's generalize further:
 
-{% highlight python %}
+```python
 >>> def filter_reduce(df, *filters, reducer=lambda acc, x: acc & x):
 ...    mapped_dfs = [f(df) for f in filters if callable(f)]
 ...    accumulated_df = functools.reduce(reducer, mapped_dfs)
@@ -234,18 +230,17 @@ Let's generalize further:
 ...    return filter_reduce(df, *filters, reducer=lambda acc, x: acc & x)
 >>> def union(df, *filters):
 ...    return filter_reduce(df, *filters, reducer=lambda acc, x: acc | x)
-
-{% endhighlight %}
+```
 
 Then we can represent the following SQL query (from the Pandas documentation) like so:
 
-{% highlight SQL %}
+```SQL
 SELECT *
 FROM tips
 WHERE size >= 5 OR total_bill > 45;
-{% endhighlight %}
+```
 
-{% highlight python %}
+```python
 >>> is_total_bill_large = lambda df: df['total_bill'] > 45
 >>> is_party_gte_five = lambda df: df['size'] >= 5
 >>> union(tips, is_party_gte_five, is_total_bill_large)
@@ -263,8 +258,7 @@ WHERE size >= 5 OR total_bill > 45;
 187       30.46   2.00    Male    Yes   Sun  Dinner     5
 212       48.33   9.00    Male     No   Sat  Dinner     4
 216       28.15   3.00    Male    Yes   Sat  Dinner     5
-
-{% endhighlight %}
+```
 
 Sure, we could have implemented the `union` and `intersection` cases by themselves, but the
 function `filter_reduce` offers us the luxury of adaptability later on.
@@ -280,7 +274,7 @@ like to revert to the previous form? What if we wanted to know what the original
 In Pandas, we can simulate immutability by creating mapping functions that first perform a shallow copy of the input 
 dataframe and return a new result.
 
-{% highlight python %}
+```python
 >>> def add_subtotal(df):
 ...     cp = pd.DataFrame(df, copy=True)
 ...     cp['subtotal'] = cp['total_bill'] - cp['tip']
@@ -330,14 +324,13 @@ Out[52]:
 2          5.836667  
 3         10.185000  
 4          5.245000  
-
-{% endhighlight %}
+```
 
 ...
 
 We can combine all of these -- and arbitrarily more operations -- through a higher order function called `compose`:
 
-{% highlight python %}
+```python
 >>> import functools
 >>> def compose(df, *mappers):
 ...     return functools.reduce(lambda acc, x: x(acc), mappers, df)
@@ -355,8 +348,7 @@ We can combine all of these -- and arbitrarily more operations -- through a high
 2          5.836667  
 3         10.185000  
 4          5.245000  
-
-{% endhighlight %}
+```
 
 One advantage of this approach is that mutating dataframes can be lazily evaluated: We can wait to modify the data only
 until it's needed (i.e. until we call `compose`).
@@ -376,7 +368,7 @@ with copies remains efficient while promoting many other benefits.
 
 Don't take my word for it! Let's prove that this is the case:
 
-{% highlight python %}
+```python
 >>> tips_ref_original = tips.applymap(id)
 >>> tips_ref_copied = tips_all.applymap(id)
 >>> tips_ref_original.head()
@@ -425,5 +417,5 @@ Don't take my word for it! Let's prove that this is the case:
 2  423146560   423072376  
 3  423146512   423072304  
 4  423146592   423073264  
+```
 
-{% endhighlight %}
