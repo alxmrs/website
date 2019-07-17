@@ -1,14 +1,16 @@
 # Your Resume as an Introduction to Version Control and CI/CD 
 
+[TL;DR: Steps](#Steps)
+
 ## Background
 
-You know how to program. Maybe you've taken lower division, perhaps upperdivsion, computer science classes. Or, you've 
-attented a boot camp, are self-taught (good for you!), etc. 
+You know how to program -- maybe you've taken lower / upper division computer science classes. Or, you've 
+attended a boot camp, are self-taught (good for you!), etc. 
 
 However, there are a few known unknowns that separates where you are now to the developer in industry that you hope to 
 be. 
 
-In this article, I want to talk about one of these areas: Project Hygine!
+In this article, I want to talk about one of these areas: Project Hygiene!
 
 I'll cover a few concepts that you've likely heard of but might not use to the fullest extent: Version Control Systems
 (VCS) and Continuous Integration / Continuous Deployment (CI/CD).  
@@ -31,8 +33,35 @@ problems, as you can imagine.
 
 * * * 
 
-1. (optional) [Set up Latex on your computer](https://www.latex-project.org/get/) (to make editing easier)
-1. Acquire a Latex Template
-  - Easy starter: [Fork this repo](https://github.com/sb2nov/resume)
+## Steps
+1. Create a new Repository on GitHub
+  - Click the `+` sign on the top right corner, select "Create new repository"
+  - Give your Repo a name and description.
+  - Add a license! I recommend Apache or MIT.
+  - Add a default README
+  - Follow the instructions to sync the GitHub repo with your local version
+1. Groom your initial master branch
+  - (recommended) `curl https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore -o .gitignore && git add .gitignore`
+  - (optional) Add more information to your README.md, then `git add README.md`
+  - `git commit -m "initial commit"`
+1. Create a feature branch for the build
+  - `git checkout -b build`
+1. Acquire a resume template 
+  - Easy starter: [Use this .tex file](https://github.com/sb2nov/resume)
   - [Choose a different resume template](https://www.latex-project.org/get/) or make your own.
-1. 
+  - `git add` all of the assets
+1. Create build scripts for local development
+  - [Set up Latex on your computer](https://www.latex-project.org/get/) 
+  - Windows (assuming you installed miktex): 
+  `echo "pdflatex <resume-filename>.tex" >> build.bat` 
+  - Linux / Mac: 
+  `echo "pdflatex <resume-filename>.tex" >> build.sh`
+
+1. Fill in your resume in a edit-commit-push loop
+  - Make edits to your template until you've finished one "chunk"
+  - (optional) Compile your Latex file to see if what you have looks good.
+  - `git add <resume-name>.tex`
+  - `git commit -m "<description of latest changes>`
+  - `git push origin initial-draft`
+  - Repeat
+1. When you're happy with the draft, make a Pull Request (PR) into master
