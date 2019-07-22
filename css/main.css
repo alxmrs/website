@@ -33,7 +33,7 @@ figure img {
 figcaption {
     font-style: italic;
     font-size: .8em;
-    color: #666;
+    color: var(--secondary-color);
 }
 
 figure {
