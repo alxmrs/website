@@ -121,6 +121,7 @@ number ending in `057`.
 
 Soon after, I had another live chat with Namecheap customer support. Soon after, I bypassed the MFA in disarray.
 
+* * * 
 <!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
 
 I've learned this general pattern about how I use to (and sometimes, still) do things: I "greedily" generalized early. 
