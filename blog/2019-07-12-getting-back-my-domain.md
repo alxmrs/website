@@ -88,9 +88,38 @@ service, I gained a glimmer of hope: Their customer service members could overri
 ownership of the account. This glimmer was extinguished soon, however, when I learned that one of the details they 
 required to identify me was the phone number used to make the account.
 
+With nothing left to do, I filed a ticket at their risk management team, hoping that they could help me. If that failed,
+ my hail mary option was to modify the content of my website, proving that it was really me after all. 
+ 
+A day later, they got back to me. Without the phone number on the account, they could do nothing for me.
+
+* * * 
+
 I have not missed the great, dual irony of the situation: 
+
 - I used a series of indirections to remain anonymous... to publicize myself via personal domain. 
-- I took security measures... that made me far less secure.
+- The security measures I took... made me more vulnerable and less in control.
+
+"Congratulations," [my partner](https://camillemerz.com) told me. "You played yourself."
+
+Thanks, hun.
+
+* * * 
+
+Over the next few days, I searched my email and other records for traces of that number with no success. I knew that 
+this was a futile effort, but I did it anyway, almost out of protest or consolation. 
+
+Then, I had an idea. When I originally created my account, I paid for extra services to make sure that any identifying 
+data about the domain wouldn't be publicly listed. I decided to check that anyway, just in case. 
+
+I ran a query via whois.org --
+
+"There it is!" I discovered.
+
+Apparently, I had only paid for a year's worth of this service. It had expired long ago. But there it was, a phone 
+number ending in `057`.
+
+Soon after, I had another live chat with Namecheap customer support. Soon after, I bypassed the MFA in disarray.
 
 <!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
 
