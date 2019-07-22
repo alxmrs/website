@@ -1,19 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Fascinate&display=swap);
 
 :root {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
+    --primary-color: #2B9045;
+    --secondary-color: #62905f;
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
 }
 
 [data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --heading-color: #818cab;
+    --primary-color: #a5f0a9;
+    --secondary-color: #85ab84;
+    --font-color: #f3fffd;
+    --bg-color: #1f2520;
+    --heading-color: #8eab92;
 }
 
 
