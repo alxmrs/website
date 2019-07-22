@@ -35,33 +35,30 @@ problems, as you can imagine.
 
 ## Steps
 1. Create a new Repository on GitHub
-  - Click the `+` sign on the top right corner, select "Create new repository"
-  - Give your Repo a name and description.
-  - Add a license! I recommend Apache or MIT.
-  - Add a default README
-  - Follow the instructions to sync the GitHub repo with your local version
+- Click the `+` sign on the top right corner, select "Create new repository"
+- Give your Repo a name and description.
+- Add a license! I recommend Apache or MIT.
+- Add a default README
+- Follow the instructions to sync the GitHub repo with your local version
 1. Groom your initial master branch
-  - (recommended) `curl https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore -o .gitignore && git add .gitignore`
-  - (optional) Add more information to your README.md, then `git add README.md`
-  - `git commit -m "initial commit"`
+- (recommended) `curl https://raw.githubusercontent.com/github/gitignore/master/TeX.gitignore -o .gitignore && git add .gitignore`
+- (optional) Add more information to your README.md, then `git add README.md`
+- `git commit -m "initial commit"`
 1. Create a feature branch for the build
-  - `git checkout -b build`
+- `git checkout -b build`
 1. Acquire a resume template 
-  - Easy starter: [Use this .tex file](https://github.com/sb2nov/resume)
-  - [Choose a different resume template](https://www.latex-project.org/get/) or make your own.
-  - `git add` all of the assets
+- Easy starter: [Use this .tex file](https://github.com/sb2nov/resume)
+- [Choose a different resume template](https://www.latex-project.org/get/) or make your own.
+- `git add` all of the assets
 1. Create build scripts for local development
-  - [Set up Latex on your computer](https://www.latex-project.org/get/) 
-  - Windows (assuming you installed miktex): 
-  `echo "pdflatex <resume-filename>.tex" >> build.bat` 
-  - Linux / Mac: 
-  `echo "pdflatex <resume-filename>.tex" >> build.sh`
-
+- [Set up Latex on your computer](https://www.latex-project.org/get/) 
+- Windows (assuming you installed miktex): `echo "pdflatex <resume-filename>.tex" >> build.bat` 
+- Linux / Mac: `echo "pdflatex <resume-filename>.tex" >> build.sh`
 1. Fill in your resume in a edit-commit-push loop
-  - Make edits to your template until you've finished one "chunk"
-  - (optional) Compile your Latex file to see if what you have looks good.
-  - `git add <resume-name>.tex`
-  - `git commit -m "<description of latest changes>`
-  - `git push origin initial-draft`
-  - Repeat
+- Make edits to your template until you've finished one "chunk"
+- (optional) Compile your Latex file to see if what you have looks good.
+- `git add <resume-name>.tex`
+- `git commit -m "<description of latest changes>`
+- `git push origin initial-draft`
+- Repeat
 1. When you're happy with the draft, make a Pull Request (PR) into master
