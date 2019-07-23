@@ -40,10 +40,21 @@ p {
     line-height: 1.6rem;
 }
 
+#profile {
+    border-radius: 50%;
+    padding: 0 6px
+    float: left;
+    width: 270px; 
+}
+
 @media screen and (max-width: 768px) {
     body {
         width: 95%;
     }
+
+    #profile {
+        width: 80%; 
+     }
 }
 
 nav ul, footer ul {
@@ -72,6 +83,7 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
 
 /*slider switch css */
 .theme-switch-wrapper {

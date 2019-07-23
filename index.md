@@ -1,5 +1,7 @@
 # Hi there, I'm Alex Rosengarten!
 
+![](/assets/website-profile-square.png "A picture of me!"){#profile float=left}
+
 My passion is learning about learning about learning. I aim to use machine learning to help human learning,
 computer vision to realize *my* vision, and hopefully go on a few adventures along the way.
 
