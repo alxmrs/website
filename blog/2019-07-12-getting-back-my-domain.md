@@ -119,7 +119,7 @@ I ran a query via whois.org --
 Apparently, I had only paid for a year's worth of this service. It had expired long ago. But there it was, a phone 
 number ending in `057`.
 
-Soon after, I had another live chat with Namecheap customer support. Soon after, I bypassed the MFA.
+Soon after, I had another live chat with Namecheap customer support. Before I knew it, I bypassed the MFA.
 
 * * * 
 <!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
