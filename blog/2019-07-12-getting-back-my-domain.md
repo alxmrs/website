@@ -132,7 +132,7 @@ ordeal.
 I had a misplaced estimation of the orders of magnitude of the tactics I exercised. At the time, I didn't know of the 
 importance of certain moves -- like how [important HTTPS is for web browsing](https://doesmysiteneedhttps.com/). I also 
 neglected to consider the longevity of certain moves. I needed to ask myself, "how dependable are the tools I choose to 
-reply on?"
+rely on?"
 
 I take away from this experience a lesson in skepticism. Before, I thought I needed to be robust against human 
 adversaries. As I've matured, it's clear that I need to be robust against human error.
