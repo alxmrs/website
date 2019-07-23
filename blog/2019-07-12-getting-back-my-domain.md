@@ -10,7 +10,8 @@ fix it.
 
 Check out the URL of this domain. Is it secure? How do you know? Let me show you how *I* know it's not, as of writing: 
 
-![My site does not use HTTPS, and therefore is not secure](/assets/alex-is-not-secure.png "A URL bar with no HTTPS support")
+![My site does not use HTTPS, and therefore is not secure](/assets/alex-is-not-secure.png 
+"A URL bar with no HTTPS support")
 
 "How embarrassing. A software engineer who doesn't know how to set up HTTPS for his own personal site."
 
@@ -26,16 +27,19 @@ myself into all in the name of "security". Here I am today, writing support tick
 * * * 
 
 When I was younger, I found this free Chrome extension that would provide me piece-of-mind while web-browsing. It was 
-called MaskedMe, and the general idea was it helped you control spam and prevent hacking. It did this by generating a fake 
-email address per website, and automatically forwarding all the emails to your real address. 
+called MaskedMe, and the general idea was it helped you control spam and prevent hacking. It did this by generating a 
+fake email address per website, and automatically forwarding all the emails to your real address. 
 
-"Great!" I thought. "I can't be subject to a [password-reuse attack](https://xkcd.com/792/) if every email I use is different, right?"
+"Great!" I thought. "I can't be subject to a [password-reuse attack](https://xkcd.com/792/) if every email I use is 
+different, right?"
 
-It had additional services, totally for free, for replacing phone numbers and credit cards, so you never had to give up personal information. 
-So I replaced a lot of information on various accounts with generated emails, cellphone numbers, and credit cards. 
+It had additional services, totally for free, for replacing phone numbers and credit cards, so you never had to give up 
+personal information. So I replaced a lot of information on various accounts with generated emails, cellphone numbers, 
+and credit cards. 
 
 Sometime around the end of high school or early college, after adopting MaskMe, I thought to myself,
- "I should buy my personal domain before [another Alex Rosengarten](https://www.facebook.com/public/Alex-Rosengarten) beats me to it."
+ "I should buy my personal domain before [another Alex Rosengarten](https://www.facebook.com/public/Alex-Rosengarten) 
+beats me to it."
 
 So I did. But I had the *brilliant* idea to make the account holding my domains as anonymous as possible. 
 You know, just in case I wanted to buy *other* domains where I would *need* anonymity (spoiler: this never happened). 
@@ -54,7 +58,8 @@ consolidate my tools on to one platform so I can build more advanced things.
 To this end, I start to log on to namecheap, which should be easy because I actually remember my username and password. 
 I enter those pieces of information. Then, I hit the next screen: 
 
-![I have to wait on a text to a phone number I don't control](/assets/namecheap-mfa-masked.png "A MFA screen showing my MaskedMe phone number")
+![I have to wait on a text to a phone number I don't control](/assets/namecheap-mfa-masked.png
+ "A MFA screen showing my MaskedMe phone number")
 
 Ok. This is *annoying*, but not too big of a problem. I'll just log into my MaskedMe account, get the multi-factor 
 authentication (MFA) code, and move along.
@@ -66,7 +71,7 @@ services: Blur (same services as MaskMe) and DeleteMe, a way to scrub your onlin
 
 Spoiler: They didn't. 
 
-Apparently, masked credit cards and phone numbers have become part of their **premium** services. 
+Apparently, masked credit cards and phone numbers have become part of their *premium* services. 
 
 From here, I took several approaches to recover this proxy cell number. I filed a support ticket (longer wait for free 
 customers). I called their support phone line (a dead end loop that tells you to email them). I even tried to sign up 
@@ -101,7 +106,6 @@ I have not missed the great, dual irony of the situation:
 
 Thanks, hun.
 
-* * * 
 
 Over the next few days, I searched my email and other records for traces of that number with no success. I knew that 
 this was a futile effort, but I did it anyway out of protest or consolation. 
