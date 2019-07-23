@@ -112,7 +112,7 @@ this was a futile effort, but I did it anyway out of desperation.
 Then, I had an idea. When I originally created my account, I paid for extra services to make sure that any identifying 
 data about the domain wouldn't be publicly listed. I decided to check that anyway, just in case. 
 
-I ran a query via whois.org --
+I ran a query via Whois.org --
 
 "There it is!" I discovered.
 
@@ -122,8 +122,17 @@ number ending in `057`.
 Soon after, I had another live chat with Namecheap customer support. Before I knew it, I bypassed the MFA.
 
 * * * 
-<!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
 
+When I was younger, I had a unbalanced sense of trust. I had strong feelings towards protecting myself online, but no 
+context to correctly model risk. 
+
+It's easy to ask what I could possibly have been thinking back then. I assure you, I have many times during this whole 
+ordeal. 
+
+I take away from this experience a lesson in skepticism. Before, I thought I needed to be robust against human 
+adversaries. As I've matured, it's clear that I need to be robust against human error.
+
+<!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
 <!--
 I've learned this general pattern about how I use to (and sometimes, still) do things: I "greedily" generalized early. 
 In other words, I deferred doing the simple thing in order to make my life easier in the long run, so much so that it made things more complicated in the long run. 
