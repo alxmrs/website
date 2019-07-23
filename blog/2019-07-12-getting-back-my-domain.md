@@ -123,17 +123,22 @@ Soon after, I had another live chat with Namecheap customer support. Before I kn
 
 * * * 
 
-When I was younger, I had an unbalanced sense of trust. I had strong feelings towards protecting myself online, but no 
+In my younger days, I had an unbalanced sense of trust. I had strong feelings towards protecting myself online, but no 
 context to correctly model risk. 
 
 It's easy to ask what I could possibly have been thinking back then. I assure you, I have many times during this whole 
 ordeal. 
 
 I had a misplaced estimation of the orders of magnitude of the tactics I exercised. At the time, I didn't know of the 
-importance of certain moves -- like how [important HTTPS is for web browsing](https://doesmysiteneedhttps.com/). I also 
-neglected to consider the longevity of certain moves. I needed to ask myself, "how dependable are the tools I choose to 
-rely on?"
+importance of certain choices -- like how [important HTTPS is for web browsing](https://doesmysiteneedhttps.com/). I also 
+neglected to consider the longevity of other choices. I needed to ask myself, "how dependable are the tools I choose to 
+rely on?" 
 
-I take away from this experience a lesson in skepticism. Before, I thought I needed to be robust against human 
-adversaries. As I've matured, it's clear that I need to be robust against human error.
+Quality of tool aside, this situation could have been avoided if I performed regular maintenance. The logic I practiced 
+was akin to the idea that you can't fall victim to a phishing attack if you never check email. Now that I'm in a less 
+turbulent time in my life, I can work on minimizing my digital footprint and tending to my virtual garden.
+
+In addition to risk assessment and orderliness, this experience has been a great lesson in skepticism. Before, I 
+thought I needed to be robust against human adversaries. As I've matured, it's clear that I need to be robust against 
+human error.
 
