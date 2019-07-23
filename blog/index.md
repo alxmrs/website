@@ -8,5 +8,4 @@
 # Drafts
 
 - [Getting Back My Domain](2019-07-12-getting-back-my-domain.html)
-- [In Defense of Interruptions](2018-09-02-in-defense-of-interruptions.html)
 
