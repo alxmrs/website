@@ -6,7 +6,7 @@ echo "Rendering site"
 find . -name "*.md" -type f -exec \
  pandoc -B includes/header.html \
         -A includes/footer.html \
-        --highlight-style=kate \
+        --highlight-style=breezedark \
         -c /css/main.css \
         --email-obfuscation=javascript \
         -t html5 \

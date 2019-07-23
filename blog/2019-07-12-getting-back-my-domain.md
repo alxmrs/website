@@ -5,7 +5,7 @@ date: 2018-09-02
 
 Well, here's a very meta story about this website and how I've grown since I started it. 
 
-I want to talk about an issue that may have bugged you like it's bugged me, and the annoying maze that I got 
+I want to talk about an issue that has bugged me for quite some time and the annoying maze that I got 
 myself in to fix it. 
 
 Check out the URL of this domain. Is it secure? How do you know? Let me show you how *I* know it's not, as of writing: 
@@ -49,14 +49,14 @@ custom jekyll blog, autopay for my domain every year, and never have to log into
 
 Fast forward, later still.
 
-By around this time, I'm familiar with AWS and use that to buy other domains. For simplicity, it makes sense to transfer 
-all my domains into one provider for simplicities sake, right? 
-I start to log on to namecheap, which should be easy because I actually remember my username and password. 
-I hit the next screen: 
+I've gaind maturity as a developer and know my way around cloud technologies (like GCP and AWS). I'm motivated to 
+consolidate my tools on to one platform so I can build more advanced things. 
+To this end, I start to log on to namecheap, which should be easy because I actually remember my username and password. 
+I enter those pieces of information. Then, I hit the next screen: 
 
 ![I have to wait on a text to a phone number I don't control](/assets/namecheap-mfa-masked.png "A MFA screen showing my MaskedMe phone number")
 
-Ok, not a problem, I'll just grab it the information from my ol' MaskedMe account. 
+Ok. This is annoying, sure, but not too big of a problem. I'll just log into my MaskedMe account, get the MFA code, and move ahead.
 
 A google search gets me [here](https://www.abine.com/).
 
@@ -69,15 +69,59 @@ Spoiler: They didn't.
 
 Apparently, masked credit cards and phone numbers are now part of their **premium** services. 
 
-<!-- TODO: finish describing how bad a situation masked me is. Make sure you talk about how you are stuck -->
+From here, I took several approaches to recover this proxy cell number. I file a support ticket (longer wait for free 
+customers). I call their support phone line (a dead end: it's a loop that tells you to email them). I even try to sign up for 
+premium -- for some reason, my attempts to upgrade failed every time (likely because my data was stale, they built their service
+around new customers instead of maintaining connections for old ones). 
 
-<!-- TODO: Talk about your attempt of resultion about the issue: You've reached out to masked me support, but they aren't responding and aren't answering phone calls. Also, you're talking to namescheap, too. -->
+Eventually, I got a hold of Abine support. They said that after a long enough period of inactivity, they deprecate text
+message proxies. This means that there was no way that I could access the MFA number, and was likely permanently
+ly locked out of my account. 
 
+This sucked a lot. Not only was I unable to maintain, upgrade, or configure my domain, I could risk losing it after my 
+credit card expired and I failed to make payments. 
+
+* * *
+
+The next lever I had left to pull was contacting Namecheap support. In my first conversation with their live help chat 
+service, I gained a glimmer of hope: Their customer service members could override MFA temporarily if I could prove 
+ownership of the account. This glimmer was extinguished soon, however, when I learned that one of the details they 
+required to identify me was the phone number used to make the account.
+
+With nothing left to do, I filed a ticket at their risk management team, hoping that they could help me. If that failed,
+ my hail mary option was to modify the content of my website, proving that it was really me after all. 
+ 
+A day later, they got back to me. Without the phone number on the account, they could do nothing for me.
+
+* * * 
 
 I have not missed the great, dual irony of the situation: 
-- I used a series of indirections to remain anonymous... to publicize myself via personal domain. 
-- I took security measures... that made me far less secure.
 
+- I used a series of indirections to remain anonymous... to publicize myself via personal domain. 
+- The security measures I took... made me more vulnerable and less in control.
+
+"Congratulations," [my partner](https://camillemerz.com) told me. "You played yourself."
+
+Thanks, hun.
+
+* * * 
+
+Over the next few days, I searched my email and other records for traces of that number with no success. I knew that 
+this was a futile effort, but I did it anyway, almost out of protest or consolation. 
+
+Then, I had an idea. When I originally created my account, I paid for extra services to make sure that any identifying 
+data about the domain wouldn't be publicly listed. I decided to check that anyway, just in case. 
+
+I ran a query via whois.org --
+
+"There it is!" I discovered.
+
+Apparently, I had only paid for a year's worth of this service. It had expired long ago. But there it was, a phone 
+number ending in `057`.
+
+Soon after, I had another live chat with Namecheap customer support. Soon after, I bypassed the MFA in disarray.
+
+* * * 
 <!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
 
 I've learned this general pattern about how I use to (and sometimes, still) do things: I "greedily" generalized early. 
