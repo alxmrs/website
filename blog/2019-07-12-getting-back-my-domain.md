@@ -14,13 +14,13 @@ Check out the URL of this domain. Is it secure? How do you know? Let me show you
 
 "How embarrassing. A software engineer who doesn't know how to set up HTTPS for his own personal site."
 
-When I started this site in 2017, that was the case. At least, I was focused on getting something up and running quick, 
+When I started this site in 2017, that was the case. At least, I was focused on getting something up and running quickly, 
 and snoozed on adding that feature. Like most of software engineering, building things outside of your current ability 
 is just a matter of Googling it and following directions. 
 
 As time has gone on, I've kept postponing this feature, despite 
 [learning how to implement it](https://github.blog/2018-05-01-github-pages-custom-domains-https/).
-I've avoided addressing anything to do with my domain due to an completely avoidable predicament that I got 
+I've avoided addressing anything to do with my domain due to a completely avoidable predicament that I got 
 myself into all in the name of "security". Here I am today, writing support tickets to sort it all out.
 
 * * * 
@@ -33,7 +33,7 @@ fake email address per website, and automatically forwarding all the emails to y
 different, right?"
 
 It had additional services, totally for free, for replacing phone numbers and credit cards, so you never had to give up 
-personal information. So I replaced a lot of information on various accounts with generated emails, cellphone numbers, 
+personal information. So I replaced a lot of information on various accounts with generated emails, cell phone numbers, 
 and credit cards. 
 
 Sometime around the end of high school or early college, after adopting MaskMe, I thought to myself,
@@ -123,7 +123,7 @@ Soon after, I had another live chat with Namecheap customer support. Before I kn
 
 * * * 
 
-When I was younger, I had a unbalanced sense of trust. I had strong feelings towards protecting myself online, but no 
+When I was younger, I had an unbalanced sense of trust. I had strong feelings towards protecting myself online, but no 
 context to correctly model risk. 
 
 It's easy to ask what I could possibly have been thinking back then. I assure you, I have many times during this whole 
