@@ -66,7 +66,7 @@ authentication (MFA) code, and move along.
 A Google search gets me [here](https://www.abine.com/): Apparently MaskMe has re-branded as Abine, offering two 
 services: Blur (same services as MaskMe) and DeleteMe, a way to scrub your online footprint off the web.
 
-"That's fine", I though. "They'll have all my account information in tact."
+"That's fine", I thought. "They'll have all my account information in tact."
 
 Spoiler: They didn't. 
 
