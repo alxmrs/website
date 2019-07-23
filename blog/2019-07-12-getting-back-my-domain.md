@@ -137,24 +137,3 @@ reply on?"
 I take away from this experience a lesson in skepticism. Before, I thought I needed to be robust against human 
 adversaries. As I've matured, it's clear that I need to be robust against human error.
 
-<!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
-<!--
-I've learned this general pattern about how I use to (and sometimes, still) do things: I "greedily" generalized early. 
-In other words, I deferred doing the simple thing in order to make my life easier in the long run, so much so that it made things more complicated in the long run. 
-In better words: ["Premature optimization is the root of all evil"](https://en.wikiquote.org/wiki/Donald_Knuth#Computer_Programming_as_an_Art_(1974)).
-
-So much of software engineering is pure computer science theory, yet a great deal of of it is craftsmanship. 
-
--->
-
-
-<!-- TODO: Talk about contingencies / where you are leaving things for now -->
-
-
-<!--
-Update: 
-- makedme got back. They said that numbers that haven't been used for a long time get deleted.
-- I had whoisguard for 1 year, but didn't renew it since I couldn't get into the account
-- whois revealed the phone number on the account
-- I was able to use that number, plus other payment information, to get back into the account
--->
