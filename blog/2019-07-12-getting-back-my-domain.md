@@ -5,8 +5,8 @@ date: 2018-09-02
 
 Well, here's a very meta story about this website and how I've grown since I started it. 
 
-I want to talk about an issue that has bugged me for quite some time and the annoying maze that I got 
-myself in to fix it. 
+I want to talk about an issue that has bugged me for quite some time and the annoying maze I had to get out of to 
+fix it. 
 
 Check out the URL of this domain. Is it secure? How do you know? Let me show you how *I* know it's not, as of writing: 
 
@@ -18,7 +18,7 @@ When I started this site in 2017, that was the case. At least, I was focused on 
 and snoozed on adding that feature. Like most of software engineering, building things outside of your current ability 
 is just a matter of Googling it and following directions. 
 
-As time has gone on, I've kept snoozing on adding this feature, despite 
+As time has gone on, I've kept postponing this feature, despite 
 [learning how to implement it](https://github.blog/2018-05-01-github-pages-custom-domains-https/).
 I've avoided addressing anything to do with my domain due to an completely-avoidable predicament that I got 
 myself into all in the name of "security". Here I am today, writing support tickets to sort it all out.
@@ -44,7 +44,7 @@ I filled out my account information without my actual email, name, or phone numb
 
 Fast forward several years. 
 
-I somehow get into my domain name service (namecheap) and wire up my domain to point to github pages. I set up a quick, 
+I somehow get into my domain name service (Namecheap) and wire up my domain to point to Github pages. I set up a quick, 
 custom jekyll blog, autopay for my domain every year, and never have to log into the domain name service for any reason. 
 
 Fast forward, later still.
@@ -56,58 +56,55 @@ I enter those pieces of information. Then, I hit the next screen:
 
 ![I have to wait on a text to a phone number I don't control](/assets/namecheap-mfa-masked.png "A MFA screen showing my MaskedMe phone number")
 
-Ok. This is annoying, sure, but not too big of a problem. I'll just log into my MaskedMe account, get the MFA code, and move ahead.
+Ok. This is *annoying*, but not too big of a problem. I'll just log into my MaskedMe account, get the multi-factor 
+authentication (MFA) code, and move along.
 
-A google search gets me [here](https://www.abine.com/).
+A google search gets me [here](https://www.abine.com/): Apparently MaskMe has re-branded as Abine, offering two 
+services: Blur (same services as MaskMe) and DeleteMe, a way to scrub your online footprint off the web.
 
-Apparently MaskMe has re-branded as Abine, offering two services: Blur (same services as MaskMe) and DeleteMe, a way to 
-scrub your online footprint off the web.
-
-"That's fine", I think. "They'll have all my account information in tact."
+"That's fine", I though. "They'll have all my account information in tact."
 
 Spoiler: They didn't. 
 
-Apparently, masked credit cards and phone numbers are now part of their **premium** services. 
+Apparently, masked credit cards and phone numbers have become part of their **premium** services. 
 
-From here, I took several approaches to recover this proxy cell number. I file a support ticket (longer wait for free 
-customers). I call their support phone line (a dead end: it's a loop that tells you to email them). I even try to sign up for 
-premium -- for some reason, my attempts to upgrade failed every time (likely because my data was stale, they built their service
-around new customers instead of maintaining connections for old ones). 
+From here, I took several approaches to recover this proxy cell number. I filed a support ticket (longer wait for free 
+customers). I called their support phone line (a dead end loop that tells you to email them). I even tried to sign up 
+for premium -- for some reason, my attempts to upgrade failed every time (likely because my data was stale, they built 
+their service around new customers instead of maintaining connections for old ones). 
 
 Eventually, I got a hold of Abine support. They said that after a long enough period of inactivity, they deprecate text
-message proxies. This means that there was no way that I could access the MFA number, and was likely permanently
-ly locked out of my account. 
+message proxies. This means that there was no way that I could access the MFA number, and was likely permanently 
+locked out of my Namescheap account. 
 
-This sucked a lot. Not only was I unable to maintain, upgrade, or configure my domain, I could risk losing it after my 
-credit card expired and I failed to make payments. 
-
-* * *
+This sucked a lot. Not only was I unable to maintain, upgrade, or configure my domain, I risked losing it after my 
+credit card expired and ceased payments. 
 
 The next lever I had left to pull was contacting Namecheap support. In my first conversation with their live help chat 
 service, I gained a glimmer of hope: Their customer service members could override MFA temporarily if I could prove 
-ownership of the account. This glimmer was extinguished soon, however, when I learned that one of the details they 
-required to identify me was the phone number used to make the account.
+ownership of the account. This glimmer was extinguished soon, however, when I learned that to identify me, they 
+needed the phone number on the account.
 
 With nothing left to do, I filed a ticket at their risk management team, hoping that they could help me. If that failed,
  my hail mary option was to modify the content of my website, proving that it was really me after all. 
  
-A day later, they got back to me. Without the phone number on the account, they could do nothing for me.
+A day later, they got back to me. Without the phone number, they could do nothing for me.
 
 * * * 
 
 I have not missed the great, dual irony of the situation: 
 
-- I used a series of indirections to remain anonymous... to publicize myself via personal domain. 
+- I used a series of indirections to remain anonymous... to publicize myself on the internet. 
 - The security measures I took... made me more vulnerable and less in control.
 
-"Congratulations," [my partner](https://camillemerz.com) told me. "You played yourself."
+"Congratulations," [my partner](http://camillemerz.com) told me. "You played yourself."
 
 Thanks, hun.
 
 * * * 
 
 Over the next few days, I searched my email and other records for traces of that number with no success. I knew that 
-this was a futile effort, but I did it anyway, almost out of protest or consolation. 
+this was a futile effort, but I did it anyway out of protest or consolation. 
 
 Then, I had an idea. When I originally created my account, I paid for extra services to make sure that any identifying 
 data about the domain wouldn't be publicly listed. I decided to check that anyway, just in case. 
@@ -119,16 +116,19 @@ I ran a query via whois.org --
 Apparently, I had only paid for a year's worth of this service. It had expired long ago. But there it was, a phone 
 number ending in `057`.
 
-Soon after, I had another live chat with Namecheap customer support. Soon after, I bypassed the MFA in disarray.
+Soon after, I had another live chat with Namecheap customer support. Soon after, I bypassed the MFA.
 
 * * * 
 <!-- TODO: Brainstorm and refine several lessons that you've had about this situation -->
 
+<!--
 I've learned this general pattern about how I use to (and sometimes, still) do things: I "greedily" generalized early. 
 In other words, I deferred doing the simple thing in order to make my life easier in the long run, so much so that it made things more complicated in the long run. 
 In better words: ["Premature optimization is the root of all evil"](https://en.wikiquote.org/wiki/Donald_Knuth#Computer_Programming_as_an_Art_(1974)).
 
 So much of software engineering is pure computer science theory, yet a great deal of of it is craftsmanship. 
+
+-->
 
 
 <!-- TODO: Talk about contingencies / where you are leaving things for now -->
