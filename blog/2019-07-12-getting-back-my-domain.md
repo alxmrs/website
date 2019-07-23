@@ -20,7 +20,7 @@ is just a matter of Googling it and following directions.
 
 As time has gone on, I've kept postponing this feature, despite 
 [learning how to implement it](https://github.blog/2018-05-01-github-pages-custom-domains-https/).
-I've avoided addressing anything to do with my domain due to an completely-avoidable predicament that I got 
+I've avoided addressing anything to do with my domain due to an completely avoidable predicament that I got 
 myself into all in the name of "security". Here I am today, writing support tickets to sort it all out.
 
 * * * 
@@ -42,7 +42,7 @@ beats me to it."
 
 So I did. But I had the *brilliant* idea to make the account holding my domains as anonymous as possible. 
 You know, just in case I wanted to buy *other* domains where I would *need* anonymity (spoiler: this never happened). 
-I filled out my account information without my actual email, name, or phone number, but at least a real credit card.
+I filled out my account information without my actual email, name, or phone number, but with a real credit card.
 
 
 Fast forward several years. 
@@ -52,9 +52,9 @@ custom jekyll blog, autopay for my domain every year, and never have to log into
 
 Fast forward, later still.
 
-I've gaind maturity as a developer and know my way around cloud technologies (like GCP and AWS). I'm motivated to 
+I've gained maturity as a developer and know my way around cloud technologies (like GCP and AWS). I'm motivated to 
 consolidate my tools on to one platform so I can build more advanced things. 
-To this end, I start to log on to namecheap, which should be easy because I actually remember my username and password. 
+To this end, I attempt to log on to Namecheap, which should be easy because I actually remember my username and password. 
 I enter those pieces of information. Then, I hit the next screen: 
 
 ![I have to wait on a text to a phone number I don't control](/assets/namecheap-mfa-masked.png
@@ -63,7 +63,7 @@ I enter those pieces of information. Then, I hit the next screen:
 Ok. This is *annoying*, but not too big of a problem. I'll just log into my MaskedMe account, get the multi-factor 
 authentication (MFA) code, and move along.
 
-A google search gets me [here](https://www.abine.com/): Apparently MaskMe has re-branded as Abine, offering two 
+A Google search gets me [here](https://www.abine.com/): Apparently MaskMe has re-branded as Abine, offering two 
 services: Blur (same services as MaskMe) and DeleteMe, a way to scrub your online footprint off the web.
 
 "That's fine", I though. "They'll have all my account information in tact."
@@ -85,7 +85,7 @@ This sucked a lot. Not only was I unable to maintain, upgrade, or configure my d
 credit card expired and ceased payments. 
 
 The next lever I had left to pull was contacting Namecheap support. In my first conversation with their live help chat 
-service, I gained a glimmer of hope: Their customer service members could override MFA temporarily if I could prove 
+service, I saw a glimmer of hope: Their customer service members could override MFA temporarily if I could prove 
 ownership of the account. This glimmer was extinguished soon, however, when I learned that to identify me, they 
 needed the phone number on the account.
 
@@ -107,7 +107,7 @@ Thanks, hun.
 
 
 Over the next few days, I searched my email and other records for traces of that number with no success. I knew that 
-this was a futile effort, but I did it anyway out of protest or consolation. 
+this was a futile effort, but I did it anyway out of desperation. 
 
 Then, I had an idea. When I originally created my account, I paid for extra services to make sure that any identifying 
 data about the domain wouldn't be publicly listed. I decided to check that anyway, just in case. 
