@@ -5,7 +5,7 @@ date: 2018-09-02
 
 Well, here's a very meta story about this website and how I've grown since I started it. 
 
-I want to talk about an issue that has bugged me for quite some time and the annoying maze I had to get out of to 
+Let's talk about an issue that has bugged me for quite some time and the annoying maze I had to get out of to 
 fix it. 
 
 Check out the URL of this domain. Is it secure? How do you know? Let me show you how *I* know it's not, as of writing: 
@@ -128,6 +128,11 @@ context to correctly model risk.
 
 It's easy to ask what I could possibly have been thinking back then. I assure you, I have many times during this whole 
 ordeal. 
+
+I had a misplaced estimation of the orders of magnitude of the tactics I exercised. At the time, I didn't know of the 
+importance of certain moves -- like how [important HTTPS is for web browsing](https://doesmysiteneedhttps.com/). I also 
+neglected to consider the longevity of certain moves. I needed to ask myself, "how dependable are the tools I choose to 
+reply on?"
 
 I take away from this experience a lesson in skepticism. Before, I thought I needed to be robust against human 
 adversaries. As I've matured, it's clear that I need to be robust against human error.
