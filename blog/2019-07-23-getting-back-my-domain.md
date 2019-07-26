@@ -1,6 +1,6 @@
 ---
 title: "Getting Back My Domain"
-date: 2018-09-02
+date: 2019-07-23
 ---
 
 Well, here's a very meta story about this website and how I've grown since I started it. 
