@@ -55,10 +55,11 @@ p {
 }
 
 #profile {
-    border-radius: 50%;
-    padding: 0 6px
     float: left;
-    width: 270px; 
+    border-radius: 50%;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 33%;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,7 +68,8 @@ p {
     }
 
     #profile {
-        width: 80%;
+        max-width: 95%;
+
     }
     figure img {
         max-width: 95%;
@@ -93,6 +95,11 @@ a {
 
 a:hover a:focus {
     border-bottom: 2px solid currentColor;
+}
+
+#profile:hover {
+    filter: grayscale(80%);
+    transition: 0.4s;
 }
 
 footer {
