@@ -59,7 +59,8 @@ p {
     border-radius: 50%;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
-    max-width: 33%;
+    width: 33%;
+    max-width: 270px;
 }
 
 @media screen and (max-width: 768px) {
@@ -68,6 +69,7 @@ p {
     }
 
     #profile {
+        width: 95%;
         max-width: 95%;
 
     }
