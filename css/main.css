@@ -17,7 +17,6 @@
 }
 
 
-
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--bg-color);
@@ -27,6 +26,21 @@ body {
     width: 70%;
 }
 
+figure img {
+    max-width: 70%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .8em;
+    color: var(--secondary-color);
+}
+
+figure {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
 
 h1 {
     color: var(--heading-color);
@@ -53,8 +67,11 @@ p {
     }
 
     #profile {
-        width: 80%; 
-     }
+        width: 80%;
+    }
+    figure img {
+        max-width: 95%;
+    }
 }
 
 nav ul, footer ul {
@@ -69,7 +86,6 @@ nav ul li, footer ul li {
 }
 
 a {
-
     text-decoration: none;
     color: var(--primary-color);
     border-bottom: 2px solid transparent;
