@@ -54,11 +54,23 @@ p {
     line-height: 1.6rem;
 }
 
+#profile {
+    float: left;
+    border-radius: 50%;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 33%;
+}
+
 @media screen and (max-width: 768px) {
     body {
         width: 95%;
     }
 
+    #profile {
+        max-width: 95%;
+
+    }
     figure img {
         max-width: 95%;
     }
@@ -85,10 +97,16 @@ a:hover a:focus {
     border-bottom: 2px solid currentColor;
 }
 
+#profile:hover {
+    filter: grayscale(80%);
+    transition: 0.4s;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
 
 /*slider switch css */
 .theme-switch-wrapper {
