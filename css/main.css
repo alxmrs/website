@@ -24,6 +24,7 @@ body {
     font-size: calc(1rem + 0.25vh);
     margin: 0 auto;
     width: 70%;
+    max-width: 680px;
 }
 
 figure img {
@@ -112,8 +113,9 @@ footer {
 /*slider switch css */
 .theme-switch-wrapper {
     position: absolute;
-    top: 16px;
-    right: 10px;
+    top: 21px;
+    padding-left: 10px;
+
 }
 
 .theme-switch-wrapper em {
