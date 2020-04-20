@@ -1,5 +1,7 @@
 # alxrsngrtn.github.io
 
+[![Build Status](https://travis-ci.com/alxrsngrtn/alxrsngrtn.github.io.svg?branch=master)](https://travis-ci.com/alxrsngrtn/alxrsngrtn.github.io)
+
 The source code for [alexrosengarten.com](https://alexrosengarten.com).
 
 ## What's this website all about?
