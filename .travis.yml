@@ -1,0 +1,16 @@
+dist: xenial
+git:
+  depth: 1
+install:
+- tools/install
+script:
+- tools/build
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  skip_cleanup: true
+  verbose: true
+  local_dir: public
+  on: 
+    branch: master
