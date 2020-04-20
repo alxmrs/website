@@ -1,0 +1,4 @@
+#!/bin/sh
+curl -O -L -C - https://github.com/jgm/pandoc/releases/download/2.8/pandoc-2.8-1-amd64.deb
+sudo dpkg -i pandoc-2.8-1-amd64.deb
+rm pandoc-2.8-1-amd64.deb
