@@ -25,7 +25,7 @@ do
    TO="${FROM%%$SRC_EXT}$DST_EXT"
    echo "$FROM --> $TO"
    mkdir -p $(dirname "$DST$TO")
-   pandoc $PANOPTS --output=$DST$TO $file || warn "failed to create $TO"
+   pandoc $PANOPTS --output=$DST$TO $file || warn "Failed to create $TO"
 done
 
 status "Copying over assets"
