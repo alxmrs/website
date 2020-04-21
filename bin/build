@@ -12,7 +12,7 @@ SRC_EXT=${SRC_EXT:-"md"}
 DST_EXT=${DST_EXT:-"html"}
 PANOPTS=${PANOPTS:-"--css $CSS --email-obfuscation=javascript --metadata-file=defaults.yml -f markdown_github+yaml_metadata_block -t html5 -B $HEADER -A $FOOTER"}
 
-. $ROOT/tools/logging
+. $ROOT/bin/logging
 
 mkdir -p $DST
 

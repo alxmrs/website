@@ -2,9 +2,9 @@ dist: xenial
 git:
   depth: 1
 install:
-- tools/install
+- bin/install
 script:
-- tools/build
+- bin/build
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN

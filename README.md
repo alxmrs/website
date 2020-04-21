@@ -11,7 +11,7 @@ thoughts (usually on programming).
 
 ## Setup
 - [Install Pandoc](https://pandoc.org/installing.html)
-- `tools/build`
+- `bin/build`
 
 See my [`pandoc-website-template`](https://github.com/alxrsngrtn/pandoc-website-template) project.
 
