@@ -10,11 +10,6 @@ warn() {
   echo "$RED$BLD$1$END"
 }
 
-fail() {
-  warn $1
-  exit 1
-}
-
 status() {
   echo "$MAG$1$END"
 }
