@@ -55,6 +55,10 @@ p {
     line-height: 1.6rem;
 }
 
+p img {
+    max-width: 100%;
+}
+
 #profile {
     float: left;
     border-radius: 50%;
