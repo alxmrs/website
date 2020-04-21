@@ -7,14 +7,9 @@ BLD="\033[1m"
 END="\033[0m"
 
 warn() {
-    echo "$RED$BLD$1$END"
-}
-
-fail() {
-    warn $1
-    exit 1
+  echo "$RED$BLD$1$END"
 }
 
 status() {
-    echo "$MAG$1$END"
+  echo "$MAG$1$END"
 }
