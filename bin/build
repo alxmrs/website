@@ -17,23 +17,21 @@ PANOPTS=${PANOPTS:-"--css $CSS --email-obfuscation=javascript --metadata-file=de
 mkdir -p $DST
 
 status "Rendering"
-for file in `find $SRC -name "*.$SRC_EXT" -type f`
-do
-   # Strip `src` path from file string
-   FROM="${file##$SRC}"
-   # Define a target file with the new extension
-   TO="${FROM%%$SRC_EXT}$DST_EXT"
-   echo "$FROM --> $TO"
-   mkdir -p $(dirname "$DST$TO")
-   pandoc $PANOPTS --output=$DST$TO $file || warn "Failed to create $TO"
+for file in $(find $SRC -name "*.$SRC_EXT" -type f); do
+  # Strip `src` path from file string
+  FROM="${file##$SRC}"
+  # Define a target file with the new extension
+  TO="${FROM%%$SRC_EXT}$DST_EXT"
+  echo "$FROM --> $TO"
+  mkdir -p $(dirname "$DST$TO")
+  pandoc $PANOPTS --output=$DST$TO $file || warn "Failed to create $TO"
 done
 
 status "Copying over assets"
-for file in `find $SRC ! -name "*.$SRC_EXT" -type f`
-do 
-    FROM=$file
-    TO="$DST${file##$SRC}"
-    echo "${FROM##$ROOT} --> ${TO##$ROOT}"
-    mkdir -p $(dirname $TO)
-    cp $FROM $TO || warn "Failed to copy asset $TO"
+for file in $(find $SRC ! -name "*.$SRC_EXT" -type f); do
+  FROM=$file
+  TO="$DST${file##$SRC}"
+  echo "${FROM##$ROOT} --> ${TO##$ROOT}"
+  mkdir -p $(dirname $TO)
+  cp $FROM $TO || warn "Failed to copy asset $TO"
 done
