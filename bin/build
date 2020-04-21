@@ -35,5 +35,5 @@ do
     TO="$DST${file##$SRC}"
     echo "${FROM##$ROOT} --> ${TO##$ROOT}"
     mkdir -p $(dirname $TO)
-    cp $FROM $TO || warm "Failed to copy asset $TO"
+    cp $FROM $TO || warn "Failed to copy asset $TO"
 done
