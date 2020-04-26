@@ -1,5 +1,18 @@
 # Ideas for Posts/Projects
 
+## 2020-04-25 Meta Writing Exercise
+I did a pen-and-paper writing exercise today. I spent 15 minutes writing a description of topics that I could spend more
+time writing about. Here are the gists of today's list.
+
+- Free will, Determinism, and Epistemology: A probabilistic approach to determinism (part 1 of series)
+- What can compression tell us about how to live? (part 2 of series) 
+- I got engaged in a cemetery
+- A story about a gal I dated in college who was studying abroad in New Zealand. 
+- (project) A tutorial on making an android-friendly chatbot in Kotlin
+  - How to create a DSL for parsing / generating dialog
+
+## 2020-04-23 Learning dev is known a distribution over the basics and advanced topics
+
 ## 2019-07-12 Structure site to abuse Jekyll
 I just realized that you don't need Jekyll to host githubpages sites. I can just write static assets and serve them. 
 I think there are some niceities to Jekyll. Well, the only one I can think of is a markdown --> HTML conversion. 
