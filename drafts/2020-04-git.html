@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2020-04-29" />
+  <title>Alex Rosengarten</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+  <link rel="stylesheet" href="/css/main.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- Checking out my source, eh? Please, feel free to see how this was made here: https://github.com/alxrsngrtn/alxrsngrtn.github.io -->
+<!-- While I have you, why don't you say "Hi" to me on email or twitter? We can talk about tech, life, or whatever you'd like. -->
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox"/>
+                <div class="slider round"></div>
+            </label>
+        </li>
+    </ul>
+</nav>
+
+<header id="title-block-header">
+<h1 class="title">Notes from reading the git manpages</h1>
+<p class="date">2020-04-29</p>
+</header>
+<p>I learned git in college. I would say that I learned it in a specific class, except around then, they were in the middle of changing the curriculum around. So they covered git in four classes. And all four classes covered basically the same content.</p>
+<p>Having used git everyday for several years, I realize that I have only really scratched the surface of what's possible. Sure, I'll hear debates from my coworkers or articles on the best workflow for a given project. There, I'll learn a new trick that I didn't know before. But this doesn't satisfy my craving to really <em>know</em> git -- to see all it can do.</p>
+<h2 id="-git"><code>$ git</code></h2>
+<p>Have you ever taken a sober look at the output of running <code>git</code> on its own? Welcome are the familiar <code>clone</code>, <code>init</code>, <code>commit</code>, <code>push</code> and <code>pull</code> -- commands we know and love.</p>
+<p>I never knew that git had tutorial documentation. What are these <code>git help tutorial</code>, <code>git help everyday</code>, <code>git help revisions</code> and <code>git help workflows</code>?</p>
+<p>I've been meaning to investigate <code>bisect</code> sometime. I've heard it lets you binary search commits to track down when a bug was introduced. <code>rebase</code> catches my attention. I <em>think</em> I know how to rebase, but can one every <em>really</em> know?</p>
+<p>Apparent to me after a while is the total absence of <code>checkout</code>. I use that command everyday. Yesterday, I discovered via total guess that I can jump back and forth between two branches with <code>git checkout -</code>. Have I fallen behind the times? What is this new kid <code>switch</code> on the block? I hope <code>checkout</code> gets introduced later, if only to know the origins of the character that I so love. k</p>
+<h2 id="-git-help--a"><code>$ git help -a</code></h2>
+<p>This is what I was looking for! Well, I didn't know what to expect here. But I wanted to see what I'm missing from git. It's a <em>lot</em>. I remember when a co-worker told me about <code>cherry-pick</code> and how big a deal that was to me. <code>cherry-pick</code> got me out of so many binds. It remains to this day by default backup option when things get really messy.</p>
+<p>Staring at the list of every git command in neat categories like "Porcelain" or "Interrogators", I feel like I found a backroom of a local bookstore, books begging to be pulled of the shelf.</p>
+<p>Did you know that git ships with a graphical interface, <code>gitk</code>? I didn't. I can see the graph of my commits without using my IDE, awesome!</p>
+<h2 id="-git-help-gitweb"><code>$ git help gitweb</code></h2>
+<p>Not only does git ship with a web interface, but it has RSS and Atom feed support for commits. It can be used to browse commits across multiple repos. Who needs GitHub?</p>
+<footer>
+    <ul>
+        <li><script type="text/javascript">
+            <!--
+            h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#108;&#120;&#114;&#x73;&#110;&#x67;&#114;&#116;&#110;&#x2b;&#112;&#x77;';e=n+a+h;
+            document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'gmail'+'<\/'+'a'+'>');
+            // -->
+        </script><noscript>&#x61;&#108;&#120;&#114;&#x73;&#110;&#x67;&#114;&#116;&#110;&#x2b;&#112;&#x77;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript></li>
+        <li><script type="text/javascript">
+            <!--
+            h='&#x67;&#x6f;&#x6f;&#x67;&#108;&#x65;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x61;&#108;&#120;&#114;';e=n+a+h;
+            document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'google'+'<\/'+'a'+'>');
+            // -->
+        </script><noscript>&#x61;&#108;&#120;&#114;&#32;&#x61;&#116;&#32;&#x67;&#x6f;&#x6f;&#x67;&#108;&#x65;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;</noscript></li>
+        </li>
+        <li><a href="https://github.com/alxrsngrtn">github</a></li>
+        <li><a href="https://twitter.com/alxrsngrtn">twitter</a></li>
+        <li><a href="https://github.com/alxrsngrtn/Resumes/releases/">resume</a></li>
+        <li><a href="https://scholar.google.com/citations?user=9ic0HRsAAAAJ&hl=en">publications</a></li>
+    </ul>
+</footer>
+<script type="text/javascript" src="/js/theme.js" async></script>
+</body>
+</html>
