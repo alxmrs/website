@@ -4,14 +4,14 @@
 
 ## About
 
-I'm a software engineer that lives i
+I'm a software engineer who lives 
 
-I currently work at Google on the [Arcs project](https://github.com/PolymerLabs/arcs). 
+I work at Google on the [Arcs project](https://github.com/PolymerLabs/arcs). 
 Here, I'm building technology to protect user privacy in the AI era.
 
 Before this, I was a Machine Learning Engineer at [Aira.io](https://aira.io), a remote assistance platform for the blind. 
 
 You can check out my public profiles, reach out to me, or read [some of my thoughts](/blog).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTU5Mzc4MjEsMTQ0OTU0ODU4MV19
+eyJoaXN0b3J5IjpbNTkwMTQ5MTk3LDE0NDk1NDg1ODFdfQ==
 -->
