@@ -4,12 +4,12 @@
 
 I'm a software engineer who in theory lives in Oakland, CA. During pandemic times, I'm mostly found residing just outside of Driscoll strawberry farms in the Monterey Bay area, if not some beach in Santa Cruz. 
 
-I love to listen to all kinds of music, help my [lovely partner](http://camimerz.com/) cook a fussy meal, and think about climate change solutions. 
+I love to listen to all kinds of music, help my [lovely partner](http://camimerz.com/) cook a fussy meal, and think hard about [climate change solutions](https://deepmind.com/blog/article/machine-learning-can-boost-value-wind-energy). 
 
 Professionally, I work at Google on the [Arcs project](https://github.com/PolymerLabs/arcs). 
 Here, I'm building technology to protect user privacy in the AI era. Before this, I was a Machine Learning Engineer at [Aira.io](https://aira.io), a remote assistance platform for the blind. 
 
 You can check out my public profiles, reach out to me, or read [some of my thoughts](/blog).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI0NTMzMjIwLDE0NDk1NDg1ODFdfQ==
+eyJoaXN0b3J5IjpbMTc2NDE1NDQsMTQ0OTU0ODU4MV19
 -->
