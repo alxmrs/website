@@ -4,7 +4,9 @@
 
 ## About
 
-I'm a software engineer who used to live in Oakland, CA. During pandemic times, I'm found in Aromas, CA, just outside of Driscoll strawberry farms
+I'm a software engineer who used to live in Oakland, CA. During pandemic times, I'm mostly found just outside of Driscoll strawberry farms in Aromas, CA, if not a beach in Santa Cruz. 
+
+I am a lover of 
 
 I work at Google on the [Arcs project](https://github.com/PolymerLabs/arcs). 
 Here, I'm building technology to protect user privacy in the AI era.
@@ -13,5 +15,5 @@ Before this, I was a Machine Learning Engineer at [Aira.io](https://aira.io), a 
 
 You can check out my public profiles, reach out to me, or read [some of my thoughts](/blog).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MjE3NjQwMiwxNDQ5NTQ4NTgxXX0=
+eyJoaXN0b3J5IjpbLTE0MzQyMzg1NTcsMTQ0OTU0ODU4MV19
 -->
