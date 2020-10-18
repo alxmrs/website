@@ -11,3 +11,6 @@ Here, I'm building technology to protect user privacy in the AI era.
 Before this, I was a Machine Learning Engineer at [Aira.io](https://aira.io), a remote assistance platform for the blind. 
 
 You can check out my public profiles, reach out to me, or read [some of my thoughts](/blog).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY0NjM4NTI2N119
+-->
