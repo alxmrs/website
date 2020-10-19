@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Invoke pandoc on $SRC, copy $STATIC assets over to $DST.
 #
