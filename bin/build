@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Invoke pandoc on $SRC, copy $STATIC assets over to $DST.
 #
@@ -14,18 +14,19 @@ ROOT=$(dirname "$0")/..
 mkdir -p "$DST"
 
 status "Rendering"
-for file in "$SRC"/*."${SRC_EXT}"; do
+for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
   # Strip `src` path from file string
   FROM="${file##$SRC}"
   # Define a target file with the new extension
   TO="${FROM%%$SRC_EXT}$DST_EXT"
   echo "$FROM --> $TO"
   mkdir -p "$(dirname "$DST$TO")"
-  pandoc "$PANOPTS" --output="$DST$TO" "$file" || warn "Failed to create $TO"
+  # shellcheck disable=SC2086
+  pandoc $PANOPTS $file --output=$DST$TO || warn "Failed to create $TO"
 done
 
 status "Copying over assets"
-for file in "$STATIC"/*."${DST_EXT}"; do
+for file in "$STATIC"/{,**/}*.*; do
   FROM=$file
   TO="$DST${file##$STATIC}"
   echo "${FROM##$ROOT} --> ${TO##$ROOT}"
