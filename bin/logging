@@ -1,7 +1,9 @@
 #!/bin/sh
+#
+# Constants & functions for logging.
+#
 
 RED="\033[91m"
-GRN="\033[92m"
 MAG="\033[95m"
 BLD="\033[1m"
 END="\033[0m"

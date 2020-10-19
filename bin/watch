@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# Watch $SRC, re-build when any file changes.
+#
+
+ROOT=$(dirname "$0")/..
+# shellcheck source=bin/env
+. "$ROOT"/bin/env
+# shellcheck source=bin/logging
+. "$ROOT"/bin/logging
+
+if ! python3 -c "import whenchanged" > /dev/null 2>&1; then
+  pip3 --disable-pip-version-check install when-changed
+fi
+
+status "Watching, Ctrl+C to exit."
+
+when-changed -r "$SRC" -c "$ROOT"/bin/build
