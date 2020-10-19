@@ -1,6 +1,6 @@
 # alxrsngrtn.github.io
 
-[![Build Status](https://travis-ci.com/alxrsngrtn/website.svg?branch=master)](https://travis-ci.com/alxrsngrtn/website)
+![CI](https://github.com/alxrsngrtn/website/workflows/CI/badge.svg)
 
 The source code for [alexrosengarten.com](https://alexrosengarten.com).
 
