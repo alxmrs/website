@@ -1,37 +1,34 @@
 #!/bin/sh
+#
+# Invoke pandoc on $SRC, copy $STATIC assets over to $DST.
+#
 
 set -e
 
-ROOT=$(dirname $0)/..
-SRC=${SRC:-"$ROOT/src"}
-DST=${DST:-"$ROOT/public"}
-HEADER=${HEADER:-"$SRC/header.html"}
-FOOTER=${FOOTER:-"$SRC/footer.html"}
-CSS=${CSS:-"/css/main.css"}
-SRC_EXT=${SRC_EXT:-"md"}
-DST_EXT=${DST_EXT:-"html"}
-PANOPTS=${PANOPTS:-"--css $CSS --email-obfuscation=javascript --metadata-file=defaults.yml -f markdown_github+yaml_metadata_block -t html5 -B $HEADER -A $FOOTER"}
+ROOT=$(dirname "$0")/..
+# shellcheck source=bin/env
+. "$ROOT"/bin/env
+# shellcheck source=bin/logging
+. "$ROOT"/bin/logging
 
-. $ROOT/bin/logging
-
-mkdir -p $DST
+mkdir -p "$DST"
 
 status "Rendering"
-for file in $(find $SRC -name "*.$SRC_EXT" -type f); do
+for file in "$SRC"/*."${SRC_EXT}"; do
   # Strip `src` path from file string
   FROM="${file##$SRC}"
   # Define a target file with the new extension
   TO="${FROM%%$SRC_EXT}$DST_EXT"
   echo "$FROM --> $TO"
-  mkdir -p $(dirname "$DST$TO")
-  pandoc $PANOPTS --output=$DST$TO $file || warn "Failed to create $TO"
+  mkdir -p "$(dirname "$DST$TO")"
+  pandoc "$PANOPTS" --output="$DST$TO" "$file" || warn "Failed to create $TO"
 done
 
 status "Copying over assets"
-for file in $(find $SRC ! -name "*.$SRC_EXT" -type f); do
+for file in "$STATIC"/*."${DST_EXT}"; do
   FROM=$file
-  TO="$DST${file##$SRC}"
+  TO="$DST${file##$STATIC}"
   echo "${FROM##$ROOT} --> ${TO##$ROOT}"
-  mkdir -p $(dirname $TO)
-  cp $FROM $TO || warn "Failed to copy asset $TO"
+  mkdir -p "$(dirname "$TO")"
+  cp "$FROM" "$TO" || warn "Failed to copy asset $TO"
 done
