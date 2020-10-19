@@ -114,12 +114,11 @@ footer {
 }
 
 
-/*slider switch css */
+ /*slider switch css */
 .theme-switch-wrapper {
     position: absolute;
-    top: 21px;
+    top: 25px;
     padding-left: 10px;
-
 }
 
 .theme-switch-wrapper em {
