@@ -18,3 +18,6 @@ See my [`pandoc-website-template`](https://github.com/alxrsngrtn/pandoc-website-
 ## I got here from a comment in my browser's dev tools... now what?
 
 I dunno. You and I are both in unexplored territory here. Maybe... star this repo?
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTUyNjg4MzkxNF19
+-->
