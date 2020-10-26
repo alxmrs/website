@@ -6,7 +6,7 @@ delicious meal – is nothing short of magic.
 Here are a few meals we've made together that I'd like to remember.
 
 ## farmers market mushroom pasta
-2020-10-17
+2020-Oct-17
 
 <div class="pa-gallery-player-widget"
   data-link="https://photos.app.goo.gl/mJ4LYW3Vp8TKij317"
@@ -46,6 +46,6 @@ Here are a few meals we've made together that I'd like to remember.
 
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzMzI4MTgyLC0xNjEzNDc4MjYzLC04NT
-k1MjEyODhdfQ==
+eyJoaXN0b3J5IjpbLTE5MTA5MjA0NTEsLTE2MTM0NzgyNjMsLT
+g1OTUyMTI4OF19
 -->
