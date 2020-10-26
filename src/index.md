@@ -2,7 +2,7 @@
 
 <img src="https://alexrosengarten.com/assets/website-profile-square.png" title="A picture of me!" id="profile">
 
-I'm a software engineer who (in theory) lives in Oakland, CA. During the pandemic, I'm mostly found living just outside of Driscoll strawberry farms in the Monterey Bay area, if not some beach in Santa Cruz. 
+I'm a software engineer who (in theory) lives in Oakland, CA. During the pandemic, I'm mostly found just outside of Driscoll's strawberry farms in the Monterey Bay area, if not some beach in Santa Cruz. 
 
 I love to listen to all kinds of music, help my [lovely partner](http://camimerz.com/) cook a [fussy meal](/pesto), and think hard about [climate change solutions](https://deepmind.com/blog/article/machine-learning-can-boost-value-wind-energy). 
 
@@ -11,6 +11,7 @@ Here, I'm building technology to protect user privacy in the AI era. Before this
 
 You can check out my public profiles, reach out to me, or read [some of my thoughts](/blog).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTEwMjkxNjgsMTE5NjMyMzQ2MSwtMT
-MzNzM3NDAyNCwxNzY0MTU0NCwxNDQ5NTQ4NTgxXX0=
+eyJoaXN0b3J5IjpbOTM0MzY1MTI4LC0xMTUxMDI5MTY4LDExOT
+YzMjM0NjEsLTEzMzczNzQwMjQsMTc2NDE1NDQsMTQ0OTU0ODU4
+MV19
 -->
