@@ -1,6 +1,6 @@
 # Pesto, Chango!
 
-My partner's food intuition – her ability to weave haphazard ingredients to a coherent, 
+My partner's food intuition – her ability to weave haphazard ingredients in to a coherent, 
 delicious meal – is nothing short of magic. 
 
 Here are a few meals we've made together that I like to remember.
@@ -46,5 +46,5 @@ Here are a few meals we've made together that I like to remember.
 
 <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1OTUyMTI4OF19
+eyJoaXN0b3J5IjpbLTE2MTM0NzgyNjMsLTg1OTUyMTI4OF19
 -->
