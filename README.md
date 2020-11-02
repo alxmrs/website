@@ -2,17 +2,21 @@
 
 ![CI](https://github.com/alxrsngrtn/website/workflows/CI/badge.svg)
 
-The source code for [alexrosengarten.com](https://alexrosengarten.com). Statically generated with Pandoc, edited with [StackEdit](https://stackedit.io).
+Source [alexrosengarten.com](https://alexrosengarten.com), statically generated with [Pandoc](https://pandoc.org), edited with [StackEdit](https://stackedit.io).
 
-## Setup
+## Use
+
+See my [`pandoc-website-template`](https://github.com/alxrsngrtn/pandoc-website-template) project.
+
+To build locally,
+
 - [Install Pandoc](https://pandoc.org/installing.html)
 - `bin/build`
 
-See my [`pandoc-website-template`](https://github.com/alxrsngrtn/pandoc-website-template) project.
 
 ## I got here from a comment in my browser's dev tools... now what?
 
 I dunno. You and I are both in unexplored territory here. Maybe... star this repo?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDExMjI5NiwtNTI2ODgzOTE0XX0=
+eyJoaXN0b3J5IjpbLTMxODA2MTcwMSwtNTI2ODgzOTE0XX0=
 -->
