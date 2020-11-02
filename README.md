@@ -1,24 +1,20 @@
-# alxrsngrtn.github.io
+# website
 
 ![pandoc-build](https://github.com/alxrsngrtn/website/workflows/pandoc-build/badge.svg)
 ![shellcheck](https://github.com/alxrsngrtn/website/workflows/shellcheck/badge.svg)
 
-The source code for [alexrosengarten.com](https://alexrosengarten.com).
+Source for [alexrosengarten.com](https://alexrosengarten.com) – statically generated with [Pandoc](https://pandoc.org), edited with [StackEdit](https://stackedit.io).
 
-## What's this website all about?
-
-It's a place for me to cross reference public profiles, host assets like profile pics, and occasionally share my 
-thoughts (usually on programming).
-
-## Setup
-- [Install Pandoc](https://pandoc.org/installing.html)
-- `bin/build`
+## Use
 
 See my [`pandoc-website-template`](https://github.com/alxrsngrtn/pandoc-website-template) project.
 
-## I got here from a comment in my browser's dev tools... now what?
+For local development:
 
-I dunno. You and I are both in unexplored territory here. Maybe... star this repo?
+- [Install Pandoc](https://pandoc.org/installing.html), e.g. `bin/install` on a debian machine.
+- `bin/build`
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNjg4MzkxNF19
+eyJoaXN0b3J5IjpbLTcwMDI1NTM0NCwtNzAwMjU1MzQ0LC01Mj
+Y4ODM5MTRdfQ==
 -->
