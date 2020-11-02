@@ -1,6 +1,7 @@
 # alxrsngrtn.github.io
 
-![CI](https://github.com/alxrsngrtn/website/workflows/CI/badge.svg)
+![pandoc-build](https://github.com/alxrsngrtn/website/workflows/pandoc-build/badge.svg)
+![shellcheck](https://github.com/alxrsngrtn/website/workflows/shellcheck/badge.svg)
 
 The source code for [alexrosengarten.com](https://alexrosengarten.com).
 

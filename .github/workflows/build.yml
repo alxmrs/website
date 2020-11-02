@@ -1,0 +1,21 @@
+name: pandoc-build
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+
+    - name: Install Pandoc
+      run: bin/install
+
+    - name: Build Website
+      run: bin/build
+
