@@ -1,6 +1,7 @@
 # website
 
-![CI](https://github.com/alxrsngrtn/website/workflows/CI/badge.svg)
+![pandoc-build](https://github.com/alxrsngrtn/website/workflows/pandoc-build/badge.svg)
+![shellcheck](https://github.com/alxrsngrtn/website/workflows/shellcheck/badge.svg)
 
 Source for [alexrosengarten.com](https://alexrosengarten.com) – statically generated with [Pandoc](https://pandoc.org), edited with [StackEdit](https://stackedit.io).
 
