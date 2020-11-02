@@ -13,6 +13,9 @@ For local development:
 - [Install Pandoc](https://pandoc.org/installing.html), e.g. `bin/install` on a debian machine.
 - `bin/build`
 
+## Principles
+This site should be as simple as possible, but no simpler. I also want it to work in as many br 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMDI1NTM0NCwtNTI2ODgzOTE0XX0=
+eyJoaXN0b3J5IjpbMTA3MjAwMjQsLTcwMDI1NTM0NCwtNTI2OD
+gzOTE0XX0=
 -->
