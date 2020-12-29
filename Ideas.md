@@ -1,5 +1,7 @@
 # Ideas for Posts/Projects
 
+## 2020-12-28 Experiment w/ Zettelkasten 
+
 ## 2020-04-25 Meta Writing Exercise
 I did a pen-and-paper writing exercise today. I spent 15 minutes writing a description of topics that I could spend more
 time writing about. Here are the gists of today's list.
