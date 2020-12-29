@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Invoke pandoc on $SRC, copy $STATIC assets over to $DST.
 #
@@ -14,6 +14,7 @@ ROOT=$(dirname "$0")/..
 mkdir -p "$DST"
 
 status "Rendering"
+shopt -s globstar
 for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
   # Strip `src` path from file string
   FROM="${file##$SRC}"
@@ -33,3 +34,4 @@ for file in "$STATIC"/{,**/}*.*; do
   mkdir -p "$(dirname "$TO")"
   cp "$FROM" "$TO" || warn "Failed to copy asset $TO"
 done
+shopt -u globstar
