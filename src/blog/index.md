@@ -1,6 +1,7 @@
 # Blog
 
 ## 2020
+- [Hypertext a la Zettelkasten](/zettel/)
 - [Pesto, Chango!](/pesto/)
 
 ## 2019
