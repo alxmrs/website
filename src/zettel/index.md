@@ -13,7 +13,7 @@ only make sense in context with other thoughts.
 While I can often coalesce these scattered thoughts into 
 coherent essays, this takes time and effort I seldom muster. 
 
-[Every new years day](TODO/), I conceive of a "nice-to-have" resolution to start writing. 
+[Every new years day](goals) I conceive of a "nice-to-have" resolution to start writing. 
 Visions dance before me of emulating great technical blogs that I spend the year reading.
 Alas, it never goes this way, due to a sense of perfectionism and habit inertia. 
 
