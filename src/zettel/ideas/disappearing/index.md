@@ -1,0 +1,3 @@
+# Disappearing webpages
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">idea for a github action: set an expiration date on markdown files.<br><br>use case: create time-limited web pages on a static website hosted with gh pages.</p>&mdash; alex rosengarten (@alxrsngrtn) <a href="https://twitter.com/alxrsngrtn/status/1317689072211558400?ref_src=twsrc%5Etfw">October 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

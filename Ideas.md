@@ -1,5 +1,9 @@
 # Ideas for Posts/Projects
 
+## 2020-12-31
+
+Feedback from Cam: Have two different colors for links: One for internal links, one for external.
+
 ## 2020-12-28 Experiment w/ Zettelkasten 
 
 ## 2020-04-25 Meta Writing Exercise
