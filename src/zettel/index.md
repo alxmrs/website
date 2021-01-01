@@ -8,7 +8,7 @@ trying to create a newsletter – while this seems fun,
 the upkeep feels like more of a burden than empowered expression. 
 Why not, instead, aim to express systems of ideas free of time?
 
-I have a lot of ideas, but most of them are small and 
+I have a [lot of ideas](ideas/), but most of them are small and 
 only make sense in context with other thoughts. 
 While I can often coalesce these scattered thoughts into 
 coherent essays, this takes time and effort I seldom muster. 
