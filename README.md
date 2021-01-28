@@ -1,9 +1,9 @@
 # website
 
-![pandoc-build](https://github.com/alxrsngrtn/website/workflows/pandoc-build/badge.svg)
-![shellcheck](https://github.com/alxrsngrtn/website/workflows/shellcheck/badge.svg)
+![pandoc-build](https://github.com/alxmrs/website/workflows/pandoc-build/badge.svg)
+![shellcheck](https://github.com/alxmrs/website/workflows/shellcheck/badge.svg)
 
-Source for [alexrosengarten.com](https://alexrosengarten.com) – statically generated with [Pandoc](https://pandoc.org), sometimes edited with [StackEdit](https://stackedit.io).
+Source for [alxmrs.com](https://alxmrs.com) – statically generated with [Pandoc](https://pandoc.org), sometimes edited with [StackEdit](https://stackedit.io).
 
 ## Use
 
@@ -13,8 +13,3 @@ For local development:
 
 - [Install Pandoc](https://pandoc.org/installing.html), e.g. `bin/install` on a debian machine.
 - `bin/build`
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMDI1NTM0NCwtNzAwMjU1MzQ0LC01Mj
-Y4ODM5MTRdfQ==
--->

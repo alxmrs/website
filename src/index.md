@@ -1,4 +1,4 @@
-# Hi there, I'm Alex Rosengarten!
+# Hi there, I'm Alex Merose!
 
 <img src="https://alexrosengarten.com/assets/website-profile-square.png" title="A picture of me!" id="profile">
 
