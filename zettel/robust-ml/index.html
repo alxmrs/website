@@ -31,38 +31,50 @@
     </ul>
 </nav>
 
-<h1 id="blog">Blog</h1>
-<h2 id="2021">2021</h2>
+<h1 id="notes-on-robust-ml">Notes on Robust ML</h1>
+<p>An article (talk?) in the making.</p>
+<h2 id="undifferentiated-ml-eng-tips">Undifferentiated ML Eng Tips</h2>
 <ul>
-<li><a href="/zettel/robust-ml/">Notes on Robust ML</a></li>
+<li><p>use <a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle">DI</a> for model configuration, e.g. <a href="https://github.com/google/gin-config">gin</a></p></li>
+<li><p><a href="https://humanloop.com/blog/why-you-should-be-using-active-learning/">active learning</a></p></li>
+<li><p><a href="https://christophm.github.io/interpretable-ml-book/">interpretability techniques</a></p>
+<ul>
+<li><p><a href="https://github.com/marcotcr/anchor">anchors</a></p></li>
+<li><p><a href="https://github.com/slundberg/shap">shap</a></p></li>
+<li><p>confusion mx to find what to interpret</p></li>
+<li><p>find out why you’re model is wrong, what it’s bounds are</p></li>
+</ul></li>
+<li><p>structure the output of the model to have a robust “don’t know class”</p>
+<ul>
+<li>currency detector (most images it will see are not currency)</li>
+<li><a href="https://rajpurkar.github.io/SQuAD-explorer/">squad 2.0</a>
+<ul>
+<li>e.g. <a href="https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously">Colorless green ideas sleep furiously</a> --&gt; "I don't know"</li>
+</ul></li>
+</ul></li>
+<li><p>pre train your model on synthetic data you can cheaply create. fine tune the model on in house data</p></li>
+<li><p>TODO(alxr): research: curriculum learning</p></li>
+<li><p><a href="https://www.hillelwayne.com/post/metamorphic-testing/">metamorphic testing</a></p></li>
+<li><p>version control data + models</p>
+<ul>
+<li><a href="https://dvc.org/">dvc</a> vs <a href="https://github.com/activeloopai/Hub">hub</a> vs git-lfs vs <a href="https://github.com/alxrsngrtn/Electron-Diffraction-CNN">roll your own</a></li>
+</ul></li>
+<li><p>the shape of your program should be commensurate to the size of your data</p>
+<ul>
+<li><p>fits in memory: jupyter notebook</p></li>
+<li><p>fits on your computer: library w/ scripts</p></li>
+<li><p>fits on the data center: <a href="https://beam.apache.org/">beam</a>, <a href="https://spark.apache.org/">spark</a></p></li>
+</ul></li>
+<li><p>when you write code to answer data science questions, package it into an API</p></li>
+<li><p>cicd</p>
+<ul>
+<li><a href="https://cml.dev/">cml</a></li>
+</ul></li>
 </ul>
-<h2 id="2020">2020</h2>
+<h2 id="principles-at-play">Principles at Play</h2>
 <ul>
-<li><a href="/zettel/">Hypertext a la Zettelkasten</a></li>
-<li><a href="/pesto/">Pesto, Chango!</a></li>
-</ul>
-<h2 id="2019">2019</h2>
-<ul>
-<li><a href="chipping-away-writers-block.html">Chipping Away Writer's Block</a></li>
-<li><a href="getting-back-my-domain.html">Getting Back My Domain</a></li>
-</ul>
-<h2 id="2018">2018</h2>
-<ul>
-<li><a href="in-defense-of-interruptions.html">In defense of interruptions</a></li>
-<li><a href="higher-order-functions-on-pandas-dataframes.html">Higher Order Functions on Pandas Dataframes</a></li>
-</ul>
-<h2 id="2017">2017</h2>
-<ul>
-<li><a href="thoughts-about-cognitive-ecology.html">Thoughts About Cognitive Ecology</a></li>
-<li><a href="first-blog-post.html">First Blog Post (new blog)</a></li>
-</ul>
-<h2 id="2014">2014</h2>
-<ul>
-<li><a href="calyx-of-held.html">Calyx of Held</a></li>
-</ul>
-<h2 id="2013">2013</h2>
-<ul>
-<li><a href="film-in-the-era-of-google-glass.html">Film in the Era of Google Glass</a></li>
+<li><p><a href="https://medium.com/@karpathy/software-2-0-a64152b37c35">Software 2.0</a></p></li>
+<li><p><a href="https://www.hillelwayne.com/uncle-bob/">Techniques for software correctness</a></p></li>
 </ul>
 <footer>
     <ul>
