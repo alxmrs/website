@@ -1,5 +1,8 @@
 # Blog
 
+## 2021
+- [Notes on Robust ML](/zettel/robust-ml/)
+
 ## 2020
 - [Hypertext a la Zettelkasten](/zettel/)
 - [Pesto, Chango!](/pesto/)
