@@ -1,33 +1,33 @@
----
-title: Beam Pipelines as CLIs: A Hack
-date: 2021-01-04
----
+# Beam Pipelines as CLIs: A Hack
 
-I love using [CLIs installed via Pip](https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html).
-I'd much prefer to call a well-named command than I
-would run a Python script (e.g. 
-`$ python3 main.py ...`). So, when I got a chance 
-to build a general-purpose data pipeline at work, I
-knew I wanted to follow this UX.
+*2021-02*
 
-For our project, we used Apache Beam to build 
-our pipeline, which we ran on GCP's Dataflow
-service. I was surprised to find out that [nowhere
-in the documentation](https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/)
-was there any instruction on 
-how to package a Beam pipeline in a pip-installable 
-fashion. Sure, the instructions used setuptools, but the 
-intention was to ultimately invoke Python on a 
-script.
+While building a [Beam](https://beam.apache.org/) pipeline for work, I found 
+myself surprised to find there was [no documentation](https://tomaugspurger.github.io/method-chaining.html)
+on how to structure the pipeline as a CLI [[1]](#1). I wanted to make running 
+my pipeline as easy as possible. What's easier than installing a python 
+package via pip, and invoking a well-documented command? With features like
+[`pip search`](https://pip.pypa.io/en/stable/reference/pip_search/#) and 
+`--help` messages, one never needs to leave the terminal.
 
-After some trail and error, I ended up figuring out 
-a hack to make it work. A full demo of my solution
-can be found in [this project on Github](https://github.com/alxrsngrtn/beam-cli-example).
+It's a bit strange to structure a Beam pipeline as a CLI. When I usually use 
+CLIs, I think about manipulating files on my local machine, not orchestrating a
+distributed system to process potentially petabytes of data. Maybe this is 
+starting to change. AWS, GCP, and the like all offer developers the ability to 
+manipulate whole cloud architectures from a CLI. Why not do the same for my ETL
+job?
 
-The secret ingredient to make this work was to have
-nested `setup.py` files. The inner `setup.py` file 
-is necessary so that each Beam worker get the 
-dependencies it needs (library code + third party 
-deps). However, the other `setup.py` is needed to 
-publish the project and make a CLI entry-point 
+After some trail and error, I ended up figuring out a hack to make it work. A 
+full demo of my solution can be found in [this project on Github](https://github.com/alxrsngrtn/beam-cli-example).
+
+The secret ingredient to getting this right was to have nested `setup.py` files.
+The inner `setup.py` file is necessary so that each Beam worker gets the 
+dependencies it needs (library code + third party deps). However, the other 
+`setup.py` is needed to publish the project and make a CLI entry-point 
 available.
+
+---
+<span id="1">**1**</span>: Sure, the docs talk about packaging workers with `setuptools`,
+but this explanation lacks my use case exactly. The workers still
+need to be run from an executor, and I want that executor to be
+installed with pip.
