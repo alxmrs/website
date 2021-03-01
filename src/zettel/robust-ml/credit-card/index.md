@@ -116,6 +116,38 @@ Sometimes, to reduce glue code, it's better to re-implement the ML
 algorithm with considerations for the whole system rather than to 
 re-use a package from a library. The resulting system may be
 easier to test & maintain. You can also inject specific optimizations 
-for your specific problem. (See: e.g. )
+for your specific problem (e.g., [Annoy](https://github.com/spotify/annoy)).
 
+> It may be surprising to the academic community to know that only a 
+> tiny fraction of the code in many machine learning systems is 
+> actually doing “machine learning”. When we recognize that a mature
+> system might end up being (at most) 5% machine learning code and 
+> (at least) 95% glue code, reimplementation rather than reuse of a 
+> clumsy API looks like a much better strategy.
 
+### Pipeline Jungles
+
+_Pipeline jungles_ are a special case of glue code concerning the
+data ingestion to the ML model. Testing these scrappy pipelines
+often require expensive e2e integration tests. 
+
+Often, re-implementing the messy pipeline from the ground up is 
+worth the investment since it can dramatically reduce the costs of
+maintaining the old system. 
+
+These jungles are often the result of having separate "research" and
+"engineering" roles. 
+
+### Dead Experiment Codepaths
+
+A common reaction to the above two issues is tweaking the ml algorithm
+with conditional branches, one per experiment. Accumulated control 
+paths create growing technical debt. 
+
+Maintaining backwards compatibility is a huge burden. Obsolete code
+branches can interact with the latest versions in unexpected ways.
+
+In healthy ML learning systems, experimental code should be well 
+isolated. This may require rethinking code APIs. 
+
+...
