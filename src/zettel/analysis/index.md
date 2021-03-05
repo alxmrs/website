@@ -37,3 +37,18 @@ which we could if we had all the information of the concrete case. Take
 > questions which do not need full knowledge of the program execution or which 
 > tolerate an imprecise answer
 
+Abstract program properties can be modelled by a 
+[complete semilattice](/zettel/analysis/semilattice/complete/).
+
+## Syntax & Semantics of Programs
+
+The paper describes a way of breaking down a program into Nodes.
+
+Each node in a program has  successor and predecessor nodes. Nodes are broken up
+into subsets (type of node): Entries, Assignments, Tests, Junctions, and Exists.
+
+* `Entries`: have no predecessors and have one successor.
+* `Assigment`: has one predecessor and one successor. These are broken up into 
+ two subtypes (subsets): 
+  * `Ident`: identifiers
+  * `Expr`: expressions
