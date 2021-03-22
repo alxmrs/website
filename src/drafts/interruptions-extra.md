@@ -24,7 +24,7 @@ negative effects of interruptions:
 - **Favor Composition**: Composition is a great pattern that's both functional and object-oriented. In OOP, it's often
   seen as the "has-a" relationship. The [Factory Pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) and [Dependency Injection Pattern](https://en.wikipedia.org/wiki/Dependency_inversion_principle) are great examples of the great
   successes of composition. Within functional languages, composition is often expressed through [higher-order functions](https://en.wikipedia.org/wiki/Higher-order_function).
-  The concept of the higher order function has certainly [helped me a lot in my own programming work](http://alexrosengarten.com/blog/2018/07/06/higher-order-functions-on-pandas-dataframes).
+  The concept of the higher order function has certainly [helped me a lot in my own programming work](https://alex.merose.com/blog/2018/07/06/higher-order-functions-on-pandas-dataframes).
   Either way, the purpose of composition is often to isolate the logic you're trying to express while delegating the
   details of it for later (e.g. for a particular implementation).
 

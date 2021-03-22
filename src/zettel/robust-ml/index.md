@@ -32,7 +32,7 @@ An article (talk?) in the making.
 
 - version control data + models
 
-  - [dvc](https://dvc.org/) vs [hub](https://github.com/activeloopai/Hub) vs git-lfs vs [roll your own](https://github.com/alxrsngrtn/Electron-Diffraction-CNN)
+  - [dvc](https://dvc.org/) vs [hub](https://github.com/activeloopai/Hub) vs git-lfs vs [roll your own](https://github.com/alxmrs/Electron-Diffraction-CNN)
 
 - the shape of your program should be commensurate to the size of your data
 
