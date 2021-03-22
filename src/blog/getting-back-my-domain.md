@@ -101,7 +101,7 @@ I have not missed the great, dual irony of the situation:
 - I used a series of indirections to remain anonymous... to publicize myself on the internet. 
 - The security measures I took... made me more vulnerable and less in control.
 
-"Congratulations," [my partner](http://camillemerz.com) told me. "You played yourself."
+"Congratulations," [my partner](http://camille.merose.com) told me. "You played yourself."
 
 Thanks, hun.
 

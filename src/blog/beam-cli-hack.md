@@ -18,7 +18,7 @@ manipulate whole cloud architectures from a CLI. Why not do the same for my ETL
 job?
 
 After some trail and error, I ended up figuring out a hack to make it work. A 
-full demo of my solution can be found in [this project on Github](https://github.com/alxrsngrtn/beam-cli-example).
+full demo of my solution can be found in [this project on Github](https://github.com/alxmrs/beam-cli-example).
 
 ```
 .
