@@ -21,8 +21,8 @@ about me](/zettel/determinism/) and reflect on what
 it means. I'll think of articles I want to write.
 I'll think about thinking. 
 
-Whereas meditation focuses on the absence of thought 
-in favor of presence, 15 minutes of boredom helps me
+Whereas [meditation](/zettel/ice/) focuses on the absence of 
+thought in favor of presence, 15 minutes of boredom helps me
 form ideas. I find the ritual to be refreshing even
 when I bear no new thoughts. I relish the opportunity
 for peace and emotional reflection.

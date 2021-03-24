@@ -2,7 +2,6 @@
 
 ## 2021
 - [Beam Pipelines as CLIs: A Hack](beam-cli-hack.html)
-- [Notes on Robust ML](/zettel/robust-ml/)
 
 ## 2020
 - [Hypertext a la Zettelkasten](/zettel/)
