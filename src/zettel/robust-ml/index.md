@@ -54,6 +54,8 @@ An article (talk?) in the making.
 
 - [Techniques for software correctness](https://www.hillelwayne.com/uncle-bob/)
 
+- [Machine Learning: The high interest credit card of technical debt](credit-card/)
+
 ## Rough Notes
 
 We're at the beginning of the era of [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35). 
