@@ -151,3 +151,5 @@ In healthy ML learning systems, experimental code should be well
 isolated. This may require rethinking code APIs. 
 
 ...
+
+[TODO(Alex): Finish dissecting paper](/TODO/)
