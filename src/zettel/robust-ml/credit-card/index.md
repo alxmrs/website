@@ -102,8 +102,8 @@ Mitigation: augment `a` to learn the corrections directly within the
 same model by adding features to help that model distinguishs
 among the various use cases. 
 
-(My perspective: it seems like what the authors are recommending 
-against has since taken off with huge successes – Transfer Learning.)
+_(My perspective: it seems like what the authors are recommending 
+against has since taken off with huge successes – Transfer Learning.)_
 
 ### Glue Code
 
