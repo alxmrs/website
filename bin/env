@@ -12,3 +12,4 @@ CSS=${CSS:-"/css/main.css"}
 SRC_EXT=${SRC_EXT:-"md"}
 DST_EXT=${DST_EXT:-"html"}
 PANOPTS=${PANOPTS:-"--css $CSS --email-obfuscation=javascript --metadata-file=$ROOT/defaults.yml -f markdown_github+yaml_metadata_block -t html -B $HEADER -A $FOOTER"}
+PREPANOPTS=${PREPANOPTS:-"-f markdown_github+yaml_metadata_block -t native"}

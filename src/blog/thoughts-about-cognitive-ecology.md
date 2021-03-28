@@ -1,7 +1,6 @@
----
-title: "Thoughts About Cognitive Ecology"
-date: 2017-01-19
----
+# Thoughts About Cognitive Ecology
+
+_2017-01-19_
 
 ## Where is the Mind?
 

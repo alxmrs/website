@@ -31,3 +31,5 @@ My intentions, given this new style of thinking, are as follows:
 Well, let's see how this experiment goes.
 
 I'll update this page with entry-points into my Zettlekasten.
+
+$zettelmap
