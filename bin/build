@@ -20,20 +20,25 @@ if ! python3 -c "import panflute" > /dev/null 2>&1; then
   pip3 --disable-pip-version-check install panflute
 fi
 
-pandoc "$SRC"/{,**/}*."$SRC_EXT" --filter bin/zettel_map.py -t markdown_github --output testfile
+# pandoc "$SRC"/{,**/}*."$SRC_EXT" --filter bin/zettel_map.py -t markdown_github --output testfile
 # pandoc "$SRC"/{,**/}*."$SRC_EXT" -f markdown_github -t native --output ast
+for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
 
-#status "Rendering"
-#for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
-#  # Strip `src` path from file string
-#  FROM="${file##$SRC}"
-#  # Define a target file with the new extension
-#  TO="${FROM%%$SRC_EXT}$DST_EXT"
-#  echo "$FROM --> $TO"
-#  mkdir -p "$(dirname "$DST$TO")"
-#  # shellcheck disable=SC2086
-#  pandoc $PANOPTS $file --output=$DST$TO || warn "Failed to create $TO"
-#done
+  pandoc $file --filter bin/zettel_map.py -t native >> agg
+
+done
+
+status "Rendering"
+for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
+  # Strip `src` path from file string
+  FROM="${file##$SRC}"
+  # Define a target file with the new extension
+  TO="${FROM%%$SRC_EXT}$DST_EXT"
+  echo "$FROM --> $TO"
+  mkdir -p "$(dirname "$DST$TO")"
+  # shellcheck disable=SC2086
+  pandoc $PANOPTS $file --output=$DST$TO || warn "Failed to create $TO"
+done
 #
 #status "Copying over assets"
 #for file in "$STATIC"/{,**/}*.*; do

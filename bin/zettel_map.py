@@ -7,45 +7,53 @@ import pprint
 
 
 def prepare(doc):
-    doc.graph = collections.defaultdict(list)
+    doc.graph = collections.defaultdict(set)
     doc.current_doc = ''
 
 
 def action(elem, doc):
-
+    if isinstance(elem, pf.Doc):
+        return None
     if isinstance(elem, pf.Link) and not elem.url.startswith('http'):
         pf.debug('------')
         header = get_header(elem)
         # pf.debug('header: ', pf.stringify(header), 'elem: ', elem.url)
         if header:
             doc.current_doc = pf.stringify(header)
-        doc.graph[doc.current_doc].append(elem.url)
+        doc.graph[doc.current_doc].add(elem.url)
+
+        pf.debug(elem.get_metadata())
+        pf.debug(elem)
+
+        return elem
+    return []
 
 
-def is_top_header(elem):
+def is_top_header(elem: pf.Element):
     x = isinstance(elem, pf.Header) and elem.level == 1
-    if x:
-        pf.debug('header:', elem)
+    # if x:
+    #     pf.debug('header:', elem)
     return x
 
 
-def get_header(elem):
-    pf.debug(elem)
+def get_header(elem: pf.Element):
+    # pf.debug(elem)
+
+    original_elem = elem
+
     if elem is None:
         return None
 
     if is_top_header(elem):
         return elem
 
-    while elem.next is not None and not is_top_header(elem.next):
-        elem = elem.next
-
-    while elem.prev is not None:
+    while elem is not None:
+        # pf.debug('>>>>>>>>', pf.stringify(elem))
         if is_top_header(elem):
             return elem
         elem = elem.prev
 
-    return get_header(elem.parent)
+    return get_header(original_elem.parent)
 
 
 def finalize(doc):
