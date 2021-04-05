@@ -12,7 +12,7 @@ _2021-04-05_
       - [TFJS API Reference](https://js.tensorflow.org/api/3.2.0/)
       - [Yamnet Model source](https://github.com/tensorflow/models/tree/master/research/audioset/yamnet)
       - [Yamnet on TFHub: trained, optimized models](https://tfhub.dev/google/yamnet/1)
-  - [Part 1: Deployment](https://quiver-twisty-border.glitch.me)
+  - [Part 1: Deployment](https://glitch.com/edit/#!/quiver-twisty-border)
   - [Part 2: Model optimization](https://colab.research.google.com/drive/1-yEPU0-qjBMfbU37xJTu09JVx0w9FfVO?usp=sharing) (time permitting)
   - _(Come back later for groomed code examples of the workshop.)_
 
