@@ -1,7 +1,7 @@
 # Goal Setting
 
 In 2016, the year I graduated from college,
-[my partner, Camille,](https://camillemerz.com) gave me 
+[my partner, Camille,](https://camille.merose.com) gave me 
 a [Passion Planner](https://passionplanner.com).
 
 This planner is a journal / ideation system

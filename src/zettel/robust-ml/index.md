@@ -32,7 +32,7 @@ An article (talk?) in the making.
 
 - version control data + models
 
-  - [dvc](https://dvc.org/) vs [hub](https://github.com/activeloopai/Hub) vs git-lfs vs [roll your own](https://github.com/alxrsngrtn/Electron-Diffraction-CNN)
+  - [dvc](https://dvc.org/) vs [hub](https://github.com/activeloopai/Hub) vs git-lfs vs [roll your own](https://github.com/alxmrs/Electron-Diffraction-CNN)
 
 - the shape of your program should be commensurate to the size of your data
 
@@ -53,3 +53,23 @@ An article (talk?) in the making.
 - [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35)
 
 - [Techniques for software correctness](https://www.hillelwayne.com/uncle-bob/)
+
+- [Machine Learning: The high interest credit card of technical debt](credit-card/)
+
+## Rough Notes
+
+We're at the beginning of the era of [Software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35). 
+
+How can we adapt techniques from software 1.0 ensure our machine learning algorithms are correct?
+
+First, what does the ML process look like? How about the traditional process of creating software? 
+
+In ML, the basic process looks like this: 
+
+(test / train split --> labeled data --> training --> model)
+            (model --> new data --> prediction)
+
+Embedded in this process is a huge [search problem](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html): 
+
+![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice2.png)
+![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice3.png)
