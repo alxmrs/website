@@ -16,4 +16,3 @@ _2021-04-05_
   - [Part 2: Model optimization](https://colab.research.google.com/drive/1-yEPU0-qjBMfbU37xJTu09JVx0w9FfVO?usp=sharing) (time permitting)
   - _(Come back later for groomed code examples of the workshop.)_
 
-    
