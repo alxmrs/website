@@ -1,6 +1,7 @@
 # Blog
 
 ## 2021
+- [CSSA ML Workshop: Machine Learning on the Edge](/cssa/)
 - [Beam Pipelines as CLIs: A Hack](beam-cli-hack.html)
 
 ## 2020
