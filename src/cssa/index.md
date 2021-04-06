@@ -4,10 +4,11 @@ _2021-04-05_
 
 The student org I used to be a part of (the 
 [Cognitive Science Student Association](https://cssa-ucsd.org/))
-asked me to lead a workshop on machine learning. The following
-are the slides and tutorial I presented. Most of my talk 
-consisted of live coding a simple ML application in the browser
-using tensorflowjs and glitch.
+asked me to lead a workshop on machine learning at their
+[annual conference](https://cssa-ucsd.github.io/conference2021).
+The following are the slides and tutorial I presented. 
+Most of my talk consisted of live coding a simple ML application
+in the browser using tensorflowjs and glitch.
 
 Together, we made a [mock version](https://insidious-sticky-tank.glitch.me/)
 of ["Rainforest Connection"](https://rfcx.org/), an app 
@@ -30,4 +31,4 @@ through mobile audio classification.
     - _[reference solution](https://colab.research.google.com/drive/1tsqEFUFNN7dTXV7FThMKiMiol1QU0soF?usp=sharing)_ (documentation to come later)
 
 Talk participants (or otherwise), feel free to reach out to me 
-with comments or questions. 
+with questions or comments. 
