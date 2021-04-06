@@ -1,5 +1,7 @@
 # 15 minutes of boredom a day
 
+_2021-01-01_
+
 A week ago (late 2020), [I started a new habit](/zettel/goals/): 
 I now try to find 15 minutes of boredom a day. 
 
