@@ -2,11 +2,18 @@
 
 ## 2021
 - [CSSA ML Workshop: Machine Learning on the Edge](/cssa/)
+- [A new meditation](/zettel/ice/)  
+- [Incomplete Summary of "ML: The High Interest Credit Card of Technical Debt"](/zettel/robust-ml/credit-card/)
+- [Analysis Notes](/zettel/analysis/)
 - [Beam Pipelines as CLIs: A Hack](beam-cli-hack.html)
+- [15 minutes of boredom a day](/zettel/boredom/)
 
 ## 2020
+- [Emails to Self](/zettel/emails/)
+- [Goals Setting](/zettel/goals/)  
 - [Hypertext a la Zettelkasten](/zettel/)
 - [Pesto, Chango!](/pesto/)
+- [Smoothie](/zettel/smoothie/)
 
 ## 2019
 - [Chipping Away Writer's Block](chipping-away-writers-block.html)
