@@ -48,7 +48,7 @@ Here's a general overview of how ordering a ring went down.
   to. I had the wiggle room of two days to propose.
 
 
-<video height="640" width="364" autoplay loop>
+<video height="640" width="364" autoplay loop mute>
 <source src="/assets/engagementring.mp4" type="video/mp4">
 Sorry, your browser does not support the video tag.
 </video>
