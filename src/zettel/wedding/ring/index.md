@@ -41,7 +41,7 @@ Here's a general overview of how ordering a ring went down.
   not available to me to have a spontaneous proposal, because Cam was enrolled in a wilderness medicine orientation and
   would be busy the whole time!
 - The ring came, like, one week before my trip, on a Wednesday. It was just in time for me to propose the way I wanted
-  to. I had the wiggle room of two days to [propose](../proposal/).
+  to. I had the wiggle room of two days to [propose](/proposal/).
 
 <video height="640" width="364" autoplay loop mute>
 <source src="/assets/engagementring.mp4" type="video/mp4">

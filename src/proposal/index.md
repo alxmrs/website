@@ -30,13 +30,13 @@ impression. I had something different in mind.
 
 ![The cemetery by our house](/assets/my-proposal-cemetery.jpg)
 
-When we landed in Oakland, CA, we ended up living in a place nearby the
+When we landed in Oakland, we ended up living nearby the
 [Mountain View Cemetery](https://en.wikipedia.org/wiki/Mountain_View_Cemetery_(Oakland,_California)) [[2]](#2). If
 you're not familiar with [the area](https://goo.gl/maps/9aeAdYfmShjbVVva9), the cemetery acts somewhat like a public
 park. It has a stunning view of the San Francisco Bay, including parts of the Bay Bridge. Camille and I would often find
 ourselves taking a stroll in the cemetery while talking about our lives. We would go there with a pad of paper whenever
 we needed to make a big decision, ornate headstones being our preferred backdrop to make defining choices. Along the way
-of figuring out the right [engagement ring](../ring/), I knew that I wanted to propose to Camille here.
+of figuring out the right [engagement ring](/zettel/wedding/ring/), I knew that I wanted to propose to Camille here.
 
 The day of the proposal was like any other day – except I dressed nicer than usual and was very nervous. I had to
 overcome what felt like a bunch of wrenches thrown at me to get the timing just right. It was a Friday, a week before
