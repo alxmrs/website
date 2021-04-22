@@ -1,6 +1,10 @@
 # Blog
 
 ## 2021
+- [Wedding Website](http://wedding.merose.com/) Series: 
+  1. [How I chose an engagement ring](/zettel/wedding/ring/)
+  1. [My Proposal](/zettel/wedding/proposal/)
+  1. [Combining Last Names](/TODO/)
 - [CSSA ML Workshop: Machine Learning on the Edge](/cssa/)
 - [A new meditation](/zettel/ice/)  
 - [Incomplete Summary of "ML: The High Interest Credit Card of Technical Debt"](/zettel/robust-ml/credit-card/)
