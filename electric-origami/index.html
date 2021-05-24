@@ -42,7 +42,7 @@
 <p>This seems fine, but I imagine using two batteries could get pricey at the scale of ~200 guests for our wedding (not to mention, wasteful). How could I create the catcher such that it used only one battery?</p>
 <p>I unfolded the fortune-teller and tried to model the connections more abstractly as a graph. The dotted lines below represent folded connections, whereas solid lines would be silver-ink connections in paper.</p>
 <p><img src="/assets/graph-initial-sketch.png" alt="Representing the problem as a graph." /></p>
-<p>I noticed that the dotted lines here weren't telling the whole picture: Each line is associated with a connection " mode." While alpha was connected, beta wasn't, and visa versa.</p>
+<p>I noticed that the dotted lines here weren't telling the whole picture: Each line is associated with a connection "mode." While alpha was connected, beta wasn't, and visa versa.</p>
 <p><img src="/assets/graph-alpha-beta.png" alt="Adding modes to the graph." /></p>
 <p>The aspiring math teacher in me wants to ask: How would you draw the circuit? It was fun for me to solve, and if you've read this far, I imagine it would be fun for you too.</p>
 <details>
@@ -64,11 +64,11 @@ battery.
 </p>
 
 <p>
-This seemed good so far. However, for this to work, my graph needs to be planer. Can I fit the one-battery circuit on
+This seemed good so far. However, for this to work, my graph needs to be planar. Can I fit the one-battery circuit on
 one page?
 </p>
 <p>
-The answer was "yes"! With another sketch, I had v0.1 of my design:
+The answer was "yes!" With another sketch, I had v0.1 of my design:
 </p>
 <p>
 <img src="/assets/catcher-v01.png" title="v0.1 of my electric paper fortune-teller">
@@ -80,6 +80,8 @@ The answer was "yes"! With another sketch, I had v0.1 of my design:
 <p><img src="/assets/v01-a-pressed.png" alt="v0.1 of a fortune-teller with the &quot;A&quot; circuit activated." /></p>
 <p><img src="/assets/v01-b-pressed.png" alt="v0.1 of a fortune-teller with the &quot;B&quot; circuit activated." /></p>
 <p>I told Jason all this, and he asked a good question: Would the silver ink connections remain robust during folding? I did a quick inspect of every crease, and to my best estimation, it seems to be the case! – no short circuits.</p>
+<p><img src="/assets/catcher-v01-short-front.png" alt="An inspection for shorts of the v0.1 design, front" /></p>
+<p><img src="/assets/catcher-v01-short-back.png" alt="An inspection for shorts of the v0.1 design, back" /></p>
 <p>Later, Jason would point out something that would require an adjustment in my design. In v0.0, I was relying on each battery making contact with the silver ink. However, in v0.1, as displayed in the picture, I need to rely on a different mechanism to complete the circuit. The cootie catcher needs to be folded in a way such that each face of the battery makes contact with the silver ink. All this means is that the position for my battery needs to be re-worked; it's not a total deal breaker.</p>
 <p>I'm sure I'll run into other issues that I can't anticipate. I feel pretty good about being able to sort those out as I complete v1.x of this prototype, once my supplies arrive.</p>
 <p>While I wait, I can't help but dream of other possibilities based on this simple experience.</p>
