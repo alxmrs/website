@@ -45,9 +45,8 @@ represent folded connections, whereas solid lines would be silver-ink connection
 
 ![Representing the problem as a graph.](/assets/graph-initial-sketch.png)
 
-I noticed that the dotted lines here weren't telling the whole picture: Each line is associated with a connection "
-mode."
-While alpha was connected, beta wasn't, and visa versa.
+I noticed that the dotted lines here weren't telling the whole picture: Each line is associated with a connection
+"mode." While alpha was connected, beta wasn't, and visa versa.
 
 ![Adding modes to the graph.](/assets/graph-alpha-beta.png)
 
@@ -73,11 +72,11 @@ battery.
 </p>
 
 <p>
-This seemed good so far. However, for this to work, my graph needs to be planer. Can I fit the one-battery circuit on
+This seemed good so far. However, for this to work, my graph needs to be planar. Can I fit the one-battery circuit on
 one page?
 </p>
 <p>
-The answer was "yes"! With another sketch, I had v0.1 of my design:
+The answer was "yes!" With another sketch, I had v0.1 of my design:
 </p>
 <p>
 <img src="/assets/catcher-v01.png" title="v0.1 of my electric paper fortune-teller">
@@ -96,6 +95,10 @@ was pressed.
 
 I told Jason all this, and he asked a good question: Would the silver ink connections remain robust during folding? I
 did a quick inspect of every crease, and to my best estimation, it seems to be the case! – no short circuits.
+
+![An inspection for shorts of the v0.1 design, front](/assets/catcher-v01-short-front.png)
+
+![An inspection for shorts of the v0.1 design, back](/assets/catcher-v01-short-back.png)
 
 Later, Jason would point out something that would require an adjustment in my design. In v0.0, I was relying on each
 battery making contact with the silver ink. However, in v0.1, as displayed in the picture, I need to rely on a different
@@ -126,6 +129,6 @@ possibility of using photoresistor and LED as a new type of interactive connecti
 circuit is complete when the active LED is near the photoresistor and broken when they are apart. He had a few other
 ideas of other types of circuits that could be used to make new "edges" or interactive, foldable connections.
 
-Jason's current area of exploration: Paper planes. 
+Jason's current area of exploration: Paper planes.
 
 What other kind of cool contraptions could we make?
