@@ -1,6 +1,7 @@
 # Blog
 
 ## 2021
+- [Cootie Catchers & Thoughts on Electric Origami](/electric-origami/)
 - [Wedding Website](http://wedding.merose.com/) Series: 
   1. [How I chose an engagement ring](/zettel/wedding/ring/)
   1. [My Proposal](/proposal/)
