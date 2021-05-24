@@ -1,23 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Fascinate&display=swap);
 
-:root {
-    --primary-color: #2B9045;
-    --secondary-color: #62905f;
-    --tertiary-color: #4070a0;
-    --font-color: #424242;
-    --highlight-color: #333;
-    --bg-color: #fff;
-    --heading-color: #292922;
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-color: #2B9045;
+        --secondary-color: #62905f;
+        --tertiary-color: #4070a0;
+        --font-color: #424242;
+        --highlight-color: #333;
+        --bg-color: #fff;
+        --heading-color: #292922;
+    }
 }
 
-[data-theme="dark"] {
-    --primary-color: #a5f0a9;
-    --secondary-color: #85ab84;
-    --tertiary-color: #69a8e9;
-    --font-color: #f3fffd;
-    --highlight-color: #eee;
-    --bg-color: #1f2520;
-    --heading-color: #8eab92;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #a5f0a9;
+        --secondary-color: #85ab84;
+        --tertiary-color: #69a8e9;
+        --font-color: #f3fffd;
+        --highlight-color: #eee;
+        --bg-color: #1f2520;
+        --heading-color: #8eab92;
+    }
 }
 
 
@@ -73,9 +77,9 @@ p img {
 }
 
 .pa-gallery-player-widget {
-    display:none;
+    display: none;
     height: 906px;
-    width:100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,6 +92,7 @@ p img {
         max-width: 95%;
 
     }
+
     figure img {
         max-width: 95%;
     }
@@ -117,7 +122,7 @@ a {
     transition: .5s ease;
 }
 
-a[href*='//']{
+a[href*='//'] {
     color: var(--tertiary-color);
 }
 
@@ -133,66 +138,4 @@ a:hover, a:focus, a:active {
 
 footer {
     font-size: .8em;
-}
-
-
- /*slider switch css */
-.theme-switch-wrapper {
-    position: absolute;
-    top: 25px;
-    padding-left: 10px;
-}
-
-.theme-switch-wrapper em {
-    margin-left: 10px;
-    font-size: 1rem;
-}
-
-.theme-switch {
-    display: inline-block;
-    height: 20px;
-    position: relative;
-    width: 42px;
-}
-
-.theme-switch input {
-    display: none;
-}
-
-.slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-
-.slider:before {
-    background-color: #fff;
-    bottom: 2px;
-    content: "";
-    height: 16px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 16px;
-}
-
-input:checked + .slider {
-    background-color: #66bb6a;
-}
-
-input:checked + .slider:before {
-    transform: translateX(16px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
 }
