@@ -73,15 +73,16 @@ try to show what I like (with the help of [everynoise.com](https://everynoise.co
 
 <summary>Neat website. How's it made?</summary>
 
-Thanks! I'm proud to say that this website has no client-side javascript; it consists entirely of statically generated
-HTML and CSS. In an effort to keep things simple, my generator consists of a series of shell scripts that
-invoke [pandoc](https://pandoc.org/) (Check out the [source](https://github.com/alxmrs/website), or
+Thanks! This website has almost no client-side javascript; it's mostly generated HTML and CSS. In an effort to keep
+things simple, my generator consists of a series of shell scripts that invoke [pandoc](https://pandoc.org/) (Check out
+the [source](https://github.com/alxmrs/website), or
 consider [making your own](https://github.com/alxmrs/pandoc-website-template) shell-powered website). This
 pandoc-centered static-site-generator lets me write in Markdown and publish in HTML. Though, in theory, I could have
 created the website in PowerPoint – a project for another time.
 
-Fair warning: While I don't use cookies (or any client-side js), I do log visits to the site via CloudFlare's
-privacy-focused analytics.
+My uses of JS are:
+- CloudFlare's privacy-focused web-analytics.
+- Obfuscating my `mailto` links.
 
 If you find any part of it that is not accessible or generally unusable, please reach out to me, and I'll correct it.
 
