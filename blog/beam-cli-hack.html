@@ -105,7 +105,8 @@
 │       └── main.py
 └── setup.py
 
-2 directories, 9 files</code></pre>
+2 directories, 9 files
+</code></pre>
 <p>The secret ingredient to getting this right was to have nested <code>setup.py</code> files. The inner <code>setup.py</code> file is necessary so that each Beam worker gets the dependencies it needs (library code + third party deps). However, the outer <code>setup.py</code> is needed to publish the project and make a CLI entry-point available. The script registered in the outer setup file, here called <code>boom</code>, passes the path to the inner setup file.</p>
 <p>This may be unclear, let me show rather than tell:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#!/usr/bin/env python3</span></span>
@@ -114,7 +115,8 @@
 <span id="cb2-4"><a href="#cb2-4"></a><span class="im">from</span> mytool.subtool <span class="im">import</span> cli</span>
 <span id="cb2-5"><a href="#cb2-5"></a></span>
 <span id="cb2-6"><a href="#cb2-6"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
-<span id="cb2-7"><a href="#cb2-7"></a>    cli([<span class="st">&#39;--setup_file&#39;</span>, <span class="st">&#39;./setup.py&#39;</span>])</span></code></pre></div>
+<span id="cb2-7"><a href="#cb2-7"></a>    cli([<span class="st">&#39;--setup_file&#39;</span>, <span class="st">&#39;./setup.py&#39;</span>])</span>
+<span id="cb2-8"><a href="#cb2-8"></a></span></code></pre></div>
 <p>This imports the <code>cli</code> function, an entrypoint to the pipeline. The <code>--setup_file</code> is a standard way to <a href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#multiple-file-dependencies">package multiple files</a> in your pipeline.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># mytool/subtool/__init__.py</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="im">from</span> .main <span class="im">import</span> run</span>
