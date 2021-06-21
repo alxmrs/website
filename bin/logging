@@ -9,9 +9,9 @@ BLD="\033[1m"
 END="\033[0m"
 
 warn() {
-  echo "$RED$BLD$1$END"
+  echo -e "$RED$BLD$1$END"
 }
 
 status() {
-  echo "$MAG$1$END"
+  echo -e "$MAG$1$END"
 }

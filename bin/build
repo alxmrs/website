@@ -15,7 +15,7 @@ mkdir -p "$DST"
 
 status "Rendering"
 shopt -s globstar
-for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
+for file in $(git diff --name-only | grep "$SRC/.*\.${SRC_EXT}"); do
   # Strip `src` path from file string
   FROM="${file##$SRC}"
   # Define a target file with the new extension
@@ -27,7 +27,7 @@ for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
 done
 
 status "Copying over assets"
-for file in "$STATIC"/{,**/}*.*; do
+for file in $(git diff --name-only | grep "$STATIC/.*"); do
   FROM=$file
   TO="$DST${file##$STATIC}"
   echo "${FROM##$ROOT} --> ${TO##$ROOT}"

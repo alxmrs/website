@@ -3,8 +3,8 @@
 # Environment variables, with defaults.
 #
 ROOT=$(dirname "$0")/..
-SRC=${SRC:-"$ROOT/src"}
-DST=${DST:-"$ROOT/public"}
+SRC=${SRC:-"src"}
+DST=${DST:-"public"}
 STATIC=${STATIC:-"$SRC/static"}
 HEADER=${HEADER:-"$SRC/header.html"}
 FOOTER=${FOOTER:-"$SRC/footer.html"}
