@@ -1,7 +1,6 @@
----
-title: Chipping Away Writer's Block
-date: 2019-07-23
----
+# Chipping Away Writer's Block
+
+_2019-07-23_
 
 I had a conversation a few weeks ago with my project manager, [Bernhard Seefeld](https://github.com/seefeldb), about 
 strategies to combat writer's block. At the time, I had been taking longer than I would like to write documentation. 

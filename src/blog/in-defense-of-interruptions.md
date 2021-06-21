@@ -1,7 +1,6 @@
----
-title: "In Defense of Interruptions"
-date: 2018-09-02
----
+# In Defense of Interruptions
+
+_2018-09-02_
 
 Many believe that the [global minimum number of interruptions](https://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/) 
 is good for software development. I disagree. Interruptions are inevitable 
