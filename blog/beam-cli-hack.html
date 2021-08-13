@@ -113,38 +113,47 @@
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">#!/usr/bin/env python3</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="co"># mytool/boom</span></span>
 <span id="cb2-3"><a href="#cb2-3"></a></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="im">import</span> glob</span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="im">import</span> logging</span>
-<span id="cb2-6"><a href="#cb2-6"></a><span class="im">import</span> os</span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="im">import</span> subprocess</span>
-<span id="cb2-8"><a href="#cb2-8"></a><span class="im">import</span> sys</span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="im">import</span> tempfile</span>
-<span id="cb2-10"><a href="#cb2-10"></a></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="im">import</span> mytool</span>
-<span id="cb2-12"><a href="#cb2-12"></a></span>
-<span id="cb2-13"><a href="#cb2-13"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
-<span id="cb2-14"><a href="#cb2-14"></a>    logging.getLogger().setLevel(logging.INFO)</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co">#!/usr/bin/env python3</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="im">import</span> glob</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="im">import</span> logging</span>
+<span id="cb2-8"><a href="#cb2-8"></a><span class="im">import</span> os</span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="im">import</span> subprocess</span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="im">import</span> sys</span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="im">import</span> tempfile</span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="im">import</span> tarfile</span>
+<span id="cb2-13"><a href="#cb2-13"></a></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="im">import</span> mytool</span>
 <span id="cb2-15"><a href="#cb2-15"></a></span>
-<span id="cb2-16"><a href="#cb2-16"></a>    site_pkg <span class="op">=</span> mytool.__path__[<span class="dv">0</span>]</span>
-<span id="cb2-17"><a href="#cb2-17"></a></span>
-<span id="cb2-18"><a href="#cb2-18"></a>    <span class="cf">try</span>:</span>
-<span id="cb2-19"><a href="#cb2-19"></a>        <span class="im">from</span> subtool <span class="im">import</span> cli</span>
-<span id="cb2-20"><a href="#cb2-20"></a>    <span class="cf">except</span> <span class="pp">ImportError</span>:</span>
-<span id="cb2-21"><a href="#cb2-21"></a>        <span class="co"># Install the subpackage.</span></span>
-<span id="cb2-22"><a href="#cb2-22"></a>        subprocess.check_call(<span class="ss">f&#39;</span><span class="sc">{</span>sys<span class="sc">.</span>executable<span class="sc">}</span><span class="ss"> -m pip install </span><span class="sc">{</span>site_pkg<span class="sc">}</span><span class="ss">&#39;</span>.split())</span>
-<span id="cb2-23"><a href="#cb2-23"></a></span>
-<span id="cb2-24"><a href="#cb2-24"></a>        <span class="im">from</span> subtool <span class="im">import</span> cli</span>
-<span id="cb2-25"><a href="#cb2-25"></a></span>
-<span id="cb2-26"><a href="#cb2-26"></a>    <span class="cf">with</span> tempfile.TemporaryDirectory() <span class="im">as</span> tmpdir:</span>
-<span id="cb2-27"><a href="#cb2-27"></a>        <span class="co"># Convert subpackage to a tarball</span></span>
-<span id="cb2-28"><a href="#cb2-28"></a>        subprocess.check_call(</span>
-<span id="cb2-29"><a href="#cb2-29"></a>            <span class="ss">f&#39;</span><span class="sc">{</span>sys<span class="sc">.</span>executable<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>site_pkg<span class="sc">}</span><span class="ss">/setup.py sdist --dist-dir </span><span class="sc">{</span>tmpdir<span class="sc">}</span><span class="ss">&#39;</span>.split(),</span>
-<span id="cb2-30"><a href="#cb2-30"></a>        )</span>
-<span id="cb2-31"><a href="#cb2-31"></a></span>
-<span id="cb2-32"><a href="#cb2-32"></a>        <span class="co"># Set tarball as extra packages for Beam.</span></span>
-<span id="cb2-33"><a href="#cb2-33"></a>        dist_files <span class="op">=</span> glob.glob(os.path.join(tmpdir, <span class="st">&#39;*.tar.gz&#39;</span>))</span>
-<span id="cb2-34"><a href="#cb2-34"></a>        cli([<span class="st">&#39;--extra_package&#39;</span>, dist_files[<span class="dv">0</span>]])</span>
-<span id="cb2-35"><a href="#cb2-35"></a></span></code></pre></div>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
+<span id="cb2-17"><a href="#cb2-17"></a>    logging.getLogger().setLevel(logging.INFO)</span>
+<span id="cb2-18"><a href="#cb2-18"></a></span>
+<span id="cb2-19"><a href="#cb2-19"></a>    site_pkg <span class="op">=</span> mytool.__path__[<span class="dv">0</span>]</span>
+<span id="cb2-20"><a href="#cb2-20"></a></span>
+<span id="cb2-21"><a href="#cb2-21"></a>    <span class="cf">try</span>:</span>
+<span id="cb2-22"><a href="#cb2-22"></a>        <span class="im">from</span> subtool <span class="im">import</span> cli</span>
+<span id="cb2-23"><a href="#cb2-23"></a>    <span class="cf">except</span> <span class="pp">ImportError</span>:</span>
+<span id="cb2-24"><a href="#cb2-24"></a>        <span class="co"># Install the subpackage.</span></span>
+<span id="cb2-25"><a href="#cb2-25"></a>        subprocess.check_call(<span class="ss">f&#39;</span><span class="sc">{</span>sys<span class="sc">.</span>executable<span class="sc">}</span><span class="ss"> -m pip install </span><span class="sc">{</span>site_pkg<span class="sc">}</span><span class="ss">&#39;</span>.split())</span>
+<span id="cb2-26"><a href="#cb2-26"></a></span>
+<span id="cb2-27"><a href="#cb2-27"></a>        <span class="im">from</span> subtool <span class="im">import</span> cli</span>
+<span id="cb2-28"><a href="#cb2-28"></a></span>
+<span id="cb2-29"><a href="#cb2-29"></a>    <span class="cf">with</span> tempfile.TemporaryDirectory() <span class="im">as</span> tmpdir:</span>
+<span id="cb2-30"><a href="#cb2-30"></a>        <span class="co"># Convert subpackage to a tarball</span></span>
+<span id="cb2-31"><a href="#cb2-31"></a>        os.chdir(site_pkg)</span>
+<span id="cb2-32"><a href="#cb2-32"></a>        subprocess.check_call(</span>
+<span id="cb2-33"><a href="#cb2-33"></a>            <span class="ss">f&#39;</span><span class="sc">{</span>sys<span class="sc">.</span>executable<span class="sc">}</span><span class="ss"> ./setup.py sdist --dist-dir </span><span class="sc">{</span>tmpdir<span class="sc">}</span><span class="ss">&#39;</span>.split(),</span>
+<span id="cb2-34"><a href="#cb2-34"></a>        )</span>
+<span id="cb2-35"><a href="#cb2-35"></a></span>
+<span id="cb2-36"><a href="#cb2-36"></a>        <span class="co"># Set tarball as extra packages for Beam.</span></span>
+<span id="cb2-37"><a href="#cb2-37"></a>        pkg_archive <span class="op">=</span> glob.glob(os.path.join(tmpdir, <span class="st">&#39;*.tar.gz&#39;</span>))[<span class="dv">0</span>]</span>
+<span id="cb2-38"><a href="#cb2-38"></a></span>
+<span id="cb2-39"><a href="#cb2-39"></a>        <span class="cf">with</span> tarfile.<span class="bu">open</span>(pkg_archive, <span class="st">&#39;r&#39;</span>) <span class="im">as</span> tar:</span>
+<span id="cb2-40"><a href="#cb2-40"></a>            py_files_in_tar <span class="op">=</span> [f <span class="cf">for</span> f <span class="kw">in</span> tar.getnames() <span class="cf">if</span> f.endswith(<span class="st">&#39;.py&#39;</span>)]</span>
+<span id="cb2-41"><a href="#cb2-41"></a>            <span class="cf">assert</span> <span class="bu">len</span>(py_files_in_tar) <span class="op">&gt;</span> <span class="dv">0</span>, <span class="st">&#39;extra_package must include python files!&#39;</span></span>
+<span id="cb2-42"><a href="#cb2-42"></a></span>
+<span id="cb2-43"><a href="#cb2-43"></a>        cli([<span class="st">&#39;--extra_package&#39;</span>, pkg_archive])</span>
+<span id="cb2-44"><a href="#cb2-44"></a></span></code></pre></div>
 <p>This imports the <code>cli</code> function, an entrypoint to the pipeline. The <code>--extra_package</code> is a standard way to <a href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#local-or-nonpypi">package non-PyPi dependencies</a> in your pipeline.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># mytool/subtool/__init__.py</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a></span>
