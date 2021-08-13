@@ -48,13 +48,58 @@ passes the path to the inner setup file.
 
 This may be unclear, let me show rather than tell: 
 
-<script src="http://gist-it.appspot.com/http://github.com/alxmrs/beam-cli-example/blob/main/mytool/boom"></script>
+```python
+#!/usr/bin/env python3
+# mytool/boom
+
+import glob
+import logging
+import os
+import subprocess
+import sys
+import tempfile
+
+import mytool
+
+if __name__ == '__main__':
+    logging.getLogger().setLevel(logging.INFO)
+
+    site_pkg = mytool.__path__[0]
+
+    try:
+        from subtool import cli
+    except ImportError:
+        # Install the subpackage.
+        subprocess.check_call(f'{sys.executable} -m pip install {site_pkg}'.split())
+
+        from subtool import cli
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        # Convert subpackage to a tarball
+        subprocess.check_call(
+            f'{sys.executable} {site_pkg}/setup.py sdist --dist-dir {tmpdir}'.split(),
+        )
+
+        # Set tarball as extra packages for Beam.
+        dist_files = glob.glob(os.path.join(tmpdir, '*.tar.gz'))
+        cli(['--extra_package', dist_files[0]])
+
+```
 
 This imports the `cli` function, an entrypoint to the pipeline. 
 The `--extra_package` is a standard way to [package non-PyPi dependencies](https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#local-or-nonpypi)
 in your pipeline. 
 
-<script src="http://gist-it.appspot.com/http://github.com/alxmrs/beam-cli-example/blob/main/mytool/subtool/__init__.py"></script>
+```python
+# mytool/subtool/__init__.py
+
+from .main import run
+
+
+def cli(extra=[]):
+    import sys
+    run(sys.argv + extra)
+```
 
 Thus, by nesting packages and pointing to the path to the inner package, 
 we get the best of both worlds: Beam can install the inner package as a
