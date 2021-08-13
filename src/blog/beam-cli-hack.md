@@ -52,12 +52,15 @@ This may be unclear, let me show rather than tell:
 #!/usr/bin/env python3
 # mytool/boom
 
+#!/usr/bin/env python3
+
 import glob
 import logging
 import os
 import subprocess
 import sys
 import tempfile
+import tarfile
 
 import mytool
 
@@ -76,13 +79,19 @@ if __name__ == '__main__':
 
     with tempfile.TemporaryDirectory() as tmpdir:
         # Convert subpackage to a tarball
+        os.chdir(site_pkg)
         subprocess.check_call(
-            f'{sys.executable} {site_pkg}/setup.py sdist --dist-dir {tmpdir}'.split(),
+            f'{sys.executable} ./setup.py sdist --dist-dir {tmpdir}'.split(),
         )
 
         # Set tarball as extra packages for Beam.
-        dist_files = glob.glob(os.path.join(tmpdir, '*.tar.gz'))
-        cli(['--extra_package', dist_files[0]])
+        pkg_archive = glob.glob(os.path.join(tmpdir, '*.tar.gz'))[0]
+
+        with tarfile.open(pkg_archive, 'r') as tar:
+            py_files_in_tar = [f for f in tar.getnames() if f.endswith('.py')]
+            assert len(py_files_in_tar) > 0, 'extra_package must include python files!'
+
+        cli(['--extra_package', pkg_archive])
 
 ```
 
