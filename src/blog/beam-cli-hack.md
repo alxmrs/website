@@ -2,6 +2,8 @@
 
 *2021-02*
 
+*updated: 2021-08*
+
 While building a [Beam](https://beam.apache.org/) pipeline for work, I found 
 myself surprised to find there was [no documentation](https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/)
 on how to structure the pipeline as a CLI [[1]](#1). I wanted to make running 
@@ -46,32 +48,15 @@ passes the path to the inner setup file.
 
 This may be unclear, let me show rather than tell: 
 
-```python
-#!/usr/bin/env python3
-# mytool/boom
-
-from mytool.subtool import cli
-
-if __name__ == '__main__':
-    cli(['--setup_file', './setup.py'])
-
-```
+<script src="http://gist-it.appspot.com/http://github.com/alxmrs/beam-cli-example/blob/main/mytool/boom"></script>
 
 This imports the `cli` function, an entrypoint to the pipeline. 
-The `--setup_file` is a standard way to [package multiple files](https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#multiple-file-dependencies)
+The `--extra_package` is a standard way to [package non-PyPi dependencies](https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#local-or-nonpypi)
 in your pipeline. 
 
-```python
-# mytool/subtool/__init__.py
-from .main import run
+<script src="http://gist-it.appspot.com/http://github.com/alxmrs/beam-cli-example/blob/main/mytool/subtool/__init__.py"></script>
 
-
-def cli(extra=[]):
-    import sys
-    run(sys.argv + extra)
-```
-
-Thus, by nesting packages and hard-coding the path to the inner package, 
+Thus, by nesting packages and pointing to the path to the inner package, 
 we get the best of both worlds: Beam can install the inner package as a
 library to each remote worker. Users can install the tool using python 
 standards. 
