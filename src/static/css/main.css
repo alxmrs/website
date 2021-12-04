@@ -17,22 +17,22 @@
         --primary-color: #a5f0a9;
         --secondary-color: #85ab84;
         --tertiary-color: #69a8e9;
-        --font-color: #f3fffd;
-        --highlight-color: #eee;
+        --font-color: #eee;
+        --highlight-color: #fff;
         --bg-color: #1f2520;
         --heading-color: #8eab92;
     }
 }
 
-
 body {
-    font-family: "Roboto", sans-serif;
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
     background-color: var(--bg-color);
     color: var(--font-color);
-    font-size: calc(1rem + 0.25vh);
-    margin: 0 auto;
-    width: 70%;
-    max-width: 680px;
+    padding: 0 10px;
+    font-family: monospace;
 }
 
 figure img {
@@ -102,7 +102,7 @@ p img {
 
 #profile {
     float: left;
-    border-radius: 50%;
+    border-radius: 60%;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
     width: 33%;
