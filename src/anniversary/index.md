@@ -24,14 +24,14 @@ The other Alex perks up. "You're getting married this weekend?"
 He chuckles. "_I_ got married on Sunday of Memorial Day weekend one year ago. My name is also Alex!"
 
 "No way! What are the odds?" I think about how there are so may Alexes. I'm not even the only Alex in my wedding party —
-one of three if you include +1s, and one of four Als (we also have an Alec).
+one of three if you include plus-ones, and one of four Als (we also have an Alec).
 
 "No kidding! So you're getting your hair cut for your wedding?"
 
 "No, just a beard trim, but yes, it's for my wedding."
 
-He laughs aloud. "You're not going to believe this: I'm getting my hair cut for a wedding... also Sunday of Memorial Day
-weekend!"
+He laughs aloud. "You're not going to believe this — I'm getting my hair cut for a wedding... also Sunday of Memorial
+Day weekend!"
 
 By now we each have stupid grins on our faces, though mine was a bit more curious than his. He continues: "Guess what
 the groom's name is?"
