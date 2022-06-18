@@ -1,7 +1,7 @@
 # Blog
 
 ## 2022
-- ["Alex's Anniversary", a corollary of the Birthday Paradox?](alexs-wedding-paradox.html)
+- ["Alex's Anniversary", a corollary of the Birthday Paradox?](/anniversary/)
 
 ## 2021
 - [Cootie Catchers & Thoughts on Electric Origami](/electric-origami/)
