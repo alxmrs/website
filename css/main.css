@@ -155,7 +155,7 @@ a {
     transition: .5s ease;
 }
 
-a[href*='//'] {
+a[href*='//'] a[href*='//alxmrs'] {
     color: var(--tertiary-color);
 }
 
