@@ -1,6 +1,7 @@
 # Blog
 
 ## 2022
+- [Why I’m going on a digital detox](https://www.notion.so/alxmrs/Why-I-m-going-on-a-digital-detox-d36bb06d530746feb952cff87268857c)
 - ["Alex's Anniversary", a corollary of the Birthday Paradox?](/anniversary/)
 
 ## 2021
