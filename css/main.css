@@ -155,8 +155,12 @@ a {
     transition: .5s ease;
 }
 
-a[href*='//'] a[href*='//alxmrs'] {
+a[href*='//'] {
     color: var(--tertiary-color);
+}
+
+a[href^="https://alxmrs"] {
+    color: var(--primary-color);
 }
 
 a:hover, a:focus, a:active {
