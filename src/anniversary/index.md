@@ -1,4 +1,4 @@
-# "Alex's Anniversary", a corollary of the Birthday Paradox?
+# Alexes' Anniversary
 
 _2022-06-16_
 
