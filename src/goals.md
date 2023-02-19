@@ -1,4 +1,7 @@
-# Goal Setting
+---
+title: Goal Setting
+date: 2020-12-31
+---
 
 In 2016, the year I graduated from college,
 [my partner, Camille,](https://camille.merose.com) gave me 

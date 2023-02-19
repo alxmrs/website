@@ -1,6 +1,7 @@
-# How I chose an engagement ring
-
-_2021-04_
+---
+title: How I chose an engagement ring
+date: 2021-04-21
+---
 
 When I first started looking for a ring, I was looking at how much bang for my buck I could get in diamond sizes...
 which was totally the wrong way to go about it. Cam wouldn't want a big rock on an ugly ring -- it would get in the way

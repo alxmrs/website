@@ -1,6 +1,7 @@
-# Cootie Catchers & Thoughts on Electric Origami
-
-_created: 2021-05-23_
+---
+title: Cootie Catchers & Thoughts on Electric Origami
+date: 2021-05-23
+---
 
 ![Prototypes and thinking about electric origami](/assets/catcher-title.png)
 

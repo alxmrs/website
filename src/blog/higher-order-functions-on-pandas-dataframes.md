@@ -1,8 +1,7 @@
 ---
 title: Higher Order Functions on Pandas Dataframes
+date: 2018-07-31
 ---
-
-_2018-07-06_
 
 (Note: the following article is unedited -- Proceed with caution).
 

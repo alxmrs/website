@@ -1,6 +1,7 @@
-# Wedding
-
-_2022-06-16_
+---
+title: Wedding
+date: 2022-06-16
+---
 
 I see why people say that their wedding is the best day of their life.
 

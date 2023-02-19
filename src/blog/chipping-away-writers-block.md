@@ -1,8 +1,7 @@
 ---
 title: Chipping Away Writer's Block
+date: 2019-07-23
 ---
-
-_2019-07-23_
 
 I had a conversation a few weeks ago with my project manager, [Bernhard Seefeld](https://github.com/seefeldb), about 
 strategies to combat writer's block. At the time, I had been taking longer than I would like to write documentation. 
@@ -12,7 +11,7 @@ I asked him how he deals with writer's block. He gave me some great advice, whic
 ## Can't start a draft? Send an email 
 
 A crafty use of psychology: sitting down and *writing* can seem like such a drag. Can't you just briefly *explain* the 
-idea to someone?  Why not pretend to (or actually) [send someone an email](/zettel/emails) where you talk about what you're going to 
+idea to someone?  Why not pretend to (or actually) [send someone an email](/emails/) where you talk about what you're going to 
 write.
 
 Viola! You have your first draft.

@@ -1,6 +1,7 @@
-# My Proposal
-
-_2021-04-21_
+---
+title: My Proposal
+date: 2021-04-21
+---
 
 ![Me just after I've proposed](/assets/my-proposal-ring.jpg)
 
@@ -12,7 +13,7 @@ to it?
 
 I originally had the idea to propose to Camille around the end of year holidays. Every year, a few days leading up to
 Christmas, Camille's family take a trip to the cabins of Yosemite valley. Proposals at Yosemite Christmas, in the Cary
-family, are practically an unofficial tradition. Unfortunately for me, the [engagement ring](/zettel/wedding/ring/)
+family, are practically an unofficial tradition. Unfortunately for me, the [engagement ring](/wedding/ring/)
 I had picked out needed more time to be made. And, wouldn't it be nice to pave my own way? While a proposal in front of
 family is great, I wanted the moment to honor the character of our relationship.
 
@@ -36,7 +37,7 @@ you're not familiar with [the area](https://goo.gl/maps/9aeAdYfmShjbVVva9), the 
 park. It has a stunning view of the San Francisco Bay, including parts of the Bay Bridge. Camille and I would often find
 ourselves taking a stroll in the cemetery while talking about our lives. We would go there with a pad of paper whenever
 we needed to make a big decision, ornate headstones being our preferred backdrop to make defining choices. Along the way
-of figuring out the right [engagement ring](/zettel/wedding/ring/), I knew that I wanted to propose to Camille here.
+of figuring out the right [engagement ring](/wedding/ring/), I knew that I wanted to propose to Camille here.
 
 The day of the proposal was like any other day – except I dressed nicer than usual and was very nervous. I had to
 overcome what felt like a bunch of wrenches thrown at me to get the timing just right. It was a Friday, a week before

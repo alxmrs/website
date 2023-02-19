@@ -8,40 +8,38 @@
 
 ## 2021
 - [Cootie Catchers & Thoughts on Electric Origami](/electric-origami/)
-- [Wedding Website](http://wedding.merose.com/) Series: 
-  1. [How I chose an engagement ring](/zettel/wedding/ring/)
+- [Wedding Website](https://weddingalbum.merose.com/) Series: 
+  1. [How I chose an engagement ring](/wedding/ring/)
   1. [My Proposal](/proposal/)
   1. [Combining Last Names](/TODO/)
 - [CSSA ML Workshop: Machine Learning on the Edge](/cssa/)
-- [A new meditation](/zettel/ice/)  
-- [Incomplete Summary of "ML: The High Interest Credit Card of Technical Debt"](/zettel/robust-ml/credit-card/)
-- [Analysis Notes](/zettel/analysis/)
-- [Beam Pipelines as CLIs: A Hack](beam-cli-hack.html)
-- [15 minutes of boredom a day](/zettel/boredom/)
+- [A new meditation](/ice/)  
+- [Beam Pipelines as CLIs: A Hack](/blog/beam-cli-hack/)
+- [15 minutes of boredom a day](/boredom/)
 
 ## 2020
-- [Emails to Self](/zettel/emails/)
-- [Goals Setting](/zettel/goals/)  
+- [Emails to Self](/emails/)
+- [Goals Setting](/goals/)  
 - [Hypertext a la Zettelkasten](/zettel/)
 - [Pesto, Chango!](/pesto/)
-- [Smoothie](/zettel/smoothie/)
+- [Smoothie](/smoothie/)
 
 ## 2019
-- [Chipping Away Writer's Block](chipping-away-writers-block.html)
-- [Getting Back My Domain](getting-back-my-domain.html)
+- [Chipping Away Writer's Block](/blog/chipping-away-writers-block)
+- [Getting Back My Domain](/blog/getting-back-my-domain)
 
 ## 2018
-- [In defense of interruptions](in-defense-of-interruptions.html)
-- [Higher Order Functions on Pandas Dataframes](higher-order-functions-on-pandas-dataframes.html)
+- [In defense of interruptions](/blog/in-defense-of-interruptions/)
+- [Higher Order Functions on Pandas Dataframes](/blog/higher-order-functions-on-pandas-dataframes/)
 
 ## 2017
-- [Thoughts About Cognitive Ecology](thoughts-about-cognitive-ecology.html)
-- [First Blog Post (new blog)](first-blog-post.html)
+- [Thoughts About Cognitive Ecology](/blog/thoughts-about-cognitive-ecology/)
+- [First Blog Post (new blog)](/blog/first-blog-post/)
 
 ## 2014
-- [Calyx of Held](calyx-of-held.html)
+- [Calyx of Held](/blog/calyx-of-held/)
 
 ## 2013
-- [Film in the Era of Google Glass](film-in-the-era-of-google-glass.html)
+- [Film in the Era of Google Glass](/blog/film-in-the-era-of-google-glass/)
 
 

@@ -2,7 +2,7 @@
 
 (WIP, come back later.)
 
-I may have figured out a [goal for 2021](/zettel/goals):
+I may have figured out a [goal for 2021](/goals/):
 to speak more directly, to say what I mean.
 
 I've trained myself to speak defensively at work and

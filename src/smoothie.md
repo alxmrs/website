@@ -1,5 +1,7 @@
-# Smoothie
-_2020-04-27_
+---
+title: Smoothie
+date: 2020-04-27
+---
 
 I make a smoothie for myself every morning.
 

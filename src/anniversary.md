@@ -1,8 +1,9 @@
-# Alexes' Anniversary
+---
+title: Alexes' Anniversary
+date: 2022-06-16
+---
 
-_2022-06-16_
-
-I got married a few weeks ago, and the strangest thing happened the Friday before my [big day](/zettel/wedding/). I
+I got married a few weeks ago, and the strangest thing happened the Friday before my [big day](/wedding/). I
 headed to the barber shop to get my beard cleaned up, as one does.
 
 I got there right on time. "Alex for a 2:30 appointment?" I asked as I entered the shop.
@@ -43,7 +44,7 @@ the groom's name is?"
 <details>
 <summary>What <i>are</i> the odds?</summary>
 
-I thought a bit about how to solve this during my wedding weekend. I [almost tried](/zettel/wedding/paradox/) to
+I thought a bit about how to solve this during my wedding weekend. I [almost tried](/wedding/paradox/) to
 formalize and calculate a solution. Instead, I went off to my honeymoon.
 
 </details>
