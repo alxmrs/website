@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Alex's Blog</title>
+<link>https://alex.merose.com</link>
+<description>The personal blog of Alex Merose.</description>
+<language>en-US</language>
+<webMaster>al@merose.com (Alex Merose)</webMaster>
+<copyright>MIT or CC BY-SA 4.0</copyright>
+<docs>https://www.rssboard.org/rss-specification</docs>
+<generator>pandoc-rss</generator>
+</channel>
+</rss>

@@ -88,9 +88,9 @@
     </ul>
 </nav>
 
-<h1 id="beam-pipelines-as-clis-a-hack">Beam Pipelines as CLIs: A Hack</h1>
-<p><em>2021-02</em></p>
-<p><em>updated: 2021-08</em></p>
+<hr />
+<h2 id="title-beam-pipelines-as-clis-a-hack-date-2021-08-13">title: Beam Pipelines as CLIs: A Hack date: 2021-08-13</h2>
+<p><em>created: 2021-02</em> <em>updated: 2021-08</em></p>
 <p>While building a <a href="https://beam.apache.org/">Beam</a> pipeline for work, I found myself surprised to find there was <a href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/">no documentation</a> on how to structure the pipeline as a CLI <a href="#1">[1]</a>. I wanted to make running my pipeline as easy as possible. What's easier than installing a python package via pip, and invoking a well-documented command? With features like <a href="https://pip.pypa.io/en/stable/reference/pip_search/#"><code>pip search</code></a> and <code>--help</code> messages, one never needs to leave the terminal.</p>
 <p>It's a bit strange to structure a Beam pipeline as a CLI. When I usually use CLIs, I think about manipulating files on my local machine, not orchestrating a distributed system to process potentially petabytes of data. Maybe this is starting to change. AWS, GCP, and the like all offer developers the ability to manipulate whole cloud architectures from a CLI. Why not do the same for my ETL job?</p>
 <p>After some trail and error, I ended up figuring out a hack to make it work. A full demo of my solution can be found in <a href="https://github.com/alxmrs/beam-cli-example">this project on Github</a>.</p>
