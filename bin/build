@@ -58,6 +58,7 @@ ORDERED_POSTS=$({
   | awk -F ":" '{print $1}'
 })
 echo "$ORDERED_POSTS"
+# shellcheck disable=SC2086
 pandoc-rss -s \
     -t "Alex's Blog" \
     -d "The personal blog of Alex Merose." \
@@ -66,4 +67,4 @@ pandoc-rss -s \
     -c "MIT or CC BY-SA 4.0" \
     -w "al@merose.com (Alex Merose)" \
     -n "en-US" \
-    ORDERED_POSTS > "$DST/rss.xml"
+    $ORDERED_POSTS > "$DST/rss.xml"
