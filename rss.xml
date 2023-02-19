@@ -9,5 +9,1424 @@
 <copyright>MIT or CC BY-SA 4.0</copyright>
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
+<item>
+<title>Alexes’ Anniversary</title>
+<pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/anniversary/</guid>
+<description><![CDATA[<p>I got married a few weeks ago, and the
+strangest thing happened the Friday before my <a
+href="https://alxmrs.com/wedding/">big day</a>. I headed to the barber
+shop to get my beard cleaned up, as one does.</p>
+<p>I got there right on time. “Alex for a 2:30 appointment?” I asked as
+I entered the shop.</p>
+<p>This question seemed to disgruntle the person in the waiting area
+next to me. “<em>I’m</em> Alex who has a 2:30 appointment” he said as if
+I was cutting in line.</p>
+<p>Apparently, we both were right — we were just scheduled to see
+different barbers. We exchanged pleasant glances, and carried on with
+our trims. I soon found myself chatting with my barber, talking about
+how excited I was for my wedding.</p>
+<p>The other Alex perks up. “You’re getting married this weekend?”</p>
+<p>“Yeah, this Sunday.” I respond.</p>
+<p>“This Sunday? Of Memorial Day weekend??”</p>
+<p>“Yeah, that’s right.” I’m a bit puzzled.</p>
+<p>He chuckles. “<em>I</em> got married on Sunday of Memorial Day
+weekend one year ago. My name is also Alex!”</p>
+<p>“No way! What are the odds?” I think about how there are so may
+Alexes. I’m not even the only Alex in my wedding party — one of three if
+you include plus-ones, and one of four Als (we also have an Alec).</p>
+<p>“No kidding! So you’re getting your hair cut for your wedding?”</p>
+<p>“No, just a beard trim, but yes, it’s for my wedding.”</p>
+<p>He laughs aloud. “You’re not going to believe this — I’m getting my
+hair cut for a wedding… also Sunday of Memorial Day weekend!”</p>
+<p>By now we each have stupid grins on our faces, though mine was a bit
+more curious than his. He continues: “Guess what the groom’s name
+is?”</p>
+<p>“No!”</p>
+<p>“Yup. It’s Alex!”</p>
+<details>
+<summary>
+What <i>are</i> the odds?
+</summary>
+<p>I thought a bit about how to solve this during my wedding weekend. I
+<a href="https://alxmrs.com/wedding/paradox/">almost tried</a> to
+formalize and calculate a solution. Instead, I went off to my
+honeymoon.</p>
+</details>]]></description>
+</item>
+<item>
+<title>Random ideas to solve Alex’s Anniversary Paradox</title>
+<pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/paradox/</guid>
+<description><![CDATA[<p><em>WIP?</em></p>
+<p>I’ve been thinking a bunch about how to tackle <a
+href="https://alxmrs.com/anniversary/">this problem</a>. It seems like
+my trip to the barber shop seems like a weird variant of the <a
+href="https://en.wikipedia.org/wiki/Birthday_problem">Birthday
+Paradox</a>: What is the probability, in a group of <code>n</code>
+randomly chosen people, at least three will have the same name and
+wedding day?</p>
+<p>I’ve poked around stats exchange and found some <a
+href="https://stats.stackexchange.com/a/1718">general solutions</a> to
+the birthday paradox, including an <a
+href="https://stats.stackexchange.com/a/335132">R implementation</a>.
+Though, I’m not convinced that this is a good approach. How do you
+maintain assumptions and also account for names?</p>
+<p>It seems like a better way would be to collect data on birthdays and
+wedding anniversaries, and calculate the distribution. A project for
+another day…</p>]]></description>
+</item>
+<item>
+<title>Cootie Catchers &amp; Thoughts on Electric Origami</title>
+<pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/electric-origami/</guid>
+<description><![CDATA[<figure>
+<img src="https://alxmrs.com/assets/catcher-title.png"
+alt="Prototypes and thinking about electric origami" />
+<figcaption aria-hidden="true">Prototypes and thinking about electric
+origami</figcaption>
+</figure>
+<p>I was reading hacker news aimlessly on the couch, as one does when
+home alone on a Sunday afternoon, when I came across <a
+href="https://news.ycombinator.com/item?id=27254480">this post</a>.
+Printable circuits with a cheap inkjet printer? How exciting! Think of
+the possibilities!</p>
+<p>I shared the post with a few of my friends. <a
+href="https://jbdoar.github.io/">Jason</a> got back to me, and we
+started thinking about what we could do with this kind of tech.</p>
+<p>Soon, the idea occurred to me: how about creating a little toy <a
+href="https://en.wikipedia.org/wiki/Paper_fortune_teller">paper
+fortune-teller</a> (or cootie catcher) that completes a circuit. Like,
+it could turn on lights or make sounds, depending on how the
+fortune-teller was folded. A bonus point about making a simple paper
+toy: I am getting married in about a year, and wanted to have some sort
+of interactive art thing at my wedding. With a hacked circuit printer, I
+could create a viable electronic at the scale of a wedding while staying
+on budget. Guests could fold their own cootie catcher, add LEDs and a
+battery, and then play games with each other at cocktail hour. How
+fun!</p>
+<p>But, would it even work? I Googled around a bit and came to learn
+that all the components of this project are pretty cheap. I ordered a
+circuit ink pen and some electronics, and moved on to thinking about the
+design.</p>
+<p>I folded myself a fortune-teller and began thinking of how the
+circuit would work. Here was my prototype v0.0:</p>
+<figure>
+<img src="https://alxmrs.com/assets/catcher-v00.png"
+alt="v0.0 of my electric paper fortune-teller" />
+<figcaption aria-hidden="true">v0.0 of my electric paper
+fortune-teller</figcaption>
+</figure>
+<p>I used quarters here in place of <a
+href="https://www.batteriesandbutter.com/RV1025.html">coin-sized
+batteries</a>. The lines represent paths with conductive ink, and the
+black dots should become contact points for the batteries when
+folded.</p>
+<p>As you can see, when you press the “B” dots together, two outside
+LEDs would turn on.</p>
+<figure>
+<img src="https://alxmrs.com/assets/v00-b-pressed.png"
+alt="v0.0 of a fortune-teller with the “B” circuit activated." />
+<figcaption aria-hidden="true">v0.0 of a fortune-teller with the “B”
+circuit activated.</figcaption>
+</figure>
+<p>When you press the “A” dots together, light would shine through the
+center of the fortune teller.</p>
+<figure>
+<img src="https://alxmrs.com/assets/v00-a-pressed.png"
+alt="v0.0 of a fortune-teller with the “A” circuit activated." />
+<figcaption aria-hidden="true">v0.0 of a fortune-teller with the “A”
+circuit activated.</figcaption>
+</figure>
+<p>This seems fine, but I imagine using two batteries could get pricey
+at the scale of ~200 guests for our wedding (not to mention, wasteful).
+How could I create the catcher such that it used only one battery?</p>
+<p>I unfolded the fortune-teller and tried to model the connections more
+abstractly as a graph. The dotted lines below represent folded
+connections, whereas solid lines would be silver-ink connections in
+paper.</p>
+<figure>
+<img src="https://alxmrs.com/assets/graph-initial-sketch.png"
+alt="Representing the problem as a graph." />
+<figcaption aria-hidden="true">Representing the problem as a
+graph.</figcaption>
+</figure>
+<p>I noticed that the dotted lines here weren’t telling the whole
+picture: Each line is associated with a connection “mode.” While alpha
+was connected, beta wasn’t, and visa versa.</p>
+<figure>
+<img src="https://alxmrs.com/assets/graph-alpha-beta.png"
+alt="Adding modes to the graph." />
+<figcaption aria-hidden="true">Adding modes to the graph.</figcaption>
+</figure>
+<p>The aspiring math teacher in me wants to ask: How would you draw the
+circuit? It was fun for me to solve, and if you’ve read this far, I
+imagine it would be fun for you too.</p>
+<details>
+<summary>
+My Solution
+</summary>
+<p>
+So, to come up with a more efficient solution, I tried to sketch out a
+consistent solid line graph for each mode. After one incorrect attempt,
+I figured out a configuration that would complete a full circuit for
+each mode with only one battery.
+</p>
+<p>
+<img src="https://alxmrs.com/assets/graph-answer.png" title="A solution to my simple graph problem">
+</p>
+<p>
+(the trick was to cross the “A” connections)
+</p>
+<p>
+This seemed good so far. However, for this to work, my graph needs to be
+planar. Can I fit the one-battery circuit on one page?
+</p>
+<p>
+The answer was “yes!” With another sketch, I had v0.1 of my design:
+</p>
+<p>
+<img src="https://alxmrs.com/assets/catcher-v01.png" title="v0.1 of my electric paper fortune-teller">
+</p>
+</details>
+<hr />
+<p>Folded together, the circuit would turn on two outer LEDs when “A”
+was pressed together, and the two other LEDs when “B” was pressed.</p>
+<figure>
+<img src="https://alxmrs.com/assets/v01-a-pressed.png"
+alt="v0.1 of a fortune-teller with the “A” circuit activated." />
+<figcaption aria-hidden="true">v0.1 of a fortune-teller with the “A”
+circuit activated.</figcaption>
+</figure>
+<figure>
+<img src="https://alxmrs.com/assets/v01-b-pressed.png"
+alt="v0.1 of a fortune-teller with the “B” circuit activated." />
+<figcaption aria-hidden="true">v0.1 of a fortune-teller with the “B”
+circuit activated.</figcaption>
+</figure>
+<p>I told Jason all this, and he asked a good question: Would the silver
+ink connections remain robust during folding? I did a quick inspect of
+every crease, and to my best estimation, it seems to be the case! – no
+short circuits.</p>
+<figure>
+<img src="https://alxmrs.com/assets/catcher-v01-short-front.png"
+alt="An inspection for shorts of the v0.1 design, front" />
+<figcaption aria-hidden="true">An inspection for shorts of the v0.1
+design, front</figcaption>
+</figure>
+<figure>
+<img src="https://alxmrs.com/assets/catcher-v01-short-back.png"
+alt="An inspection for shorts of the v0.1 design, back" />
+<figcaption aria-hidden="true">An inspection for shorts of the v0.1
+design, back</figcaption>
+</figure>
+<p>Later, Jason would point out something that would require an
+adjustment in my design. In v0.0, I was relying on each battery making
+contact with the silver ink. However, in v0.1, as displayed in the
+picture, I need to rely on a different mechanism to complete the
+circuit. The cootie catcher needs to be folded in a way such that each
+face of the battery makes contact with the silver ink. All this means is
+that the position for my battery needs to be re-worked; it’s not a total
+deal breaker.</p>
+<p>I’m sure I’ll run into other issues that I can’t anticipate. I feel
+pretty good about being able to sort those out as I complete v1.x of
+this prototype, once my supplies arrive.</p>
+<p>While I wait, I can’t help but dream of other possibilities based on
+this simple experience.</p>
+<p>It occurs to me that the kind of folks who find origami satisfying
+probably overlap quite a bit with the folks who find circuit building
+satisfying. The prospect of accessible printable circuits offers a
+unique opportunity to cater to both audiences at once.</p>
+<p>To generalize here, what if I could create a series of novel,
+origami-based puzzles? Like, you get a piece of paper with normal ink
+lines to indicate folds. A conductive ink layer interspersed with LEDs
+offers the origamist clues on the fold order, guiding them to make the
+origami shape by turning on lights.</p>
+<p>Imagine creating a program to model circuits that live on folded
+paper. Nodes could be polygons from folds with various types of
+circuitry. Different kinds of edges might express relationships based on
+neighborship on a plane or fold. Maybe we could speed up writing such a
+program by extending existing PCB-design software. But, can it handle
+the topological challenge?</p>
+<p>Jason had fascinating ideas along the lines of different kinds of
+circuit patterns. For one, he suggested the possibility of using
+photoresistor and LED as a new type of interactive connection similar to
+a fold. In this scheme, a circuit is complete when the active LED is
+near the photoresistor and broken when they are apart. He had a few
+other ideas of other types of circuits that could be used to make new
+“edges” or interactive, foldable connections.</p>
+<p>Jason’s current area of exploration: Paper planes.</p>
+<p>What other kind of cool contraptions could we
+make?</p>]]></description>
+</item>
+<item>
+<title>My Proposal</title>
+<pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/proposal/</guid>
+<description><![CDATA[<figure>
+<img src="https://alxmrs.com/assets/my-proposal-ring.jpg"
+alt="Me just after I’ve proposed" />
+<figcaption aria-hidden="true">Me just after I’ve proposed</figcaption>
+</figure>
+<p>I like surprises, but <a
+href="https://camille.merose.com">Camille</a> doesn’t. She’d rather be
+able to look forward to things. For her, half the pleasure of enjoying,
+say, a vacation comes purely from its anticipation.</p>
+<p>I had a challenge before me: How could I give Cam the biggest
+surprise of her life while also letting her look forward to it?</p>
+<p>I originally had the idea to propose to Camille around the end of
+year holidays. Every year, a few days leading up to Christmas, Camille’s
+family take a trip to the cabins of Yosemite valley. Proposals at
+Yosemite Christmas, in the Cary family, are practically an unofficial
+tradition. Unfortunately for me, the <a
+href="https://alxmrs.com/wedding/ring/">engagement ring</a> I had picked
+out needed more time to be made. And, wouldn’t it be nice to pave my own
+way? While a proposal in front of family is great, I wanted the moment
+to honor the character of our relationship.</p>
+<p>Christmas’ day of 2019, I acted super weird. I let on that I was
+giving Camille a Big Gift™, the vibes of which she definitely picked up
+on. I am not a good liar. You should see my total absence of a poker
+face when we play cards at Yosemite Christmas <a href="#1">[1]</a>. The
+way I pulled off authentic engagement-ring-under-the-tree energy was by
+giving Camille a trip for Christmas. I gave her a vacation to New
+Orleans for the start of Mardi Gras, over Valentines Day weekend.</p>
+<p>Camille and I love jazz. Since we got together in 2012, music has
+been a cornerstone of our relationship. And, as you can <a
+href="https://alxmrs.com/pesto/">probably guess</a>, Camille and I love
+food. For these reasons (and the allure of gator tours), Cam and I have
+talked about going to New Orleans together for forever.</p>
+<p>“I was sure that he was going to propose in New Orleans,” Grandma
+Shirley would tell us later. I’m glad I gave off that impression. I had
+something different in mind.</p>
+<figure>
+<img src="https://alxmrs.com/assets/my-proposal-cemetery.jpg"
+alt="The cemetery by our house" />
+<figcaption aria-hidden="true">The cemetery by our house</figcaption>
+</figure>
+<p>When we landed in Oakland, we ended up living nearby the <a
+href="https://en.wikipedia.org/wiki/Mountain_View_Cemetery_(Oakland,_California)">Mountain
+View Cemetery</a> <a href="#2">[2]</a>. If you’re not familiar with <a
+href="https://goo.gl/maps/9aeAdYfmShjbVVva9">the area</a>, the cemetery
+acts somewhat like a public park. It has a stunning view of the San
+Francisco Bay, including parts of the Bay Bridge. Camille and I would
+often find ourselves taking a stroll in the cemetery while talking about
+our lives. We would go there with a pad of paper whenever we needed to
+make a big decision, ornate headstones being our preferred backdrop to
+make defining choices. Along the way of figuring out the right <a
+href="https://alxmrs.com/wedding/ring/">engagement ring</a>, I knew that
+I wanted to propose to Camille here.</p>
+<p>The day of the proposal was like any other day – except I dressed
+nicer than usual and was very nervous. I had to overcome what felt like
+a bunch of wrenches thrown at me to get the timing just right. It was a
+Friday, a week before Valentines day, and half a week from our vacation
+to New Orleans. Camille was attending an all weekend <a
+href="https://www.wildmed.com/course-type/wilderness-first-responder/">WFR</a>
+training, so I was running out of time. I had just gotten the engagement
+ring in my hands Thursday, after months of planning. Now, it was go
+time. All I had to do was convince Camille to take a walk with me in the
+cemetery after work.</p>
+<p>Camille didn’t want to go! Another complication: She was training for
+a half-marathon, which included a weekly 10-mile run, which she had
+taken <em>that day</em>. Why was I making her go on walk? Couldn’t we
+just stay at the house and hang out?</p>
+<p>I had to think fast to come up with a good excuse. “No, let’s go on a
+walk so we can talk shit about our roommates,” I told her. She was
+down.</p>
+<p>We gossiped as we strolled down the Ave. I don’t remember how the
+conversation shifted when we got to the cemetery. All I remember is that
+it was sunset when I popped down on one knee. My proposal speech was a
+remembrance of when we first started dating, and she asked me where our
+relationship was going. I had flown across the world to see her in New
+Zealand, only four months into being an item. We were in a car, and it
+was raining. Back then, I told her that we were choosing each other
+every day. In the cemetery, almost eight years later, I told her that I
+want to choose her for the rest of my life.</p>
+<p>The rest of the evening was a dream. We went to happy hour at <a
+href="https://wineonpiedmont.com/">Wine on Piedmont</a>, as was our
+traditional Friday night activity. I got a reservation at the excellent
+sicilian place on our block. We had an exciting trip to look forward to.
+I got my wish – Cam was surprised.</p>
+<figure>
+<img src="https://alxmrs.com/assets/my-proposal-end.jpg"
+alt="Cam and I" />
+<figcaption aria-hidden="true">Cam and I</figcaption>
+</figure>
+<hr />
+<p><span id="1">[1]</span>: Not that it’s a big deal or anything, but I
+did win the poker game that year.</p>
+<p><span id="2">[2]</span>: The <a
+href="https://en.wikipedia.org/wiki/Black_Dahlia#:~:text=Resting%20place">Black
+Dahlia</a> happens to be buried there.</p>]]></description>
+</item>
+<item>
+<title>How I chose an engagement ring</title>
+<pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/ring/</guid>
+<description><![CDATA[<p>When I first started looking for a ring, I was
+looking at how much bang for my buck I could get in diamond sizes… which
+was totally the wrong way to go about it. Cam wouldn’t want a big rock
+on an ugly ring – it would get in the way and be a liability! Besides,
+the ring had to compliment her style and personality.</p>
+<p>The trick that worked for me to better figure out what would best
+suit her was to talk <a
+href="https://www.instagram.com/briannabanananana/">to</a> <a
+href="https://www.instagram.com/sleepiegirl/">her</a> <a
+href="https://www.instagram.com/ro.riches/">friends</a> . I ended up
+starting a group chat with a few of her closest gals to gather intel.
+Turns out that they regularly would share what kinds of jewelry / rings
+that they liked. In any case, they had a much better idea of where to
+start looking than I did.</p>
+<p>For Cam, I knew that I wanted to get an environmentally friendly,
+conflict-free diamond. I thought I would go towards the lab-grown
+variety. However, her friends pointed me towards place like <a
+href="https://fiatluxsf.com/">Fiat Lux</a> , <a
+href="http://www.anastassiasel.com/">Anastassia Sel Jewelry</a>, <a
+href="https://www.asraigarden.com/">asrai garden</a>, and <a
+href="https://sofiazakia.com/">Sofia Zakia</a>. Not only do these
+jewelers only source ethical stones, they also fit Camille’s style.</p>
+<p>Here’s a general overview of how ordering a ring went down.</p>
+<ul>
+<li>FiatLux was based in San Francisco and located a quick BART ride
+away from my office.</li>
+<li>Visited them for the first time w/ <a
+href="https://eatbigger.fish/">eve</a>. This was early October.</li>
+<li>Met <a href="https://www.instagram.com/thee.georgie/">Georgie</a>,
+who was awesome and would help me find the perfect ring.</li>
+<li>Narrowed down various styles of rings while outlining which type of
+stone to get.</li>
+<li>From a (much) earlier convo with Camille, I knew that she liked
+grey, imperfect diamonds.</li>
+<li>I said that I wanted a hexagonal stone, and a ring to match.</li>
+<li>Later, Georgie would find three stones; the middle one had the
+greatest color in the light.</li>
+<li>At thanksgiving without Camille, I couldn’t keep in my excitement
+and blurted that I was ring shopping to my family. I showed them the
+options I had. My Aunti <a
+href="https://www.instagram.com/roz_creativestylist/">Rasmit</a> said
+that I should go with the biggest stone.</li>
+<li>I went with my gut and chose the middle-sized stone that was
+elongated and had a beautiful shimmer. I also paired it with a <a
+href="https://fiatluxsf.com/wp-content/uploads/2018/12/3595-W.jpg">Casia
+Vestra</a>.</li>
+<li>Once I decided, it was time to wait. I ordered the ring around late
+November, with general plans to propose at the beginning of the new
+year.</li>
+<li>Turns out there is a holiday rush to make rings in time for end of
+year proposals! That’s ok, by then, I changed my plans to pop the
+question before Valentines day. The ring should be ready by then,
+right?</li>
+<li>Turns out the holiday rush can quickly turn into the Valentines’ day
+rush. There were fewer and fewer days in my 10-day period to pop the
+question, and the ring was still not ready. The weekend before our
+Valentines day trip was not available to me to have a spontaneous
+proposal, because Cam was enrolled in a wilderness medicine orientation
+and would be busy the whole time!</li>
+<li>The ring came, like, one week before my trip, on a Wednesday. It was
+just in time for me to propose the way I wanted to. I had the wiggle
+room of two days to <a
+href="https://alxmrs.com/proposal/">propose</a>.</li>
+</ul>
+<video height="640" width="364" autoplay loop mute>
+<source src="https://alxmrs.com/assets/engagementring.mp4" type="video/mp4">
+<p>Sorry, your browser does not support the video tag.
+</video></p>]]></description>
+</item>
+<item>
+<title>A new meditation</title>
+<pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/ice/</guid>
+<description><![CDATA[<p>A new meditation:</p>
+<p>Let ice melt on your tongue.</p>
+<p>Feel the cold on your palate.</p>
+<p>Watch the pain fade into an electric buzz,</p>
+<p>as you inhale a dragon’s breath.</p>
+<p>Fight the nervous impulse to chew.</p>
+<p>Notice when you <em>are</em> chewing, when you</p>
+<p>became lost in a thought. Let the fragments</p>
+<p>return you to the moment.</p>
+<p><a href="https://alxmrs.com/smoothie/">Taste</a> the
+present.</p>]]></description>
+</item>
+<item>
+<title>15 minutes of boredom a day</title>
+<pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/boredom/</guid>
+<description><![CDATA[<p>A week ago (late 2020), <a
+href="https://alxmrs.com/goals/">I started a new habit</a>: I now try to
+find 15 minutes of boredom a day.</p>
+<p>These are uninterrupted periods of no stimulation. I have my phone
+off or in another room. I avoid screens in general. No music plays in
+the background. I just sit there alone with my thoughts and perceptions
+– preferably outside.</p>
+<p>I find my 15 minutes to be exhilarating. They start out… boring. Soon
+enough, my mind will wonder and I’ll enjoy following its path.</p>
+<p>I’ll sing the earworm stuck in my head while thinking about the next
+revision of the <a
+href="https://editor.p5js.org/alxrsngrtn/sketches/8Ndif6Ngl">hex tile
+art</a> I’m working on. I’ll dig into a <a
+href="https://alxmrs.com/zettel/determinism/">joke my wife made about
+me</a> and reflect on what it means. I’ll think of articles I want to
+write. I’ll think about thinking.</p>
+<p>Whereas <a href="https://alxmrs.com/ice/">meditation</a> focuses on
+the absence of thought in favor of presence, 15 minutes of boredom helps
+me form ideas. I find the ritual to be refreshing even when I bear no
+new thoughts. I relish the opportunity for peace and emotional
+reflection.</p>]]></description>
+</item>
+<item>
+<title>Emails to Self</title>
+<pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/emails/</guid>
+<description><![CDATA[<p>Tip: For better work-life balance, consider
+sending emails to your self.</p>
+<p>Separate your work and personal apps across devices. Don’t always be
+available to receive work messages – when you close your laptop, work
+should be done.</p>
+<p>The hardest part of this separation, for me, is that shutting a
+laptop doesn’t stop the spontaneous flow of ideas. Maybe when your <a
+href="https://alxmrs.com/boredom/">brain is trying to relax</a>, you
+think of a small TODO that will make tomorrow better. Or, you feel
+inspired to create something work related. Maybe you’ve encountered an
+article in your feeds that you’d like to share with a co-worker.</p>
+<p>Just send the thought from your personal to your work email. It’ll be
+waiting for you in your inbox tomorrow. Thereafter, you can resume your
+non-working life.</p>]]></description>
+</item>
+<item>
+<title>Goal Setting</title>
+<pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/goals/</guid>
+<description><![CDATA[<p>In 2016, the year I graduated from college, <a
+href="https://camille.merose.com">my partner, Camille,</a> gave me a <a
+href="https://passionplanner.com">Passion Planner</a>.</p>
+<p>This planner is a journal / ideation system that helps you figure out
+what you want in life, and then helps you realize it. A guide designed
+by someone who felt adrift after her own graduation, it was exactly what
+I needed.</p>
+<p>The <a
+href="https://passionplanner.com/products/passion-roadmap">system</a>
+works something like this: First, you brainstorm ways how you would like
+to change your life (or what you’d like to accomplish). Then, you
+organize your top goals per various time spans (lifetime, 3 years, 1
+year, 3 months). Lastly, you break down the goals into a specific
+<em>plan of action</em>, where you get to hold yourself accountable.
+This plan of action involves literally scheduling milestones, reminders,
+and due dates in the rest of the book (it’s a planner, after all).</p>
+<p>I have to admit, the <em>planner</em> part of “Passion Planner” never
+stuck for me. I don’t really keep track of my time or tasks on paper; I
+prefer to use digital calendars and reminder systems. However, the model
+of this book has given me a great sense of structure for my life. It
+involves making monthly check-ins, to see if your actions are aligning
+with your goals. In addition, I have a larger check-in at the end of the
+year, to contemplate annual progress and cast new goals.</p>
+<p>The process gives me the opportunity to reflect on the <a
+href="/zettel/determinism">shape of my life</a>. It feels great to
+accomplish a goal I’ve set. Better still: it’s a real joy to see how
+your goals change over time.</p>]]></description>
+</item>
+<item>
+<title>Hypertext a la Zettelkasten</title>
+<pubDate>Thu, 31 Dec 2020 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/zettel/</guid>
+<description><![CDATA[<h1 id="hypertext-a-la-zettelkasten">Hypertext a
+la Zettelkasten</h1>
+<p>Ideally, I don’t want my website to be <em>just</em> a blog.</p>
+<p>I don’t think in terms of sequences of posts. I am not trying to
+create a newsletter – while this seems fun, the upkeep feels like more
+of a burden than empowered expression. Why not, instead, aim to express
+systems of ideas free of time?</p>
+<p>I have a <a href="https://alxmrs.com/zettel/ideas/">lot of ideas</a>,
+but most of them are small and only make sense in context with other
+thoughts. While I can often coalesce these scattered thoughts into
+coherent essays, this takes time and effort I seldom muster.</p>
+<p><a href="https://alxmrs.com/goals/">Every new years day</a> I
+conceive of a “nice-to-have” resolution to start writing. Visions dance
+before me of emulating great technical blogs that I spend the year
+reading. Alas, it never goes this way, due to a sense of perfectionism
+and habit inertia.</p>
+<p>My dear friend <a href="http://eatbigger.fish">eve</a> mentioned the
+other day that they were getting into this style of hypertext called <a
+href="https://zettelkasten.de/introduction/">Zettelkasten</a>. Parsing
+the (admittedly, lengthy) introduction filled me with excitement – this
+is the approach that I’m looking for.</p>
+<p>My intentions, given this new style of thinking, are as follows: -
+Organize the media in my life into a web of atomic connections, based on
+the Zettelkasten method and my own preferences for hypertext media. -
+What media? Why not include every bookmark saved for later, every note
+scrawled on my phone, all the (legible) journal pages I’ve deemed
+publishable, and every podcast episode that’s filled me with joy? - ???
+- Profit.</p>
+<p>Well, let’s see how this experiment goes.</p>
+<p>I’ll update this page with entry-points into my
+Zettlekasten.</p>]]></description>
+</item>
+<item>
+<title>Pesto, Chango!</title>
+<pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/pesto/</guid>
+<description><![CDATA[<p>My partner’s food intuition – her ability to
+weave haphazard ingredients into a coherent, delicious meal – is nothing
+short of magic.</p>
+<p>Here are a few meals we’ve made together that I’d like to
+remember.</p>
+<h2 id="farmers-market-mushroom-pasta">farmers market mushroom
+pasta</h2>
+<em>2020-Oct-17</em>
+<details>
+<summary>
+behind the recipe
+</summary>
+<p>We had just picked up fresh <a
+href="https://www.montereybayfarmers.org/markets-hours/carmel-farmers-market/carmel-vendors/pensi-pasta-company-carmel">porcini
+mushroom pasta</a> from the local farmers market. Such a fine ingredient
+required a worthy recipe to go with it. What we cooked was inspired by
+<a
+href="https://www.bonappetit.com/recipe/creamy-pasta-with-crispy-mushrooms">Bon
+Appétit’s “Creamy pasta with crispy mushrooms”</a>. Instead of oil,
+Camille chose to cook the mushrooms in butter because “mushrooms and
+butter belong together.”</p>
+<p>Before she cooked the <a
+href="https://en.wikipedia.org/wiki/Allium">alliums</a>, Camille had the
+idea that this dish would be great with Alison Roman’s crispy
+breadcrumbs from her <a
+href="https://cooking.nytimes.com/recipes/1020173-creamy-cauliflower-pasta-with-pecorino-bread-crumbs">cauliflower
+pasta recipe</a>. So, after the mushrooms were crisped, she made
+that.</p>
+<p>We had a few fall vegetables on hand we thought would be good on the
+side: delicata squash and romanesco (or, as I prefer to call it,
+“self-similar broccoli”). We decided to roast them while we made the
+rest of the meal. Little did we know that the veg would combine with the
+pasta and sauce oh so well.</p>
+<p>The cream sauce was simple: cream, alliums, and pasta water. We
+finished cooking the pasta in the sauce. The rest was a matter of
+combining the elements – roasted veggies, pasta with sauce – finished
+with fresh-chopped parsley and those cheesy, crispy bread crumbs. We
+added a glass of rosé, and called it a night.</p>
+</details>
+<div class="pa-gallery-player-widget"
+data-link="https://photos.app.goo.gl/mJ4LYW3Vp8TKij317"
+data-title="farmers market mushroom pasta"
+data-description="pasta dinner after a trip to the local farmer&#39;s market"
+data-background-color="#1f2520" data-delay="4">
+<p><object data="https://lh3.googleusercontent.com/FMSV4TfcAtVggVHtTpFepbPkGLtZU-GwDobQEc7EP03be9i7iL-5bdpXKQE4NGN3ZkcJ3zQbRZfGjB4USSJuz231y64fiIqT6d-XpNOz0SW5yF5_bQKprfxhdIv26ya17kMNWMeXCGI=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/a91bBpLHIQBRI9fJ3qrYT1mWQiftWIOho4WjdueH1ZAKhx4cfsN5csgQsbIwJAJdz8-4Ksm2aGWGdSNVAA37e72cgtpnckYz9OlMMqu0uOarxrbA_d6z6wjiudrhLGv5UitLv9vk42s=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/u7jwi6FKROhMpwDu-XqXkesC8Eghrr7WZvBkFRjX-ZskzFURBL5a1fRiopTTq0rBZXK_lquO0h409weXCIEN22JDJygIvwruBYjENkRd4F7LQtzWoEYfB9qwHjxarKQ7tM1YYF7TtKk=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/ncfm9LQMqmP3YwDWTPJIF4yBz1ehQuMtLJhEnms37AXx0_v8zPW0C6CTkhYhWqqpPQRo-d8I-2JtL-yMH_PhZiMikIqvLPeJoFkrWzssTkltDZcmiuEdWBbcRUAIVmZU1lXSVTulhw0=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/CJFoq0VaqQO-JJv-ipBWJaYZ1ca0LG8I1lP8KoI_hsmejS58kTRf7iCnyF7oInMnrPdy0LSEGlo6CD_XCgMCMsAsUHGAMxAVJQaislL1qZ9obgC7mIdnwBAErFgabqr2SPqzGI6hzGg=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/H45UWSIjC0683jYNrMhcHdJNYGfnNal7fmAuNsQ5_9v0SMw1imYFJoypAhuBa0OaHrVMpSD7X-yX_XGJu1IeBugp_Pah4j0uwxcNJr6YSCqyTDiDBdB52Tlw98u6EZ4GeqsRekX2gnI=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/w6VeI-Pe69ec0SbnED6bipE1o4mfaqeP2aamPHrCepIYoS7sM0gvfPLshkArdrYXYQ2QEevukkrhdCc_TExQ735cdnnaFxNbIL3H6O_MbX3ObB73BlG2ijxF8Xju3Ar9gKwYZjlWyC8=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/cwgVHhBeA-x6I-PmvMQg4b-PO6FdVL9K1d2I_LOh0YfkjI4kcVp65HMaHNKN62NuKp_HuhiRBPnePUqgmuxnEkWiaeGMMR1mkxQvqLoRQn6zhRbyyQZrk2LwFJd3t7pYw5MnjiK-f4I=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/kcRbJzzs3s5mLU4VflE-5arX1Q1grcdNyohuyGyaY8sovK5nl7_8LCn_7XEkTF2h08AHTrGFOPRunzfWpDOiM37XGK01rQtz1cbox7MQs1Bhla5B15RJbh-FTaxUFNYPh8N65GaznoA=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/MPZ35gIWYHngDldMziSxNqNJRapKBkraaSTM88g6Otperi5aSBiu7C_l33YDmvs2PkbJN0hI82OiYEOofjknsfjFxU6UskL_1M3EeGJ5WCf-4712PvvMvMrXvHEbbC52HJEfqNuqKoI=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/0Yn9qG0loOTLIXj1QqoKPbDbp18BppdSyinbOJCVkI128GOqKe62iPv5mnQ9W1MWE8KvxTlYyN4fBKiOvFELI6FzHK0q8nJX5ovXfiqdh5tVSSp__wdH4OMOkvG8vYWzOtI1o_-zavU=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/yjbfhmVHTFSndGY4DMeIj_ZOUj5PQlj9P-st2jqwnK638ullwar8-bU3DLpkBPRYzVprnq7lHP3h5tv7maHOIGDr3AcqhkxYQL1l06iB9KxSOwdTPwQj49oKacf8qRUn7GjdFXF1FBg=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/YC1Y87uE2jkkrJ8z_rVaN-ArUXowO4awQJQG-XA9vyx3W3BPYzbvxYucvuhs2b2rFC8qElI1ul7_JyYiaS2kCDonn1cvGoXd7VC53ltYrby7OtbXrd7dBaK0JPxsN5j1LwFgIiXg_uA=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/fI_6BimAd6FdWu5xlYjZ0i595t2V3oslB0ZcNhObQXpfIdg2s0VskxrQ8TKOjzNvLzZMZMwiZq4-nwDFvq9zm6PpfuPAJ50kTa9sCLmye1-he1IqHleDgcG60x6d3eLW-z2GlJS1GPg=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/cWRxa1KQKypNKvPAs7gMcjaelfqjG3UyuflLCaHnFj50Vh71yOl_75yEChJCyYdsNZEsP1R7bWJ8zM0hQnqWwyuF-k6lDSfgqDMd86Ttd7P1nySe6SNmPyCTxOqfjDUY8a77bxxXC9A=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/fh7ulGgL6RvM9ZchrQ__c58SjmCyRDW3gdmCU_fEBV3Crm8bB2MIyEM8z81jfNC6OwmNydZvr4ToKU0W5WvfWF6Rt715WwkdWe2bKKIjg3PxDGOcyIu6WGpSdkBtavyf9J42DORKZ1Q=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/ZAG6kSI7tXTPANKGZsgto3UZaBHw2y6BD6oNf541eFJDewAD6IvlBGwzH3lTJnYxnXQxBIGpJEjxRCqcRkGhdZUmy_CrClkVRdiWo9rG1s-HXhXmyPYvjZv0Kknu_e0_4uk16FoQTuY=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/5rXYdpN-zWlXwXC20NZbhsyNftke-p5RJ9VOBVpaWcbkQmzPAchS-A3uPYsg0kjD6r2srP-AX6C5P6qOhOEnVVkChb88YvjN5K3L5glmzT0mE6mtwMtgs0TLZ_8WGhsQ5DUHVOhauJg=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/olDL-Hqlr_lIY1ufLw82mC1i-JyNZv7zBrdMPvYFql01Om6OmCj1lLiKWB8_QtvqK5xW1PZzyt2dtSNUF6dwN3BeuuRQ2yOtHQ23-1KY1ZVvnatZWae_Rr-oWGHQ84I07As0p1ioAs0=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/vhE471qYmDqQ9WskPH7h-tiKgtzp62f4yxOKc7v4G0SE-H-WTEiAKegNoy9fL-i4W5tkyho7nMie7we3Ad78L0YIfdeI3sq904LhXIem9b9ScvGlxsxlUcGl0LjxuSiKjTFvIYX1JuU=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/p5OuEvIP7nNYciC_IKZ8jAzIL8At8PpwWmVFLP8b4sIyA9FI5mvRqsZxxyVGagvHMB-cT-l6GqufuNsKHOgNbCLqLZsdEkdwZRJUGoUAwBZ_q22u5V43g0-_Aw4KQ6P9bT5W4ThZew8=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/n6tdGn6nHkl9AdV0bxcn1DGxE5WFIrDg0ka1tUeMjf9PRQkHUpY88cAW2k6OikmOWei3UAAPTj62mv5B9b1PgNWE9Lh9iJMiJrDYDnUrfy9JYJqimaakGeZYGIGt1IzBINFks5WrI_E=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/rTIcjdpfyT5cl-ABVPLdhCWKMgxyIxJnrxegBCi9B4DNG5hfD4ishWyC7Bekin84R3tseIe6h-3G_Dc-Nm3itJCpUbVjBjpuV4uWKI503PA7q0hd-1vG76vFrGeQnKLmaoI3SB-YOuk=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/bw0OHnNzbrfkiU0IMiIjMXXVLHC4qzxqBSaYThDolHrWuyNfZL7HPI_pU52PXPNvGLaGEmRlOVkQhQqi5IvxVAeSzEELcKDmtFaiWVzmTwU5oUbkGqDw9nbMZx50Gw_5QDI-9h7UdHw=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/8MMOKjfpRtUyixYQQpo32rreEOcz1SOAyxpW1E4mV16jjelje8Io19j3kQvryqgSgRdtSvnbE4GDkHAgbWwJaUz5oKIAz3FILyr2K4oayryomO72BR0JmlCVTRFbahYrpjR7JgYb244=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/oqAEBeh6o8iBKA77N7ly1IuW2QEO3rIwba0Lb-WU7a3Ge_L7bCZW11B6dlYyw8YWsB_3pLYNRzGN-Uvcxdb8Po8RxlfJ2zPOLj_dxKBC6Z-g_GL3cJelpdUNBkchgvnhUPPxJZpiN3c=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/wA6bMXFM4oOv8EjE9i1QSMMU8y94Nh50nYw57vgKuu_YEjSIyyqJzMSV7HZuypoSHLXn1iv5DZ07A4ATCN5xug6o148wch023uLM35kNufZHS0OI_shN7-ywEKX9W5MRF0sb7S4zkkg=w1920-h1080"></object>
+<object data="https://lh3.googleusercontent.com/sldWq1pzaFpRxcQVUHml4B0BuB_3Hg4QmV8s-Aso72ZYtHlxUHP3KPLnK-F9_fnf0KMjkseADPLfB2yi3EZAvrVY0SoFwdx9xYcx1gMj_zG_PRHT3e3hfGuyAv7VLJJaZ75_ixNlj-A=w1920-h1080"></object></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE5MTA5MjA0NTEsLTE2MTM0NzgyNjMsLT
+g1OTUyMTI4OF19
+-->]]></description>
+</item>
+<item>
+<title>Smoothie</title>
+<pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/smoothie/</guid>
+<description><![CDATA[<p>I make a smoothie for myself every morning.</p>
+<p>One half cut of frozen batteries</p>
+<p>AA, AAA, 9-Volt,</p>
+<p>You can have just one variety, too.</p>
+<p>Add three-fourths cup of bleach</p>
+<p>to make it easier to blend,</p>
+<p>less if you like a thinker gulp.</p>
+<p>Fresh plastic adds easy petroleum</p>
+<p>that you can’t taste, and a</p>
+<p>good green color, to boot.</p>
+<p>Some say local spider pollen</p>
+<p>helps with your allergies,</p>
+<p>but I can’t say it’s worked for me.</p>]]></description>
+</item>
+<item>
+<title>Chipping Away Writer’s Block</title>
+<pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/chipping-away-writers-block/</guid>
+<description><![CDATA[<p>I had a conversation a few weeks ago with my
+project manager, <a href="https://github.com/seefeldb">Bernhard
+Seefeld</a>, about strategies to combat writer’s block. At the time, I
+had been taking longer than I would like to write documentation. I asked
+him how he deals with writer’s block. He gave me some great advice,
+which I thought was worthy of sharing.</p>
+<h2 id="cant-start-a-draft-send-an-email">Can’t start a draft? Send an
+email</h2>
+<p>A crafty use of psychology: sitting down and <em>writing</em> can
+seem like such a drag. Can’t you just briefly <em>explain</em> the idea
+to someone? Why not pretend to (or actually) <a
+href="https://alxmrs.com/emails/">send someone an email</a> where you
+talk about what you’re going to write.</p>
+<p>Viola! You have your first draft.</p>
+<h2 id="draw-a-diagram-convert-it-to-text">Draw a diagram, convert it to
+text</h2>
+<p>Sometimes, the linear nature of writing gets in the way of the
+expression of your ideas.</p>
+<p>People will <em>read</em> your idea from start to finish, but that
+often is not the way you <em>think</em> of an idea.</p>
+<p>Drawings become your friend: with them, you’re not bound to write any
+portion that is uninspired or follow any order. Berni finds that they
+help communicate the relationships between ideas.</p>
+<p>You reach a full expression of a though faster with diagram than
+paragraphs.</p>
+<p>Once you’ve mapped your concept into two dimensions, you’ll have an
+easier time describing it in text.</p>
+<h2 id="modular-storytelling">Modular Storytelling</h2>
+<p>Since we had been talking about documentation, Berni introduced me to
+the idea of <a
+href="https://www.duarte.com/slidedocs/">SlideDocs</a>.</p>
+<p>TL;DR: Instead of traditional documents, the medium is slides;
+Instead of a presentation, they are used as reference material.</p>
+<p>There are a few aspects of SlideDocs that strike me as valuable.
+First, I like how each slide covers only one concept. This is helpful
+both in the construction and consumption of the deck. The slide is
+organized into a format of increasing levels of depth: the title
+contains the core idea, diagrams another layer, and small print provides
+full information. Then, concepts can be interchanged within the deck in
+a modular fashion.</p>
+<p>The second thing that I really like about slide decks is that the
+format easily flows into a narrative. Since it relies on the more
+familiar form factor of a presentation, the writer is more likely to
+tell a story. Though ultimately, everything gets read, the creator is
+more likely to “speak” to the reader.</p>
+<p>Even if you’re not writing documentation, there’s valuable lessons to
+gleam from their model. If you organize ideas into bite-sizes units,
+writing becomes an exercise of arrangement and filling in the details
+(see slide 44 onward). Further, writing becomes easier if you realize
+that you are not writing in a vacuum, but communicating to
+<em>somebody</em>, down the line.</p>]]></description>
+</item>
+<item>
+<title>Getting Back My Domain</title>
+<pubDate>Tue, 23 Jul 2019 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/getting-back-my-domain/</guid>
+<description><![CDATA[<p>Well, here’s a very meta story about this
+website and how I’ve grown since I started it.</p>
+<p>Let’s talk about an issue that has bugged me for quite some time and
+the annoying maze I had to get out of to fix it.</p>
+<p>Check out the URL of this domain. Is it secure? How do you know? Let
+me show you how <em>I</em> know it’s not, as of writing:</p>
+<figure>
+<img src="https://alxmrs.com/assets/alex-is-not-secure.png"
+title="A URL bar with no HTTPS support"
+alt="My site does not use HTTPS, and therefore is not secure" />
+<figcaption aria-hidden="true">My site does not use HTTPS, and therefore
+is not secure</figcaption>
+</figure>
+<p>“How embarrassing. A software engineer who doesn’t know how to set up
+HTTPS for his own personal site.”</p>
+<p>When I started this site in 2017, that was the case. At least, I was
+focused on getting something up and running quickly, and snoozed on
+adding that feature. Like most of software engineering, building things
+outside of your current ability is just a matter of Googling it and
+following directions.</p>
+<p>As time has gone on, I’ve kept postponing this feature, despite <a
+href="https://github.blog/2018-05-01-github-pages-custom-domains-https/">learning
+how to implement it</a>. I’ve avoided addressing anything to do with my
+domain due to a completely avoidable predicament that I got myself into
+all in the name of “security”. Here I am today, writing support tickets
+to sort it all out.</p>
+<hr />
+<p>When I was younger, I found this free Chrome extension that would
+provide me piece-of-mind while web-browsing. It was called MaskedMe, and
+the general idea was it helped you control spam and prevent hacking. It
+did this by generating a fake email address per website, and
+automatically forwarding all the emails to your real address.</p>
+<p>“Great!” I thought. “I can’t be subject to a <a
+href="https://xkcd.com/792/">password-reuse attack</a> if every email I
+use is different, right?”</p>
+<p>It had additional services, totally for free, for replacing phone
+numbers and credit cards, so you never had to give up personal
+information. So I replaced a lot of information on various accounts with
+generated emails, cell phone numbers, and credit cards.</p>
+<p>Sometime around the end of high school or early college, after
+adopting MaskMe, I thought to myself, “I should buy my personal domain
+before <a
+href="https://www.facebook.com/public/Alex-Rosengarten">another Alex
+Rosengarten</a> beats me to it.”</p>
+<p>So I did. But I had the <em>brilliant</em> idea to make the account
+holding my domains as anonymous as possible. You know, just in case I
+wanted to buy <em>other</em> domains where I would <em>need</em>
+anonymity (spoiler: this never happened). I filled out my account
+information without my actual email, name, or phone number, but with a
+real credit card.</p>
+<p>Fast forward several years.</p>
+<p>I somehow get into my domain name service (Namecheap) and wire up my
+domain to point to Github pages. I set up a quick, custom jekyll blog,
+autopay for my domain every year, and never have to log into the domain
+name service for any reason.</p>
+<p>Fast forward, later still.</p>
+<p>I’ve gained maturity as a developer and know my way around cloud
+technologies (like GCP and AWS). I’m motivated to consolidate my tools
+on to one platform so I can build more advanced things. To this end, I
+attempt to log on to Namecheap, which should be easy because I actually
+remember my username and password. I enter those pieces of information.
+Then, I hit the next screen:</p>
+<figure>
+<img src="https://alxmrs.com/assets/namecheap-mfa-masked.png"
+title="A MFA screen showing my MaskedMe phone number"
+alt="I have to wait on a text to a phone number I don’t control" />
+<figcaption aria-hidden="true">I have to wait on a text to a phone
+number I don’t control</figcaption>
+</figure>
+<p>Ok. This is <em>annoying</em>, but not too big of a problem. I’ll
+just log into my MaskedMe account, get the multi-factor authentication
+(MFA) code, and move along.</p>
+<p>A Google search gets me <a href="https://www.abine.com/">here</a>:
+Apparently MaskMe has re-branded as Abine, offering two services: Blur
+(same services as MaskMe) and DeleteMe, a way to scrub your online
+footprint off the web.</p>
+<p>“That’s fine”, I thought. “They’ll have all my account information in
+tact.”</p>
+<p>Spoiler: They didn’t.</p>
+<p>Apparently, masked credit cards and phone numbers have become part of
+their <em>premium</em> services.</p>
+<p>From here, I took several approaches to recover this proxy cell
+number. I filed a support ticket (longer wait for free customers). I
+called their support phone line (a dead end loop that tells you to email
+them). I even tried to sign up for premium – for some reason, my
+attempts to upgrade failed every time (likely because my data was stale,
+they built their service around new customers instead of maintaining
+connections for old ones).</p>
+<p>Eventually, I got a hold of Abine support. They said that after a
+long enough period of inactivity, they deprecate text message proxies.
+This means that there was no way that I could access the MFA number, and
+was likely permanently locked out of my Namescheap account.</p>
+<p>This sucked a lot. Not only was I unable to maintain, upgrade, or
+configure my domain, I risked losing it after my credit card expired and
+ceased payments.</p>
+<p>The next lever I had left to pull was contacting Namecheap support.
+In my first conversation with their live help chat service, I saw a
+glimmer of hope: Their customer service members could override MFA
+temporarily if I could prove ownership of the account. This glimmer was
+extinguished soon, however, when I learned that to identify me, they
+needed the phone number on the account.</p>
+<p>With nothing left to do, I filed a ticket at their risk management
+team, hoping that they could help me. If that failed, my hail mary
+option was to modify the content of my website, proving that it was
+really me after all.</p>
+<p>A day later, they got back to me. Without the phone number, they
+could do nothing for me.</p>
+<hr />
+<p>I have not missed the great, dual irony of the situation:</p>
+<ul>
+<li>I used a series of indirections to remain anonymous… to publicize
+myself on the internet.</li>
+<li>The security measures I took… made me more vulnerable and less in
+control.</li>
+</ul>
+<p>“Congratulations,” <a href="http://camille.merose.com">my partner</a>
+told me. “You played yourself.”</p>
+<p>Thanks, hun.</p>
+<p>Over the next few days, I searched my email and other records for
+traces of that number with no success. I knew that this was a futile
+effort, but I did it anyway out of desperation.</p>
+<p>Then, I had an idea. When I originally created my account, I paid for
+extra services to make sure that any identifying data about the domain
+wouldn’t be publicly listed. I decided to check that anyway, just in
+case.</p>
+<p>I ran a query via Whois.org –</p>
+<p>“There it is!” I discovered.</p>
+<p>Apparently, I had only paid for a year’s worth of this service. It
+had expired long ago. But there it was, a phone number ending in
+<code>057</code>.</p>
+<p>Soon after, I had another live chat with Namecheap customer support.
+Before I knew it, I bypassed the MFA.</p>
+<hr />
+<p>In my younger days, I had an unbalanced sense of trust. I had strong
+feelings towards protecting myself online, but no context to correctly
+model risk. At the time, I didn’t know of the importance of certain
+choices – like how <a href="https://doesmysiteneedhttps.com/">important
+HTTPS is for web browsing</a>. I also neglected to consider the
+longevity of other choices. I needed to ask myself, “how dependable are
+the tools I choose to rely on?”</p>
+<p>Further, this situation could have been avoided if I performed
+regular maintenance. The logic I practiced was akin to the idea that you
+can’t fall victim to a phishing attack if you never check email. Or, it
+was always tomorrow Alex’s problem. Now that I’m in a less turbulent
+time in my life, I can work on minimizing my digital footprint and
+tending to my virtual garden.</p>
+<p>In addition to risk assessment and orderliness, this experience has
+been a great lesson in skepticism. Before, I thought I needed to be
+robust against human adversaries. As I’ve matured, it’s clear that I
+need to be robust against human error.</p>]]></description>
+</item>
+<item>
+<title>In Defense of Interruptions</title>
+<pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/in-defense-of-interruptions/</guid>
+<description><![CDATA[<p>Many believe that the <a
+href="https://heeris.id.au/2013/this-is-why-you-shouldnt-interrupt-a-programmer/">global
+minimum number of interruptions</a> is good for software development. I
+disagree. Interruptions are inevitable and often useful.</p>
+<h2 id="interruption-is-a-slur-for-collaboration">“Interruption” Is A
+Slur For Collaboration</h2>
+<p>Interruptions are inevitable. In typical agile shops, there are
+stand-ups, sprint-plannings, retrospectives, and other corporate
+meetings. Communication takes place on Slack, HipChat, and the like. To
+butcher Kurt Vonnegut, being anti-interruptions “is like being
+anti-glacier.”</p>
+<p>But, are interruptions all bad? No!</p>
+<p>In fact, in the cases listed here, they are merely the realities in
+working in a collaborative environment <sup id="a1"><a
+href="#f1">1</a></sup>. Can we not lend 15 minutes to perform a code
+review for a colleague? Should we skip answering a question from an
+intern because it would interrupt our current work?</p>
+<p>Even if meetings are a drag<sup id="a2"><a href="#f2">2</a></sup> and
+you don’t have any of the aforementioned, would you permit being
+interrupted for a <code>P0</code> bug? Of course!</p>
+<p>I think we should celebrate interruptions rather than demonize them.
+Yes, retrospectives are valuable even though I haven’t finished my
+current story. Of course, I will teach you about mime types, rising
+sophomore intern, instead of just using the term in context. Give me a
+minutes to finish what I’m typing<sup id="a3"><a href="#f3">3</a></sup>,
+but then <em>yes</em>, I’ll review your PR.</p>
+<p><code>&lt;/rant&gt;</code></p>
+<hr />
+<p><b id="f1">1</b>. Lone Wolf Programmers (noun): extinct or
+mythical-beasts. <a href="#a1">↩︎</a></p>
+<p><b id="f2">2</b>. I like the advice of setting agendas
+<em>before</em> meetings and ending early when possible. <a
+href="#a2">↩︎</a></p>
+<p><b id="f3">3</b>. I hope it’s evident by context that I’m not taking
+“interruptions” to their semantic extreme. <a
+href="#a3">↩︎</a></p>]]></description>
+</item>
+<item>
+<title>Higher Order Functions on Pandas Dataframes</title>
+<pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/higher-order-functions-on-pandas-dataframes/</guid>
+<description><![CDATA[<p>(Note: the following article is unedited –
+Proceed with caution).</p>
+<p>(Last updated: 2018-07-31)</p>
+<h2 id="motivation">Motivation</h2>
+<p>I wrote this article to capture a perspective on dataframes that I
+think most Python developers – especially data scientists –
+overlook.</p>
+<p>Working closely with data often lends itself to tight coupling to the
+structure of that data. With this comes messy, brittle code.</p>
+<p>I contend that there is a better way; a way that promotes modular,
+flexible, and testable code; a method where we can automate away the
+boring parts and think clearly about the problem at hand.</p>
+<p>The core idea is to promote re-use of logic through composition. To
+this end, we treat functions as data. We must also try as much as
+possible to abstract away the nonessential details of each
+operation.</p>
+<p>I’m getting ahead of myself. It’s better to <em>show</em> rather than
+<em>tell</em>. Let’s explore the thought process of refactoring the
+standard method for querying data in Pandas.</p>
+<h2 id="the-conventional-way">The Conventional Way</h2>
+<p>The Pandas documentation explains the similarities between their API
+and SQL for querying tabular data. A SQL query with a compound
+<code>WHERE</code> clause, for instance, can be expressed as
+follows:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode sql"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- tips of more than $5.00 at Dinner meals</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> tips</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> <span class="dt">time</span> <span class="op">=</span> <span class="st">&#39;Dinner&#39;</span> <span class="kw">AND</span> tip <span class="op">&gt;</span> <span class="fl">5.00</span>;</span></code></pre></div>
+<p>The equivalent Pandas syntax is as such:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tips of more than $5.00 at Dinner meals</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> In [<span class="dv">11</span>]: tips[(tips[<span class="st">&#39;time&#39;</span>] <span class="op">==</span> <span class="st">&#39;Dinner&#39;</span>) <span class="op">&amp;</span> (tips[<span class="st">&#39;tip&#39;</span>] <span class="op">&gt;</span> <span class="fl">5.00</span>)]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>     total_bill    tip     sex smoker  day    time  size</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="dv">23</span>        <span class="fl">39.42</span>   <span class="fl">7.58</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="dv">44</span>        <span class="fl">30.40</span>   <span class="fl">5.60</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="dv">47</span>        <span class="fl">32.40</span>   <span class="fl">6.00</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="dv">52</span>        <span class="fl">34.81</span>   <span class="fl">5.20</span>  Female     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="dv">59</span>        <span class="fl">48.27</span>   <span class="fl">6.73</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="dv">116</span>       <span class="fl">29.93</span>   <span class="fl">5.07</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="dv">155</span>       <span class="fl">29.85</span>   <span class="fl">5.14</span>  Female     No  Sun  Dinner     <span class="dv">5</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="dv">170</span>       <span class="fl">50.81</span>  <span class="fl">10.00</span>    Male    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="dv">172</span>        <span class="fl">7.25</span>   <span class="fl">5.15</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="dv">181</span>       <span class="fl">23.33</span>   <span class="fl">5.65</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="dv">183</span>       <span class="fl">23.17</span>   <span class="fl">6.50</span>    Male    Yes  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="dv">211</span>       <span class="fl">25.89</span>   <span class="fl">5.16</span>    Male    Yes  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="dv">212</span>       <span class="fl">48.33</span>   <span class="fl">9.00</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="dv">214</span>       <span class="fl">28.17</span>   <span class="fl">6.50</span>  Female    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="dv">239</span>       <span class="fl">29.03</span>   <span class="fl">5.92</span>    Male     No  Sat  Dinner     <span class="dv">3</span></span></code></pre></div>
+<p><a
+href="https://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html#where">(source)</a></p>
+<p>What if we wanted to extend our query with an arbitrary number of
+conditions?</p>
+<p>Using the standard Pandas syntax, it would look something like
+this:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips[(tips[<span class="st">&#39;time&#39;</span>] <span class="op">==</span> <span class="st">&#39;Dinner&#39;</span>) <span class="op">&amp;</span> (tips[<span class="st">&#39;tip&#39;</span>] <span class="op">&gt;</span> <span class="fl">5.00</span>) <span class="op">&amp;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>...      (tips[<span class="st">&#39;sex&#39;</span>] <span class="op">==</span> <span class="st">&#39;Female&#39;</span>)  <span class="op">&amp;</span> (tips[<span class="st">&#39;smoker&#39;</span>] <span class="op">==</span> <span class="st">&#39;No&#39;</span>)]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>     total_bill   tip     sex smoker  day    time  size</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="dv">52</span>        <span class="fl">34.81</span>  <span class="fl">5.20</span>  Female     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="dv">155</span>       <span class="fl">29.85</span>  <span class="fl">5.14</span>  Female     No  Sun  Dinner     <span class="dv">5</span></span></code></pre></div>
+<p>This does not seem ideal. Our line of code quickly gets longer as we
+add more filtering logic. A lot of logic is repeated – namely, we keep
+referring to the <code>tips</code> dataframe over and over. What if the
+dataframe name changed? Or we wanted to apply the same query to another,
+similar table?</p>
+<p>This would double our work: We would need to re-write the whole line
+substituting one variable name for the other. Or worse, we could swap
+the data each variable refers to.</p>
+<p>How can we provide a more succinct interface for querying data? How
+can we make sure that it is intuitive, general, and correct?</p>
+<h2 id="breaking-down-the-problem">Breaking Down The Problem</h2>
+<p>Let’s break down what’s going on in the above query:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_dinner_time <span class="op">=</span> (tips[<span class="st">&#39;time&#39;</span>] <span class="op">==</span> <span class="st">&#39;Dinner&#39;</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_dinner_time.head()</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="va">True</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="va">True</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>    <span class="va">True</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="va">True</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="va">True</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>Name: time, dtype: <span class="bu">bool</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_dinner_time.value_counts()</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="va">True</span>     <span class="dv">176</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="va">False</span>     <span class="dv">68</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>Name: time, dtype: int64</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_tip_above_five <span class="op">=</span> (tips[<span class="st">&#39;tip&#39;</span>] <span class="op">&gt;</span> <span class="fl">5.00</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_tip_above_five.head()</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="va">False</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="va">False</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>    <span class="va">False</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="va">False</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="va">False</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>Name: tip, dtype: <span class="bu">bool</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_tip_above_five.value_counts()</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="va">False</span>    <span class="dv">226</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="va">True</span>      <span class="dv">18</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>Name: tip, dtype: int64</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="co"># etc...</span></span></code></pre></div>
+<p>Ah! So what’s actually going on is we are taking advantage of
+dataframe’s capacity for <a
+href="https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing">boolean
+indexing</a>.</p>
+<p>What if we could use this to abstract away which dataframe we are
+acting on? Certainly, we’d prefer to only focus on the filtering logic
+rather than housekeeping. Plus, we might like to reuse the query on
+different dataframes.</p>
+<p>Let’s try this:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_dinner_time <span class="op">=</span> <span class="kw">lambda</span> df: df[<span class="st">&#39;time&#39;</span>] <span class="op">==</span> <span class="st">&#39;Dinner&#39;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_tip_above_five <span class="op">=</span> <span class="kw">lambda</span> df: df[<span class="st">&#39;tip&#39;</span>] <span class="op">&gt;</span> <span class="fl">5.00</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips[is_dinner_time(tips) <span class="op">&amp;</span> is_tip_above_five(tips)]</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>     total_bill    tip     sex smoker  day    time  size</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="dv">23</span>        <span class="fl">39.42</span>   <span class="fl">7.58</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="dv">44</span>        <span class="fl">30.40</span>   <span class="fl">5.60</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="dv">47</span>        <span class="fl">32.40</span>   <span class="fl">6.00</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="dv">52</span>        <span class="fl">34.81</span>   <span class="fl">5.20</span>  Female     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="dv">59</span>        <span class="fl">48.27</span>   <span class="fl">6.73</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="dv">116</span>       <span class="fl">29.93</span>   <span class="fl">5.07</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="dv">155</span>       <span class="fl">29.85</span>   <span class="fl">5.14</span>  Female     No  Sun  Dinner     <span class="dv">5</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="dv">170</span>       <span class="fl">50.81</span>  <span class="fl">10.00</span>    Male    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="dv">172</span>        <span class="fl">7.25</span>   <span class="fl">5.15</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="dv">181</span>       <span class="fl">23.33</span>   <span class="fl">5.65</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="dv">183</span>       <span class="fl">23.17</span>   <span class="fl">6.50</span>    Male    Yes  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="dv">211</span>       <span class="fl">25.89</span>   <span class="fl">5.16</span>    Male    Yes  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="dv">212</span>       <span class="fl">48.33</span>   <span class="fl">9.00</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="dv">214</span>       <span class="fl">28.17</span>   <span class="fl">6.50</span>  Female    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="dv">239</span>       <span class="fl">29.03</span>   <span class="fl">5.92</span>    Male     No  Sat  Dinner     <span class="dv">3</span></span></code></pre></div>
+<p>Great. I now have two functions <code>is_dinner_time</code> and
+<code>is_tip_above_five</code> which I could use on any other dataframe.
+However, I still am repeating the reference to <code>tips</code> as many
+times as I did before. How can I get rid of this grunt work? Ideally, I
+would like to refer to a dataframe once, mixing in the filter operations
+and I see fit.</p>
+<h2 id="towards-generalization">Towards Generalization</h2>
+<p>Why not use a <a
+href="https://en.wikipedia.org/wiki/Higher-order_function">higher-order
+function</a>? Functions are first class citizens in python, after all.
+Let’s abstract away the rote work of calling these filter functions with
+respect to a particular dataframe.</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> functools</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> intersection(df, <span class="op">*</span>filters):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>...    mapped_boolean_dfs <span class="op">=</span> [f(df) <span class="cf">for</span> f <span class="kw">in</span> filters <span class="cf">if</span> <span class="bu">callable</span>(f)]</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>...    accumulated_boolean_df <span class="op">=</span> functools.<span class="bu">reduce</span>(<span class="kw">lambda</span> acc, d: acc <span class="op">&amp;</span> d, mapped_boolean_dfs)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>...    <span class="cf">return</span> df[accumulated_boolean_df]</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> intersection(tips, is_dinner_time, is_tip_above_five)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>     total_bill    tip     sex smoker  day    time  size</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="dv">23</span>        <span class="fl">39.42</span>   <span class="fl">7.58</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="dv">44</span>        <span class="fl">30.40</span>   <span class="fl">5.60</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="dv">47</span>        <span class="fl">32.40</span>   <span class="fl">6.00</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="dv">52</span>        <span class="fl">34.81</span>   <span class="fl">5.20</span>  Female     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="dv">59</span>        <span class="fl">48.27</span>   <span class="fl">6.73</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="dv">116</span>       <span class="fl">29.93</span>   <span class="fl">5.07</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="dv">155</span>       <span class="fl">29.85</span>   <span class="fl">5.14</span>  Female     No  Sun  Dinner     <span class="dv">5</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="dv">170</span>       <span class="fl">50.81</span>  <span class="fl">10.00</span>    Male    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="dv">172</span>        <span class="fl">7.25</span>   <span class="fl">5.15</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="dv">181</span>       <span class="fl">23.33</span>   <span class="fl">5.65</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="dv">183</span>       <span class="fl">23.17</span>   <span class="fl">6.50</span>    Male    Yes  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="dv">211</span>       <span class="fl">25.89</span>   <span class="fl">5.16</span>    Male    Yes  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="dv">212</span>       <span class="fl">48.33</span>   <span class="fl">9.00</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="dv">214</span>       <span class="fl">28.17</span>   <span class="fl">6.50</span>  Female    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="dv">239</span>       <span class="fl">29.03</span>   <span class="fl">5.92</span>    Male     No  Sat  Dinner     <span class="dv">3</span></span></code></pre></div>
+<p>Much better. Now, should we want to add additional fields in the
+table to filter with, we merely define more filter functions – which,
+again, can be used for any table.</p>
+<p>Please note that each functions can be as complicated as we want, as
+long as they return a dataframe of booleans the same size as the
+input.</p>
+<p>For example, if we are querying string data that is messy, we could
+write a filter like the following:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> is_dinner_fuzzy(df):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>...    <span class="cf">return</span> df[<span class="st">&#39;time&#39;</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: fuzz.ratio(x, <span class="st">&#39;dinner&#39;</span>)) <span class="op">&gt;=</span> <span class="dv">90</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> intersection(tips, is_dinner_fuzzy, is_tip_above_five)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>     total_bill    tip     sex smoker  day    time  size</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="dv">23</span>        <span class="fl">39.42</span>   <span class="fl">7.58</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="dv">44</span>        <span class="fl">30.40</span>   <span class="fl">5.60</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="dv">47</span>        <span class="fl">32.40</span>   <span class="fl">6.00</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="dv">52</span>        <span class="fl">34.81</span>   <span class="fl">5.20</span>  Female     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="dv">59</span>        <span class="fl">48.27</span>   <span class="fl">6.73</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="dv">116</span>       <span class="fl">29.93</span>   <span class="fl">5.07</span>    Male     No  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="dv">155</span>       <span class="fl">29.85</span>   <span class="fl">5.14</span>  Female     No  Sun  Dinner     <span class="dv">5</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="dv">170</span>       <span class="fl">50.81</span>  <span class="fl">10.00</span>    Male    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="dv">172</span>        <span class="fl">7.25</span>   <span class="fl">5.15</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="dv">181</span>       <span class="fl">23.33</span>   <span class="fl">5.65</span>    Male    Yes  Sun  Dinner     <span class="dv">2</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="dv">183</span>       <span class="fl">23.17</span>   <span class="fl">6.50</span>    Male    Yes  Sun  Dinner     <span class="dv">4</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="dv">211</span>       <span class="fl">25.89</span>   <span class="fl">5.16</span>    Male    Yes  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="dv">212</span>       <span class="fl">48.33</span>   <span class="fl">9.00</span>    Male     No  Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="dv">214</span>       <span class="fl">28.17</span>   <span class="fl">6.50</span>  Female    Yes  Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="dv">239</span>       <span class="fl">29.03</span>   <span class="fl">5.92</span>    Male     No  Sat  Dinner     <span class="dv">3</span></span></code></pre></div>
+<p>(Note: <code>fuzz.ratio()</code> returns an integer representing the
+<a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein
+distance</a> from one string to another)</p>
+<h2 id="how-general-can-we-go">How General Can We Go?</h2>
+<p>Is our intersection general enough? What if we wanted to query our
+data but instead of using a SQL-like <code>AND</code> operation, we
+wanted an <code>OR</code> operation?</p>
+<p>Let’s generalize further:</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> filter_reduce(df, <span class="op">*</span>filters, reducer<span class="op">=</span><span class="kw">lambda</span> acc, x: acc <span class="op">&amp;</span> x):</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>...    mapped_dfs <span class="op">=</span> [f(df) <span class="cf">for</span> f <span class="kw">in</span> filters <span class="cf">if</span> <span class="bu">callable</span>(f)]</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>...    accumulated_df <span class="op">=</span> functools.<span class="bu">reduce</span>(reducer, mapped_dfs)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>...    <span class="cf">return</span> df[accumulated_df]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> intersection(df, <span class="op">*</span>filters):</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>...    <span class="cf">return</span> filter_reduce(df, <span class="op">*</span>filters, reducer<span class="op">=</span><span class="kw">lambda</span> acc, x: acc <span class="op">&amp;</span> x)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> union(df, <span class="op">*</span>filters):</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>...    <span class="cf">return</span> filter_reduce(df, <span class="op">*</span>filters, reducer<span class="op">=</span><span class="kw">lambda</span> acc, x: acc <span class="op">|</span> x)</span></code></pre></div>
+<p>Then we can represent the following SQL query (from the Pandas
+documentation) like so:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode sql"><code class="sourceCode sql"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> <span class="op">*</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> tips</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> <span class="kw">size</span> <span class="op">&gt;=</span> <span class="dv">5</span> <span class="kw">OR</span> total_bill <span class="op">&gt;</span> <span class="dv">45</span>;</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_total_bill_large <span class="op">=</span> <span class="kw">lambda</span> df: df[<span class="st">&#39;total_bill&#39;</span>] <span class="op">&gt;</span> <span class="dv">45</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> is_party_gte_five <span class="op">=</span> <span class="kw">lambda</span> df: df[<span class="st">&#39;size&#39;</span>] <span class="op">&gt;=</span> <span class="dv">5</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> union(tips, is_party_gte_five, is_total_bill_large)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>     total_bill    tip     sex smoker   day    time  size</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="dv">59</span>        <span class="fl">48.27</span>   <span class="fl">6.73</span>    Male     No   Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="dv">125</span>       <span class="fl">29.80</span>   <span class="fl">4.20</span>  Female     No  Thur   Lunch     <span class="dv">6</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="dv">141</span>       <span class="fl">34.30</span>   <span class="fl">6.70</span>    Male     No  Thur   Lunch     <span class="dv">6</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="dv">142</span>       <span class="fl">41.19</span>   <span class="fl">5.00</span>    Male     No  Thur   Lunch     <span class="dv">5</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="dv">143</span>       <span class="fl">27.05</span>   <span class="fl">5.00</span>  Female     No  Thur   Lunch     <span class="dv">6</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="dv">155</span>       <span class="fl">29.85</span>   <span class="fl">5.14</span>  Female     No   Sun  Dinner     <span class="dv">5</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="dv">156</span>       <span class="fl">48.17</span>   <span class="fl">5.00</span>    Male     No   Sun  Dinner     <span class="dv">6</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="dv">170</span>       <span class="fl">50.81</span>  <span class="fl">10.00</span>    Male    Yes   Sat  Dinner     <span class="dv">3</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="dv">182</span>       <span class="fl">45.35</span>   <span class="fl">3.50</span>    Male    Yes   Sun  Dinner     <span class="dv">3</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="dv">185</span>       <span class="fl">20.69</span>   <span class="fl">5.00</span>    Male     No   Sun  Dinner     <span class="dv">5</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="dv">187</span>       <span class="fl">30.46</span>   <span class="fl">2.00</span>    Male    Yes   Sun  Dinner     <span class="dv">5</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="dv">212</span>       <span class="fl">48.33</span>   <span class="fl">9.00</span>    Male     No   Sat  Dinner     <span class="dv">4</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="dv">216</span>       <span class="fl">28.15</span>   <span class="fl">3.00</span>    Male    Yes   Sat  Dinner     <span class="dv">5</span></span></code></pre></div>
+<p>Sure, we could have implemented the <code>union</code> and
+<code>intersection</code> cases by themselves, but the function
+<code>filter_reduce</code> offers us the luxury of adaptability later
+on.</p>
+<h2 id="beyond-querying">Beyond Querying</h2>
+<p>Can this perspective help with other problems besides querying?</p>
+<p>Often, we need to mutate dataframes. We might want to add a column of
+derived values, or change a column’s data type. Mutability, however,
+comes with several challenges: What if we make a mistake when mutating
+the dataframe, and we would like to revert to the previous form? What if
+we wanted to know what the original data looked like?</p>
+<p>In Pandas, we can simulate immutability by creating mapping functions
+that first perform a shallow copy of the input dataframe and return a
+new result.</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> add_subtotal(df):</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>...     cp <span class="op">=</span> pd.DataFrame(df, copy<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>...     cp[<span class="st">&#39;subtotal&#39;</span>] <span class="op">=</span> cp[<span class="st">&#39;total_bill&#39;</span>] <span class="op">-</span> cp[<span class="st">&#39;tip&#39;</span>]</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">return</span> cp</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips1 <span class="op">=</span> add_subtotal(tips)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips1.head()</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>   total_bill   tip     sex smoker  day    time  size  subtotal</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>       <span class="fl">16.99</span>  <span class="fl">1.01</span>  Female     No  Sun  Dinner     <span class="dv">2</span>     <span class="fl">15.98</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>       <span class="fl">10.34</span>  <span class="fl">1.66</span>    Male     No  Sun  Dinner     <span class="dv">3</span>      <span class="fl">8.68</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>       <span class="fl">21.01</span>  <span class="fl">3.50</span>    Male     No  Sun  Dinner     <span class="dv">3</span>     <span class="fl">17.51</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>       <span class="fl">23.68</span>  <span class="fl">3.31</span>    Male     No  Sun  Dinner     <span class="dv">2</span>     <span class="fl">20.37</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>       <span class="fl">24.59</span>  <span class="fl">3.61</span>  Female     No  Sun  Dinner     <span class="dv">4</span>     <span class="fl">20.98</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> add_avg_bill(df): </span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>...     cp <span class="op">=</span> pd.DataFrame(df, copy<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>...     cp[<span class="st">&#39;price_per_person&#39;</span>] <span class="op">=</span> cp[<span class="st">&#39;subtotal&#39;</span>] <span class="op">/</span> cp[<span class="st">&#39;size&#39;</span>]</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">return</span> cp</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips2 <span class="op">=</span> add_avg_bill(tips1)</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips2.head()</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>   total_bill   tip     sex smoker  day    time  size  subtotal  <span class="op">\</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>       <span class="fl">16.99</span>  <span class="fl">1.01</span>  Female     No  Sun  Dinner     <span class="dv">2</span>     <span class="fl">15.98</span>   </span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>       <span class="fl">10.34</span>  <span class="fl">1.66</span>    Male     No  Sun  Dinner     <span class="dv">3</span>      <span class="fl">8.68</span>   </span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>       <span class="fl">21.01</span>  <span class="fl">3.50</span>    Male     No  Sun  Dinner     <span class="dv">3</span>     <span class="fl">17.51</span>   </span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>       <span class="fl">23.68</span>  <span class="fl">3.31</span>    Male     No  Sun  Dinner     <span class="dv">2</span>     <span class="fl">20.37</span>   </span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>       <span class="fl">24.59</span>  <span class="fl">3.61</span>  Female     No  Sun  Dinner     <span class="dv">4</span>     <span class="fl">20.98</span>   </span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>   price_per_person  </span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>          <span class="fl">7.990000</span>  </span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>          <span class="fl">2.893333</span>  </span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>          <span class="fl">5.836667</span>  </span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>         <span class="fl">10.185000</span>  </span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>          <span class="fl">5.245000</span>  </span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> yesno_to_bool(df, column<span class="op">=</span><span class="st">&#39;smoker&#39;</span>):</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>...     cp <span class="op">=</span> pd.DataFrame(df, copy<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>...     cp[column] <span class="op">=</span> cp[column].<span class="bu">apply</span>(<span class="kw">lambda</span> x: x <span class="op">==</span> <span class="st">&#39;Yes&#39;</span>)</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">return</span> cp</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips3 <span class="op">=</span> yesno_to_bool(tips2, <span class="st">&#39;smoker&#39;</span>)</span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips3.head()</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>Out[<span class="dv">52</span>]: </span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>   total_bill   tip     sex  smoker  day    time  size  subtotal  <span class="op">\</span></span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>       <span class="fl">16.99</span>  <span class="fl">1.01</span>  Female   <span class="va">False</span>  Sun  Dinner     <span class="dv">2</span>     <span class="fl">15.98</span>   </span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>       <span class="fl">10.34</span>  <span class="fl">1.66</span>    Male   <span class="va">False</span>  Sun  Dinner     <span class="dv">3</span>      <span class="fl">8.68</span>   </span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>       <span class="fl">21.01</span>  <span class="fl">3.50</span>    Male   <span class="va">False</span>  Sun  Dinner     <span class="dv">3</span>     <span class="fl">17.51</span>   </span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>       <span class="fl">23.68</span>  <span class="fl">3.31</span>    Male   <span class="va">False</span>  Sun  Dinner     <span class="dv">2</span>     <span class="fl">20.37</span>   </span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>       <span class="fl">24.59</span>  <span class="fl">3.61</span>  Female   <span class="va">False</span>  Sun  Dinner     <span class="dv">4</span>     <span class="fl">20.98</span>   </span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>   price_per_person  </span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>          <span class="fl">7.990000</span>  </span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>          <span class="fl">2.893333</span>  </span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>          <span class="fl">5.836667</span>  </span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>         <span class="fl">10.185000</span>  </span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>          <span class="fl">5.245000</span>  </span></code></pre></div>
+<p>…</p>
+<p>We can combine all of these – and arbitrarily more operations –
+through a higher order function called <code>compose</code>:</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> functools</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> compose(df, <span class="op">*</span>mappers):</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>...     <span class="cf">return</span> functools.<span class="bu">reduce</span>(<span class="kw">lambda</span> acc, x: x(acc), mappers, df)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_all <span class="op">=</span> compose(tips, add_subtotal, add_avg_bill, <span class="kw">lambda</span> x: yesno_to_bool(x, <span class="st">&#39;smoker&#39;</span>))</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_all.head()</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>   total_bill   tip     sex  smoker  day    time  size  subtotal  <span class="op">\</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>       <span class="fl">16.99</span>  <span class="fl">1.01</span>  Female   <span class="va">False</span>  Sun  Dinner     <span class="dv">2</span>     <span class="fl">15.98</span>   </span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>       <span class="fl">10.34</span>  <span class="fl">1.66</span>    Male   <span class="va">False</span>  Sun  Dinner     <span class="dv">3</span>      <span class="fl">8.68</span>   </span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>       <span class="fl">21.01</span>  <span class="fl">3.50</span>    Male   <span class="va">False</span>  Sun  Dinner     <span class="dv">3</span>     <span class="fl">17.51</span>   </span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>       <span class="fl">23.68</span>  <span class="fl">3.31</span>    Male   <span class="va">False</span>  Sun  Dinner     <span class="dv">2</span>     <span class="fl">20.37</span>   </span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>       <span class="fl">24.59</span>  <span class="fl">3.61</span>  Female   <span class="va">False</span>  Sun  Dinner     <span class="dv">4</span>     <span class="fl">20.98</span>   </span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>   price_per_person  </span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>          <span class="fl">7.990000</span>  </span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>          <span class="fl">2.893333</span>  </span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>          <span class="fl">5.836667</span>  </span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>         <span class="fl">10.185000</span>  </span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>          <span class="fl">5.245000</span>  </span></code></pre></div>
+<p>One advantage of this approach is that mutating dataframes can be
+lazily evaluated: We can wait to modify the data only until it’s needed
+(i.e. until we call <code>compose</code>).</p>
+<p>Another advantage is that we preserve all the intermediate states of
+the data. Further, we have complete flexibility as to what mappings get
+applied. Decide that we want to keep the <code>smokers</code> column as
+strings again? – Just remove the <code>yesno_to_bool</code> function.
+Decide that you’d rather map it to <code>int</code>s? – Simply swap out
+the function. Just like the filter functions, these mappers can be
+applied to any dataframe, provided they have the correct columns.</p>
+<p>It’s worth wondering: Is copying all of the data inefficient? Surely,
+we don’t want to duplicate the data all over the place, especially if
+the corpus is large.</p>
+<p>Pandas addresses this in a very clever manner. The constructor
+performs a lazy copy! The copied dataframes store references to the
+original values. Only when the data gets mutated does it decide to
+allocate new memory. In other words, only the <em>differences</em> from
+one dataframe to another are stored. Thus, representing transformations
+with copies remains efficient while promoting many other benefits.</p>
+<p>Don’t take my word for it! Let’s prove that this is the case:</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_ref_original <span class="op">=</span> tips.applymap(<span class="bu">id</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_ref_copied <span class="op">=</span> tips_all.applymap(<span class="bu">id</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_ref_original.head()</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    total_bill              tip              sex           smoker  <span class="op">\</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>  <span class="dv">139919566582840</span>  <span class="dv">139919566583392</span>  <span class="dv">139919566677192</span>  <span class="dv">139919567009976</span>   </span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="dv">139919566584736</span>  <span class="dv">139919566583416</span>  <span class="dv">139919567011768</span>  <span class="dv">139919567009976</span>   </span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="dv">139919566584760</span>  <span class="dv">139919566583440</span>  <span class="dv">139919567011768</span>  <span class="dv">139919567009976</span>   </span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  <span class="dv">139919566584808</span>  <span class="dv">139919566583464</span>  <span class="dv">139919567011768</span>  <span class="dv">139919567009976</span>   </span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="dv">139919566584832</span>  <span class="dv">139919566583488</span>  <span class="dv">139919566677192</span>  <span class="dv">139919567009976</span>   </span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>               day             time            size  </span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979360</span>  </span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979392</span>  </span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979392</span>  </span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979360</span>  </span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979424</span>  </span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_ref_copied.head()</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>        total_bill              tip              sex          smoker  <span class="op">\</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>  <span class="dv">139919450679696</span>  <span class="dv">139919450735360</span>  <span class="dv">139919566677192</span>  <span class="dv">94289170711232</span>   </span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="dv">139919450679720</span>  <span class="dv">139919450735336</span>  <span class="dv">139919567011768</span>  <span class="dv">94289170711232</span>   </span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="dv">139919450679744</span>  <span class="dv">139919450735312</span>  <span class="dv">139919567011768</span>  <span class="dv">94289170711232</span>   </span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  <span class="dv">139919450679768</span>  <span class="dv">139919450735288</span>  <span class="dv">139919567011768</span>  <span class="dv">94289170711232</span>   </span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="dv">139919450679792</span>  <span class="dv">139919450735264</span>  <span class="dv">139919566677192</span>  <span class="dv">94289170711232</span>   </span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>               day             time            size         subtotal  <span class="op">\</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979360</span>  <span class="dv">139919450679696</span>   </span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979392</span>  <span class="dv">139919450679720</span>   </span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979392</span>  <span class="dv">139919450679744</span>   </span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979360</span>  <span class="dv">139919450679768</span>   </span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="dv">139919567011600</span>  <span class="dv">139919567008184</span>  <span class="dv">94289170979424</span>  <span class="dv">139919450679792</span>   </span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>   price_per_person  </span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>   <span class="dv">139919450735360</span>  </span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   <span class="dv">139919450735336</span>  </span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   <span class="dv">139919450735312</span>  </span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="dv">139919450735288</span>  </span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="dv">139919450735264</span>  </span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_xor <span class="op">=</span> tips_ref_original <span class="op">^</span> tips_ref_copied</span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> tips_xor.head()</span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>   day  price_per_person  sex  size          smoker  subtotal  time  <span class="op">\</span></span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>    <span class="dv">0</span>               NaN    <span class="dv">0</span>     <span class="dv">0</span>  <span class="dv">46733414398584</span>       NaN     <span class="dv">0</span>   </span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>    <span class="dv">0</span>               NaN    <span class="dv">0</span>     <span class="dv">0</span>  <span class="dv">46733414398584</span>       NaN     <span class="dv">0</span>   </span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>    <span class="dv">0</span>               NaN    <span class="dv">0</span>     <span class="dv">0</span>  <span class="dv">46733414398584</span>       NaN     <span class="dv">0</span>   </span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>    <span class="dv">0</span>               NaN    <span class="dv">0</span>     <span class="dv">0</span>  <span class="dv">46733414398584</span>       NaN     <span class="dv">0</span>   </span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>    <span class="dv">0</span>               NaN    <span class="dv">0</span>     <span class="dv">0</span>  <span class="dv">46733414398584</span>       NaN     <span class="dv">0</span>   </span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>         tip  total_bill  </span>
+<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a><span class="dv">0</span>  <span class="dv">423146848</span>   <span class="dv">423075240</span>  </span>
+<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>  <span class="dv">423146640</span>   <span class="dv">423072264</span>  </span>
+<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>  <span class="dv">423146560</span>   <span class="dv">423072376</span>  </span>
+<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>  <span class="dv">423146512</span>   <span class="dv">423072304</span>  </span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>  <span class="dv">423146592</span>   <span class="dv">423073264</span>  </span></code></pre></div>]]></description>
+</item>
+<item>
+<title>First Blog Post</title>
+<pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/first-blog-post/</guid>
+<description><![CDATA[<p>Well. Finally got around to making a website
+that was more than a placeholder. It was pretty easy after all. Jekyll
+worked out quite well. Now I can write without much fuss in
+markdown.</p>]]></description>
+</item>
+<item>
+<title>Thoughts About Cognitive Ecology</title>
+<pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/thoughts-about-cognitive-ecology/</guid>
+<description><![CDATA[<h2 id="where-is-the-mind">Where is the Mind?</h2>
+<p>One the first day of Distributed Cognition, COGS 102a at UCSD,
+Professor Johnson hands out a piece of paper for every pair of students
+in a 400 person auditorium. On the back of the sheet is a maze, which
+cannot be solved until the class has heard her instructions.</p>
+<p>We all turn to our right or left and team up with our neighbor, as
+per the instructions. One person in the team is allowed to put a pen to
+the start of the maze. However, this person must have his or her eyes
+closed thereafter. The other person is allowed to see the maze and
+communicate instructions to the effector team member, but cannot
+physically intervene in any way.</p>
+<p>The time begins, every team flips their paper, and over the next
+three minutes the class is full voices commanding “Up – right! No, too
+far!” and the like.</p>
+<p>At the end of the exercise, Professor Johnson proposes a question:
+Where is the mind that got through the maze?</p>
+<p>The class thinks this over for a minute before a few students raise
+their hands.</p>
+<p>“It had to have been the students providing instructions,” one
+student argues, “For they perceived the maze, understood it, and planned
+a navigation strategy.”</p>
+<p>Another student counters: “No, the mind belongs with the students who
+had a pen to the maze. They had to interpret and embody the instructions
+they received.”</p>
+<p>After a little more discussion, the class waits for a definitive
+answer from Professor Johnson.</p>
+<p>She explained, “The mind that got through the maze is a
+<em>system</em> that includes both people, the pen, and the maze.”</p>
+<p>And with this moment, my perspective about the nature of
+consciousness forever changed.</p>]]></description>
+</item>
+<item>
+<title>Calyx of Held</title>
+<pubDate>Fri, 02 May 2014 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/calyx-of-held/</guid>
+<description><![CDATA[<p>I’m taking a class called neural encoding of
+sensory systems and it make me appreciate the complexity and elegance of
+the brain so much more than I have ever before. I wish that I had the
+time to take all the neuroscience classes and ECE classes and their
+per-requisites so that I could better understand the underlying
+machinery of the human (primate) brain.</p>
+<p>The globular bushy cells, for instance, have the biggest axon
+diameters of all the neurons in the auditory system.<br />
+They need to be so thick because they need to transmit signals fast –
+from the cochlea (where hair cells transduce mechanical sound into
+electric signals) to a nucleus all the way on the opposite
+(contralateral) side of the brain. This takes a few hundred
+microseconds, quick enough so that the fibers connecting the cochlea
+from the same (ipsilateral) side of the brain only have time to fire one
+action potential on to that nucleus.</p>
+<p>I read an article about a team of bioengineers at Stanford creating
+microchips that simulated 10,000 neurons. I feel like I could join them
+if I had the chance to take computational neurobiology or semiconductor
+physics – or both. If I every get a masters, I’ll be sure to take those
+classes… if that’s still something that I want to do when I get
+there.</p>]]></description>
+</item>
+<item>
+<title>Film in the Era of Google Glass</title>
+<pubDate>Mon, 22 Jul 2013 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/film-in-the-era-of-google-glass/</guid>
+<description><![CDATA[<p>Ubiquitous technologies have already enabled us
+to capture events that were never possible before. Not too long ago, one
+could only see photographs and movies about the aftermath of meteorites,
+plane crashes, explosions, revolutions, and the like. Camera-equipped
+smartphone have made it possible to capture catastrophic events in real
+time, enabling us to record history as it is happening.</p>
+<p>When Google Glass becomes widely used, I expect this phenomena to
+proliferate. Constant surveillance would be a casual thing. This faction
+of humanity will become living cameras with names and social security
+numbers. They will fight to be the first to witness and upload some
+object of history, to proudly regard themselves as part of the great
+peripheral system in the embodied internet.</p>
+<p>Granted, a great deal of this is happening now. Google Glass,
+however, seems to be a purer expression of a new trend of consumer
+cybernetics. The next step after pushing augmented reality from nuance
+to normalcy, in my opinion, will be incorporating biofeedback as a
+causal control system.</p>
+<p>What peeks my interest the most about this emerging technology is the
+potential for revolutionizing art and film. Augmented reality glasses,
+such as Google Glass, will usher in a new era of experimental,
+independent film.</p>
+<p>What if, for instance, a film had no pre-written script, director, or
+editor? Instead, just costumes, props, a setting, and highly skilled
+long-form improvisors, each equipped with Google Glasses. They could
+reenact scenes from history or fantasy in whatever genre of their
+choosing. Protagonists would not even be chosen ahead of time: Actors
+would be told that there are no lead and non-lead roles; every character
+is as important as you make them. Acting troupes would be valued for
+their ability to imagine and implement stories as a team.</p>
+<p>Director/editors would be granted permission to access the vast
+amount of raw footage generated by each actor, no matter how important
+or significant they ended up being. The artfulness of the movie would
+not only come from the brilliance of the actors, but also from the
+director/editors ability to choose the organic narratives generated from
+the days of filming. Key to this technique would be the art of
+selection.</p>
+<p>A single film could produce enough data that teams of
+editor/directors could create multiple films, each telling a separate
+narrative that relates yet is independent of the others. For instance, a
+team of college students could produce an independent, “open-source”
+film contest, where they supply the footage of actors performing, lets
+say, a murder-mystery. The job of competing editors would be to put the
+film together in the most artful way.</p>
+<p>This sort of application of Google Glass, to me, would combine data
+science and art. There would be so much film that humans might have to
+work along algorithms to find the salient aspects of a story across
+multiple cameras. The story would have to be pieced together by
+software-engineer artists, experts in data compression and design,
+neural nets and narrative.</p>]]></description>
+</item>
 </channel>
 </rss>
