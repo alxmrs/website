@@ -1,4 +1,6 @@
-# In Defense of Interruptions
+---
+title: In Defense of Interruptions
+---
 
 _2018-09-02_
 

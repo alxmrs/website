@@ -1,4 +1,6 @@
-# Film in the Era of Google Glass
+---
+title: Film in the Era of Google Glass
+---
 
 _2013-07-22_
 

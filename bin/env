@@ -2,7 +2,7 @@
 #
 # Environment variables, with defaults.
 #
-ROOT=$(dirname "$0")/..
+ROOT=$(dirname "$(dirname "$(realpath "$0")")")
 SRC=${SRC:-"$ROOT/src"}
 DST=${DST:-"$ROOT/public"}
 STATIC=${STATIC:-"$SRC/static"}

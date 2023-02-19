@@ -1,4 +1,6 @@
-# Chipping Away Writer's Block
+---
+title: Chipping Away Writer's Block
+---
 
 _2019-07-23_
 

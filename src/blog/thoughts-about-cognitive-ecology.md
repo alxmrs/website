@@ -1,4 +1,6 @@
-# Thoughts About Cognitive Ecology
+---
+title: Thoughts About Cognitive Ecology
+---
 
 _2017-01-19_
 

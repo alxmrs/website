@@ -1,4 +1,6 @@
-# Beam Pipelines as CLIs: A Hack
+---
+title: Beam Pipelines as CLIs: A Hack
+---
 
 *2021-02*
 

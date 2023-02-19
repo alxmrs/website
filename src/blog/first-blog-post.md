@@ -1,4 +1,6 @@
-# First Blog Post
+---
+title: First Blog Post
+---
 
 _2017-01-19_
 

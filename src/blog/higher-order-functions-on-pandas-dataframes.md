@@ -1,4 +1,6 @@
-# Higher Order Functions on Pandas Dataframes
+---
+title: Higher Order Functions on Pandas Dataframes
+---
 
 _2018-07-06_
 

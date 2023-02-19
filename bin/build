@@ -5,7 +5,7 @@
 
 set -e
 
-ROOT=$(dirname "$0")/..
+ROOT=$(dirname "$(dirname "$(realpath "$0")")")
 # shellcheck source=bin/env
 . "$ROOT"/bin/env
 # shellcheck source=bin/logging
@@ -35,3 +35,15 @@ for file in "$STATIC"/{,**/}*.*; do
   cp "$FROM" "$TO" || warn "Failed to copy asset $TO"
 done
 shopt -u globstar
+
+status "Rendering RSS feed from /blog/"
+pandoc-rss -s \
+    -t "Alex's Blog" \
+    -d "The personal blog of Alex Merose." \
+    -l "https://alex.merose.com" \
+    -f "https://alex.merose.com/blog/%s.html" \
+    -c "MIT or CC BY-SA 4.0" \
+    -w "al@merose.com (Alex Merose)" \
+    -n "en-US" \
+    "$(find "$SRC/blog" -type f -name "*.md" | grep -v "index.md$")" > "$DST/rss.xml"
+

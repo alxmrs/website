@@ -1,4 +1,6 @@
-# Getting Back My Domain
+---
+title: Getting Back My Domain
+---
 
 _2019-07-23_
 

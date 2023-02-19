@@ -1,4 +1,6 @@
-# Calyx of Held
+---
+title: Calyx of Held
+---
 
 _2014-05-02_
 
