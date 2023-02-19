@@ -15,4 +15,5 @@ fi
 
 status "Watching, Ctrl+C to exit."
 
+"$ROOT"/bin/build
 when-changed -r "$SRC" -c "$ROOT"/bin/build
