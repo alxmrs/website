@@ -53,11 +53,11 @@ status "Rendering RSS feed"
 # 2. Parse the "date" field from the YAML section, sort the files by date
 # 3. Print out only the paths to the files.
 ORDERED_POSTS=$({
-  find "$temp_dir" -type f -name "*.md" -not -path "$SRC/zettel/" | grep -v "index.md$" \
+  find "$SRC" -type f -name "*.md" -not -path "$SRC/zettel/" | grep -v "index.md$" \
   | xargs grep "date:" | awk -F ": " '{print $1 " " $2}' | sort -k 2r \
   | awk -F ":" '{print $1}'
 })
-echo $ORDERED_POSTS
+echo "$ORDERED_POSTS"
 pandoc-rss -s \
     -t "Alex's Blog" \
     -d "The personal blog of Alex Merose." \
@@ -66,4 +66,4 @@ pandoc-rss -s \
     -c "MIT or CC BY-SA 4.0" \
     -w "al@merose.com (Alex Merose)" \
     -n "en-US" \
-    $ORDERED_POSTS > "$DST/rss.xml"
+    ORDERED_POSTS > "$DST/rss.xml"
