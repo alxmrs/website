@@ -1,6 +1,7 @@
-# Calyx of Held
-
-_2014-05-02_
+---
+title: Calyx of Held
+date: 2014-05-02
+---
 
 I'm taking a class called neural encoding of sensory systems and it make me appreciate the complexity and elegance of 
 the brain so much more than I have ever before. I wish that I had the time to take all the neuroscience classes and ECE 

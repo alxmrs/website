@@ -1,8 +1,9 @@
-# 15 minutes of boredom a day
+---
+title: 15 minutes of boredom a day
+date: 2021-01-01
+---
 
-_2021-01-01_
-
-A week ago (late 2020), [I started a new habit](/zettel/goals/): 
+A week ago (late 2020), [I started a new habit](/goals/): 
 I now try to find 15 minutes of boredom a day. 
 
 These are uninterrupted periods of no stimulation.
@@ -23,7 +24,7 @@ about me](/zettel/determinism/) and reflect on what
 it means. I'll think of articles I want to write.
 I'll think about thinking. 
 
-Whereas [meditation](/zettel/ice/) focuses on the absence of 
+Whereas [meditation](/ice/) focuses on the absence of 
 thought in favor of presence, 15 minutes of boredom helps me
 form ideas. I find the ritual to be refreshing even
 when I bear no new thoughts. I relish the opportunity

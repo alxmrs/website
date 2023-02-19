@@ -1,6 +1,7 @@
-# CSSA ML Workshop: Machine Learning on the Edge
-
-_2021-04-05_
+---
+title: CSSA ML Workshop: Machine Learning on the Edge
+date: 2021-04-05
+---
 
 The student org I used to be a part of (the 
 [Cognitive Science Student Association](https://cssa-ucsd.org/))

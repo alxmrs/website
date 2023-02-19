@@ -1,7 +1,8 @@
-# Beam Pipelines as CLIs: A Hack
-
-*2021-02*
-
+---
+title: Beam Pipelines as CLIs: A Hack
+date: 2021-08-13
+---
+*created: 2021-02*
 *updated: 2021-08*
 
 While building a [Beam](https://beam.apache.org/) pipeline for work, I found 

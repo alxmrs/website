@@ -1,4 +1,7 @@
-# Pesto, Chango!
+---
+title: Pesto, Chango!
+date: 2020-10-17
+---
 
 My partner's food intuition – her ability to weave haphazard ingredients into a coherent, 
 delicious meal – is nothing short of magic. 

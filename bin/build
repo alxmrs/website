@@ -5,7 +5,7 @@
 
 set -e
 
-ROOT=$(dirname "$0")/..
+ROOT=$(dirname "$(dirname "$(realpath "$0")")")
 # shellcheck source=bin/env
 . "$ROOT"/bin/env
 # shellcheck source=bin/logging
@@ -18,8 +18,19 @@ shopt -s globstar
 for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
   # Strip `src` path from file string
   FROM="${file##"$SRC"}"
+
+  # Apply the mappings as follows:
+  #  src/some/path/webpage.md --> public/some/path/webpage/index.html
+  #  src/some/path/index.md   --> public/some/path/index.html
+  # In order words: Let the file name become the slug name
+  # and let any index page simply become an index.hml page.
+  filename=${FROM##*/}
+  if [[ "$filename" =~ index\.md$ ]]; then
+    TO="${FROM%%"$SRC_EXT"}$DST_EXT"
+  else
+    TO="${FROM%%".$SRC_EXT"}/index.$DST_EXT"
+  fi
   # Define a target file with the new extension
-  TO="${FROM%%"$SRC_EXT"}$DST_EXT"
   echo "$FROM --> $TO"
   mkdir -p "$(dirname "$DST$TO")"
   # shellcheck disable=SC2086
@@ -35,3 +46,24 @@ for file in "$STATIC"/{,**/}*.*; do
   cp "$FROM" "$TO" || warn "Failed to copy asset $TO"
 done
 shopt -u globstar
+
+status "Rendering RSS feed"
+# This does the following:
+# 1. Get all the markdown files in $SRC that are not in "zettel" or an index
+# 2. Parse the "date" field from the YAML section, sort the files by date
+# 3. Print out only the paths to the files.
+ORDERED_POSTS=$({
+  find "$SRC" -type f -name "*.md" -not -path "$SRC/zettel/" | grep -v "index.md$" \
+  | xargs grep "date:" | awk -F ": " '{print $1 " " $2}' | sort -k 2r \
+  | awk -F ":" '{print $1}'
+})
+echo "$ORDERED_POSTS"
+pandoc-rss -s \
+    -t "Alex's Blog" \
+    -d "The personal blog of Alex Merose." \
+    -l "https://alex.merose.com" \
+    -f "%s/" \
+    -c "MIT or CC BY-SA 4.0" \
+    -w "al@merose.com (Alex Merose)" \
+    -n "en-US" \
+    ORDERED_POSTS > "$DST/rss.xml"

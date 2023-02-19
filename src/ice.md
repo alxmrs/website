@@ -1,6 +1,7 @@
-# A new meditation
-
-_2021-03-13_
+---
+title: A new meditation
+date: 2021-03-13
+---
 
 A new meditation: 
 
@@ -20,5 +21,5 @@ became lost in a thought. Let the fragments
 
 return you to the moment.
 
-[Taste](/zettel/smoothie/) the present.
+[Taste](/smoothie/) the present.
 

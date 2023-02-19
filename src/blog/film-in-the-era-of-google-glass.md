@@ -1,7 +1,7 @@
-# Film in the Era of Google Glass
-
-_2013-07-22_
-
+---
+title: Film in the Era of Google Glass
+date: 2013-07-22
+---
 
 Ubiquitous technologies have already enabled us to capture events that were never possible before. Not too long ago, 
 one could only see photographs and movies about the aftermath of meteorites, plane crashes, explosions, revolutions, 
