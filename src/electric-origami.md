@@ -3,7 +3,7 @@ title: Cootie Catchers & Thoughts on Electric Origami
 date: 2021-05-23
 ---
 
-![Prototypes and thinking about electric origami](/assets/catcher-title.png)
+![Prototypes and thinking about electric origami](https://alxmrs.com/assets/catcher-title.png)
 
 I was reading hacker news aimlessly on the couch, as one does when home alone on a Sunday afternoon, when I came across
 [this post](https://news.ycombinator.com/item?id=27254480). Printable circuits with a cheap inkjet printer? How
@@ -25,18 +25,18 @@ cheap. I ordered a circuit ink pen and some electronics, and moved on to thinkin
 
 I folded myself a fortune-teller and began thinking of how the circuit would work. Here was my prototype v0.0:
 
-![v0.0 of my electric paper fortune-teller](/assets/catcher-v00.png)
+![v0.0 of my electric paper fortune-teller](https://alxmrs.com/assets/catcher-v00.png)
 
 I used quarters here in place of [coin-sized batteries](https://www.batteriesandbutter.com/RV1025.html). The lines
 represent paths with conductive ink, and the black dots should become contact points for the batteries when folded.
 
 As you can see, when you press the "B" dots together, two outside LEDs would turn on.
 
-![v0.0 of a fortune-teller with the "B" circuit activated.](/assets/v00-b-pressed.png)
+![v0.0 of a fortune-teller with the "B" circuit activated.](https://alxmrs.com/assets/v00-b-pressed.png)
 
 When you press the "A" dots together, light would shine through the center of the fortune teller.
 
-![v0.0 of a fortune-teller with the "A" circuit activated.](/assets/v00-a-pressed.png)
+![v0.0 of a fortune-teller with the "A" circuit activated.](https://alxmrs.com/assets/v00-a-pressed.png)
 
 This seems fine, but I imagine using two batteries could get pricey at the scale of ~200 guests for our wedding (not to
 mention, wasteful). How could I create the catcher such that it used only one battery?
@@ -44,12 +44,12 @@ mention, wasteful). How could I create the catcher such that it used only one ba
 I unfolded the fortune-teller and tried to model the connections more abstractly as a graph. The dotted lines below
 represent folded connections, whereas solid lines would be silver-ink connections in paper.
 
-![Representing the problem as a graph.](/assets/graph-initial-sketch.png)
+![Representing the problem as a graph.](https://alxmrs.com/assets/graph-initial-sketch.png)
 
 I noticed that the dotted lines here weren't telling the whole picture: Each line is associated with a connection
 "mode." While alpha was connected, beta wasn't, and visa versa.
 
-![Adding modes to the graph.](/assets/graph-alpha-beta.png)
+![Adding modes to the graph.](https://alxmrs.com/assets/graph-alpha-beta.png)
 
 The aspiring math teacher in me wants to ask: How would you draw the circuit? It was fun for me to solve, and if you've
 read this far, I imagine it would be fun for you too.
@@ -65,7 +65,7 @@ battery.
 </p>
 
 <p>
-<img src="/assets/graph-answer.png" title="A solution to my simple graph problem">
+<img src="https://alxmrs.com/assets/graph-answer.png" title="A solution to my simple graph problem">
 </p>
 
 <p>
@@ -80,7 +80,7 @@ one page?
 The answer was "yes!" With another sketch, I had v0.1 of my design:
 </p>
 <p>
-<img src="/assets/catcher-v01.png" title="v0.1 of my electric paper fortune-teller">
+<img src="https://alxmrs.com/assets/catcher-v01.png" title="v0.1 of my electric paper fortune-teller">
 </p>
 
 </details>
@@ -90,16 +90,16 @@ The answer was "yes!" With another sketch, I had v0.1 of my design:
 Folded together, the circuit would turn on two outer LEDs when "A" was pressed together, and the two other LEDs when "B"
 was pressed.
 
-![v0.1 of a fortune-teller with the "A" circuit activated.](/assets/v01-a-pressed.png)
+![v0.1 of a fortune-teller with the "A" circuit activated.](https://alxmrs.com/assets/v01-a-pressed.png)
 
-![v0.1 of a fortune-teller with the "B" circuit activated.](/assets/v01-b-pressed.png)
+![v0.1 of a fortune-teller with the "B" circuit activated.](https://alxmrs.com/assets/v01-b-pressed.png)
 
 I told Jason all this, and he asked a good question: Would the silver ink connections remain robust during folding? I
 did a quick inspect of every crease, and to my best estimation, it seems to be the case! – no short circuits.
 
-![An inspection for shorts of the v0.1 design, front](/assets/catcher-v01-short-front.png)
+![An inspection for shorts of the v0.1 design, front](https://alxmrs.com/assets/catcher-v01-short-front.png)
 
-![An inspection for shorts of the v0.1 design, back](/assets/catcher-v01-short-back.png)
+![An inspection for shorts of the v0.1 design, back](https://alxmrs.com/assets/catcher-v01-short-back.png)
 
 Later, Jason would point out something that would require an adjustment in my design. In v0.0, I was relying on each
 battery making contact with the silver ink. However, in v0.1, as displayed in the picture, I need to rely on a different

@@ -11,7 +11,7 @@ I asked him how he deals with writer's block. He gave me some great advice, whic
 ## Can't start a draft? Send an email 
 
 A crafty use of psychology: sitting down and *writing* can seem like such a drag. Can't you just briefly *explain* the 
-idea to someone?  Why not pretend to (or actually) [send someone an email](/emails/) where you talk about what you're going to 
+idea to someone?  Why not pretend to (or actually) [send someone an email](https://alxmrs.com/emails/) where you talk about what you're going to 
 write.
 
 Viola! You have your first draft.

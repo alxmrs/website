@@ -11,12 +11,12 @@ trying to create a newsletter – while this seems fun,
 the upkeep feels like more of a burden than empowered expression. 
 Why not, instead, aim to express systems of ideas free of time?
 
-I have a [lot of ideas](ideas/), but most of them are small and 
+I have a [lot of ideas](https://alxmrs.com/zettel/ideas/), but most of them are small and 
 only make sense in context with other thoughts. 
 While I can often coalesce these scattered thoughts into 
 coherent essays, this takes time and effort I seldom muster. 
 
-[Every new years day](goals) I conceive of a "nice-to-have" resolution to start writing. 
+[Every new years day](https://alxmrs.com/goals/) I conceive of a "nice-to-have" resolution to start writing. 
 Visions dance before me of emulating great technical blogs that I spend the year reading.
 Alas, it never goes this way, due to a sense of perfectionism and habit inertia. 
 
