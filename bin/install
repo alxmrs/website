@@ -10,5 +10,5 @@ rm pandoc-2.8-1-amd64.deb
 # Install pandoc-rss on debian.
 #
 git clone https://github.com/chambln/pandoc-rss.git rss
-cd rss
+cd rss || exit 2
 sudo make install
