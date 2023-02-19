@@ -2,9 +2,10 @@
 #
 # Install pandoc on debian.
 #
-curl -O -L -C - https://github.com/jgm/pandoc/releases/download/2.8/pandoc-2.8-1-amd64.deb
-sudo dpkg -i pandoc-2.8-1-amd64.deb
-rm pandoc-2.8-1-amd64.deb
+
+curl -O -L -C - https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-1-arm64.deb
+sudo dpkg -i pandoc-2.19.2-1-arm64.deb
+rm pandoc-2.19.2-1-arm64.deb
 
 #
 # Install pandoc-rss on debian.
