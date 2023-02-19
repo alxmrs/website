@@ -5,7 +5,7 @@ date: 2022-06-16
 
 _WIP?_
 
-I've been thinking a bunch about how to tackle [this problem](/anniversary/). It seems like my trip
+I've been thinking a bunch about how to tackle [this problem](https://alxmrs.com/anniversary/). It seems like my trip
 to the barber shop seems like a weird variant of the [Birthday Paradox](https://en.wikipedia.org/wiki/Birthday_problem):
 What is the probability, in a group of `n` randomly chosen people, at least three will have the same name and wedding
 day?

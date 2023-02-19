@@ -12,7 +12,7 @@ when you close your laptop, work should be done.
 
 The hardest part of this separation, for me, is that
 shutting a laptop doesn't stop the spontaneous flow
-of ideas. Maybe when your [brain is trying to relax](/boredom/), 
+of ideas. Maybe when your [brain is trying to relax](https://alxmrs.com/boredom/), 
 you think of a small TODO that will make tomorrow 
 better. Or, you feel inspired to create something 
 work related. Maybe you've encountered an article in
