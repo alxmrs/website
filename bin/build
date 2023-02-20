@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 #
 # Invoke pandoc on $SRC, copy $STATIC assets over to $DST.
 #
 
 set -e
 
-ROOT=$(dirname "$(dirname "$(realpath "$0")")")
+ROOT=$(dirname "$(dirname "$0")")
 # shellcheck source=bin/env
 . "$ROOT"/bin/env
 # shellcheck source=bin/logging
@@ -13,9 +13,8 @@ ROOT=$(dirname "$(dirname "$(realpath "$0")")")
 
 mkdir -p "$DST"
 
-status "Rendering"
-shopt -s globstar
-for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
+convert() {
+  file="$1"
   # Strip `src` path from file string
   FROM="${file##"$SRC"}"
 
@@ -24,28 +23,39 @@ for file in "$SRC"/{,**/}*."${SRC_EXT}"; do
   #  src/some/path/index.md   --> public/some/path/index.html
   # In order words: Let the file name become the slug name
   # and let any index page simply become an index.hml page.
-  filename=${FROM##*/}
-  if [[ "$filename" =~ index\.md$ ]]; then
+  filename=$(basename "$FROM")
+  if echo "$filename" | grep -q 'index\.md$'; then
     TO="${FROM%%"$SRC_EXT"}$DST_EXT"
   else
     TO="${FROM%%".$SRC_EXT"}/index.$DST_EXT"
   fi
   # Define a target file with the new extension
-  echo "$FROM --> $TO"
+  # echo "$FROM --> $TO"
   mkdir -p "$(dirname "$DST$TO")"
   # shellcheck disable=SC2086
-  pandoc $PANOPTS $file --output=$DST$TO || warn "Failed to create $TO"
-done
+  pandoc $PANOPTS "$file" --output="$DST$TO" || warn "Failed to create $TO"
+}
 
-status "Copying over assets"
-for file in "$STATIC"/{,**/}*.*; do
+copy() {
+  file="$1"
   FROM=$file
   TO="$DST${file##"$STATIC"}"
   echo "${FROM##"$ROOT"} --> ${TO##"$ROOT"}"
   mkdir -p "$(dirname "$TO")"
   cp "$FROM" "$TO" || warn "Failed to copy asset $TO"
+}
+
+status "Rendering"
+# shellcheck disable=SC3045,SC2039
+find "$SRC" -type f -name "*.$SRC_EXT" -print0 | while IFS= read -r -d '' file; do
+  convert "$file" &
 done
-shopt -u globstar
+
+status "Copying over assets"
+# shellcheck disable=SC3045,SC2039
+find "$STATIC" -type f -print0 | while IFS= read -r -d '' file; do
+  copy "$file" &
+done
 
 status "Rendering RSS feed"
 # This does the following:
