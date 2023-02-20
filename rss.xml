@@ -81,7 +81,7 @@ another day…</p>]]></description>
 <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/electric-origami/</guid>
 <description><![CDATA[<figure>
-<img src="https://alxmrs.com/assets/catcher-title.png"
+<img src="https://alxmrs.com/assets/catcher-title.webp"
 alt="Prototypes and thinking about electric origami" />
 <figcaption aria-hidden="true">Prototypes and thinking about electric
 origami</figcaption>
@@ -112,7 +112,7 @@ design.</p>
 <p>I folded myself a fortune-teller and began thinking of how the
 circuit would work. Here was my prototype v0.0:</p>
 <figure>
-<img src="https://alxmrs.com/assets/catcher-v00.png"
+<img src="https://alxmrs.com/assets/catcher-v00.webp"
 alt="v0.0 of my electric paper fortune-teller" />
 <figcaption aria-hidden="true">v0.0 of my electric paper
 fortune-teller</figcaption>
@@ -125,7 +125,7 @@ folded.</p>
 <p>As you can see, when you press the “B” dots together, two outside
 LEDs would turn on.</p>
 <figure>
-<img src="https://alxmrs.com/assets/v00-b-pressed.png"
+<img src="https://alxmrs.com/assets/v00-b-pressed.webp"
 alt="v0.0 of a fortune-teller with the “B” circuit activated." />
 <figcaption aria-hidden="true">v0.0 of a fortune-teller with the “B”
 circuit activated.</figcaption>
@@ -133,7 +133,7 @@ circuit activated.</figcaption>
 <p>When you press the “A” dots together, light would shine through the
 center of the fortune teller.</p>
 <figure>
-<img src="https://alxmrs.com/assets/v00-a-pressed.png"
+<img src="https://alxmrs.com/assets/v00-a-pressed.webp"
 alt="v0.0 of a fortune-teller with the “A” circuit activated." />
 <figcaption aria-hidden="true">v0.0 of a fortune-teller with the “A”
 circuit activated.</figcaption>
@@ -146,7 +146,7 @@ abstractly as a graph. The dotted lines below represent folded
 connections, whereas solid lines would be silver-ink connections in
 paper.</p>
 <figure>
-<img src="https://alxmrs.com/assets/graph-initial-sketch.png"
+<img src="https://alxmrs.com/assets/graph-initial-sketch.webp"
 alt="Representing the problem as a graph." />
 <figcaption aria-hidden="true">Representing the problem as a
 graph.</figcaption>
@@ -155,7 +155,7 @@ graph.</figcaption>
 picture: Each line is associated with a connection “mode.” While alpha
 was connected, beta wasn’t, and visa versa.</p>
 <figure>
-<img src="https://alxmrs.com/assets/graph-alpha-beta.png"
+<img src="https://alxmrs.com/assets/graph-alpha-beta.webp"
 alt="Adding modes to the graph." />
 <figcaption aria-hidden="true">Adding modes to the graph.</figcaption>
 </figure>
@@ -173,7 +173,7 @@ I figured out a configuration that would complete a full circuit for
 each mode with only one battery.
 </p>
 <p>
-<img src="https://alxmrs.com/assets/graph-answer.png" title="A solution to my simple graph problem">
+<img src="https://alxmrs.com/assets/graph-answer.webp" title="A solution to my simple graph problem">
 </p>
 <p>
 (the trick was to cross the “A” connections)
@@ -186,20 +186,20 @@ planar. Can I fit the one-battery circuit on one page?
 The answer was “yes!” With another sketch, I had v0.1 of my design:
 </p>
 <p>
-<img src="https://alxmrs.com/assets/catcher-v01.png" title="v0.1 of my electric paper fortune-teller">
+<img src="https://alxmrs.com/assets/catcher-v01.webp" title="v0.1 of my electric paper fortune-teller">
 </p>
 </details>
 <hr />
 <p>Folded together, the circuit would turn on two outer LEDs when “A”
 was pressed together, and the two other LEDs when “B” was pressed.</p>
 <figure>
-<img src="https://alxmrs.com/assets/v01-a-pressed.png"
+<img src="https://alxmrs.com/assets/v01-a-pressed.webp"
 alt="v0.1 of a fortune-teller with the “A” circuit activated." />
 <figcaption aria-hidden="true">v0.1 of a fortune-teller with the “A”
 circuit activated.</figcaption>
 </figure>
 <figure>
-<img src="https://alxmrs.com/assets/v01-b-pressed.png"
+<img src="https://alxmrs.com/assets/v01-b-pressed.webp"
 alt="v0.1 of a fortune-teller with the “B” circuit activated." />
 <figcaption aria-hidden="true">v0.1 of a fortune-teller with the “B”
 circuit activated.</figcaption>
@@ -209,13 +209,13 @@ ink connections remain robust during folding? I did a quick inspect of
 every crease, and to my best estimation, it seems to be the case! – no
 short circuits.</p>
 <figure>
-<img src="https://alxmrs.com/assets/catcher-v01-short-front.png"
+<img src="https://alxmrs.com/assets/catcher-v01-short-front.webp"
 alt="An inspection for shorts of the v0.1 design, front" />
 <figcaption aria-hidden="true">An inspection for shorts of the v0.1
 design, front</figcaption>
 </figure>
 <figure>
-<img src="https://alxmrs.com/assets/catcher-v01-short-back.png"
+<img src="https://alxmrs.com/assets/catcher-v01-short-back.webp"
 alt="An inspection for shorts of the v0.1 design, back" />
 <figcaption aria-hidden="true">An inspection for shorts of the v0.1
 design, back</figcaption>
@@ -264,7 +264,7 @@ make?</p>]]></description>
 <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/proposal/</guid>
 <description><![CDATA[<figure>
-<img src="https://alxmrs.com/assets/my-proposal-ring.jpg"
+<img src="https://alxmrs.com/assets/my-proposal-ring.webp"
 alt="Me just after I’ve proposed" />
 <figcaption aria-hidden="true">Me just after I’ve proposed</figcaption>
 </figure>
@@ -299,7 +299,7 @@ talked about going to New Orleans together for forever.</p>
 Shirley would tell us later. I’m glad I gave off that impression. I had
 something different in mind.</p>
 <figure>
-<img src="https://alxmrs.com/assets/my-proposal-cemetery.jpg"
+<img src="https://alxmrs.com/assets/my-proposal-cemetery.webp"
 alt="The cemetery by our house" />
 <figcaption aria-hidden="true">The cemetery by our house</figcaption>
 </figure>
@@ -347,7 +347,7 @@ traditional Friday night activity. I got a reservation at the excellent
 sicilian place on our block. We had an exciting trip to look forward to.
 I got my wish – Cam was surprised.</p>
 <figure>
-<img src="https://alxmrs.com/assets/my-proposal-end.jpg"
+<img src="https://alxmrs.com/assets/my-proposal-end.webp"
 alt="Cam and I" />
 <figcaption aria-hidden="true">Cam and I</figcaption>
 </figure>
@@ -406,7 +406,7 @@ href="https://www.instagram.com/roz_creativestylist/">Rasmit</a> said
 that I should go with the biggest stone.</li>
 <li>I went with my gut and chose the middle-sized stone that was
 elongated and had a beautiful shimmer. I also paired it with a <a
-href="https://fiatluxsf.com/wp-content/uploads/2018/12/3595-W.jpg">Casia
+href="https://fiatluxsf.com/wp-content/uploads/2018/12/3595-W.png">Casia
 Vestra</a>.</li>
 <li>Once I decided, it was time to wait. I ordered the ring around late
 November, with general plans to propose at the beginning of the new
@@ -728,7 +728,7 @@ the annoying maze I had to get out of to fix it.</p>
 <p>Check out the URL of this domain. Is it secure? How do you know? Let
 me show you how <em>I</em> know it’s not, as of writing:</p>
 <figure>
-<img src="https://alxmrs.com/assets/alex-is-not-secure.png"
+<img src="https://alxmrs.com/assets/alex-is-not-secure.webp"
 title="A URL bar with no HTTPS support"
 alt="My site does not use HTTPS, and therefore is not secure" />
 <figcaption aria-hidden="true">My site does not use HTTPS, and therefore
@@ -784,7 +784,7 @@ attempt to log on to Namecheap, which should be easy because I actually
 remember my username and password. I enter those pieces of information.
 Then, I hit the next screen:</p>
 <figure>
-<img src="https://alxmrs.com/assets/namecheap-mfa-masked.png"
+<img src="https://alxmrs.com/assets/namecheap-mfa-masked.webp"
 title="A MFA screen showing my MaskedMe phone number"
 alt="I have to wait on a text to a phone number I don’t control" />
 <figcaption aria-hidden="true">I have to wait on a text to a phone
