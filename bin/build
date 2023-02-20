@@ -30,7 +30,7 @@ convert() {
     TO="${FROM%%".$SRC_EXT"}/index.$DST_EXT"
   fi
   # Define a target file with the new extension
-  # echo "$FROM --> $TO"
+  echo "$FROM --> $TO"
   mkdir -p "$(dirname "$DST$TO")"
   # shellcheck disable=SC2086
   pandoc $PANOPTS "$file" --output="$DST$TO" || warn "Failed to create $TO"
