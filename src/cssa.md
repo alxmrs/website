@@ -16,7 +16,7 @@ of ["Rainforest Connection"](https://rfcx.org/), an app
 that's fighting climate change and protecting rainforests 
 through mobile audio classification.
 
-![Web-Rainforest Connection](https://alxmrs.com/assets/Web-RFCX.png)
+![Web-Rainforest Connection](https://alxmrs.com/assets/Web-RFCX.webp)
 
 - [Slides](https://docs.google.com/presentation/d/1KCVwKHB4NmEjwLM8pPYlCe1pYqG95-6GqMwChGIzAJ0/edit?usp=sharing)
 - Workshop: Web Rainforest Connection

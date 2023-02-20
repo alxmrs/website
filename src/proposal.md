@@ -3,7 +3,7 @@ title: My Proposal
 date: 2021-04-21
 ---
 
-![Me just after I've proposed](https://alxmrs.com/assets/my-proposal-ring.jpg)
+![Me just after I've proposed](https://alxmrs.com/assets/my-proposal-ring.webp)
 
 I like surprises, but [Camille](https://camille.merose.com) doesn't. She'd rather be able to look forward to things. For
 her, half the pleasure of enjoying, say, a vacation comes purely from its anticipation.
@@ -29,7 +29,7 @@ have talked about going to New Orleans together for forever.
 "I was sure that he was going to propose in New Orleans," Grandma Shirley would tell us later. I'm glad I gave off that
 impression. I had something different in mind.
 
-![The cemetery by our house](https://alxmrs.com/assets/my-proposal-cemetery.jpg)
+![The cemetery by our house](https://alxmrs.com/assets/my-proposal-cemetery.webp)
 
 When we landed in Oakland, we ended up living nearby the
 [Mountain View Cemetery](https://en.wikipedia.org/wiki/Mountain_View_Cemetery_(Oakland,_California)) [[2]](#2). If
@@ -63,7 +63,7 @@ The rest of the evening was a dream. We went to happy hour at [Wine on Piedmont]
 our traditional Friday night activity. I got a reservation at the excellent sicilian place on our block. We had an
 exciting trip to look forward to. I got my wish – Cam was surprised.
 
-![Cam and I](https://alxmrs.com/assets/my-proposal-end.jpg)
+![Cam and I](https://alxmrs.com/assets/my-proposal-end.webp)
 
 * * *
 

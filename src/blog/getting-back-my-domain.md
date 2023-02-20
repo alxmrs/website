@@ -10,7 +10,7 @@ fix it.
 
 Check out the URL of this domain. Is it secure? How do you know? Let me show you how *I* know it's not, as of writing: 
 
-![My site does not use HTTPS, and therefore is not secure](https://alxmrs.com/assets/alex-is-not-secure.png "A URL bar with no HTTPS support")
+![My site does not use HTTPS, and therefore is not secure](https://alxmrs.com/assets/alex-is-not-secure.webp "A URL bar with no HTTPS support")
 
 "How embarrassing. A software engineer who doesn't know how to set up HTTPS for his own personal site."
 
@@ -57,7 +57,7 @@ consolidate my tools on to one platform so I can build more advanced things.
 To this end, I attempt to log on to Namecheap, which should be easy because I actually remember my username and password. 
 I enter those pieces of information. Then, I hit the next screen: 
 
-![I have to wait on a text to a phone number I don't control](https://alxmrs.com/assets/namecheap-mfa-masked.png
+![I have to wait on a text to a phone number I don't control](https://alxmrs.com/assets/namecheap-mfa-masked.webp
  "A MFA screen showing my MaskedMe phone number")
 
 Ok. This is *annoying*, but not too big of a problem. I'll just log into my MaskedMe account, get the multi-factor 
