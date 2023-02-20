@@ -46,14 +46,12 @@ copy() {
 }
 
 status "Rendering"
-# shellcheck disable=SC3045,SC2039
-find "$SRC" -type f -name "*.$SRC_EXT" -print0 | while IFS= read -r -d '' file; do
+find "$SRC" -type f -name "*.$SRC_EXT" | while IFS= read -r file; do
   convert "$file" &
 done
 
 status "Copying over assets"
-# shellcheck disable=SC3045,SC2039
-find "$STATIC" -type f -print0 | while IFS= read -r -d '' file; do
+find "$STATIC" -type f | while IFS= read -r file; do
   copy "$file" &
 done
 
