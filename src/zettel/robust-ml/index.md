@@ -71,5 +71,5 @@ In ML, the basic process looks like this:
 
 Embedded in this process is a huge [search problem](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html): 
 
-![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice2.webp)
-![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice3.webp)
+![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice2.png)
+![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice3.png)
