@@ -49,11 +49,13 @@ status "Rendering"
 find "$SRC" -type f -name "*.$SRC_EXT" | while IFS= read -r file; do
   convert "$file" &
 done
+wait
 
 status "Copying over assets"
 find "$STATIC" -type f | while IFS= read -r file; do
   copy "$file" &
 done
+wait
 
 status "Rendering RSS feed"
 # This does the following:
