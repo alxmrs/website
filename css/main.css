@@ -154,6 +154,7 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    line-height: 2.5em;
 }
 
 a {
