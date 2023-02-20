@@ -32,7 +32,7 @@ Here's a general overview of how ordering a ring went down.
   showed them the options I had. My Aunti [Rasmit](https://www.instagram.com/roz_creativestylist/) said that I should go
   with the biggest stone.
 - I went with my gut and chose the middle-sized stone that was elongated and had a beautiful shimmer. I also paired it
-  with a [Casia Vestra](https://fiatluxsf.com/wp-content/uploads/2018/12/3595-W.jpg).
+  with a [Casia Vestra](https://fiatluxsf.com/wp-content/uploads/2018/12/3595-W.png).
 - Once I decided, it was time to wait. I ordered the ring around late November, with general plans to propose at the
   beginning of the new year.
 - Turns out there is a holiday rush to make rings in time for end of year proposals! That's ok, by then, I changed my

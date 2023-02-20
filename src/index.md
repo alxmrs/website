@@ -1,6 +1,6 @@
 # Hi, I'm Alex!
 
-<img src="/assets/website-profile-square.png" title="A picture of me!" id="profile">
+<img src="/assets/website-profile-square.webp" width="270" title="A picture of me!" id="profile" >
 
 I'm a software engineer who works remotely. Due to the pandemic, I've been moving around a lot.
 
