@@ -1,13 +1,14 @@
 @media (prefers-color-scheme: light) {
     :root {
-        --primary-color: #2B9045;
-        --secondary-color: #62905f;
-        --tertiary-color: #4070a0;
+        --primary-color: #35b257;
+        --secondary-color: #76ab71;
+        --tertiary-color: #548fd2;
+        --link-blur-color: rgba(0, 0, 0, 0.1);
         --font-color: #424242;
         --highlight-color: #333;
         --bg-color: #fff;
         --heading-color: #292922;
-        --cam-color: #dbc106;
+        --cam-color: #d5c400;
         --wedding-color: #ec8472;
     }
 }
@@ -17,10 +18,11 @@
         --primary-color: #a5f0a9;
         --secondary-color: #85ab84;
         --tertiary-color: #69a8e9;
+        --link-blur-color: rgba(255, 255, 255, 0.5);
         --font-color: #eee;
         --highlight-color: #fff;
         --bg-color: #1f2520;
-        --heading-color: #8eab92;
+        --heading-color: #9FB7A3;
         --cam-color: #fede00;
         --wedding-color: #f4cbb9;
     }
@@ -162,6 +164,7 @@ a {
     color: var(--primary-color);
     border-bottom: 2px solid transparent;
     transition: .5s ease;
+    text-shadow: 1px 0px 10px var(--link-blur-color);
 }
 
 a[href*='//'] {
