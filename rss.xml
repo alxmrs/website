@@ -77,6 +77,123 @@ wedding anniversaries, and calculate the distribution. A project for
 another day…</p>]]></description>
 </item>
 <item>
+<title>Beam Pipelines as CLIs: A Hack</title>
+<pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/beam-cli-hack/</guid>
+<description><![CDATA[<p><em>created: 2021-02</em> <em>updated:
+2021-08</em></p>
+<p>While building a <a href="https://beam.apache.org/">Beam</a> pipeline
+for work, I found myself surprised to find there was <a
+href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/">no
+documentation</a> on how to structure the pipeline as a CLI <a
+href="#1">[1]</a>. I wanted to make running my pipeline as easy as
+possible. What’s easier than installing a python package via pip, and
+invoking a well-documented command? With features like <a
+href="https://pip.pypa.io/en/stable/reference/pip_search/#"><code>pip search</code></a>
+and <code>--help</code> messages, one never needs to leave the
+terminal.</p>
+<p>It’s a bit strange to structure a Beam pipeline as a CLI. When I
+usually use CLIs, I think about manipulating files on my local machine,
+not orchestrating a distributed system to process potentially petabytes
+of data. Maybe this is starting to change. AWS, GCP, and the like all
+offer developers the ability to manipulate whole cloud architectures
+from a CLI. Why not do the same for my ETL job?</p>
+<p>After some trail and error, I ended up figuring out a hack to make it
+work. A full demo of my solution can be found in <a
+href="https://github.com/alxmrs/beam-cli-example">this project on
+Github</a>.</p>
+<pre><code>.
+├── LICENSE
+├── README.md
+├── mytool
+│   ├── __init__.py
+│   ├── boom
+│   ├── setup.py
+│   └── subtool
+│       ├── __init__.py
+│       ├── helper.py
+│       └── main.py
+└── setup.py
+
+2 directories, 9 files</code></pre>
+<p>The secret ingredient to getting this right was to have nested
+<code>setup.py</code> files. The inner <code>setup.py</code> file is
+necessary so that each Beam worker gets the dependencies it needs
+(library code + third party deps). However, the outer
+<code>setup.py</code> is needed to publish the project and make a CLI
+entry-point available. The script registered in the outer setup file,
+here called <code>boom</code>, passes the path to the inner setup
+file.</p>
+<p>This may be unclear, let me show rather than tell:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env python3</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># mytool/boom</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#!/usr/bin/env python3</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> glob</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> logging</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> subprocess</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tempfile</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tarfile</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> mytool</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    logging.getLogger().setLevel(logging.INFO)</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    site_pkg <span class="op">=</span> mytool.__path__[<span class="dv">0</span>]</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="im">from</span> subtool <span class="im">import</span> cli</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">ImportError</span>:</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Install the subpackage.</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        subprocess.check_call(<span class="ss">f&#39;</span><span class="sc">{</span>sys<span class="sc">.</span>executable<span class="sc">}</span><span class="ss"> -m pip install </span><span class="sc">{</span>site_pkg<span class="sc">}</span><span class="ss">&#39;</span>.split())</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        <span class="im">from</span> subtool <span class="im">import</span> cli</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> tempfile.TemporaryDirectory() <span class="im">as</span> tmpdir:</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Convert subpackage to a tarball</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>        os.chdir(site_pkg)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>        subprocess.check_call(</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>            <span class="ss">f&#39;</span><span class="sc">{</span>sys<span class="sc">.</span>executable<span class="sc">}</span><span class="ss"> ./setup.py sdist --dist-dir </span><span class="sc">{</span>tmpdir<span class="sc">}</span><span class="ss">&#39;</span>.split(),</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Set tarball as extra packages for Beam.</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        pkg_archive <span class="op">=</span> glob.glob(os.path.join(tmpdir, <span class="st">&#39;*.tar.gz&#39;</span>))[<span class="dv">0</span>]</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> tarfile.<span class="bu">open</span>(pkg_archive, <span class="st">&#39;r&#39;</span>) <span class="im">as</span> tar:</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>            py_files_in_tar <span class="op">=</span> [f <span class="cf">for</span> f <span class="kw">in</span> tar.getnames() <span class="cf">if</span> f.endswith(<span class="st">&#39;.py&#39;</span>)]</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>            <span class="cf">assert</span> <span class="bu">len</span>(py_files_in_tar) <span class="op">&gt;</span> <span class="dv">0</span>, <span class="st">&#39;extra_package must include python files!&#39;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>        cli([<span class="st">&#39;--extra_package&#39;</span>, pkg_archive])</span></code></pre></div>
+<p>This imports the <code>cli</code> function, an entrypoint to the
+pipeline. The <code>--extra_package</code> is a standard way to <a
+href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#local-or-nonpypi">package
+non-PyPi dependencies</a> in your pipeline.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># mytool/subtool/__init__.py</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> .main <span class="im">import</span> run</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> cli(extra<span class="op">=</span>[]):</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> sys</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    run(sys.argv <span class="op">+</span> extra)</span></code></pre></div>
+<p>Thus, by nesting packages and pointing to the path to the inner
+package, we get the best of both worlds: Beam can install the inner
+package as a library to each remote worker. Users can install the tool
+using python standards.</p>
+<hr />
+<p><span id="1"><strong>1</strong></span>: Sure, the docs talk about
+packaging workers with <code>setuptools</code>, but this explanation
+lacks my use case exactly. The workers still need to be run from an
+executor, and I want that executor to be installed with
+pip.</p>]]></description>
+</item>
+<item>
 <title>Cootie Catchers &amp; Thoughts on Electric Origami</title>
 <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/electric-origami/</guid>
@@ -430,6 +547,65 @@ href="https://alxmrs.com/proposal/">propose</a>.</li>
 <source src="https://alxmrs.com/assets/engagementring.mp4" type="video/mp4">
 <p>Sorry, your browser does not support the video tag.
 </video></p>]]></description>
+</item>
+<item>
+<title>CSSA ML Workshop: Machine Learning on the Edge</title>
+<pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/cssa/</guid>
+<description><![CDATA[<p>The student org I used to be a part of (the <a
+href="https://cssa-ucsd.org/">Cognitive Science Student Association</a>)
+asked me to lead a workshop on machine learning at their <a
+href="https://cssa-ucsd.github.io/conference2021">annual conference</a>.
+The following are the slides and tutorial I presented. Most of my talk
+consisted of live coding a simple ML application in the browser using
+tensorflowjs and glitch.</p>
+<p>Together, we made a <a
+href="https://insidious-sticky-tank.glitch.me/">mock version</a> of <a
+href="https://rfcx.org/">“Rainforest Connection”</a>, an app that’s
+fighting climate change and protecting rainforests through mobile audio
+classification.</p>
+<figure>
+<img src="https://alxmrs.com/assets/Web-RFCX.webp"
+alt="Web-Rainforest Connection" />
+<figcaption aria-hidden="true">Web-Rainforest Connection</figcaption>
+</figure>
+<ul>
+<li><a
+href="https://docs.google.com/presentation/d/1KCVwKHB4NmEjwLM8pPYlCe1pYqG95-6GqMwChGIzAJ0/edit?usp=sharing">Slides</a></li>
+<li>Workshop: Web Rainforest Connection
+<ul>
+<li>Inspiration: <a href="https://rfcx.org/">rfcx.org</a></li>
+<li>Resources
+<ul>
+<li><a href="https://github.com/tensorflow/tfjs">TFJS Github
+Project</a></li>
+<li><a href="https://js.tensorflow.org/api/3.2.0/">TFJS API
+Reference</a></li>
+<li><a
+href="https://github.com/tensorflow/models/tree/master/research/audioset/yamnet">Yamnet
+Model source</a></li>
+<li><a href="https://tfhub.dev/google/yamnet/1">Yamnet on TFHub:
+trained, optimized models</a></li>
+</ul></li>
+<li><a href="https://glitch.com/edit/#!/quiver-twisty-border">Part 1:
+Deployment</a>
+<ul>
+<li><em><a
+href="https://glitch.com/edit/#!/insidious-sticky-tank">reference
+solution</a></em></li>
+</ul></li>
+<li><a
+href="https://colab.research.google.com/drive/1-yEPU0-qjBMfbU37xJTu09JVx0w9FfVO?usp=sharing">Part
+2: Model optimization</a> ( time permitting)
+<ul>
+<li><em><a
+href="https://colab.research.google.com/drive/1tsqEFUFNN7dTXV7FThMKiMiol1QU0soF?usp=sharing">reference
+solution</a></em> ( documentation to come later)</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Talk participants (or otherwise), feel free to reach out to me with
+questions or comments.</p>]]></description>
 </item>
 <item>
 <title>A new meditation</title>
