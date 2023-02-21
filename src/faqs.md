@@ -3,7 +3,7 @@
 <details>
 <summary>What do you do for work?</summary>
 
-I work at Google Research on the Anthromet team where I develop machine-learning applications for weather. I used to
+I work at Google Research on the Anthromet team. Here I develop machine-learning applications for the weather. I used to
 work on the [Arcs project](https://github.com/PolymerLabs/arcs), a system to protect user privacy in the AI era. Before
 joining Google, I've had a mix of software engineering and machine learning roles.
 </details>
@@ -14,27 +14,30 @@ joining Google, I've had a mix of software engineering and machine learning role
 
 All over California, really. I grew up in [San Diego](/zettel/san-diego/) (north county) and went to college there, too.
 I lived in Oakland for a few years, then in the Santa Cruz / Monterey area. I recently found myself in the central
-coast. Hey, maybe one day I'll end up in Chico or Mt. Shasta.
+coast near SLO. Hey, maybe one day I'll end up in Chico or Mt. Shasta.
 
 </details>
 
 <details>
 <summary>What kinds of things do you do for fun?</summary>
 
-I really enjoy traveling. I spent the month of October visiting New York. In the summer, I spent a decent amount of time
-getting to know San Luis Obispo and the central coast. I have upcoming plans to bounce around a few other places. I'm
-happy doing both city things and well as spending time outdoors. Over the past year, I've been trying to get more into
-creative projects. I [write](/blog/) from time to time. I have some [ideas for arts & crafts](/electric-origami/)
-and a casual interest in making projector-based interactive digital art.
+I really enjoy traveling. Before the pandemic, I was visiting Sydney, Australia, twice a year for work. I used to take
+trips to exciting places, like Havana and Paris, with a fair amount of regularity.
 
-Generally, I'd say I'm not really a hobby-person so much as I am community oriented. I like to see family & friends
-whenever possible, and otherwise make friends out of strangers.
+Cam & I certainly took a break from this during the height of the pandemic. When travel became safer, we started to
+travel more domestically. We moved all around California and visited friends & family out of state, like New York and
+Texas. To this day, we always seem to have an upcoming place to visit.
+
+Generally, I'd say I like to spend time with my community more than with my hobbies. I like to see family & friends
+whenever possible, and otherwise make friends out of strangers. I once made a friend on Bart!
 
 </details>
 
 <details>
 
 <summary>What kind of music do you like? What have you been listening to recently?</summary>
+
+<div id="music"></div>
 
 Why, thank you for asking! In a world of streaming music, it's common to say that one's tastes are eclectic. This
 certainly is true for me, however, it doesn't really speak to the shape of my preferences. Instead of telling, let me
@@ -59,17 +62,14 @@ try to show what I like (with the help of [everynoise.com](https://everynoise.co
 
 <summary>Neat website. How's it made?</summary>
 
-Thanks! This website has almost no client-side javascript; it's mostly generated HTML and CSS. In an effort to keep
-things simple, my generator consists of a series of shell scripts that invoke [pandoc](https://pandoc.org/) (Check out
+Thanks! This website is mostly generated HTML and CSS. In an effort to keep
+things simple, my generator consists of some shell scripts that invoke [pandoc](https://pandoc.org/) (Check out
 the [source](https://github.com/alxmrs/website), or
-consider [making your own](https://github.com/alxmrs/pandoc-website-template) shell-powered website). This
-pandoc-centered static-site-generator lets me write in Markdown and publish in HTML. Though, in theory, I could have
-created the website in PowerPoint – a project for another time.
-
-My uses of JS are:
-
-- CloudFlare's privacy-focused web-analytics.
-- Obfuscating my `mailto` links.
+consider [making your own](https://github.com/alxmrs/pandoc-website-template) shell-powered website). I thought I would
+have to replace my hacked-together solution with a "real" static site generator until I
+found [this awesome project](https://github.com/chambln/pandoc-rss) for generating an RSS feed! It seems like I'm
+not the only pandoc obsessed developer out there (there are dozens of us!). I guess the allure of creating a website in 
+PowerPoint too strong to let this go...
 
 If you find any part of it that is not accessible or generally unusable, please reach out to me, and I'll correct it.
 
