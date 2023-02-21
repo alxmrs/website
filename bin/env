@@ -11,4 +11,4 @@ FOOTER=${FOOTER:-"$SRC/footer.html"}
 CSS=${CSS:-"/css/main.css"}
 SRC_EXT=${SRC_EXT:-"md"}
 DST_EXT=${DST_EXT:-"html"}
-PANOPTS=${PANOPTS:-"--css $CSS --metadata-file=$ROOT/defaults.yml -f gfm+raw_html -t html -B $HEADER -A $FOOTER"}
+PANOPTS=${PANOPTS:-"--css $CSS --metadata-file=$ROOT/defaults.yml -f gfm+raw_html -t html -B $HEADER -A $FOOTER" -V lang=en-US}
