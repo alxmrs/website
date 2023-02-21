@@ -1,5 +1,5 @@
 ---
-title: CSSA ML Workshop: Machine Learning on the Edge
+title: "CSSA ML Workshop: Machine Learning on the Edge"
 date: 2021-04-05
 ---
 
