@@ -3,7 +3,7 @@
         --primary-color: #35b257;
         --secondary-color: #76ab71;
         --tertiary-color: #548fd2;
-        --link-blur-color: rgba(0, 0, 0, 0.1);
+        --link-shadow: 2px 2px 1px rgba(29, 196, 18, 0.1);
         --font-color: #424242;
         --highlight-color: #333;
         --bg-color: #fff;
@@ -18,7 +18,7 @@
         --primary-color: #a5f0a9;
         --secondary-color: #85ab84;
         --tertiary-color: #69a8e9;
-        --link-blur-color: rgba(255, 255, 255, 0.5);
+        --link-shadow: 1px 0 10px rgba(255, 255, 255, 0.5);
         --font-color: #eee;
         --highlight-color: #fff;
         --bg-color: #1f2520;
@@ -164,7 +164,7 @@ a {
     color: var(--primary-color);
     border-bottom: 2px solid transparent;
     transition: .5s ease;
-    text-shadow: 1px 0px 10px var(--link-blur-color);
+    text-shadow: var(--link-shadow)
 }
 
 a[href*='//'] {
