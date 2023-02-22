@@ -10,6 +10,200 @@
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
 <item>
+<title>How I backed up all my wedding footage in the cloud</title>
+<pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/wedding-video/</guid>
+<description><![CDATA[<iframe id="album" title="camille &amp;amp; alex // brick wedding highlight film // san diego, ca" src="https://player.vimeo.com/video/759313365?h=b758ca6554&amp;dnt=1&amp;app_id=122963" width="960" height="409" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+</iframe>
+<p>My wife and I absolutely love our <a
+href="https://amariproductions.com/camille-alex/">wedding video</a>. I
+honestly can’t imagine how it could have been any better. In addition to
+their excellent work, we chose <a
+href="https://amariproductions.com/">Amari Productions</a> as our
+videographers because they offered us the ability to get all our wedding
+footage in raw. This really appealed to us since we think it would make
+a really great anniversary present down the line to eventually produce a
+longer wedding movie. This presents us a problem — how do we download
+and store all this video?</p>
+<p>We face an immediate problem: Amari has sent us a Google Drive folder
+with the 100 or so gigabytes of raw files (zipped) that will be deleted
+in about a few weeks. My wife and I are not at home at the moment, so
+it’s a bit impractical for us to download all of this to a terabyte hard
+drive.</p>
+<aside>
+<p>💡 Aside: Apparently, hard drives <a
+href="https://datarecovery.com/rd/ssd-lifespans-how-long-can-you-trust-your-solid-state-drive">expire</a>.
+This doesn’t bode well if we want to keep something so precious
+indefinitely.</p>
+</aside>
+<p>A remote backup is definitely the right move. However, I am not quite
+ready yet to <a href="https://workspace.google.com/pricing.html">pay for
+that much Google Drive space</a> every year. Can I do better with Google
+Cloud Storage?</p>
+<p>Ideally, I want to solve for both 1) convenient data transfer and 2)
+cheap long-term storage.</p>
+<h1 id="whats-this-going-to-cost">What’s this going to cost?</h1>
+<p>My approach was to set up a Google Cloud Storage bucket as cheaply as
+possible. (For the non-technical reader: A bucket is like a folder in
+Drive.) I’ve estimating that it would cost me about $14 in the first
+year, given that I need to transfer the data and I’ll probably want to
+download it once. This is cheap enough that I don’t really care to
+estimate the exact annual cost thereafter, which will almost certainly
+be lower (maybe $7 a year).</p>
+<p>I don’t expect to access the data that often, so the archival storage
+class seems good enough for me. I feel pretty confident about GCP’s lack
+of data loss, so I only chose to host the data in a single data
+center.</p>
+<p><a
+href="https://www.notion.so/68ac24431daf417d9b1a1c5de1416064">Wedding
+Footage Cloud Storage Cost Estimates</a></p>
+<h2 id="how-did-i-back-it-all-up">How did I back it all up?</h2>
+<p>I basically followed <a
+href="https://philipplies.medium.com/transferring-data-from-google-drive-to-google-cloud-storage-using-google-colab-96e088a8c041">this
+article</a> ’s approach for copying data between Google Drive and Google
+Cloud Storage. The steps for me looked like:</p>
+<ol type="1">
+<li>I “Added a Shortcut” from Amari’s shared folder to my personal
+drive. This was essential for the it to show up in my mounted drive
+later on.</li>
+<li>I created a cloud bucket that suited my needs. I called it
+<code>gs://merose-wedding-video-raw</code>. I typically use long,
+verbose names like these since bucket names have to be globally
+unique.</li>
+<li>I created a new Colab notebook and followed the steps mentioned in
+the article. After the setup, the actual transfer more or less amounted
+to a <code>gsutil</code> invocation.</li>
+</ol>
+<p>Here’s the actual Colab that I used to make the transfer, if you’d
+like to do something similar yourself (remember to change the Drive
+folder name and destination bucket).</p>
+<p><a
+href="https://colab.research.google.com/drive/11BtoMT2hf1b-rWCojZy5zNXfpaiC8kPO#scrollTo=eLxQNdSwXQBZ">Google
+Colaboratory</a></p>
+<h2 id="takeaways">Takeaways</h2>
+<p>I think I’ve met all my goals to have a convenient, cheap backup of
+my wedding videos. This whole process was incredibly easy: With Colab, I
+didn’t have to install or set anything up. Writing this article probably
+took ten times as long as it did to write the code. My favorite part:
+this basically amounts to renting a hard drive from Google, where
+they’re on the hook for maintenance.</p>]]></description>
+</item>
+<item>
+<title>Why I’m going on a digital detox</title>
+<pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/digital-detox/</guid>
+<description><![CDATA[<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+Breaking: Elon Musk has just reinstated Donald Trump’s Twitter account.
+</p>
+— No Lie with Brian Tyler Cohen (<span class="citation"
+data-cites="NoLieWithBTC">@NoLieWithBTC</span>)
+<a href="https://twitter.com/NoLieWithBTC/status/1594136753949974530?ref_src=twsrc%5Etfw">November
+20, 2022</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>I’m reading <a href="https://g.co/kgs/GW6WUJ">Cal Newport’s
+<em>Digital Minimalism</em></a> right now. What a perfect time to do
+this, just as Twitter is on the Musk train to hell.</p>
+<p>The book is making me notice how little I really get out of my media
+consumption habits. Screen Time shows that I spend four to five hours a
+day on my phone (<em>edit: I have mislead myself here by looking at
+weeks where I was on vacation. Though, my point still stands with
+spending 2 hours per day on a screen, too</em>). That’s a part time job
+amount of time — so, what am I getting out of it? Newport is helping me
+understand the answer is not much. I’m mostly addicted to social apps
+that I probably use to escape emotions instead of process them. While I
+may get some utility from these platforms, they mostly exploit my
+attention for profit. This provides a high opportunity cost: what if I
+spent this second job worth of free time on “high quality leisure”
+instead?</p>
+<p>I’m taking the same approach in reading this book as I did when I
+quite smoking. To quit cigarettes, I read <a
+href="https://g.co/kgs/LBFdQF">Allen Carr’s <em>The Easy Way</em></a>,
+where I didn’t have to stop lighting up until I finished reading the
+book. This book actually worked. After finishing it, I never had a
+cigarette again.</p>
+<p>I’m reading <em>Digital Minimalism</em> and am using social media at
+the same time. I find myself asking why I even like it in the first
+place. <em>The East Way</em> goes on and on about how you don’t actually
+like smoking. Smoking make you feel anxious and big tobacco has
+brainwashed you into thinking that a cigarette will make this go away
+(you are temporarily free from withdrawal pain that cigarettes cause). I
+feel the same effect with my phone: media makes me feel anxious, from
+FOMO or boredom or emotional processing debt, and it offers me the
+ability to kick the can down the road once more. Cal Newport is less
+hypnotizing than Carr, but he is effective nevertheless.</p>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+I'm only here because I want to find out how Twitter gracefully
+degrades.
+</p>
+— Jaana Dogan ヤナ ドガン (<span class="citation"
+data-cites="rakyll">@rakyll</span>)
+<a href="https://twitter.com/rakyll/status/1593746078527913984?ref_src=twsrc%5Etfw">November
+18, 2022</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>The algorithms can see my disappointment, or the universe is trying
+to send me a message, because these are the posts I’ve seen recently
+about the state of social media:</p>
+<p><a href="http://bradconte.com/files/misc/HackerNewsParodyThread/">A
+Technical Blog Post by a Big Name Expert | Parody Hacker News</a></p>
+<p>Hackernews has been the same for 10 years. What’s there to miss out
+on?</p>
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">
+incredible indictment that everyone is desperately looking for somewhere
+to meet and talk to people, and no one has even mentioned Zuckerberg's
+$70bn metaverse
+</p>
+— Luke Bailey (<span class="citation"
+data-cites="imbadatlife">@imbadatlife</span>)
+<a href="https://twitter.com/imbadatlife/status/1593548552474689536?ref_src=twsrc%5Etfw">November
+18, 2022</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>And, my personal favorite:</p>
+<video playsinline controls preload="metadata" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/717aa740-13f6-4311-8149-4f45a1be6713/IMG_7039.mov?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230221%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20230221T020704Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=378fcf614580fc70eb5d666f6b4d833d920248f79e05d3506745f8f04c7841d2&amp;X-Amz-SignedHeaders=host&amp;x-id=GetObject" style="display: block; pointer-events: auto; width: 100%; background-color: rgb(242, 241, 238);">
+</video>
+<p>Given all this, I’m taking a digital detox come December.</p>
+<h2 id="whats-a-digital-detox">What’s a digital detox?</h2>
+<p>Newport calls this a digital declutter, which is a more accurate
+description. The idea is to learn to live without most digital
+technology for a while so that you know what small bit of it is worth
+keeping.</p>
+<p>I’ve not really done the book justice with my summary of it here. For
+a better overview, I recommend my friend Alexander’s post.</p>
+<p><a href="https://awsaavedra.com/posts/digital-minimalism/">Digital
+Minimalism</a></p>
+<h2 id="how-did-i-get-here">How did I get here?</h2>
+<p>I don’t think it’s always been this bad. As recently as 2019, I felt
+pretty at peace with my digital media consumption. I probably still
+spent too much time online, but I didn’t really mind. My wife and I were
+putting our phones to sleep well before our own bedtime. I consumed a
+lot of news and social media, but it didn’t feel so all-consuming.
+Around that time, I had successfully tamped down my intake of charged
+political posts.</p>
+<p>The pandemic made a huge difference in my habits. Stuck inside and
+cut off from most human connections, I gave myself permission to do
+whatever I needed to get by. With little else to do I spent
+<strong><em>way</em></strong> more time online. In the middle of the
+pandemic, I started using TikTok, a much more potent content aggregator
+than I’ve ever used before.</p>
+<h2 id="what-can-i-hope-for-next">What can I hope for next?</h2>
+<p>Instead of connecting more with others online, I’m more looking
+forward for the opportunity to connect more with myself. I’d like to
+spend more time creating in <a
+href="https://alxmrs.com/boredom/">solitude</a>, including writing. I
+really like Newport’s recommendation to write more letters to yourself.
+I do some form of this already, though I do hope to make it more of a
+regular habit.</p>
+<p>As far as keeping up with people, I’m already the weird one in my
+friend groups who randomly calls people on the phone. And, I have no
+trouble meeting new people in real life – I once made a friend on
+Bart!</p>]]></description>
+</item>
+<item>
 <title>Alexes’ Anniversary</title>
 <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/anniversary/</guid>

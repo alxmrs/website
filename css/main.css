@@ -10,6 +10,7 @@
         --heading-color: #292922;
         --cam-color: #d5c400;
         --wedding-color: #ec8472;
+        --aside-color: #eee
     }
 }
 
@@ -25,6 +26,7 @@
         --heading-color: #9FB7A3;
         --cam-color: #fede00;
         --wedding-color: #f4cbb9;
+        --aside-color: #343b36;
     }
 }
 
@@ -195,4 +197,16 @@ a:hover, a:focus, a:active {
 
 footer {
     font-size: .8em;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+aside {
+    border-radius: 10px;
+    background-color: var(--aside-color);
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
