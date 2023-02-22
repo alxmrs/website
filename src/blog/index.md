@@ -2,7 +2,7 @@
 
 ## 2022
 - [Smarter Closet App](https://alxmrs.notion.site/Smarter-Closet-App-b182228add834efd90bfdc529efafe25)
-- [How I backed up all my wedding footage in the cloud](https://alxmrs.notion.site/How-I-backed-up-all-my-wedding-footage-in-the-cloud-435a2f940f9542f7bf2e5d23e3689153)
+- [How I backed up all my wedding footage in the cloud](/wedding-video/)
 - [Why I’m going on a digital detox](/digital-detox/)
 - [Alexes' Anniversary](/anniversary/)
 
