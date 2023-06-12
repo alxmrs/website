@@ -79,19 +79,18 @@ near the back of her neck that were longer than her bob. I had given my wife a r
 
 ![I gave Cam a rat tail](https://alxmrs.com/assets/rat-tail.webp)
 
-We'll fix it tomorrow…
+We'll fix it tomorrow...
 
 _February 2023_
 
 I didn't take immediately after this cut. Here's what I remember about it:
 
 - Her hair was wet at the beginning, which helped.
-- I cut it fast
-- It was cut short
-- Too short
+- I cut it fast.
+- It was cut short.
+- Too short.
 
-Her haircut was so short, that we waited several months until her next haircut. I feel like I must have done a trim
-sometime three months later, but I have no record (or recollection) of this.
+Her haircut was so short that we waited three months until her next haircut.
 
 ![Her bob was cut too short](https://alxmrs.com/assets/too-short.webp)
 
@@ -112,8 +111,8 @@ video that stuck with me were:
 - It may have not been the intention of the video, but I so appreciated watching (and mimicking) the general “comb and
   fold technique.” It was so helpful to see examples (and hear instructions) on how to manage layers of hair: starting
   with the back (”neck bangs”), moving to the sides behind the ears, then the sides, then all the way to the front.
-- I like the creator's recommendation for splitting around the years, specifically. She provides a useful example for
-  knowing which hairs should fall to the front and back of the year.
+- I like the creator's recommendation for splitting around the ears, specifically. She provides a useful example for
+  knowing which hairs should fall to the front and back of the ear.
 - I get a good set of instructions for how to look for a length and make it consistent. In all my initial cuts, I really
   just hoped that it was somewhat close to even length and understood that I will probably have to correct it. Now, I
   feel like I don't have to do this anymore.
@@ -125,12 +124,11 @@ My initial cut following this video, I just focused on getting the length and en
 to get the weight or density right, since I have a feathered razor (she said that it's really easy to take off too much
 weight with those).
 
-So, I made a first pass cut, where I cut off the minimum amount possible using proper razor technique. I didn't want to
-repeat my mistake from February! Surprisingly this was too short! I repeated the cut the next day, again cutting off the
-smallest amount possible. This ended up being the right length! Now, Cam could look good going to her office happy hour.
-If anything, I appreciated getting to do the cut twice. It was good practice and it helped build confidence with the
-razor.
-
+So, I made a first pass, where I cut off the minimum amount possible using proper razor technique. I didn't want to cut
+too much off like I did in February! I was a bit too cautious, and it ended up too long. I repeated the cut the next
+day, again cutting off the smallest amount possible. This ended up being the right length! Now, Cam could look good
+going to her office happy hour. If anything, I appreciated getting to do the cut twice. It was good practice and it
+helped build confidence with the razor.
 
 <video width="640" controls mute autoplay>
   <source src="https://alxmrs.com/assets/cam-bob.mp4" type="video/mp4">
@@ -139,7 +137,7 @@ Your browser does not support the video tag.
 
 _June 10, 2023_
 
-The length was still good. Now, Cam wants me to try to take away some weight so it looks more like a true Bob. Since it
+The length was still good. Now, Cam wants me to try to take away some weight so it looks more like a true bob. Since it
 was my first serious attempt to cut for weight, I re-watched parts of the Vimeo tutorial, and cut very conservatively.
 Cam was freaked when she saw how much hair fell to the ground! But, it was clear that after the cut, I didn't really
 take off that much at all. 
