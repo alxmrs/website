@@ -131,7 +131,7 @@ going to her office happy hour. If anything, I appreciated getting to do the cut
 helped build confidence with the razor.
 
 <video width="640" controls muted autoplay>
-  <source src="https://alxmrs.com/assets/cam-bob.mp4" type="video/mp4">
+  <source src="https://alxmrs.com/assets/cam-bob-silent.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
