@@ -132,7 +132,7 @@ If anything, I appreciated getting to do the cut twice. It was good practice and
 razor.
 
 
-<video width="720" height="1280" controls>
+<video width="640" controls mute autoplay>
   <source src="https://alxmrs.com/assets/cam-bob.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
