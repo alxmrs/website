@@ -1,5 +1,8 @@
 # Blog
 
+## 2023
+- [ 💇‍♀️ How to cut your wife's hair (and stay married)](/haircut/)
+
 ## 2022
 - [Smarter Closet App](https://alxmrs.notion.site/Smarter-Closet-App-b182228add834efd90bfdc529efafe25)
 - [How I backed up all my wedding footage in the cloud](/wedding-video/)
