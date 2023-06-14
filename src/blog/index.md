@@ -1,6 +1,7 @@
 # Blog
 
 ## 2023
+- [Think for Someone Else](/think/)
 - [ 💇‍♀️ How to cut your wife's hair (and stay married)](/haircut/)
 
 ## 2022
