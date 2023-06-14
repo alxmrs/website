@@ -1,10 +1,10 @@
 # 💇‍♀️ How to cut your wife's hair (and stay married)
 
-_December, 13, 2022_
+_December 13, 2022_
 
 Step 1: Have a wife who may not have any chill but who thinks that not going to the salon is punk rock.
 
-_December, 14, 2022_
+_December 14, 2022_
 
 Today was my first haircut attempt. I looked up a quick youtube video on how to cut women's hair and this is what popped
 up:
