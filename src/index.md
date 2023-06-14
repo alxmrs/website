@@ -2,7 +2,7 @@
 
 <img src="/assets/profile.webp" width="270" title="A picture of me!" id="profile" >
 
-I'm a software engineer who works remotely and [moves around a lot](https://merose.com/2022/).
+I'm a software engineer who [works remotely](/faqs/#work) and [travels a lot](/faqs/#fun).
 
 I love to listen to [all kinds of music](/faqs/#music), help my [lovely wife](http://camille.merose.com/) cook a
 [fussy meal](/pesto/), and think hard about

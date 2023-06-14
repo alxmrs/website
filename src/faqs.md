@@ -3,6 +3,8 @@
 <details>
 <summary>What do you do for work?</summary>
 
+<div id="work"></div>
+
 I work at Google Research on the Anthromet team. Here, I develop machine-learning applications for the weather. I used
 to work on the [Arcs project](https://github.com/PolymerLabs/arcs), a system to protect user privacy in the AI era.
 Before joining Google, I've had
