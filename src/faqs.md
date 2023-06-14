@@ -5,9 +5,11 @@
 
 <div id="work"></div>
 
-I work at Google Research on the Anthromet team. Here, I develop machine-learning applications for the weather. I used
-to work on the [Arcs project](https://github.com/PolymerLabs/arcs), a system to protect user privacy in the AI era.
-Before joining Google, I've had
+I work at Google Research on the Anthromet team. Here, I develop machine-learning applications for the weather. A lot of
+the time, this involves making it [easier to work with weather data](https://github.com/google/weather-tools/), if
+not [specific datasets](https://github.com/google-research/arco-era5). Before this team, I used to work on
+the [Arcs project](https://github.com/PolymerLabs/arcs), a system to protect user privacy in the AI era. I've been
+lucky so far that a lot of my work involves contributing to open source. Before joining Google, I've had
 a [mix of software engineering and machine learning roles](https://www.linkedin.com/in/almerose/).
 </details>
 
