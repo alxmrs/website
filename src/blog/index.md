@@ -1,4 +1,6 @@
-# Blog
+---
+title: Blog
+---
 
 ## 2023
 - [Think for Someone Else](/think/)

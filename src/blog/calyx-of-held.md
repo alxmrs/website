@@ -1,6 +1,9 @@
 ---
 title: Calyx of Held
 date: 2014-05-02
+header-includes:
+    <meta name="keywords" content="Neuroscience,College,Brain,Reflection,Hearing,BCI" />
+    <meta name="description" content="Dreaming of silicone neurons for sound." />
 ---
 
 I'm taking a class called neural encoding of sensory systems and it make me appreciate the complexity and elegance of 

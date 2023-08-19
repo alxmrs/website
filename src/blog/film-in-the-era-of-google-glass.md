@@ -1,6 +1,9 @@
 ---
 title: Film in the Era of Google Glass
 date: 2013-07-22
+header-includes:
+  <meta name="keywords" content="Film,Video,Google,Glass,POV,Camera,Predictions" />
+  <meta name="description" content="What would film be like in the future with Google Glass?" />
 ---
 
 Ubiquitous technologies have already enabled us to capture events that were never possible before. Not too long ago, 
@@ -21,7 +24,7 @@ What peeks my interest the most about this emerging technology is the potential 
 Augmented reality glasses, such as Google Glass, will usher in a new era of experimental, independent film.
 
 What if, for instance, a film had no pre-written script, director, or editor? Instead, just costumes, props, a setting, 
-and highly skilled long-form improvisors, each equipped with Google Glasses. They could reenact scenes from history or 
+and highly skilled long-form improvisers, each equipped with Google Glasses. They could reenact scenes from history or 
 fantasy in whatever genre of their choosing. Protagonists would not even be chosen ahead of time: Actors would be told 
 that there are no lead and non-lead roles; every character is as important as you make them.  Acting troupes would be 
 valued for their ability to imagine and implement stories as a team.
