@@ -1,6 +1,8 @@
 # Blog
 
 ## 2023
+- [Martini's at the Opera House](https://vagabonvivants.substack.com/p/martinis-at-the-opera-house)
+- [Why we're taking a gap year](https://vagabonvivants.substack.com/p/why-were-taking-a-gap-year)
 - [Think for Someone Else](/think/)
 - [ 💇‍♀️ How to cut your wife's hair (and stay married)](/haircut/)
 
