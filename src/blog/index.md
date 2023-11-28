@@ -1,4 +1,6 @@
-# Blog
+---
+title: Blog
+---
 
 ## 2023
 - [Martini's at the Opera House](https://vagabonvivants.substack.com/p/martinis-at-the-opera-house)
