@@ -1,8 +1,9 @@
 # Blog
 
 ## 2024
-- [Celebrating 100 Days!](https://vagabonvivants.substack.com/p/celebrating-100-days)
-- [Packing for Gap Year, Part 1: Wardrobe](https://vagabonvivants.substack.com/p/packing-for-gap-year-part-1-wardrobe)
+- [Reflections on 200 days of travel](https://vagabonvivants.com/reflections-on-200-days-of-travel)
+- [Celebrating 100 Days!](https://vagabonvivants.com/celebrating-100-days)
+- [Packing for Gap Year, Part 1: Wardrobe](https://vagabonvivants.com/packing-for-gap-year-part-1-wardrobe)
 
 ## 2023
 - [Martini's at the Opera House](https://vagabonvivants.substack.com/p/martinis-at-the-opera-house)
