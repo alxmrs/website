@@ -10,6 +10,7 @@
         --heading-color: #292922;
         --cam-color: #d5c400;
         --wedding-color: #ec8472;
+        --travel-color: #ff81cd;
         --aside-color: #eee
     }
 }
@@ -26,6 +27,7 @@
         --heading-color: #9FB7A3;
         --cam-color: #fede00;
         --wedding-color: #f4cbb9;
+        --travel-color: #ff81cd;
         --aside-color: #343b36;
     }
 }
@@ -185,6 +187,10 @@ a[href*="//wedding"] {
     color: var(--wedding-color);
 }
 
+a[href*="//vagabonvivant"] {
+    color: var(--travel-color);
+}
+
 a[href^="https://alxmrs"] {
     color: var(--primary-color);
 }
@@ -195,7 +201,11 @@ a:hover, a:focus, a:active {
 }
 
 #profile:hover {
-    filter: grayscale(80%);
+    transform: rotate3d(0, -1, 0, 3.142rad);
+    transition: 0.4s;
+}
+#profile:not(:hover) {
+    transform: rotate3d(0, 0, 0, 0);
     transition: 0.4s;
 }
 
