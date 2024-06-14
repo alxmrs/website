@@ -1,6 +1,9 @@
 ---
 title: Chipping Away Writer's Block
 date: 2019-07-23
+header-includes:
+    <meta name="keywords" content="Writing,Design,Docs,Documents,Stuck,Writers,Block,Tips,Slidedocs" />
+    <meta name="description" content="How I find ways to write when I hit writer's block." />
 ---
 
 I had a conversation a few weeks ago with my project manager, [Bernhard Seefeld](https://github.com/seefeldb), about 

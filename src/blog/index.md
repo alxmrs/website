@@ -1,4 +1,6 @@
-# Blog
+---
+title: Blog
+---
 
 ## 2024
 - [Reflections on 200 days of travel](https://vagabonvivants.com/reflections-on-200-days-of-travel)

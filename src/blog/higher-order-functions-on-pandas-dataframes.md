@@ -1,11 +1,18 @@
 ---
 title: Higher Order Functions on Pandas Dataframes
 date: 2018-07-31
+header-includes:
+  <meta name="keywords" content="Python,Pandas,Functional,Programming" />
+  <meta name="description" content="Querying pandas data frames with boolean indexing and higher order functions." />
 ---
 
 (Note: the following article is unedited -- Proceed with caution).
 
 (Last updated: 2018-07-31)
+
+> Note from 2023: I don't recommend the following approaches anymore.
+> Pandas has a fluent interface. Use that instead. 
+> For a decent intermediate intro to Pandas, read [Tom's posts on Modern Pandas](https://tomaugspurger.net/posts/modern-1-intro/).
 
 ## Motivation
 
