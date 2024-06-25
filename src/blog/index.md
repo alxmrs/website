@@ -1,6 +1,8 @@
 # Blog
 
 ## 2024
+- [Is there a parallel between tile GPU/TPU kernes and Cubed chunks?](https://github.com/cubed-dev/cubed/issues/490)
+- [Conflict-free Replicated Zarr](https://discourse.pangeo.io/t/conflict-free-replicated-zarr/4261)
 - [Reflections on 200 days of travel](https://vagabonvivants.com/reflections-on-200-days-of-travel)
 - [Celebrating 100 Days!](https://vagabonvivants.com/celebrating-100-days)
 - [Packing for Gap Year, Part 1: Wardrobe](https://vagabonvivants.com/packing-for-gap-year-part-1-wardrobe)
