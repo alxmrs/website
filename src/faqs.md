@@ -26,7 +26,7 @@ a [mix of software engineering and machine learning roles](https://www.linkedin.
 
 All over California, really. I grew up in [San Diego](/zettel/san-diego/) (north county) and went to college there, too.
 I lived in Oakland for a few years, then in the Santa Cruz / Monterey area. During the pandemic, I found myself in the
-central coast near SLO. Hey, maybe one day I'll end up in Chico or Mt. Shasta.
+central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family. Hey, maybe one day I'll end up in Chico or Mt. Shasta.
 
 </details>
 
