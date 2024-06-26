@@ -5,6 +5,7 @@
 - [Conflict-free Replicated Zarr](https://discourse.pangeo.io/t/conflict-free-replicated-zarr/4261)
 - [Reflections on 200 days of travel](https://vagabonvivants.com/reflections-on-200-days-of-travel)
 - [Celebrating 100 Days!](https://vagabonvivants.com/celebrating-100-days)
+- [Zarrquet: Create a referenced based filesystem to read virtual parquet from Zarr](https://github.com/alxmrs/xarray-sql/issues/4)
 - [Packing for Gap Year, Part 1: Wardrobe](https://vagabonvivants.com/packing-for-gap-year-part-1-wardrobe)
 
 ## 2023
