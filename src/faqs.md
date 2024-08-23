@@ -14,7 +14,7 @@ my [old team's main product](https://blog.research.google/2023/11/metnet-3-state
 this, I used to work on the [Arcs project](https://github.com/PolymerLabs/arcs), a system to protect user privacy in the
 AI era. I've been lucky so far that a lot of my work involves contributing to [open source](https://github.com/alxmrs).
 Before joining Google, I've had
-a [mix of software engineering and machine learning roles](https://www.linkedin.com/in/almerose/).
+a [mix of software engineering and machine learning roles](/cv).
 
 </details>
 
