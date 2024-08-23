@@ -3,7 +3,7 @@
 _Updated: 2024-08-22_
 
 I am a senior software engineer focused on machine learning. I have played a critical role in two paradigm shifts in
-fields of science using machine learning — first, in materials characterization; second, in weather prediction.
+fields of science using machine learning — first, in materials characterization & discovery; second, in weather prediction.
 
 I do my best work in highly collaborative environments. As much as possible, I try to contribute to open source.
 
@@ -103,7 +103,7 @@ _Arcs is an experiment attempting to create a new programming model for privacy-
 
 _Aira helps blind and low-vision users access visual information via remote assistance with smart glasses._
 
-- Built core dialog engine for an Android Voice-UX. This allows our blind and low-vision users to pair Bluetooth devices, call a remote assistant, and rate call experiences conversationally. _(Java 8))
+- Built core dialog engine for an Android Voice-UX. This allows our blind and low-vision users to pair Bluetooth devices, call a remote assistant, and rate call experiences conversationally. _(Java 8)_
 - Created a visual-question-answer research prototype for an NSF grant. The system used real-time object detection and rule-based NLP to investigate assistive user experiences for blind and low vision people. _(Tensorflow, OpenCV, YOLO)_
 - Technical lead for prototype of indoor navigation system based on Open Structure-from-Motion, Android, and ArcGIS.
 - Trained and productionized a mobile USD currency classifier model to help blind users identify paper bills. _(Tensorflow, Android, MobileNet, Firebase MLKit)_
@@ -115,11 +115,11 @@ _Aira helps blind and low-vision users access visual information via remote assi
 
 _Dr. Vecchio's research group focuses on advanced materials discovery and their translation to industrial applications._
 
--Used neural networks and boosted tree based algorithms to make materials science discoveries _(Keras, ResNet, XGBoost, Sklearn)_.
--Applied gradient-based techniques to explain classifications of convolutional neural networks _(GradCam)_.
--Used OOP design principles to create a framework to track hyperparameters & ML pipelines in version control.
--Taught nanoengineering grad students machine learning, focusing on neural networks and tree-based techniques.
--The papers produced as a result of my contributions would go on to be published in Science, Nature, and respected journals within the materials science world.
+- Used neural networks and boosted tree based algorithms to make materials science discoveries _(Keras, ResNet, XGBoost, Sklearn)_.
+- Applied gradient-based techniques to explain classifications of convolutional neural networks _(GradCam)_.
+- Used OOP design principles to create a framework to track hyperparameters & ML pipelines in version control.
+- Taught nanoengineering grad students machine learning, focusing on neural networks and tree-based techniques.
+- The papers produced as a result of my contributions would go on to be published in Science, Nature, and respected journals within the materials science world.
 
 ## Software Engineer, [Intuit (ProSeries team)](https://accountants.intuit.com/tax-software/proseries/)
 
