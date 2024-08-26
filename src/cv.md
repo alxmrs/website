@@ -1,7 +1,5 @@
 # Curriculum vitae
 
-_Updated: 2024-08-22_
-
 I am a senior software engineer focused on machine learning. I have played a critical role in two paradigm shifts in
 fields of science using machine learning — first, in materials characterization & discovery; second, in weather prediction.
 
@@ -16,18 +14,13 @@ October 2023 - Present. Remote.
 _My wife and I have a travel blog! We’re telling the story of our gap year, one chapter at a time.
 [vagabonvivants.com](https://vagabonvivants.com/)_
 
-- [Why we're taking a gap year](https://vagabonvivants.substack.com/p/why-were-taking-a-gap-year)
-- [Celebrating 100 days](https://vagabonvivants.substack.com/p/celebrating-100-days)
-- [Reflections on 200 days of travel](https://vagabonvivants.substack.com/p/reflections-on-200-days-of-travel)
-- [300 days!](https://vagabonvivants.substack.com/p/300-days)
-
 ## Contributor, [Cubed](https://cubed-dev.github.io/cubed/)
 
 January 2024 - Present. Remote.
 
 _Cubed is a library for distributed, serverless, memory-bounded computation on the Python Array API._
 
-- Investigating how Cubed intersects with accelerators, primarily via an integration with JAX.
+- Investigating how Cubed intersects with accelerators, primarily via JAX.
 - Added an affordance for compiling Cubed operations via Numba or JAX (JIT or AOT).
 - Adding support for JAX arrays on M1+ hardware via jax-metal.
 
@@ -167,7 +160,15 @@ _de Sa Lab specializes in machine learning and brain computer interfaces (BCI)._
 
 # Publications
 
-Please visit my [Google Scholar page](https://scholar.google.com/citations?user=9ic0HRsAAAAJ&hl=en) to see my latest publications.
+_Please visit my [Google Scholar page](https://scholar.google.com/citations?user=9ic0HRsAAAAJ&hl=en) to see my latest publications._
+
+- **Learning skillful medium-range global weather forecasting**. Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, Meire Fortunato, Ferran Alet, Suman Ravuri, Timo Ewalds, Zach Eaton-Rosen, Weihua Hu, **Alexander Merose**, Stephan Hoyer, George Holland, Oriol Vinyals, Jacklynn Stott, Alexander Pritzel, Shakir Mohamed, Peter Battaglia. _Science_ 382 (6677), 1416-1421
+- **Discovery of high-entropy ceramics via machine learning**. Kevin Kaufmann, Daniel Maryanovsky, William M Mellor, Chaoyi Zhu, **Alexander S Rosengarten**, Tyler J Harrington, Corey Oses, Cormac Toher, Stefano Curtarolo, Kenneth S Vecchio. _Npj Computational Materials_ 6 (1), 42
+- **Crystal symmetry determination in electron diffraction using machine learning**. Kevin Kaufmann, Chaoyi Zhu, **Alexander S Rosengarten**, Daniel Maryanovsky, Tyler J Harrington, Eduardo Marin, Kenneth S Vecchio. _Science_ 367 (6477), 564-568
+- **WeatherBench 2: A benchmark for the next generation of data‐driven global weather models**. Stephan Rasp, Stephan Hoyer, **Alexander Merose**, Ian Langmore, Peter Battaglia, Tyler Russell, Alvaro Sanchez‐Gonzalez, Vivian Yang, Rob Carver, Shreya Agrawal, Matthew Chantry, Zied Ben Bouallegue, Peter Dueben, Carla Bromberg, Jared Sisk, Luke Barrington, Aaron Bell, Fei Sha. _Journal of Advances in Modeling Earth Systems_ 16 (6), e2023MS004019
+- **Deep learning for day forecasts from sparse observations**. Marcin Andrychowicz, Lasse Espeholt, Di Li, Samier Merchant, **Alexander Merose**, Fred Zyda, Shreya Agrawal, Nal Kalchbrenner. _arXiv preprint_ arXiv:2306.06079
+- **Deep neural network enabled space group identification in EBSD**. K Kaufmann, C Zhu, **AS Rosengarten**, KS Vecchio. _Microscopy and Microanalysis_ 26 (3), 447-457
+
 
 # Education
 
