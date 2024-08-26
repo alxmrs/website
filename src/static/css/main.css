@@ -32,6 +32,45 @@
     }
 }
 
+@media print {
+  /* Specific margins for different sides */
+  @page {
+    margin-top: 0.25in;
+    margin-bottom: 0.5in;
+    margin-left: 0.5in;
+    margin-right: 0.5in;
+  }
+
+  header,
+  footer,
+  nav {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 18px !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    page-break-after: avoid;
+  }
+
+  h2, h3 {
+    font-size: 14px !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+  }
+
+  p {
+    font-size: 12px !important;
+    line-height: normal !important;
+  }
+
+  body {
+    font-size: 12px !important;
+    line-height: normal !important;
+  }
+}
+
 body {
     margin: 40px auto;
     max-width: 650px;
