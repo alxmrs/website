@@ -32,8 +32,15 @@
     }
 }
 
+print-only {
+    display: none;
+}
+
 @media print {
-  /* Specific margins for different sides */
+  @page :first {
+   margin-top: 0.1in;
+  }
+
   @page {
     margin-top: 0.25in;
     margin-bottom: 0.5in;
@@ -58,7 +65,18 @@
     font-size: 14px !important;
     line-height: normal !important;
     letter-spacing: normal !important;
+    page-break-after: avoid;
   }
+
+  cv-section {
+    display: flex;
+    justify-content: space-between;
+  }
+    /*
+  h2 + p {
+      display: flex;
+      justify-content: flex-end;
+  } */
 
   p {
     font-size: 12px !important;
@@ -68,6 +86,24 @@
   body {
     font-size: 12px !important;
     line-height: normal !important;
+  }
+
+  print-only {
+    display: block;
+  }
+
+  no-print {
+    display: none;
+  }
+
+  print-only ul.cv-topline {
+    padding: 0;
+    list-style: none;
+  }
+
+  print-only ul.cv-topline li {
+    display: inline;
+    margin-right: 25px;
   }
 }
 
