@@ -1,6 +1,6 @@
 <center>
 
-# Alexander S. Merose
+# Alexander S Merose
 
 <print-only> 
   <ul class="cv-topline">
