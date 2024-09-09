@@ -78,7 +78,7 @@ _Anthromet is on a mission to make weather information universally accessible an
 developing state-of-the-art AI weather forecasts and integrating them into products._
 
 - [Xee](https://github.com/google/Xee): An Xarray backend for Google Earth Engine. _(Xarray, Google Earth Engine)_
-  - Created this packaged, launched as a [keynote feature](https://x.com/spatialthoughts/status/1711794831499166032) of [Geo for Good 2023](/talks#geo-for-good-2023).
+  - Created this package, launched as a [keynote feature](https://x.com/spatialthoughts/status/1711794831499166032) of [Geo for Good 2023](/talks#geo-for-good-2023).
   - This bridges the Google Earth Engine and scientific Python communities.
   - Built to serve an internal weather research platform to build and ship new weather models.
   - Between 2023-10-11 and 2024-09-08, Xee received [62k downloads (9k/month)](https://www.pepy.tech/projects/xee) on pip. 
