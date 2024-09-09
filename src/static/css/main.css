@@ -36,18 +36,14 @@ print-only {
     display: none;
 }
 
-@media print {
-  @page :first {
-   margin-top: 0.1in;
-  }
-
-  @page {
+@page {
     margin-top: 0.25in;
     margin-bottom: 0.5in;
     margin-left: 0.5in;
     margin-right: 0.5in;
-  }
+}
 
+@media print {
   header,
   footer,
   nav {
