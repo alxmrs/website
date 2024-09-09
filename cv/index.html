@@ -32,88 +32,127 @@
         <li><a href="/talks">Talks</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/cv">CV</a></li>
+        <li><a href="javascript:if(window.print)window.print()">🖨️</a></li>
     </ul>
 </nav>
 
-<h1 id="curriculum-vitae">Curriculum vitae</h1>
+<center>
+
+<h1 id="alexander-s-merose">Alexander S. Merose</h1>
+<print-only> 
+  <ul class="cv-topline">
+    <li>+1 (760) 518-7440</li>
+    <li><a href="https://alex.merose.com">alex.merose.com</a></li>
+    <li>al@merose.com</li> 
+  </ul>
+</print-only>
+
+</center>
+
 <p>I am a senior software engineer focused on machine learning. I have
 played a critical role in two paradigm shifts in fields of science using
-machine learning — first, in materials characterization &amp; discovery;
-second, in weather prediction.</p>
-<p>I do my best work in highly collaborative environments. As much as
-possible, I try to contribute to open source.</p>
+machine learning — first, in materials science; second, in weather
+prediction.</p>
 <h1 id="sabbatical-projects">Sabbatical Projects</h1>
+<no-print>
+
+<cv-section>
+
 <h2 id="writer-vaga--bon--vivants">Writer, vaga • bon • vivants</h2>
 <p>October 2023 - Present. Remote.</p>
+</cv-section>
+
 <p><em>My wife and I have a travel blog! We’re telling the story of our
 gap year, one chapter at a time. <a
 href="https://vagabonvivants.com/">vagabonvivants.com</a></em></p>
+</no-print>
+
+<cv-section>
+
 <h2 id="contributor-cubed">Contributor, <a
 href="https://cubed-dev.github.io/cubed/">Cubed</a></h2>
 <p>January 2024 - Present. Remote.</p>
+</cv-section>
+
 <p><em>Cubed is a library for distributed, serverless, memory-bounded
 computation on the Python Array API.</em></p>
 <ul>
-<li>Investigating how Cubed intersects with accelerators, primarily via
-JAX.</li>
+<li><a
+href="https://github.com/cubed-dev/cubed/issues/created_by/alxmrs">Investigating</a>
+how Cubed intersects with accelerators, primarily via JAX.</li>
 <li>Added an affordance for compiling Cubed operations via Numba or JAX
 (JIT or AOT).</li>
 <li>Adding support for JAX arrays on M1+ hardware via jax-metal.</li>
 </ul>
+<cv-section>
+
 <h2 id="advisor-earthranger">Advisor, <a
 href="https://www.earthranger.com/">EarthRanger</a></h2>
-<p>January 2023 - June 2024. Remote.</p>
+<p>January 2024 - June 2024. Remote.</p>
+</cv-section>
+
 <p><em>EarthRanger is a project funded by the Allen Institute of AI
 (AI2) to support African Elephant Conservation, among other conservation
 projects. It’s a collaborative effort involving the Mara Elephant
 Project and Ecoscope.io.</em></p>
 <ul>
-<li><a
-href="https://github.com/alxmrs/xarray-sql/">github.com/alxmrs/xarray-sql</a>.
-What if we could join raster and vector data by treating pixels as
+<li><a href="https://github.com/alxmrs/dask-ee">dask-ee</a>. Google
+Earth Engine Feature Collections via Dask Dataframes. Featured at <a
+href="https://www.youtube.com/watch?v=tH1Dr0iHSxE">SciPy 2024</a>.</li>
+<li><a href="https://github.com/alxmrs/xarray-sql">xarray-sql</a>. What
+if we could join raster, vector, and point data by treating pixels as
 tables?</li>
-<li><a
-href="https://github.com/alxmrs/dask-ee">github.com/alxmrs/dask-ee</a>.
-Google Earth Engine Feature Collections via Dask Dataframes.
-<ul>
-<li>The library was presented by <a
-href="https://www.youtube.com/watch?v=tH1Dr0iHSxE">Quisheng Wu at SciPy
-2024</a>.</li>
-</ul></li>
 </ul>
 <h1 id="google-experience">Google Experience</h1>
+<cv-section>
+
 <h2 id="anthromet-team-google-research">Anthromet Team, Google
 Research</h2>
 <p>2021 - 2023. Remote, CA</p>
+</cv-section>
+
 <p><em>Anthromet is on a mission to make weather information universally
-accessible and useful. It does this by enabling the development of
-state-of-the-art AI forecasts and integrating them into
-products.</em></p>
+accessible and useful. It does this by developing state-of-the-art AI
+weather forecasts and integrating them into products.</em></p>
 <ul>
-<li><a href="https://github.com/google/weather-tools">Weather Tools</a>,
+<li><a href="https://github.com/google/Xee">Xee</a>: An Xarray backend
+for Google Earth Engine. <em>(Xarray, Google Earth Engine)</em>
+<ul>
+<li>Created this packaged, launched as a <a
+href="https://x.com/spatialthoughts/status/1711794831499166032">keynote
+feature</a> of <a href="/talks#geo-for-good-2023">Geo for Good
+2023</a>.</li>
+<li>This bridges the Google Earth Engine and scientific Python
+communities.</li>
+<li>Built to serve an internal weather research platform to build and
+ship new weather models.</li>
+<li>Between 2023-10-11 and 2024-09-08, Xee received <a
+href="https://www.pepy.tech/projects/xee">62k downloads (9k/month)</a>
+on pip.</li>
+</ul></li>
+<li><a href="https://github.com/google/weather-tools">weather-tools</a>,
 a set of data pipelines to make weather data universally accessible and
-useful. <em>(Apache Beam, Xarray, Google Earth Engine, Google BigQuery,
-MetView)</em>. Originally a 20% effort, I grew the project to a team of
-8 engineers to serve ~22 research and product teams across Google AI,
-Brain, X, DeepMind and Cloud. Some highlights:
+useful. Originally a 20% effort, I grew the project to a team of 8
+engineers to serve ~25 research and product teams across Google AI,
+Brain, X, DeepMind and Cloud. <em>(Apache Beam, Xarray, Google Earth
+Engine, Google BigQuery, MetView)</em>:
 <ul>
 <li><a
 href="https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/">GraphCast</a>:
-these tools enabled DeepMind to ingest and regrid ERA5, the dataset
-behind their autoregressive graph neural network. At the time of
-publishing, this was the SOTA 10 day weather forecast, beating physics
-based models. GraphCast was published in Science and has ushered in a
-new generation of AI-based weather forecasting. The model is being
-adopted by ECMWF.</li>
+Enabled DeepMind to ingest and regrid ERA5, the dataset behind their
+autoregressive graph neural network. At the time of publishing, this was
+the SOTA 10 day weather forecast, beating physics based models.
+GraphCast was among <a
+href="https://www.science.org/content/article/biggest-science-breakthroughs-2023">2023's
+top-ten biggest breakthroughs</a> published in <em>Science</em>,
+ushering in a new generation of AI-based weather forecasts.</li>
 <li><a
 href="https://blog.research.google/2023/11/metnet-3-state-of-art-neural-weather.html">MetNet
 v3 &amp; Nowcasting in Google Search</a>: MetNet is the world’s leading
 Nowcast, or 24 hour, minute by minute weather forecast at 1-4 km
-resolution. Weather-Tools were used to ingest a global weather training
-and validation dataset for the development of this model as well as for
-production inference in Google Search (especially in the EU).
-<code>weather-mv</code> focuses on ingesting weather data into Google
-Earth Engine in batch and in real time.</li>
+resolution. <code>weather-tools</code> created gobal training,
+inference, and validation datasets, enabling our team to ship to
+GSRP.</li>
 <li><a href="https://sites.research.google/contrails/">Project
 Contrails</a>. I provided critical weather data and data engineering
 pipelines that made this project possible. This project alone will solve
@@ -123,77 +162,59 @@ airplanes.</li>
 &amp; <a
 href="https://sites.research.google/weatherbench/">Weatherbench2</a>: I
 ingested and published the two biggest datasets in Google Cloud’s Public
-Dataset program. These petabytes of data were cloud optimized as Zarr. I
-worked with Cloud to shape weather tools to ingest ERA5 into Google
-BigQuery.</li>
-<li><a
-href="https://blog.research.google/2024/03/generative-ai-to-quantify-uncertainty.html">SEEDS</a>.
-Provided data coordinate and support for this GenAI ensemble weather
-forecast (diffusion modeling). SEEDS makes it possible to predict rarer
-weather events or predict at higher resolutions over physics based
-methods since the ML approach creates a surplus of compute.</li>
+Dataset program. I worked with Cloud to shape weather tools to ingest
+ERA5 into Google BigQuery.</li>
 <li><a
 href="https://deepmind.google/discover/blog/machine-learning-can-boost-the-value-of-wind-energy/">DeepMind’s
-Wind Energy optimization</a>. By ingesting weather data from the ECMWF
-into Google BigQuery, I was able to help create an ML model with
-DeepMind and Cloud to make wind energy more profitable in the Texas
-energy grid. This was the original 20% project motivating weather tools.
-The ECMWF data and ingestion system lead to a ~3% improvement of mean
-absolute zero error compared to benchmarks. This led to ~$7 million more
-in revenue over 8 months from wind power.</li>
+Wind Energy optimization</a>. By ingesting weather data into Google
+BigQuery, I was able to help create an ML model with DeepMind and Cloud
+to make wind energy more profitable in the Texas energy grid. This lead
+to a ~3% improvement of mean absolute zero error and ~$7 million more in
+revenue over 8 months from wind power.</li>
 </ul></li>
 <li><a
 href="https://sites.research.google/weatherbench/">Weatherbench2</a>.
-WB2 is the definitive benchmark to fairly compare AI-based, mid-range
-weather forecasts. This is ushering in a new generation of ML weather
-forecasting. <em>(Xarray, Apache Beam, Zarr)</em>
+The definitive benchmark to fairly compare AI-based, mid-range weather
+forecasts and a cornerstone for all future ML weather model development.
+<em>(Xarray, Apache Beam, Zarr)</em>
 <ul>
 <li>Besides ingesting the fundamental datasets (see above), I made core
-updates to Xarray-Beam, the underlying engine behind the benchmark.</li>
+updates to <a
+href="https://github.com/google/xarray-beam">Xarray-Beam</a>, the
+underlying engine behind the benchmark.</li>
 <li>Contributed code to the benchmark itself, helping ship it to
 production.</li>
 </ul></li>
-<li><a href="https://github.com/google/Xee">Xee</a>: An Xarray backend
-for Google Earth Engine. <em>(Xarray, Google Earth Engine)</em>
-<ul>
-<li>Creator of this package. Launched as a keynote feature of Geo for
-Good 2023.</li>
-<li>This bridges Google Earth Engine and the scientific Python
-communities (i.e. Xarray users).</li>
-<li>Internally, this was a key component of a weather research platform
-to create new weather models and help put them into production.</li>
-<li>Between 2023-10-11 and 2024-08-07, Xee received <a
-href="https://www.pepy.tech/projects/xee">52k downloads, including 8k
-downloads a month</a> on Pip.</li>
-</ul></li>
 <li><a href="https://github.com/google-research/arco-era5">ARCO-ERA5</a>
 &amp; <a href="https://pangeo-forge.org/">Pangeo Forge</a>. <em>(Apache
-Beam, Xarray, Zarr)</em>
+Beam, Xarray, Dask, Zarr)</em>
 <ul>
+<li>ARCO-ERA5 is the biggest dataset in Cloud Public Datasets, at 12+
+petabytes. It represents the most accurate history of weather on Earth
+from 1940 to the present.</li>
 <li>Pangeo Forge is aiming to become the conda-forge of scientific
 datasets, or open ecosystem of data engineering recipes for producing
 cloud-optimized, analysis ready data.</li>
-<li>I was the impetus for the Pangeo Forge Project to transition their
-data engineering core system to Apache Beam.</li>
 <li>I contributed bug fixes and the Beam integration upstream to Pangeo
 Forge to produce ARCO-ERA5.</li>
-<li>ARCO-ERA5 is the biggest dataset in cloud public datasets, at 3-6
-petabytes. It represents the most accurate history of weather on Earth
-from 1940 to the present.</li>
-<li>We produced cloud optimized and analysis ready data in the Zarr
-format, making this critical dataset accessible to everyone (especially,
-ML algorithms).</li>
-<li>To support the Pangeo Forge project, I contributed Dask runner
-support to the Apache Beam project (<a
-href="https://m.youtube.com/watch?v=uGEQkws1Low">presented at PyData
+<li><a
+href="https://github.com/pangeo-forge/pangeo-forge-recipes/issues/256#issuecomment-1026428221">I
+was the impetus</a> for Pangeo Forge to transition their data
+engineering system to Apache Beam.</li>
+<li>To support Pangeo Forge, I contributed a Dask runner to Apache Beam
+(<a href="https://m.youtube.com/watch?v=uGEQkws1Low">presented at PyData
 NYC</a>).</li>
-<li>Pangeo Forge would go on to cloud optimize over 4,000 CMIP6 datasets
-via Apache Beam.</li>
+<li>Pangeo Forge would go on to cloud optimize <a
+href="https://x.com/JuliusBusecke/status/1781429813258932710">over 4,000
+CMIP6 datasets via Apache Beam</a>.</li>
+<li>The ARCO-ERA5 corpus likely includes the <a
+href="https://x.com/shoyer/status/1805735177517416749">biggest single
+Zarr ever created</a>.</li>
 </ul></li>
 <li>Awards and recognition received while on Anthromet:
 <ul>
 <li>Google Research’s Science Award for <em>Best Collaboration</em>,
-along with my team and several partner teams.</li>
+along with my team and partner teams.</li>
 <li>A Greenie award from Anthropocene, an internal grassroots
 organization focused on climate technologies.</li>
 <li>A spot bonus from John Platt, the head of Google Applied Sciences,
@@ -204,17 +225,22 @@ magnitude.</li>
 weather community, including internal changes to Google Earth Engine and
 open source changes to Weather Tools.</li>
 </ul>
+<cv-section>
+
 <h2 id="arcs-team-google-research"><a
 href="https://github.com/PolymerLabs/arcs">Arcs Team</a>, Google
 Research</h2>
 <p>2019 – 2021. San Francisco, CA</p>
-<p><em>Arcs is an experiment attempting to create a new programming
-model for privacy-preserving computation and AI. It enables rapid
-compositional development and probable privacy via data flow analysis.
-Before the 2023 layoffs, the project internally debuted as a core
-AI-safety system for ambient computing.</em></p>
+</cv-section>
+
+<p><em>Arcs is an experimental new programming model for
+privacy-preserving computation and AI. It enables rapid compositional
+development and probable privacy via data flow analysis. Before the 2023
+layoffs, the project internally debuted as a core AI-safety system for
+ambient computing.</em></p>
 <ul>
-<li>Extended Arcs data flow analysis system to verify MediaPipe graphs.
+<li>Extended Arcs data flow analysis system to verify <a
+href="https://github.com/google-ai-edge/mediapipe">MediaPipe</a> graphs.
 This was an important step towards provably private machine learning
 applications.</li>
 <li>Created a system for automatic claim deduction in a SQL-like subset
@@ -238,9 +264,13 @@ within the Arcs programming model <em>(Typescript, Tensorflow
 JS)</em>.</li>
 </ul>
 <h1 id="pre-google-experience">Pre-Google Experience</h1>
+<cv-section>
+
 <h2 id="machine-learning-engineer-aira-tech-corp">Machine Learning
 Engineer, <a href="https://aira.io/">Aira Tech Corp</a></h2>
 <p>2017 – 2019. La Jolla, CA</p>
+</cv-section>
+
 <p><em>Aira helps blind and low-vision users access visual information
 via remote assistance with smart glasses.</em></p>
 <ul>
@@ -252,52 +282,68 @@ assistant, and rate call experiences conversationally. <em>(Java
 grant. The system used real-time object detection and rule-based NLP to
 investigate assistive user experiences for blind and low vision people.
 <em>(Tensorflow, OpenCV, YOLO)</em></li>
-<li>Technical lead for prototype of indoor navigation system based on
-Open Structure-from-Motion, Android, and ArcGIS.</li>
+<li>Technical lead for prototype of indoor navigation system using
+computer vision <em>(OpenSfM, ArcGIS)</em>.</li>
 <li>Trained and productionized a mobile USD currency classifier model to
 help blind users identify paper bills. <em>(Tensorflow, Android,
 MobileNet, Firebase MLKit)</em></li>
+<li>Created an image tagging game to label integral internal datasets.
+<em>(Spring Boot, Vue.js, Typescript)</em></li>
 <li>Led agile rituals such as daily stand-ups, sprint planning meetings,
-and retrospectives.</li>
+and retrospectives; started a machine-learning brownbag lunch
+series.</li>
 </ul>
+<cv-section>
+
 <h2 id="research-assistant-vecchio-lab">Research Assistant, <a
 href="https://kennethvecchioresearchgroup.eng.ucsd.edu/">Vecchio
 Lab</a></h2>
 <p>2018 – 2019. UCSD Nanoengineering Department. La Jolla, CA</p>
+</cv-section>
+
 <p><em>Dr. Vecchio's research group focuses on advanced materials
 discovery and their translation to industrial applications.</em></p>
 <ul>
 <li>Used neural networks and boosted tree based algorithms to make
-materials science discoveries <em>(Keras, ResNet, XGBoost,
+materials science discoveries <em>(Tensorflow/Keras, ResNet, XGBoost,
 Sklearn)</em>.</li>
 <li>Applied gradient-based techniques to explain classifications of
 convolutional neural networks <em>(GradCam)</em>.</li>
 <li>Used OOP design principles to create a framework to track
-hyperparameters &amp; ML pipelines in version control.</li>
+hyperparameters &amp; ML pipelines in git.</li>
 <li>Taught nanoengineering grad students machine learning, focusing on
-neural networks and tree-based techniques.</li>
+neural networks and tree algorithms.</li>
 <li>The papers produced as a result of my contributions would go on to
 be published in Science, Nature, and respected journals within the
 materials science world.</li>
 </ul>
+<cv-section>
+
 <h2 id="software-engineer-intuit-proseries-team">Software Engineer, <a
 href="https://accountants.intuit.com/tax-software/proseries/">Intuit
 (ProSeries team)</a></h2>
 <p>2016 – 2017. San Diego, CA</p>
+</cv-section>
+
 <p><em>ProSeries is intuitive tax-preparation software for tax
 professionals.</em></p>
 <ul>
-<li>Lead data-oriented effort to reduce the number of application
-crashes in ProSeries by 50% from prior year. <em>(Python,
-Pandas)</em></li>
+<li>Reduced rate of application crashes in ProSeries by 50% from prior
+year via data analysis. <em>(Python, Pandas)</em></li>
+<li>Won business unit hackathon with novel idea for a telemetry system,
+presented to senior leadership.</li>
 <li>Contributed to annual releases of tax preparation software for
 legacy Windows application. <em>(C++, C#)</em></li>
-<li>Invented C-macro-preprocessor method to eliminate year-over-year
-maintenance work.</li>
 </ul>
+<no-print>
+
+<cv-section>
+
 <h2 id="software-engineering-intern-ingenu">Software Engineering Intern,
 <a href="https://www.ingenu.com/">Ingenu</a></h2>
 <p>2016, March - August. San Diego, CA</p>
+</cv-section>
+
 <p><em>Ingenu is a Internet-Of-Things (IoT) company specializing in
 low-power, long range networks.</em></p>
 <ul>
@@ -306,29 +352,39 @@ aggregator and sanitizer (Angular 1, Spring MVC).</li>
 <li>Reduced application load time by 44% and KB size by 40% via
 minification, lazy loading, and deployment on a CDN.</li>
 </ul>
+<cv-section>
+
 <h2 id="founding-frontend-engineer-guardiome">Founding Frontend
 Engineer, <a href="https://www.guardiome.com/">Guardiome</a></h2>
 <p>2015 - 2016. La Jolla, CA</p>
+</cv-section>
+
 <p><em>Guardiome was a dorm-room bioinformatics start-up that provided
 users a private way to learn about their genome.</em></p>
 <ul>
 <li>Created a UI engine and interface for an embedded bioinformatics
 device that allowed users to answer questions about their genome.</li>
 </ul>
+<cv-section>
+
 <h2 id="software-engineering-intern-illumina">Software Engineering
 Intern, <a href="https://www.illumina.com/">Illumina</a></h2>
 <p>2015, July. La Jolla, CA</p>
+</cv-section>
+
 <p><em>Illumina is a bioinformatics company that produces 90% of the
 world's genome sequencers.</em></p>
 <ul>
 <li>Onboarded to creating an Angular 1 progressive web app.</li>
 <li>Fell ill early into the internship and had to leave.</li>
 </ul>
-<h2
-id="research-assistant-natural-computation-laboratory-de-sa-lab">Research
-Assistant, <a href="https://pages.ucsd.edu/~desa/">Natural Computation
-Laboratory (de Sa Lab)</a></h2>
+<cv-section>
+
+<h2 id="research-assistant-de-sa-lab">Research Assistant, <a
+href="https://pages.ucsd.edu/~desa/">de Sa Lab</a></h2>
 <p>2013 - 2015. UCSD CogSci Department. La Jolla, CA</p>
+</cv-section>
+
 <p><em>de Sa Lab specializes in machine learning and brain computer
 interfaces (BCI).</em></p>
 <ul>
@@ -338,16 +394,19 @@ prototype</a> aiming to help people with epilepsy. <em>(OpenBCI, Matlab,
 SVMs, Ensemble Methods)</em></li>
 <li>Developed <a href="https://alxmrs.github.io/BrainTag/">BrainTag</a>,
 an open source neurofeedback game for children with autism spectrum
-disorders. <em>(Arduino, Neurosky, C)</em></li>
+disorders. Presented at UCSD's Undergrad Research Conference.
+<em>(Arduino, Neurosky, C)</em></li>
 <li>Initiated collaboration between de Sa lab and <a
 href="https://openbci.com/">OpenBCI</a>. We were one of the startup’s
-first research collaborators.</li>
+first university partners.</li>
 <li>Taught open source BCI workshops to UCSD students through hands-on
 workshops. <em>(Python, OpenBCI)</em></li>
 <li>Wrote data visualization and machine learning toolbox for an open
 source brain computer interface. <em>(Python, Java, C, JS)</em></li>
 </ul>
-<h1 id="publications">Publications</h1>
+</no-print>
+
+<h1 id="select-publications">Select Publications</h1>
 <p><em>Please visit my <a
 href="https://scholar.google.com/citations?user=9ic0HRsAAAAJ&amp;hl=en">Google
 Scholar page</a> to see my latest publications.</em></p>
@@ -383,6 +442,36 @@ Agrawal, Nal Kalchbrenner. <em>arXiv preprint</em> arXiv:2306.06079</li>
 EBSD</strong>. K Kaufmann, C Zhu, <strong>AS Rosengarten</strong>, KS
 Vecchio. <em>Microscopy and Microanalysis</em> 26 (3), 447-457</li>
 </ul>
+<h1 id="technical-skills">Technical Skills</h1>
+<table>
+  <tr>
+    <th></th>
+    <th>Expert</th>
+    <th>Proficient</th>
+ </tr>
+ <tr>
+    <td>Language</td>
+    <td>Python, Typescript, JS, Kotlin, Java</td>
+    <td>C, C++, SQL, Wasm</td>
+ </tr>
+ <tr>
+    <td>Data</td>
+    <td>Tensorflow, Scikit-Learn, XGBoost, OpenCV, Xarray, NumPy, Dask, Pandas, Zarr, Apache Beam, GEE</td>
+    <td>JAX, Apache Spark, GeoPandas, GDAL, Proj, Rasterio, Parquet, BQ, Postgres</td>
+ </tr>
+ <tr>
+    <td>Product</td>
+    <td>GCP, HTML, CSS, Android, REST, Serverless, Docker</td>
+    <td>AWS, FastAPI, Express, Spring, VueJS</td>
+ </tr>
+ <tr>
+    <td>Soft</td>
+    <td>Leadership, Collaboration, Public Speaking, Empathy</td>
+    <td>Agile Rituals, Accessibility, Mentorship</td>
+ </tr>
+
+</table>
+
 <h1 id="education">Education</h1>
 <p>B.S. Computer Science, University of California, San Diego, 2011-16
 </br> B.S. Cognitive Science (Computation), University of California,
