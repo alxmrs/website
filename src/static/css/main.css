@@ -63,6 +63,7 @@ print-only {
     line-height: normal !important;
     letter-spacing: normal !important;
     page-break-after: avoid;
+    margin-bottom: 0 !important;
   }
 
   cv-section {
