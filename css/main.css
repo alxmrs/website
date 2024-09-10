@@ -82,6 +82,7 @@ print-only {
   body {
     font-size: 12px !important;
     line-height: normal !important;
+    margin: 0px auto !important;
   }
 
   print-only {
