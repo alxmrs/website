@@ -4,7 +4,6 @@
 
 <print-only> 
   <ul class="cv-topline">
-    <li>+1 (760) 518-7440</li>
     <li><a href="https://alex.merose.com">alex.merose.com</a></li>
     <li>al@merose.com</li> 
   </ul>
