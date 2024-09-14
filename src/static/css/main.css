@@ -70,15 +70,12 @@ print-only {
     display: flex;
     justify-content: space-between;
   }
-    /*
-  h2 + p {
-      display: flex;
-      justify-content: flex-end;
-  } */
 
   p {
     font-size: 12px !important;
     line-height: normal !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   body {
