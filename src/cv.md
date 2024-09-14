@@ -1,9 +1,10 @@
 <center>
 
-# Alexander S Merose
+# Alexander S. Merose
 
 <print-only> 
   <ul class="cv-topline">
+    <li>SF Bay Area</li>
     <li><a href="https://alex.merose.com">alex.merose.com</a></li>
     <li>al@merose.com</li> 
   </ul>
@@ -11,13 +12,12 @@
 
 </center>
 
-I am a senior software engineer focusing on machine learning. I have played a critical role in two paradigm shifts in
-fields of science using machine learning — first, in materials science; second, in weather prediction.
+I am a senior software engineer focused on machine learning. I have played a critical role in two paradigm shifts in
+fields of science using machine learning — recently, in weather prediction; previously, in materials science.
 
 # Sabbatical Projects
 
 <no-print>
-
 
 <cv-section>
 
@@ -78,14 +78,15 @@ developing state-of-the-art AI weather forecasts and integrating them into produ
 
 - [Xee](https://github.com/google/Xee): An Xarray backend for Google Earth Engine. _(Xarray, Google Earth Engine)_
   - Created this package, launched as a [keynote feature](https://x.com/spatialthoughts/status/1711794831499166032) of [Geo for Good 2023](/talks#geo-for-good-2023).
-  - This bridges the Google Earth Engine and scientific Python communities.
+  - This connects Google Earth Engine to the scientific Python ecosystem.
+  - When integarted with Xarray-Beam, it only takes ~25 lines of code and a few hours to export 20 TiBs of data from Google Earth Engine to Zarr, saving thousands of LOC and days of debugging quota limits.
   - Built to serve an internal weather research platform to build and ship new weather models.
   - Between October, 2023 and September, 2024, Xee received [62k downloads (9k/month)](https://www.pepy.tech/projects/xee) on pip. 
 - [weather-tools](https://github.com/google/weather-tools), a set of data pipelines to make weather data universally accessible and useful. Originally a side project (20% time), I grew the project to a team of 8 engineers to serve ~25 research and product teams across Google AI, Brain, X, DeepMind and Cloud. _(Apache Beam, Xarray, Google Earth Engine, Google BigQuery, MetView)_:
   - [GraphCast](https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/): Enabled DeepMind to ingest and regrid ERA5, the dataset behind their autoregressive graph neural network. At the time of publishing, this was the SOTA 10 day weather forecast, beating physics based models. GraphCast was among [2023's top-ten biggest breakthroughs](https://www.science.org/content/article/biggest-science-breakthroughs-2023) published in _Science_, ushering in a new generation of AI-based weather forecasts. 
   - [MetNet v3 & Nowcasting in Google Search](https://blog.research.google/2023/11/metnet-3-state-of-art-neural-weather.html): MetNet is the world’s leading Nowcast, or 24 hour, minute by minute weather forecast at 1-4 km resolution. `weather-tools` created gobal training, inference, and validation datasets, enabling our team to ship to GSRP.
   - [Project Contrails](https://sites.research.google/contrails/). I provided critical weather data and data engineering pipelines that made this project possible. This project alone will solve 1% of anthropogenic climate change by reducing solar irradiance from airplanes. 
-  - [ARCO-ERA5](https://github.com/google-research/arco-era5) & [Weatherbench2](https://sites.research.google/weatherbench/): I ingested and published the two biggest datasets in Google Cloud’s Public Dataset program. I worked with Cloud to shape weather tools to ingest ERA5 into Google BigQuery.
+  - [ARCO-ERA5](https://github.com/google-research/arco-era5) & [Weatherbench2](https://sites.research.google/weatherbench/): I ingested and published the two biggest datasets in Google Cloud’s Public Dataset program. I worked with Cloud to shape weather tools to ingest ERA5 into BigQuery.
   - [DeepMind’s Wind Energy optimization](https://deepmind.google/discover/blog/machine-learning-can-boost-the-value-of-wind-energy/). By ingesting weather data into Google BigQuery, I helped create an ML model with DeepMind and Cloud to make wind energy more profitable in the Texas energy grid. This lead to a ~3% improvement of mean absolute zero error and ~$7 million more in revenue over 8 months from wind power.
 - [Weatherbench2](https://sites.research.google/weatherbench/). The definitive benchmark to fairly compare AI-based, mid-range weather forecasts and a cornerstone for all future ML weather model development. _(Xarray, Apache Beam, Zarr)_
   - In addition to ingesting the fundamental datasets (see above), I made core updates to [Xarray-Beam](https://github.com/google/xarray-beam), the underlying engine behind the benchmark. 
@@ -95,7 +96,7 @@ developing state-of-the-art AI weather forecasts and integrating them into produ
   - Pangeo Forge is aiming to become the canonical open ecosystem of data engineering recipes for producing cloud-optimized, analysis ready data, i.e. the conda-forge of scientific datasets.
   - I contributed bug fixes and the Beam integration upstream to Pangeo Forge to produce ARCO-ERA5. 
   - [I was the impetus](https://github.com/pangeo-forge/pangeo-forge-recipes/issues/256#issuecomment-1026428221) for Pangeo Forge to transition their data engineering system to Apache Beam.
-  - To support Pangeo Forge, I contributed a Dask runner to Apache Beam ([which I presented at PyData NYC](https://m.youtube.com/watch?v=uGEQkws1Low)).
+  - To support Pangeo Forge, I contributed a Dask runner to Apache Beam ([and presented it at PyData](https://m.youtube.com/watch?v=uGEQkws1Low)).
   - Pangeo Forge would go on to cloud optimize [over 4,000 CMIP6 datasets via Apache Beam](https://x.com/JuliusBusecke/status/1781429813258932710).
   - The ARCO-ERA5 corpus likely includes the [biggest single Zarr ever created](https://x.com/shoyer/status/1805735177517416749).
 - Awards and recognition received while on Anthromet:
@@ -144,7 +145,7 @@ _Aira helps blind and low-vision users access visual information via remote assi
 
 ## Research Assistant, [Vecchio Lab](https://kennethvecchioresearchgroup.eng.ucsd.edu/)
 
-2018 – 2019. UCSD Nanoengineering Department. La Jolla, CA
+2018 – 2019. La Jolla, CA
 
 </cv-section>
 
@@ -214,7 +215,7 @@ _Illumina is a bioinformatics company that produces 90% of the world's genome se
 
 ## Research Assistant, [de Sa Lab](https://pages.ucsd.edu/~desa/)
 
-2013 - 2015. UCSD CogSci Department. La Jolla, CA
+2013 - 2015. La Jolla, CA
 
 </cv-section>
 
@@ -233,11 +234,12 @@ _Please visit my [Google Scholar page](https://scholar.google.com/citations?user
 
 - **Learning skillful medium-range global weather forecasting**. Remi Lam, Alvaro Sanchez-Gonzalez, Matthew Willson, Peter Wirnsberger, Meire Fortunato, Ferran Alet, Suman Ravuri, Timo Ewalds, Zach Eaton-Rosen, Weihua Hu, **Alexander Merose**, Stephan Hoyer, George Holland, Oriol Vinyals, Jacklynn Stott, Alexander Pritzel, Shakir Mohamed, Peter Battaglia. _Science_ 382 (6677), 1416-1421
 - **Discovery of high-entropy ceramics via machine learning**. Kevin Kaufmann, Daniel Maryanovsky, William M Mellor, Chaoyi Zhu, **Alexander S Rosengarten**, Tyler J Harrington, Corey Oses, Cormac Toher, Stefano Curtarolo, Kenneth S Vecchio. _Npj Computational Materials_ 6 (1), 42
-- **Crystal symmetry determination in electron diffraction using machine learning**. Kevin Kaufmann, Chaoyi Zhu, **Alexander S Rosengarten**, Daniel Maryanovsky, Tyler J Harrington, Eduardo Marin, Kenneth S Vecchio. _Science_ 367 (6477), 564-568
+- **Crystal symmetry determination in electron diffraction using machine learning**. Kevin Kaufmann, Chaoyi Zhu°, **Alexander S Rosengarten**°, Daniel Maryanovsky, Tyler J Harrington, Eduardo Marin, Kenneth S Vecchio. _Science_ 367 (6477), 564-568
 - **WeatherBench 2: A benchmark for the next generation of data‐driven global weather models**. Stephan Rasp, Stephan Hoyer, **Alexander Merose**, Ian Langmore, Peter Battaglia, Tyler Russell, Alvaro Sanchez‐Gonzalez, Vivian Yang, Rob Carver, Shreya Agrawal, Matthew Chantry, Zied Ben Bouallegue, Peter Dueben, Carla Bromberg, Jared Sisk, Luke Barrington, Aaron Bell, Fei Sha. _Journal of Advances in Modeling Earth Systems_ 16 (6), e2023MS004019
 - **Deep learning for day forecasts from sparse observations**. Marcin Andrychowicz, Lasse Espeholt, Di Li, Samier Merchant, **Alexander Merose**, Fred Zyda, Shreya Agrawal, Nal Kalchbrenner. _arXiv preprint_ arXiv:2306.06079
 - **Deep neural network enabled space group identification in EBSD**. K Kaufmann, C Zhu, **AS Rosengarten**, KS Vecchio. _Microscopy and Microanalysis_ 26 (3), 447-457
 
+_°Equal contribution_
 
 # Technical Skills
 

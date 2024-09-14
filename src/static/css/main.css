@@ -74,8 +74,7 @@ print-only {
   p {
     font-size: 12px !important;
     line-height: normal !important;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 0.5em 0;
   }
 
   body {
@@ -142,6 +141,10 @@ h1 {
     font-size: 2rem;
     line-height: 1.2;
     margin-bottom: 1vh;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 summary {
