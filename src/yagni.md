@@ -33,7 +33,9 @@ have knowledge of the future. And, if anything is constant in software, it's cha
 abstractions you create will be wrong, just as your guesses about the future are wrong. In this abstraction's wake,
 you're left with technical debt.
 
-> Prediction is hard – _especially_ of the future! — Niels Bohr
+> Prediction is hard – _especially_ of the future! 
+
+— _Niels Bohr_
 
 But abstracting _feels good_. We really _do_ get into software to automate away drudgery! The tools you learn in
 college or early in your career – OOP, Design Patterns, SOLID Principles, etc. – are totally fun to wield. These all
@@ -48,7 +50,8 @@ to more performant, not just more maintainable, programs.
 > There are two ways of constructing a software design: One way is to make it so simple that there are obviously no
 > deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method
 > is far more difficult.
-> — [C. A. R. Hoare](https://web.archive.org/web/20220428130737/https://www.cs.fsu.edu/~engelen/courses/COP4610/hoare.pdf)
+
+— _[C. A. R. Hoare](https://web.archive.org/web/20220428130737/https://www.cs.fsu.edu/~engelen/courses/COP4610/hoare.pdf)_
 
 While I believe I am a "good guesser" and can introduce good abstractions, I find I write less complicated code when
 I react instead of predict. In many ways, I find abstracting early a la DRY is a flavor
