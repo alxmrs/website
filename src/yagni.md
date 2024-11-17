@@ -8,7 +8,8 @@ _Santiago, Chile_
 
 Ok, that's a lot of acronyms. Let me break down what I mean:
 
-- `DRY`: _Don't Repeat Yourself_. It's a software principle that promotes creating abstractions to reduce duplicate logic.
+- `DRY`: _Don't Repeat Yourself_. It's a software principle that promotes creating abstractions to reduce duplicate
+  logic.
 - `WET`: _Write Everything Twice_. The strawman of DRY. A paradigm where one duplicates logic instead
   of creating functions or other abstractions. Imagine copy-pasting-and-tweaking code instead of creating a function
   with a parameter.
@@ -20,7 +21,7 @@ a balance. Knowing how to make such a tradeoff comes from accumulating experienc
 I often balance is between writing DRY code and admitting that YAGNI.
 
 When I was in my first internship at the end of college, my friend who got me the job was a big proponent of DRY. Once
-I learned what DRY meant, writing anything just for right now seemed totally dumb. "The whole idea of programming is
+I learned the definition, writing code any other way seemed totally dumb. "The whole idea of programming is
 to automate drudgery," I remember another colleague telling a more impressionable me. "Never write anything twice!" I
 nodded along, enlightened.
 
@@ -28,12 +29,17 @@ I remember reading _The Elements of Style_ in high school, feeling empowered wit
 thoughts in the written word better. Many years later, I would read about a published author on social media who
 once loved _Elements_ too. He said it took him years of writing to unlearn its lessons.
 
+> You can't edit what you didn't write. You can't optimize code that's not written yet. DRY feels like a distraction
+> from solving the actual problem.
+
+— _[My spouse](https://camille.merose.com/), reacting to the first draft of this article._
+
 In the same vein, it took me years to unlearn writing DRY code. To truly not repeat yourself, you have to
 have knowledge of the future. And, if anything is constant in software, it's change. More often than not, the
 abstractions you create will be wrong, just as your guesses about the future are wrong. In this abstraction's wake,
 you're left with technical debt.
 
-> Prediction is hard – _especially_ of the future! 
+> Prediction is hard – _especially_ of the future!
 
 — _Niels Bohr_
 
@@ -51,7 +57,8 @@ to more performant, not just more maintainable, programs.
 > deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method
 > is far more difficult.
 
-— _[C. A. R. Hoare](https://web.archive.org/web/20220428130737/https://www.cs.fsu.edu/~engelen/courses/COP4610/hoare.pdf)_
+—
+_[C. A. R. Hoare](https://web.archive.org/web/20220428130737/https://www.cs.fsu.edu/~engelen/courses/COP4610/hoare.pdf)_
 
 While I believe I am a "good guesser" and can introduce good abstractions, I find I write less complicated code when
 I react instead of predict. In many ways, I find abstracting early a la DRY is a flavor
