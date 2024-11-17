@@ -53,7 +53,7 @@ to more performant, not just more maintainable, programs.
 While I believe I am a "good guesser" and can introduce good abstractions, I find I write less complicated code when
 I react instead of predict. In many ways, I find abstracting early a la DRY is a flavor
 of [premature optimization](https://m.xkcd.com/1691/). Whenever I feel tempted to add an abstraction early, I tell
-myself: "You Aren't Gunna Need It."
+myself: "You Ain't Gunna Need It."
 
 ## Say No To Classes and Yes To Types
 
