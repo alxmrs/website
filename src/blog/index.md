@@ -3,6 +3,7 @@
 ## 2024
 - [The opposite of DRY isn't WET, it's YAGNI](/yagni/)
 - [Letter to Jed](https://discourse.pangeo.io/t/letter-to-jed-assess-the-value-of-data-by-measuring-the-cost-of-information/4598)
+- [300 days](https://vagabonvivants.com/300-days)
 - [Is there a parallel between tile GPU/TPU kernes and Cubed chunks?](https://github.com/cubed-dev/cubed/issues/490)
 - [Conflict-free Replicated Zarr](https://discourse.pangeo.io/t/conflict-free-replicated-zarr/4261)
 - [Reflections on 200 days of travel](https://vagabonvivants.com/reflections-on-200-days-of-travel)
