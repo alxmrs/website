@@ -1,6 +1,9 @@
 ---
-title: "Beam Pipelines as CLIs: A Hack"
+title: Beam Pipelines as CLIs: A Hack
 date: 2021-08-13
+header-includes:
+    <meta name="keywords" content="Apache,Beam,CLI,Data,Pipeline,Hack,Python" />
+    <meta name="description" content="How to turn a Python Apache Beam Pipeline into a CLI." />
 ---
 *created: 2021-02*
 *updated: 2021-08*

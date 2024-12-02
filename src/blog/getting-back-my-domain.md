@@ -1,6 +1,9 @@
 ---
 title: Getting Back My Domain
 date: 2019-07-23
+header-includes:
+  <meta name="keywords" content="Website,Domain,Irony,Lesson" />
+  <meta name="description" content="I outsmarted myself and lost my domain. How did I get it back?" />
 ---
 
 Well, here's a very meta story about this website and how I've grown since I started it. 

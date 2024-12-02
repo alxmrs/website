@@ -1,4 +1,6 @@
-# Blog
+---
+title: Blog
+---
 
 ## 2024
 - [The opposite of DRY isn't WET, it's YAGNI](/yagni/)
