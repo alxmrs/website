@@ -1,6 +1,7 @@
 # Blog
 
 ## 2024
+- [Day 424: How we feel](https://vagabonvivants.com/day-424-how-we-feel)
 - [The opposite of DRY isn't WET, it's YAGNI](/yagni/)
 - [Letter to Jed](https://discourse.pangeo.io/t/letter-to-jed-assess-the-value-of-data-by-measuring-the-cost-of-information/4598)
 - [300 days](https://vagabonvivants.com/300-days)
