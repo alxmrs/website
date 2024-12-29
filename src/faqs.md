@@ -29,7 +29,7 @@ I lived in Oakland for a few years, then in the Santa Cruz/Monterey area. During
 central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family. 
 Hey, maybe one day I'll end up in Chico or Mt. Shasta. 
 
-Currently, I live in Aromas, CA.
+Currently, I live in Aromas, CA. (It's about 100 miles south of San Francisco.)
 
 </details>
 
