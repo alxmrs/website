@@ -25,35 +25,27 @@ a [mix of software engineering and machine learning roles](/cv).
 <div id="from"></div>
 
 All over California, really. I grew up in [San Diego](/zettel/san-diego/) (north county) and went to college there, too.
-I lived in Oakland for a few years, then in the Santa Cruz / Monterey area. During the pandemic, I found myself in the
-central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family. Hey, maybe one day I'll end up in Chico or Mt. Shasta.
+I lived in Oakland for a few years, then in the Santa Cruz/Monterey area. During the pandemic, I found myself in the
+central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family. 
+Hey, maybe one day I'll end up in Chico or Mt. Shasta. 
+
+Currently, I live in Aromas, CA. (It's about 100 miles south of San Francisco.)
+
+![A good place to live](/assets/a-good-place-to-live.webp)
 
 </details>
 
 <details>
-<summary>What kinds of things do you do for fun?</summary>
 
-<div id="fun"></div>
+<summary>What's your favorite place that you've traveled to?</summary>
 
-I used to fret this question. Especially its corollary: "What are your hobbies?" For the longest time, I felt like I had
-no hobbies, despite my best intentions at starting playing music or [creating art](/electric-origami/). There never
-seemed to be any time. Then, one day, my father-in-law dropped a bomb on me: Travelling is my hobby. Until he said it,
-it never clicked that time spent planning, packing, and unpacking for trips amounted to something!
+Wow, what an impossible question! Well, I have a soft spot for Vietnam. We only visited the [top](https://vagabonvivants.com/chapter-17-good-morning-vietnam) 
+[half](https://vagabonvivants.com/chapter-18-goodnight-vietnam) of the country, but boy does it have it all: natural 
+beauty, rich culture and history, delicious food and, in my opinion, the best coffee in the world. Next on my list is 
+probably Türkiye. There's something really special about that place. 
 
-I really enjoy traveling. I definitely got the travel bug while coming of age. I visited my (then) college girlfriend
-while she studied abroad in New Zealand. On this first major international trip as an adult, I saw NZ (north island
-only) and Tonga. We've used to do at least one major trip per year once we started working, as folks do. I once took a
-wonderful family trip to Havana, Cuba – we snuck that in during the brief window when it was allowed for Americans!
-When I got my last job, I started traveling internationally for work (primarily to Sydney), which only gave me more of
-an apptetite to see more places.
-
-Cam & I took a break from this, of course, during the pandemic. When travel became safer, we started to explore
-domestically. We moved [all around California](#from) and visited friends & family around North America. We would jump
-to new places even with the flimsiest of excuses.
-
-Right now (most likely, who has time to update FAQ pages?), Cam and I are on a yearlong trip around the world. We quit
-our jobs on Friday the 13th of October 2023, to finally see the world to our heart's desire. You can read about where we
-went or hear about where we're going to be on our [newsletter](https://vagabonvivants.substack.com/).
+We're lucky enough to have spent a good deal of [time](https://www.seat61.com/Vietnam.htm) [on trains](https://www.seat61.com/train-travel-in-turkey.htm) in 
+both countries; I wonder if that has something to do with it.
 
 </details>
 
@@ -91,7 +83,7 @@ consider [making your own](https://github.com/alxmrs/pandoc-website-template) sh
 have to replace my hacked-together solution with a "real" static site generator until I
 found [this awesome project](https://github.com/chambln/pandoc-rss) for generating an RSS feed! It seems like I'm not
 the only pandoc obsessed developer out there (there are dozens of us!). I guess the allure of creating a website in
-PowerPoint too strong to let this go...
+PowerPoint is too strong to let go...
 
 If you find any part of it that is not accessible or generally unusable, please reach out to me, and I'll correct it.
 
