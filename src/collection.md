@@ -2,7 +2,7 @@
 
 _2024-12-29_
 
-That's the best advice for creativity I have yet received.
+It's the best advice for creativity I have yet received.
 
 I was a bit lost when I first heard it, having just quit my job about to go travel for who-knew-how-long. I thought I
 might use my time off to figure out new ways to be creative. Before I left, I had a phone call with a close friend of
