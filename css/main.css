@@ -261,7 +261,7 @@ a[href*="//wedding"] {
     color: var(--wedding-color);
 }
 
-a[href*="//vagabonvivant"] {
+a[href*="//vagabonvivants"] {
     color: var(--travel-color);
 }
 
