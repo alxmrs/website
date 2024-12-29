@@ -33,7 +33,7 @@ on at the time, I started at high levels of abstraction and worked my way down t
 that his approach was as alien to me as it was exhilarating. I loved how much of the music and visual art that Zach
 makes comes from phenomena that he has observed and admired. I loved the challenge for me to pay attention to the world
 around me, to look beyond myself and within myself at the same time. And I love the mystery behind the idea of works of
-art that come primarily from outside my own mind, that are born out of happenstance and discernment – is this what
+art that come primarily from outside my own mind, that are born out of happenstance and discernment – isn't this what
 Jung's synchronicity is about, at some level?
 
 ![Birth, Aging, Dying](/assets/birth-aging-dying.webp)
