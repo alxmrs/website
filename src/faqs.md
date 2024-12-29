@@ -31,6 +31,8 @@ Hey, maybe one day I'll end up in Chico or Mt. Shasta.
 
 Currently, I live in Aromas, CA. (It's about 100 miles south of San Francisco.)
 
+![A good place to live](/assets/a-good-place-to-live.webp)
+
 </details>
 
 <details>
@@ -40,11 +42,10 @@ Currently, I live in Aromas, CA. (It's about 100 miles south of San Francisco.)
 Wow, what an impossible question! Well, I have a soft spot for Vietnam. We only visited the [top](https://vagabonvivants.com/chapter-17-good-morning-vietnam) 
 [half](https://vagabonvivants.com/chapter-18-goodnight-vietnam) of the country, but boy does it have it all: natural 
 beauty, rich culture and history, delicious food and, in my opinion, the best coffee in the world. Next on my list is 
-probably Türkiye. There's something really special about that place as well. We're lucky enough to have spent a good 
-deal of [time](https://www.seat61.com/Vietnam.htm) [on trains](https://www.seat61.com/train-travel-in-turkey.htm) in 
-both places; I wonder if that has something to do with it.
+probably Türkiye. There's something really special about that place. 
 
-
+We're lucky enough to have spent a good deal of [time](https://www.seat61.com/Vietnam.htm) [on trains](https://www.seat61.com/train-travel-in-turkey.htm) in 
+both countries; I wonder if that has something to do with it.
 
 </details>
 
