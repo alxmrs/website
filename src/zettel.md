@@ -2,7 +2,6 @@
 title: Hypertext a la Zettelkasten 
 date: 2020-12-31
 ---
-# Hypertext a la Zettelkasten
 
 Ideally, I don't want my website to be _just_ a blog. 
 
