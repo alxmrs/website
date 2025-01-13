@@ -410,9 +410,11 @@ another day…</p>]]></description>
 for work, I found myself surprised to find there was <a
 href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/">no
 documentation</a> on how to structure the pipeline as a CLI <a
-href="#1">[1]</a>. I wanted to make running my pipeline as easy as
-possible. What’s easier than installing a python package via pip, and
-invoking a well-documented command? With features like <a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>. I wanted to make running my
+pipeline as easy as possible. What’s easier than installing a python
+package via pip, and invoking a well-documented command? With features
+like <a
 href="https://pip.pypa.io/en/stable/reference/pip_search/#"><code>pip search</code></a>
 and <code>--help</code> messages, one never needs to leave the
 terminal.</p>
@@ -510,12 +512,17 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a hr
 package, we get the best of both worlds: Beam can install the inner
 package as a library to each remote worker. Users can install the tool
 using python standards.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
 <hr />
-<p><span id="1"><strong>1</strong></span>: Sure, the docs talk about
-packaging workers with <code>setuptools</code>, but this explanation
-lacks my use case exactly. The workers still need to be run from an
-executor, and I want that executor to be installed with
-pip.</p>]]></description>
+<ol>
+<li id="fn1"><p>Sure, the docs talk about packaging workers with
+<code>setuptools</code>, but this explanation lacks my use case exactly.
+The workers still need to be run from an executor, and I want that
+executor to be installed with pip.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>]]></description>
 </item>
 <item>
 <title>Cootie Catchers &amp; Thoughts on Electric Origami</title>
@@ -727,9 +734,10 @@ character of our relationship.</p>
 <p>Christmas’ day of 2019, I acted super weird. I let on that I was
 giving Camille a Big Gift™, the vibes of which she definitely picked up
 on. I am not a good liar. You should see my total absence of a poker
-face when we play cards at Yosemite Christmas <a href="#1">[1]</a>. The
-way I pulled off authentic engagement-ring-under-the-tree energy was by
-giving Camille a trip for Christmas. I gave her a vacation to New
+face when we play cards at Yosemite Christmas <a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+The way I pulled off authentic engagement-ring-under-the-tree energy was
+by giving Camille a trip for Christmas. I gave her a vacation to New
 Orleans for the start of Mardi Gras, over Valentines Day weekend.</p>
 <p>Camille and I love jazz. Since we got together in 2012, music has
 been a cornerstone of our relationship. And, as you can <a
@@ -746,7 +754,8 @@ alt="The cemetery by our house" />
 </figure>
 <p>When we landed in Oakland, we ended up living nearby the <a
 href="https://en.wikipedia.org/wiki/Mountain_View_Cemetery_(Oakland,_California)">Mountain
-View Cemetery</a> <a href="#2">[2]</a>. If you’re not familiar with <a
+View Cemetery</a> <a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a>. If you’re not familiar with <a
 href="https://goo.gl/maps/9aeAdYfmShjbVVva9">the area</a>, the cemetery
 acts somewhat like a public park. It has a stunning view of the San
 Francisco Bay, including parts of the Bay Bridge. Camille and I would
@@ -791,12 +800,19 @@ I got my wish – Cam was surprised.</p>
 <img src="assets/my-proposal-end.webp" alt="Cam and I" />
 <figcaption aria-hidden="true">Cam and I</figcaption>
 </figure>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
 <hr />
-<p><span id="1">[1]</span>: Not that it’s a big deal or anything, but I
-did win the poker game that year.</p>
-<p><span id="2">[2]</span>: The <a
+<ol>
+<li id="fn1"><p>Not that it’s a big deal or anything, but I did win the
+poker game that year.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The <a
 href="https://en.wikipedia.org/wiki/Black_Dahlia#:~:text=Resting%20place">Black
-Dahlia</a> happens to be buried there.</p>]]></description>
+Dahlia</a> happens to be buried there.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>]]></description>
 </item>
 <item>
 <title>How I chose an engagement ring</title>

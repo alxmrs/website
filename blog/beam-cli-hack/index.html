@@ -111,9 +111,11 @@
 pipeline for work, I found myself surprised to find there was <a
 href="/https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/">no
 documentation</a> on how to structure the pipeline as a CLI <a
-href="/#1">[1]</a>. I wanted to make running my pipeline as easy as
-possible. What's easier than installing a python package via pip, and
-invoking a well-documented command? With features like <a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>. I wanted to make running my
+pipeline as easy as possible. What's easier than installing a python
+package via pip, and invoking a well-documented command? With features
+like <a
 href="/https://pip.pypa.io/en/stable/reference/pip_search/#"><code>pip search</code></a>
 and <code>--help</code> messages, one never needs to leave the
 terminal.</p>
@@ -211,11 +213,17 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a hr
 package, we get the best of both worlds: Beam can install the inner
 package as a library to each remote worker. Users can install the tool
 using python standards.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
 <hr />
-<p><span id="1"><strong>1</strong></span>: Sure, the docs talk about
-packaging workers with <code>setuptools</code>, but this explanation
-lacks my use case exactly. The workers still need to be run from an
-executor, and I want that executor to be installed with pip.</p>
+<ol>
+<li id="fn1"><p>Sure, the docs talk about packaging workers with
+<code>setuptools</code>, but this explanation lacks my use case exactly.
+The workers still need to be run from an executor, and I want that
+executor to be installed with pip.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>
