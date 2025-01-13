@@ -19,7 +19,7 @@ family is great, I wanted the moment to honor the character of our relationship.
 
 Christmas' day of 2019, I acted super weird. I let on that I was giving Camille a Big Gift™, the vibes of which she
 definitely picked up on. I am not a good liar. You should see my total absence of a poker face when we play cards at
-Yosemite Christmas [[1]](#1). The way I pulled off authentic engagement-ring-under-the-tree energy was by giving Camille
+Yosemite Christmas [^1]. The way I pulled off authentic engagement-ring-under-the-tree energy was by giving Camille
 a trip for Christmas. I gave her a vacation to New Orleans for the start of Mardi Gras, over Valentines Day weekend.
 
 Camille and I love jazz. Since we got together in 2012, music has been a cornerstone of our relationship. And, as you
@@ -32,7 +32,7 @@ impression. I had something different in mind.
 ![The cemetery by our house](assets/my-proposal-cemetery.webp)
 
 When we landed in Oakland, we ended up living nearby the
-[Mountain View Cemetery](https://en.wikipedia.org/wiki/Mountain_View_Cemetery_(Oakland,_California)) [[2]](#2). If
+[Mountain View Cemetery](https://en.wikipedia.org/wiki/Mountain_View_Cemetery_(Oakland,_California)) [^2]. If
 you're not familiar with [the area](https://goo.gl/maps/9aeAdYfmShjbVVva9), the cemetery acts somewhat like a public
 park. It has a stunning view of the San Francisco Bay, including parts of the Bay Bridge. Camille and I would often find
 ourselves taking a stroll in the cemetery while talking about our lives. We would go there with a pad of paper whenever
@@ -65,12 +65,10 @@ exciting trip to look forward to. I got my wish – Cam was surprised.
 
 ![Cam and I](assets/my-proposal-end.webp)
 
-* * *
 
-<span id="1">[1]</span>: Not that it's a big deal or anything, but I did win the poker game that year.
+[^1]: Not that it's a big deal or anything, but I did win the poker game that year.
 
-<span id="2">[2]</span>: The [Black Dahlia](https://en.wikipedia.org/wiki/Black_Dahlia#:~:text=Resting%20place)
-happens to be buried there.
+[^2]: The [Black Dahlia](https://en.wikipedia.org/wiki/Black_Dahlia#:~:text=Resting%20place) happens to be buried there.
 
 
 

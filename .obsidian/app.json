@@ -6,6 +6,9 @@
   "useMarkdownLinks": true,
   "promptDelete": false,
   "userIgnoreFilters": [
-    "src/zettel/"
+    "src/zettel/",
+    "bin/",
+    "venv/",
+    "templates/"
   ]
 }
