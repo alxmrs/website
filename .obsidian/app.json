@@ -1,1 +1,11 @@
-{}
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "src",
+  "attachmentFolderPath": "src/static/assets",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "promptDelete": false,
+  "userIgnoreFilters": [
+    "src/zettel/"
+  ]
+}
