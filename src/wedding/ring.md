@@ -8,14 +8,11 @@ which was totally the wrong way to go about it. Cam wouldn't want a big rock on 
 and be a liability! Besides, the ring had to compliment her style and personality.
 
 The trick that worked for me to better figure out what would best suit her was to
-talk [to](https://www.instagram.com/briannabanananana/) [her](https://www.instagram.com/sleepiegirl/) [friends](https://www.instagram.com/ro.riches/)
-. I ended up starting a group chat with a few of her closest gals to gather intel. Turns out that they regularly would
-share what kinds of jewelry / rings that they liked. In any case, they had a much better idea of where to start looking
-than I did.
+talk [to](https://www.instagram.com/briannabanananana/) [her](https://www.instagram.com/sleepiegirl/) [friends](https://www.instagram.com/ro.riches/). I ended up starting a group chat with a few of her closest gals to gather intel. Turns out that they regularly would
+share what kinds of jewelry / rings that they liked. In any case, they had a much better idea of where to start looking than I did.
 
 For Cam, I knew that I wanted to get an environmentally friendly, conflict-free diamond. I thought I would go towards
-the lab-grown variety. However, her friends pointed me towards place like [Fiat Lux](https://fiatluxsf.com/)
-, [Anastassia Sel Jewelry](http://www.anastassiasel.com/), [asrai garden](https://www.asraigarden.com/),
+the lab-grown variety. However, her friends pointed me towards place like [Fiat Lux](https://fiatluxsf.com/), [Anastassia Sel Jewelry](http://www.anastassiasel.com/), [asrai garden](https://www.asraigarden.com/),
 and [Sofia Zakia](https://sofiazakia.com/). Not only do these jewelers only source ethical stones, they also fit
 Camille's style.
 
@@ -42,9 +39,9 @@ Here's a general overview of how ordering a ring went down.
   not available to me to have a spontaneous proposal, because Cam was enrolled in a wilderness medicine orientation and
   would be busy the whole time!
 - The ring came, like, one week before my trip, on a Wednesday. It was just in time for me to propose the way I wanted
-  to. I had the wiggle room of two days to [propose](https://alxmrs.com/proposal/).
+  to. I had the wiggle room of two days to [propose](proposal.md).
 
 <video height="640" width="364" autoplay loop mute>
-<source src="https://alxmrs.com/assets/engagementring.mp4" type="video/mp4">
+<source src="/assets/engagementring.mp4" type="video/mp4">
 Sorry, your browser does not support the video tag.
 </video>

@@ -21,5 +21,5 @@ became lost in a thought. Let the fragments
 
 return you to the moment.
 
-[Taste](https://alxmrs.com/smoothie/) the present.
+[Taste](smoothie.md) the present.
 

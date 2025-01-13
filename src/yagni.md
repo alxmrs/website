@@ -109,5 +109,5 @@ though it may mean generalizing early, I often say "Yes" to types.
 
 These two heuristics — YAGNI over DRY, Types over Classes — have served me well. I may yet throw these patterns out the
 window later as I continue to grow. I dare say that you, dear reader, should adopt these preferences too, but then
-I'd be [thinking for someone else](/think/).
+I'd be [thinking for someone else](think.md).
 

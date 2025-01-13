@@ -1,1 +1,1 @@
-<meta http-equiv="Refresh" content="0; URL=https://docs.google.com/document/d/1i6OBR1p_ZsdUH9dovQQT4eMuymKJd6PWoC7xPwqhEvk/edit" />
+<meta http-equiv="Refresh" content="0; URL=https://jbdoar.github.io/" />

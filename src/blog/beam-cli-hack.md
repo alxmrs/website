@@ -10,8 +10,7 @@ myself surprised to find there was [no documentation](https://beam.apache.org/do
 on how to structure the pipeline as a CLI [[1]](#1). I wanted to make running 
 my pipeline as easy as possible. What's easier than installing a python 
 package via pip, and invoking a well-documented command? With features like
-[`pip search`](https://pip.pypa.io/en/stable/reference/pip_search/#) and 
-`--help` messages, one never needs to leave the terminal.
+[`pip search`](https://pip.pypa.io/en/stable/reference/pip_search/#) and  `--help` messages, one never needs to leave the terminal.
 
 It's a bit strange to structure a Beam pipeline as a CLI. When I usually use 
 CLIs, I think about manipulating files on my local machine, not orchestrating a

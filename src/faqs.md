@@ -14,7 +14,7 @@ my [old team's main product](https://blog.research.google/2023/11/metnet-3-state
 this, I used to work on the [Arcs project](https://github.com/PolymerLabs/arcs), a system to protect user privacy in the
 AI era. I've been lucky so far that a lot of my work involves contributing to [open source](https://github.com/alxmrs).
 Before joining Google, I've had
-a [mix of software engineering and machine learning roles](/cv).
+a [mix of software engineering and machine learning roles](cv.md).
 
 </details>
 
@@ -24,14 +24,14 @@ a [mix of software engineering and machine learning roles](/cv).
 
 <div id="from"></div>
 
-All over California, really. I grew up in [San Diego](/zettel/san-diego/) (north county) and went to college there, too.
+All over California, really. I grew up in [San Diego](san-diego.md) (north county) and went to college there, too.
 I lived in Oakland for a few years, then in the Santa Cruz/Monterey area. During the pandemic, I found myself in the
 central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family. 
 Hey, maybe one day I'll end up in Chico or Mt. Shasta. 
 
 Currently, I live in Aromas, CA. (It's about 100 miles south of San Francisco.)
 
-![A good place to live](/assets/a-good-place-to-live.webp)
+![A good place to live](assets/a-good-place-to-live.webp)
 
 </details>
 
