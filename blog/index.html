@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -37,81 +37,85 @@
 </nav>
 
 <h1 id="blog">Blog</h1>
+<h2 id="2025">2025</h2>
+<ul>
+<li><a href="/a-second-second-brain">A Second Second-Brain</a></li>
+</ul>
 <h2 id="2024">2024</h2>
 <ul>
-<li><a href="/collection/">Collect Things</a></li>
-<li><a href="https://vagabonvivants.com/day-424-how-we-feel">Day 424:
+<li><a href="/collection">Collect Things</a></li>
+<li><a href="/https://vagabonvivants.com/day-424-how-we-feel">Day 424:
 How we feel</a></li>
-<li><a href="/yagni/">The opposite of DRY isn't WET, it's YAGNI</a></li>
+<li><a href="/yagni">The opposite of DRY isn't WET, it's YAGNI</a></li>
 <li><a
-href="https://discourse.pangeo.io/t/letter-to-jed-assess-the-value-of-data-by-measuring-the-cost-of-information/4598">Letter
+href="/https://discourse.pangeo.io/t/letter-to-jed-assess-the-value-of-data-by-measuring-the-cost-of-information/4598">Letter
 to Jed</a></li>
-<li><a href="https://vagabonvivants.com/300-days">300 days</a></li>
-<li><a href="https://github.com/cubed-dev/cubed/issues/490">Is there a
+<li><a href="/https://vagabonvivants.com/300-days">300 days</a></li>
+<li><a href="/https://github.com/cubed-dev/cubed/issues/490">Is there a
 parallel between tile GPU/TPU kernes and Cubed chunks?</a></li>
 <li><a
-href="https://discourse.pangeo.io/t/conflict-free-replicated-zarr/4261">Conflict-free
+href="/https://discourse.pangeo.io/t/conflict-free-replicated-zarr/4261">Conflict-free
 Replicated Zarr</a></li>
 <li><a
-href="https://vagabonvivants.com/reflections-on-200-days-of-travel">Reflections
+href="/https://vagabonvivants.com/reflections-on-200-days-of-travel">Reflections
 on 200 days of travel</a></li>
 <li><a
-href="https://vagabonvivants.com/celebrating-100-days">Celebrating 100
+href="/https://vagabonvivants.com/celebrating-100-days">Celebrating 100
 Days!</a></li>
-<li><a href="https://github.com/alxmrs/xarray-sql/issues/4">Zarrquet:
+<li><a href="/https://github.com/alxmrs/xarray-sql/issues/4">Zarrquet:
 Create a referenced based filesystem to read virtual parquet from
 Zarr</a></li>
 <li><a
-href="https://vagabonvivants.com/packing-for-gap-year-part-1-wardrobe">Packing
+href="/https://vagabonvivants.com/packing-for-gap-year-part-1-wardrobe">Packing
 for Gap Year, Part 1: Wardrobe</a></li>
 </ul>
 <h2 id="2023">2023</h2>
 <ul>
 <li><a
-href="https://vagabonvivants.substack.com/p/martinis-at-the-opera-house">Martini's
+href="/https://vagabonvivants.substack.com/p/martinis-at-the-opera-house">Martini's
 at the Opera House</a></li>
 <li><a
-href="https://vagabonvivants.substack.com/p/why-were-taking-a-gap-year">Why
+href="/https://vagabonvivants.substack.com/p/why-were-taking-a-gap-year">Why
 we're taking a gap year</a></li>
-<li><a href="/think/">Think for Someone Else</a></li>
-<li><a href="/haircut/"> 💇‍♀️ How to cut your wife's hair (and stay
+<li><a href="/think">Think for Someone Else</a></li>
+<li><a href="/haircut"> 💇‍♀️ How to cut your wife's hair (and stay
 married)</a></li>
 </ul>
 <h2 id="2022">2022</h2>
 <ul>
 <li><a
-href="https://alxmrs.notion.site/Smarter-Closet-App-b182228add834efd90bfdc529efafe25">Smarter
+href="/https://alxmrs.notion.site/Smarter-Closet-App-b182228add834efd90bfdc529efafe25">Smarter
 Closet App</a></li>
-<li><a href="/wedding-video/">How I backed up all my wedding footage in
+<li><a href="/wedding-video">How I backed up all my wedding footage in
 the cloud</a></li>
-<li><a href="/digital-detox/">Why I’m going on a digital detox</a></li>
-<li><a href="/anniversary/">Alexes' Anniversary</a></li>
+<li><a href="/digital-detox">Why I’m going on a digital detox</a></li>
+<li><a href="/anniversary">Alexes' Anniversary</a></li>
 </ul>
 <h2 id="2021">2021</h2>
 <ul>
-<li><a href="/electric-origami/">Cootie Catchers &amp; Thoughts on
+<li><a href="/electric-origami">Cootie Catchers &amp; Thoughts on
 Electric Origami</a></li>
-<li><a href="https://weddingalbum.merose.com/">Wedding Website</a>
+<li><a href="/https://weddingalbum.merose.com/">Wedding Website</a>
 Series:
 <ol type="1">
-<li><a href="/wedding/ring/">How I chose an engagement ring</a></li>
-<li><a href="/proposal/">My Proposal</a></li>
-<li><a href="/TODO/">Combining Last Names</a></li>
+<li><a href="/wedding/ring">How I chose an engagement ring</a></li>
+<li><a href="/proposal">My Proposal</a></li>
+<li><a href="/TODO">Combining Last Names</a></li>
 </ol></li>
-<li><a href="/cssa/">CSSA ML Workshop: Machine Learning on the
+<li><a href="/cssa">CSSA ML Workshop: Machine Learning on the
 Edge</a></li>
-<li><a href="/ice/">A new meditation</a></li>
-<li><a href="/blog/beam-cli-hack/">Beam Pipelines as CLIs: A
+<li><a href="/ice">A new meditation</a></li>
+<li><a href="/blog/beam-cli-hack">Beam Pipelines as CLIs: A
 Hack</a></li>
-<li><a href="/boredom/">15 minutes of boredom a day</a></li>
+<li><a href="/boredom">15 minutes of boredom a day</a></li>
 </ul>
 <h2 id="2020">2020</h2>
 <ul>
-<li><a href="/emails/">Emails to Self</a></li>
-<li><a href="/goals/">Goals Setting</a></li>
-<li><a href="/zettel/">Hypertext a la Zettelkasten</a></li>
-<li><a href="/pesto/">Pesto, Chango!</a></li>
-<li><a href="/smoothie/">Smoothie</a></li>
+<li><a href="/emails">Emails to Self</a></li>
+<li><a href="/goals">Goals Setting</a></li>
+<li><a href="/zettel">Hypertext a la Zettelkasten</a></li>
+<li><a href="/pesto">Pesto, Chango!</a></li>
+<li><a href="/smoothie">Smoothie</a></li>
 </ul>
 <h2 id="2019">2019</h2>
 <ul>
@@ -122,24 +126,24 @@ Domain</a></li>
 </ul>
 <h2 id="2018">2018</h2>
 <ul>
-<li><a href="/blog/in-defense-of-interruptions/">In defense of
+<li><a href="/blog/in-defense-of-interruptions">In defense of
 interruptions</a></li>
-<li><a href="/blog/higher-order-functions-on-pandas-dataframes/">Higher
+<li><a href="/blog/higher-order-functions-on-pandas-dataframes">Higher
 Order Functions on Pandas Dataframes</a></li>
 </ul>
 <h2 id="2017">2017</h2>
 <ul>
-<li><a href="/blog/thoughts-about-cognitive-ecology/">Thoughts About
+<li><a href="/blog/thoughts-about-cognitive-ecology">Thoughts About
 Cognitive Ecology</a></li>
-<li><a href="/blog/first-blog-post/">First Blog Post (new blog)</a></li>
+<li><a href="/blog/first-blog-post">First Blog Post (new blog)</a></li>
 </ul>
 <h2 id="2014">2014</h2>
 <ul>
-<li><a href="/blog/calyx-of-held/">Calyx of Held</a></li>
+<li><a href="/blog/calyx-of-held">Calyx of Held</a></li>
 </ul>
 <h2 id="2013">2013</h2>
 <ul>
-<li><a href="/blog/film-in-the-era-of-google-glass/">Film in the Era of
+<li><a href="/blog/film-in-the-era-of-google-glass">Film in the Era of
 Google Glass</a></li>
 </ul>
 <footer>

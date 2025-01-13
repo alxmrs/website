@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -36,18 +36,7 @@
     </ul>
 </nav>
 
-<h1 id="choices">Choices</h1>
-<blockquote>
-<p>But if you act compassionately in this branch, that’s still
-meaningful, because it has an effect on the branches that will split off
-in the future. The more often you make compassionate <a
-href="/zettel/san-diego/">choices</a>, the less likely it is that you’ll
-make selfish choices in the future, even in the branches where you’re
-having a bad day.</p>
-</blockquote>
-<p>– Ted Chiang, 2019. <a
-href="https://www.overdrive.com/search?q=80B8C36B-D9E5-4278-B94F-5403F2DCB583">Exhalation</a>.
-Page 328.</p>
+<meta http-equiv="Refresh" content="0; URL=/choices/" />
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>

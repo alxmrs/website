@@ -11,12 +11,18 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -80,12 +86,8 @@
     code span.va { color: #19177c; } /* Variable */
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -140,7 +142,7 @@ took him years of writing to unlearn its lessons.</p>
 not written yet. DRY feels like a distraction from solving the actual
 problem.</p>
 </blockquote>
-<p>— <em><a href="https://camille.merose.com/">My spouse</a>, reacting
+<p>— <em><a href="/https://camille.merose.com/">My spouse</a>, reacting
 to the first draft of this article.</em></p>
 <p>In the same vein, it took me years to unlearn writing DRY code. To
 truly not repeat yourself, you have to have knowledge of the future.
@@ -172,12 +174,12 @@ other way is to make it so complicated that there are no obvious
 deficiencies. The first method is far more difficult.</p>
 </blockquote>
 <p>— <em><a
-href="https://web.archive.org/web/20220428130737/https://www.cs.fsu.edu/~engelen/courses/COP4610/hoare.pdf">C.
+href="/https://web.archive.org/web/20220428130737/https://www.cs.fsu.edu/~engelen/courses/COP4610/hoare.pdf">C.
 A. R. Hoare</a></em></p>
 <p>While I believe I am a "good guesser" and can introduce good
 abstractions, I find I write less complicated code when I react instead
 of predict. In many ways, I find abstracting early a la DRY is a flavor
-of <a href="https://m.xkcd.com/1691/">premature optimization</a>.
+of <a href="/https://m.xkcd.com/1691/">premature optimization</a>.
 Whenever I feel tempted to add an abstraction early, I tell myself: "You
 Ain't Gunna Need It."</p>
 <h2 id="say-no-to-classes-and-yes-to-types">Say No To Classes and Yes To
@@ -199,7 +201,7 @@ trade off between DRY and YAGNI. Whenever I get the chance, I say "No"
 to classes and "Yes" to types. Two specific artifacts from members of
 the Python community inform this perspective.</p>
 <p>The first is Jack Diederich's now classic talk, <a
-href="https://youtu.be/o9pEzgHorH0">"Stop Writing Classes"</a>. It
+href="/https://youtu.be/o9pEzgHorH0">"Stop Writing Classes"</a>. It
 really is worth a watch. I have seen no better embodiment of the Zen of
 Python. (If the Zen of Python is unfamiliar to you, I recommend running
 this within a Python REPL:</p>
@@ -215,8 +217,8 @@ say "No" to classes.</p>
 <p>Since this talk came out, however, the Python language has changed a
 lot. More and more, the community is embracing typing and other formal
 methods for program correctness. This blog post from <a
-href="https://kobzol.github.io/">Jakub Beránek (aka @Kobzol)</a>, <a
-href="https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html">"Writing
+href="/https://kobzol.github.io/">Jakub Beránek (aka @Kobzol)</a>, <a
+href="/https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html">"Writing
 Python like it's Rust"</a> is emblematic of this trend.</p>
 <p>The lesson to not make error states representable in your programs is
 well worth abstracting up-front to me. Algebraic Data Types and other
@@ -226,7 +228,7 @@ their effort. Even though it may mean generalizing early, I often say
 <p>These two heuristics — YAGNI over DRY, Types over Classes — have
 served me well. I may yet throw these patterns out the window later as I
 continue to grow. I dare say that you, dear reader, should adopt these
-preferences too, but then I'd be <a href="/think/">thinking for someone
+preferences too, but then I'd be <a href="/think">thinking for someone
 else</a>.</p>
 <footer>
     <ul>

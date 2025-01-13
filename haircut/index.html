@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -36,8 +36,8 @@
     </ul>
 </nav>
 
-<h1 id="️-how-to-cut-your-wifes-hair-and-stay-married">💇‍♀️ How to cut your
-wife's hair (and stay married)</h1>
+<h1 id="haircut_woman-how-to-cut-your-wifes-hair-and-stay-married">💇‍♀️
+How to cut your wife's hair (and stay married)</h1>
 <p><em>December 13, 2022</em></p>
 <p>Step 1: Have a wife who may not have any chill but who thinks that
 not going to the salon is punk rock.</p>
@@ -46,7 +46,7 @@ not going to the salon is punk rock.</p>
 on how to cut women's hair and this is what popped up:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QBZ4ZMVtXIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<h2 id="️">🤦🏼‍♂️</h2>
+<h2 id="facepalmmale_sign">🤦🏼‍♂️</h2>
 <p>It's amazing how much and little I know about hair at the same time.
 Like, it's quite patronizing that this guy had to explain split ends to
 me (currently, my hair is about twice as long as my wife's — so I
@@ -123,8 +123,7 @@ I can help it!</p>
 successful cut, Cam found a patch of smaller hairs near the back of her
 neck that were longer than her bob. I had given my wife a rat tail.
 🤦‍♂️🤦‍♂️🤦‍♂️</p>
-<p><img src="https://alxmrs.com/assets/rat-tail.webp"
-alt="I gave Cam a rat tail" /></p>
+<p><img src="/assets/rat-tail.webp" alt="I gave Cam a rat tail" /></p>
 <p>We'll fix it tomorrow...</p>
 <p><em>February 2023</em></p>
 <p>I didn't take immediately after this cut. Here's what I remember
@@ -137,13 +136,13 @@ about it:</p>
 </ul>
 <p>Her haircut was so short that we waited three months until her next
 haircut.</p>
-<p><img src="https://alxmrs.com/assets/too-short.webp"
+<p><img src="/assets/too-short.webp"
 alt="Her bob was cut too short" /></p>
 <p><em>Her hair falls above her chin, not just below it!</em></p>
 <p><em>May 20, 2023</em></p>
 <p>Ok. I'm graduating to using the straight razor. It's time to get
 serious. Luckily, Cam found a professional video on the subject <a
-href="https://vimeo.com/ondemand/385045">for me to rent</a>.</p>
+href="/https://vimeo.com/ondemand/385045">for me to rent</a>.</p>
 <p>This was quite a good tutorial on giving French bobs. I like the hair
 dressers music choices. Some of the ideas from the video that stuck with
 me were:</p>
@@ -186,7 +185,7 @@ going to her office happy hour. If anything, I appreciated getting to do
 the cut twice. It was good practice and it helped build confidence with
 the razor.</p>
 <video width="640" controls muted autoplay>
-  <source src="https://alxmrs.com/assets/cam-bob-silent.mp4" type="video/mp4">
+  <source src="/assets/cam-bob-silent.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 

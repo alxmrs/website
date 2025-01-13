@@ -12,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -21,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -42,14 +42,14 @@
 <p class="date">2020-12-31</p>
 </header>
 <p>In 2016, the year I graduated from college, <a
-href="https://camille.merose.com">my partner, Camille,</a> gave me a <a
-href="https://passionplanner.com">Passion Planner</a>.</p>
+href="/https://camille.merose.com">my partner, Camille,</a> gave me a <a
+href="/https://passionplanner.com">Passion Planner</a>.</p>
 <p>This planner is a journal / ideation system that helps you figure out
 what you want in life, and then helps you realize it. A guide designed
 by someone who felt adrift after her own graduation, it was exactly what
 I needed.</p>
 <p>The <a
-href="https://passionplanner.com/products/passion-roadmap">system</a>
+href="/https://passionplanner.com/products/passion-roadmap">system</a>
 works something like this: First, you brainstorm ways how you would like
 to change your life (or what you'd like to accomplish). Then, you
 organize your top goals per various time spans (lifetime, 3 years, 1

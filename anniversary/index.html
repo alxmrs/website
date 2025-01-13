@@ -12,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -21,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -42,8 +42,8 @@
 <p class="date">2022-06-16</p>
 </header>
 <p>I got married a few weeks ago, and the strangest thing happened the
-Friday before my <a href="https://alxmrs.com/wedding/">big day</a>. I
-headed to the barber shop to get my beard cleaned up, as one does.</p>
+Friday before my <a href="/wedding">big day</a>. I headed to the barber
+shop to get my beard cleaned up, as one does.</p>
 <p>I got there right on time. "Alex for a 2:30 appointment?" I asked as
 I entered the shop.</p>
 <p>This question seemed to disgruntle the person in the waiting area
@@ -75,9 +75,8 @@ is?"</p>
 <summary>What <i>are</i> the odds?</summary>
 
 <p>I thought a bit about how to solve this during my wedding weekend. I
-<a href="https://alxmrs.com/wedding/paradox/">almost tried</a> to
-formalize and calculate a solution. Instead, I went off to my
-honeymoon.</p>
+<a href="/wedding/paradox">almost tried</a> to formalize and calculate a
+solution. Instead, I went off to my honeymoon.</p>
 </details>
 <footer>
     <ul>

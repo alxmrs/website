@@ -12,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -21,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -43,16 +43,16 @@
 </header>
 <p><em>WIP?</em></p>
 <p>I've been thinking a bunch about how to tackle <a
-href="https://alxmrs.com/anniversary/">this problem</a>. It seems like
-my trip to the barber shop seems like a weird variant of the <a
-href="https://en.wikipedia.org/wiki/Birthday_problem">Birthday
+href="/anniversary">this problem</a>. It seems like my trip to the
+barber shop seems like a weird variant of the <a
+href="/https://en.wikipedia.org/wiki/Birthday_problem">Birthday
 Paradox</a>: What is the probability, in a group of <code>n</code>
 randomly chosen people, at least three will have the same name and
 wedding day?</p>
 <p>I've poked around stats exchange and found some <a
-href="https://stats.stackexchange.com/a/1718">general solutions</a> to
+href="/https://stats.stackexchange.com/a/1718">general solutions</a> to
 the birthday paradox, including an <a
-href="https://stats.stackexchange.com/a/335132">R implementation</a>.
+href="/https://stats.stackexchange.com/a/335132">R implementation</a>.
 Though, I'm not convinced that this is a good approach. How do you
 maintain assumptions and also account for names?</p>
 <p>It seems like a better way would be to collect data on birthdays and

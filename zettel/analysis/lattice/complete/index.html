@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -36,23 +36,7 @@
     </ul>
 </nav>
 
-<h1 id="complete-lattice"><a
-href="https://en.wikipedia.org/wiki/Lattice_(order)#Completeness">Complete
-Lattice</a></h1>
-<p>A <a href="/zettel/analysis/lattice/">lattice</a> is complete if
-<em>all</em> subsets have both a join and a meet. A complete lattice is
-more restrictive than a normal lattice.</p>
-<p>Every non-empty finite lattice is complete.</p>
-<p><a
-href="https://en.wikipedia.org/wiki/Complete_lattice#Examples">Examples</a>:</p>
-<blockquote>
-<p>The power set of a given set, ordered by inclusion. The supremum is
-given by the union and the infimum by the intersection of subsets.</p>
-<p>...</p>
-<p>The convex subsets of a real or complex vector space, ordered by
-inclusion. The infimum is given by the intersection of convex sets and
-the supremum by the convex hull of the union.</p>
-</blockquote>
+<meta http-equiv="Refresh" content="0; URL=/complete-lattice/" />
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>

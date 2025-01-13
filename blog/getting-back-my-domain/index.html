@@ -12,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -21,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -47,7 +47,7 @@ since I started it.</p>
 the annoying maze I had to get out of to fix it.</p>
 <p>Check out the URL of this domain. Is it secure? How do you know? Let
 me show you how <em>I</em> know it's not, as of writing:</p>
-<p><img src="https://alxmrs.com/assets/alex-is-not-secure.webp"
+<p><img src="/assets/alex-is-not-secure.webp"
 title="A URL bar with no HTTPS support"
 alt="My site does not use HTTPS, and therefore is not secure" /></p>
 <p>"How embarrassing. A software engineer who doesn't know how to set up
@@ -58,7 +58,7 @@ adding that feature. Like most of software engineering, building things
 outside of your current ability is just a matter of Googling it and
 following directions.</p>
 <p>As time has gone on, I've kept postponing this feature, despite <a
-href="https://github.blog/2018-05-01-github-pages-custom-domains-https/">learning
+href="/https://github.blog/2018-05-01-github-pages-custom-domains-https/">learning
 how to implement it</a>. I've avoided addressing anything to do with my
 domain due to a completely avoidable predicament that I got myself into
 all in the name of "security". Here I am today, writing support tickets
@@ -70,7 +70,7 @@ the general idea was it helped you control spam and prevent hacking. It
 did this by generating a fake email address per website, and
 automatically forwarding all the emails to your real address.</p>
 <p>"Great!" I thought. "I can't be subject to a <a
-href="https://xkcd.com/792/">password-reuse attack</a> if every email I
+href="/https://xkcd.com/792/">password-reuse attack</a> if every email I
 use is different, right?"</p>
 <p>It had additional services, totally for free, for replacing phone
 numbers and credit cards, so you never had to give up personal
@@ -79,7 +79,7 @@ generated emails, cell phone numbers, and credit cards.</p>
 <p>Sometime around the end of high school or early college, after
 adopting MaskMe, I thought to myself, "I should buy my personal domain
 before <a
-href="https://www.facebook.com/public/Alex-Rosengarten">another Alex
+href="/https://www.facebook.com/public/Alex-Rosengarten">another Alex
 Rosengarten</a> beats me to it."</p>
 <p>So I did. But I had the <em>brilliant</em> idea to make the account
 holding my domains as anonymous as possible. You know, just in case I
@@ -99,13 +99,13 @@ on to one platform so I can build more advanced things. To this end, I
 attempt to log on to Namecheap, which should be easy because I actually
 remember my username and password. I enter those pieces of information.
 Then, I hit the next screen:</p>
-<p><img src="https://alxmrs.com/assets/namecheap-mfa-masked.webp"
+<p><img src="/assets/namecheap-mfa-masked.webp"
 title="A MFA screen showing my MaskedMe phone number"
 alt="I have to wait on a text to a phone number I don&#39;t control" /></p>
 <p>Ok. This is <em>annoying</em>, but not too big of a problem. I'll
 just log into my MaskedMe account, get the multi-factor authentication
 (MFA) code, and move along.</p>
-<p>A Google search gets me <a href="https://www.abine.com/">here</a>:
+<p>A Google search gets me <a href="/https://www.abine.com/">here</a>:
 Apparently MaskMe has re-branded as Abine, offering two services: Blur
 (same services as MaskMe) and DeleteMe, a way to scrub your online
 footprint off the web.</p>
@@ -148,8 +148,8 @@ myself on the internet.</li>
 <li>The security measures I took... made me more vulnerable and less in
 control.</li>
 </ul>
-<p>"Congratulations," <a href="http://camille.merose.com">my partner</a>
-told me. "You played yourself."</p>
+<p>"Congratulations," <a href="/http://camille.merose.com">my
+partner</a> told me. "You played yourself."</p>
 <p>Thanks, hun.</p>
 <p>Over the next few days, I searched my email and other records for
 traces of that number with no success. I knew that this was a futile
@@ -169,10 +169,11 @@ Before I knew it, I bypassed the MFA.</p>
 <p>In my younger days, I had an unbalanced sense of trust. I had strong
 feelings towards protecting myself online, but no context to correctly
 model risk. At the time, I didn't know of the importance of certain
-choices -- like how <a href="https://doesmysiteneedhttps.com/">important
-HTTPS is for web browsing</a>. I also neglected to consider the
-longevity of other choices. I needed to ask myself, "how dependable are
-the tools I choose to rely on?"</p>
+choices -- like how <a
+href="/https://doesmysiteneedhttps.com/">important HTTPS is for web
+browsing</a>. I also neglected to consider the longevity of other
+choices. I needed to ask myself, "how dependable are the tools I choose
+to rely on?"</p>
 <p>Further, this situation could have been avoided if I performed
 regular maintenance. The logic I practiced was akin to the idea that you
 can't fall victim to a phishing attack if you never check email. Or, it

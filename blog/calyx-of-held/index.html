@@ -12,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -21,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -48,14 +48,13 @@ neuroscience classes and ECE classes and their per-requisites so that I
 could better understand the underlying machinery of the human (primate)
 brain.</p>
 <p>The globular bushy cells, for instance, have the biggest axon
-diameters of all the neurons in the auditory system.<br />
-They need to be so thick because they need to transmit signals fast –
-from the cochlea (where hair cells transduce mechanical sound into
-electric signals) to a nucleus all the way on the opposite
-(contralateral) side of the brain. This takes a few hundred
-microseconds, quick enough so that the fibers connecting the cochlea
-from the same (ipsilateral) side of the brain only have time to fire one
-action potential on to that nucleus.</p>
+diameters of all the neurons in the auditory system. They need to be so
+thick because they need to transmit signals fast – from the cochlea
+(where hair cells transduce mechanical sound into electric signals) to a
+nucleus all the way on the opposite (contralateral) side of the brain.
+This takes a few hundred microseconds, quick enough so that the fibers
+connecting the cochlea from the same (ipsilateral) side of the brain
+only have time to fire one action potential on to that nucleus.</p>
 <p>I read an article about a team of bioengineers at Stanford creating
 microchips that simulated 10,000 neurons. I feel like I could join them
 if I had the chance to take computational neurobiology or semiconductor

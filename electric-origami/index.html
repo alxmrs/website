@@ -12,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -21,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -42,18 +42,18 @@
 Origami</h1>
 <p class="date">2021-05-23</p>
 </header>
-<p><img src="https://alxmrs.com/assets/catcher-title.webp"
+<p><img src="/assets/catcher-title.webp"
 alt="Prototypes and thinking about electric origami" /></p>
 <p>I was reading hacker news aimlessly on the couch, as one does when
 home alone on a Sunday afternoon, when I came across <a
-href="https://news.ycombinator.com/item?id=27254480">this post</a>.
+href="/https://news.ycombinator.com/item?id=27254480">this post</a>.
 Printable circuits with a cheap inkjet printer? How exciting! Think of
 the possibilities!</p>
 <p>I shared the post with a few of my friends. <a
-href="https://jbdoar.github.io/">Jason</a> got back to me, and we
+href="/https://jbdoar.github.io/">Jason</a> got back to me, and we
 started thinking about what we could do with this kind of tech.</p>
 <p>Soon, the idea occurred to me: how about creating a little toy <a
-href="https://en.wikipedia.org/wiki/Paper_fortune_teller">paper
+href="/https://en.wikipedia.org/wiki/Paper_fortune_teller">paper
 fortune-teller</a> (or cootie catcher) that completes a circuit. Like,
 it could turn on lights or make sounds, depending on how the
 fortune-teller was folded. A bonus point about making a simple paper
@@ -69,20 +69,20 @@ circuit ink pen and some electronics, and moved on to thinking about the
 design.</p>
 <p>I folded myself a fortune-teller and began thinking of how the
 circuit would work. Here was my prototype v0.0:</p>
-<p><img src="https://alxmrs.com/assets/catcher-v00.webp"
+<p><img src="/assets/catcher-v00.webp"
 alt="v0.0 of my electric paper fortune-teller" /></p>
 <p>I used quarters here in place of <a
-href="https://www.batteriesandbutter.com/RV1025.html">coin-sized
+href="/https://www.batteriesandbutter.com/RV1025.html">coin-sized
 batteries</a>. The lines represent paths with conductive ink, and the
 black dots should become contact points for the batteries when
 folded.</p>
 <p>As you can see, when you press the "B" dots together, two outside
 LEDs would turn on.</p>
-<p><img src="https://alxmrs.com/assets/v00-b-pressed.webp"
+<p><img src="/assets/v00-b-pressed.webp"
 alt="v0.0 of a fortune-teller with the &quot;B&quot; circuit activated." /></p>
 <p>When you press the "A" dots together, light would shine through the
 center of the fortune teller.</p>
-<p><img src="https://alxmrs.com/assets/v00-a-pressed.webp"
+<p><img src="/assets/v00-a-pressed.webp"
 alt="v0.0 of a fortune-teller with the &quot;A&quot; circuit activated." /></p>
 <p>This seems fine, but I imagine using two batteries could get pricey
 at the scale of ~200 guests for our wedding (not to mention, wasteful).
@@ -91,12 +91,12 @@ How could I create the catcher such that it used only one battery?</p>
 abstractly as a graph. The dotted lines below represent folded
 connections, whereas solid lines would be silver-ink connections in
 paper.</p>
-<p><img src="https://alxmrs.com/assets/graph-initial-sketch.webp"
+<p><img src="/assets/graph-initial-sketch.webp"
 alt="Representing the problem as a graph." /></p>
 <p>I noticed that the dotted lines here weren't telling the whole
 picture: Each line is associated with a connection "mode." While alpha
 was connected, beta wasn't, and visa versa.</p>
-<p><img src="https://alxmrs.com/assets/graph-alpha-beta.webp"
+<p><img src="/assets/graph-alpha-beta.webp"
 alt="Adding modes to the graph." /></p>
 <p>The aspiring math teacher in me wants to ask: How would you draw the
 circuit? It was fun for me to solve, and if you've read this far, I
@@ -112,7 +112,7 @@ battery.
 </p>
 
 <p>
-<img src="https://alxmrs.com/assets/graph-answer.webp" title="A solution to my simple graph problem">
+<img src="/assets/graph-answer.webp" title="A solution to my simple graph problem">
 </p>
 
 <p>
@@ -127,7 +127,7 @@ one page?
 The answer was "yes!" With another sketch, I had v0.1 of my design:
 </p>
 <p>
-<img src="https://alxmrs.com/assets/catcher-v01.webp" title="v0.1 of my electric paper fortune-teller">
+<img src="/assets/catcher-v01.webp" title="v0.1 of my electric paper fortune-teller">
 </p>
 
 </details>
@@ -135,17 +135,17 @@ The answer was "yes!" With another sketch, I had v0.1 of my design:
 <hr />
 <p>Folded together, the circuit would turn on two outer LEDs when "A"
 was pressed together, and the two other LEDs when "B" was pressed.</p>
-<p><img src="https://alxmrs.com/assets/v01-a-pressed.webp"
+<p><img src="/assets/v01-a-pressed.webp"
 alt="v0.1 of a fortune-teller with the &quot;A&quot; circuit activated." /></p>
-<p><img src="https://alxmrs.com/assets/v01-b-pressed.webp"
+<p><img src="/assets/v01-b-pressed.webp"
 alt="v0.1 of a fortune-teller with the &quot;B&quot; circuit activated." /></p>
 <p>I told Jason all this, and he asked a good question: Would the silver
 ink connections remain robust during folding? I did a quick inspect of
 every crease, and to my best estimation, it seems to be the case! – no
 short circuits.</p>
-<p><img src="https://alxmrs.com/assets/catcher-v01-short-front.webp"
+<p><img src="/assets/catcher-v01-short-front.webp"
 alt="An inspection for shorts of the v0.1 design, front" /></p>
-<p><img src="https://alxmrs.com/assets/catcher-v01-short-back.webp"
+<p><img src="/assets/catcher-v01-short-back.webp"
 alt="An inspection for shorts of the v0.1 design, back" /></p>
 <p>Later, Jason would point out something that would require an
 adjustment in my design. In v0.0, I was relying on each battery making

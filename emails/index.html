@@ -12,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -21,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -48,10 +48,10 @@ available to receive work messages – when you close your laptop, work
 should be done.</p>
 <p>The hardest part of this separation, for me, is that shutting a
 laptop doesn't stop the spontaneous flow of ideas. Maybe when your <a
-href="https://alxmrs.com/boredom/">brain is trying to relax</a>, you
-think of a small TODO that will make tomorrow better. Or, you feel
-inspired to create something work related. Maybe you've encountered an
-article in your feeds that you'd like to share with a co-worker.</p>
+href="/boredom">brain is trying to relax</a>, you think of a small TODO
+that will make tomorrow better. Or, you feel inspired to create
+something work related. Maybe you've encountered an article in your
+feeds that you'd like to share with a co-worker.</p>
 <p>Just send the thought from your personal to your work email. It'll be
 waiting for you in your inbox tomorrow. Thereafter, you can resume your
 non-working life.</p>

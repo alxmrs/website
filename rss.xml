@@ -10,6 +10,129 @@
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
 <item>
+<title>Complete Lattice</title>
+<pubDate>Sun, 12 Jan 2025 18:17:00 +0000</pubDate>
+<guid>https://alex.merose.com/complete-lattice/</guid>
+<description><![CDATA[<p>A <a href="src/lattice.md">lattice</a> is
+complete if <em>all</em> subsets have both a join and a meet. A complete
+lattice is more restrictive than a normal lattice.</p>
+<p>Every non-empty finite lattice is complete.</p>
+<p><a
+href="https://en.wikipedia.org/wiki/Complete_lattice#Examples">Examples</a>:</p>
+<blockquote>
+<p>The power set of a given set, ordered by inclusion. The supremum is
+given by the union and the infimum by the intersection of subsets.</p>
+<p>…</p>
+<p>The convex subsets of a real or complex vector space, ordered by
+inclusion. The infimum is given by the intersection of convex sets and
+the supremum by the convex hull of the union.</p>
+</blockquote>
+<hr />
+<h1 id="references">References</h1>
+<p>https://en.wikipedia.org/wiki/Lattice_(order)#Completenes</p>]]></description>
+</item>
+<item>
+<title>Complete Semilattice</title>
+<pubDate>Sun, 12 Jan 2025 18:13:00 +0000</pubDate>
+<guid>https://alex.merose.com/complete-semilattice/</guid>
+<description><![CDATA[<p>Apparently, this term doesn’t mean much. Why?
+Well, if a <a href="src/semilattice.md">semilattice</a> is complete (all
+subsets hold the meet / join property), then it will be complete in the
+other direction, making it a <a
+href="complete-lattice.md">complete-lattice</a></p>
+<blockquote>
+<p>[A] complete meet-semilattice has all non-empty meets (which is
+equivalent to being bounded complete) and all directed joins. If such a
+structure has also a greatest element (the meet of the empty set), it is
+also a complete lattice.</p>
+</blockquote>
+<p>Why does this term exist? Probably, because we only care about
+completeness for one operation, either just the <em>meet</em> or just
+the <em>join</em>.</p>
+<hr />
+<h1 id="references">References</h1>
+<p>https://en.wikipedia.org/wiki/Semilattice#Complete_semilattices</p>]]></description>
+</item>
+<item>
+<title>Semilattice</title>
+<pubDate>Sun, 12 Jan 2025 18:09:00 +0000</pubDate>
+<guid>https://alex.merose.com/semilattice/</guid>
+<description><![CDATA[<p>A semilattice is like a directed <a
+href="src/lattice.md">lattice</a> in either<br />
+the <em>meet</em> (LCM) or <em>join</em> (GCD) direction (“for
+<em>any</em> nonempty finite subset”).</p>
+<p><em>Meet</em>-semilattices are “lower semilattices” whereas
+<em>join</em>-semilattices are “upper<br />
+semilattices.”</p>
+<blockquote>
+<p>A set S partially ordered by the binary relation ≤ is a
+meet-semilattice if<br />
+For all elements x and y of S, the greatest lower bound of the set {x,
+y} exists. — # References</p>
+</blockquote>
+<p>https://en.wikipedia.org/wiki/Semilattice</p>]]></description>
+</item>
+<item>
+<title>Collect Things</title>
+<pubDate>Sun, 29 Dec 2024 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/collection/</guid>
+<description><![CDATA[<p>It’s the best advice for creativity I have yet
+received.</p>
+<p>I was a bit lost when I first heard it, having just quit my job about
+to go travel for who-knew-how-long. I thought I might use my time off to
+figure out new ways to be creative. Before I left, I had a phone call
+with a close friend of mine <a
+href="https://www.instagram.com/wyrm.rilye/">who is a musician</a>. Man,
+I love Zach.</p>
+<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2738656371/size=large/bgcol=333333/linkcol=2ebd35/tracklist=false/transparent=true/" seamless>
+<a href="https://wyrm-rilye.bandcamp.com/album/drone-love-me"> Drone
+love me by Wyrm Rilye</a>
+</iframe>
+<p>When I told him my intentions, without missing a beat, he told me to
+collect things. I wondered, “what kinds of things?”</p>
+<p>Zach told me he took pictures of things he found beautiful,
+downloaded bits of the internet on to his phone, and my favorite: he
+would write down phrases or words that didn’t mean anything but that he
+thought sounded cool. These would often become lyrics in his songs. The
+category didn’t matter so much. The important part was to collect.</p>
+<figure>
+<img src="assets/sax.webp" alt="If walls could jam" />
+<figcaption aria-hidden="true">If walls could jam</figcaption>
+</figure>
+<p>“Oh, I get it. But, don’t you have to have something you’re working
+on to know what to collect?” I asked, trying to understand.</p>
+<p>(To the best of my memory) Zach replied: “You don’t do this to
+produce something. You do it for the pleasure of having your collection.
+That’s it.” So much of the process behind art boils down to
+decision-making, he posited. Therefore, it’s really important to
+understand your own sense of taste. What from the world around you fits
+into that palate?</p>
+<figure>
+<img src="assets/sarcatstic.webp" alt="A cat making fun of a god" />
+<figcaption aria-hidden="true">A cat making fun of a god</figcaption>
+</figure>
+<p>I told Zach then how much my process involved thinking top-down. For
+the few works of fiction that I had been noodling on at the time, I
+started at high levels of abstraction and worked my way down to the
+concrete and specific. I told him that his approach was as alien to me
+as it was exhilarating. I loved how much of the music and visual art
+that Zach makes comes from phenomena that he has observed and admired. I
+loved the challenge for me to pay attention to the world around me, to
+look beyond myself and within myself at the same time. And I love the
+mystery behind the idea of works of art that come primarily from outside
+my own mind, that are born out of happenstance and discernment – isn’t
+this what Jung’s synchronicity is about, at some level?</p>
+<figure>
+<img src="assets/birth-aging-dying.webp" alt="Birth, Aging, Dying" />
+<figcaption aria-hidden="true">Birth, Aging, Dying</figcaption>
+</figure>
+<p>We said goodbye after talking for a while. He was living in LA and I
+was about to fly off to Australia. I left for fifteen months. By now, at
+least as of writing, I’ve added bits from the whole world to my
+collection. Boy, what a pleasure it has been! And, more than anything, I
+can’t wait to pay Zach a visit and show it to him.</p>]]></description>
+</item>
+<item>
 <title>How I backed up all my wedding footage in the cloud</title>
 <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/wedding-video/</guid>
@@ -193,11 +316,10 @@ than I’ve ever used before.</p>
 <h2 id="what-can-i-hope-for-next">What can I hope for next?</h2>
 <p>Instead of connecting more with others online, I’m more looking
 forward for the opportunity to connect more with myself. I’d like to
-spend more time creating in <a
-href="https://alxmrs.com/boredom/">solitude</a>, including writing. I
-really like Newport’s recommendation to write more letters to yourself.
-I do some form of this already, though I do hope to make it more of a
-regular habit.</p>
+spend more time creating in <a href="boredom.md">solitude</a>, including
+writing. I really like Newport’s recommendation to write more letters to
+yourself. I do some form of this already, though I do hope to make it
+more of a regular habit.</p>
 <p>As far as keeping up with people, I’m already the weird one in my
 friend groups who randomly calls people on the phone. And, I have no
 trouble meeting new people in real life – I once made a friend on
@@ -208,9 +330,9 @@ Bart!</p>]]></description>
 <pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/anniversary/</guid>
 <description><![CDATA[<p>I got married a few weeks ago, and the
-strangest thing happened the Friday before my <a
-href="https://alxmrs.com/wedding/">big day</a>. I headed to the barber
-shop to get my beard cleaned up, as one does.</p>
+strangest thing happened the Friday before my <a href="wedding.md">big
+day</a>. I headed to the barber shop to get my beard cleaned up, as one
+does.</p>
 <p>I got there right on time. “Alex for a 2:30 appointment?” I asked as
 I entered the shop.</p>
 <p>This question seemed to disgruntle the person in the waiting area
@@ -243,10 +365,18 @@ is?”</p>
 What <i>are</i> the odds?
 </summary>
 <p>I thought a bit about how to solve this during my wedding weekend. I
-<a href="https://alxmrs.com/wedding/paradox/">almost tried</a> to
-formalize and calculate a solution. Instead, I went off to my
-honeymoon.</p>
+<a href="wedding/paradox.md">almost tried</a> to formalize and calculate
+a solution. Instead, I went off to my honeymoon.</p>
 </details>]]></description>
+</item>
+<item>
+<title>Wedding</title>
+<pubDate>Thu, 16 Jun 2022 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/wedding/</guid>
+<description><![CDATA[<p>I see why people say that their wedding is the
+best day of their life.</p>
+<p><a href="https://weddingalbum.merose.com">Mine certainly
+was.</a></p>]]></description>
 </item>
 <item>
 <title>Random ideas to solve Alex’s Anniversary Paradox</title>
@@ -254,8 +384,8 @@ honeymoon.</p>
 <guid>https://alex.merose.com/paradox/</guid>
 <description><![CDATA[<p><em>WIP?</em></p>
 <p>I’ve been thinking a bunch about how to tackle <a
-href="https://alxmrs.com/anniversary/">this problem</a>. It seems like
-my trip to the barber shop seems like a weird variant of the <a
+href="anniversary.md">this problem</a>. It seems like my trip to the
+barber shop seems like a weird variant of the <a
 href="https://en.wikipedia.org/wiki/Birthday_problem">Birthday
 Paradox</a>: What is the probability, in a group of <code>n</code>
 randomly chosen people, at least three will have the same name and
@@ -392,7 +522,7 @@ pip.</p>]]></description>
 <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/electric-origami/</guid>
 <description><![CDATA[<figure>
-<img src="https://alxmrs.com/assets/catcher-title.webp"
+<img src="assets/catcher-title.webp"
 alt="Prototypes and thinking about electric origami" />
 <figcaption aria-hidden="true">Prototypes and thinking about electric
 origami</figcaption>
@@ -423,7 +553,7 @@ design.</p>
 <p>I folded myself a fortune-teller and began thinking of how the
 circuit would work. Here was my prototype v0.0:</p>
 <figure>
-<img src="https://alxmrs.com/assets/catcher-v00.webp"
+<img src="assets/catcher-v00.webp"
 alt="v0.0 of my electric paper fortune-teller" />
 <figcaption aria-hidden="true">v0.0 of my electric paper
 fortune-teller</figcaption>
@@ -436,7 +566,7 @@ folded.</p>
 <p>As you can see, when you press the “B” dots together, two outside
 LEDs would turn on.</p>
 <figure>
-<img src="https://alxmrs.com/assets/v00-b-pressed.webp"
+<img src="assets/v00-b-pressed.webp"
 alt="v0.0 of a fortune-teller with the “B” circuit activated." />
 <figcaption aria-hidden="true">v0.0 of a fortune-teller with the “B”
 circuit activated.</figcaption>
@@ -444,7 +574,7 @@ circuit activated.</figcaption>
 <p>When you press the “A” dots together, light would shine through the
 center of the fortune teller.</p>
 <figure>
-<img src="https://alxmrs.com/assets/v00-a-pressed.webp"
+<img src="assets/v00-a-pressed.webp"
 alt="v0.0 of a fortune-teller with the “A” circuit activated." />
 <figcaption aria-hidden="true">v0.0 of a fortune-teller with the “A”
 circuit activated.</figcaption>
@@ -457,7 +587,7 @@ abstractly as a graph. The dotted lines below represent folded
 connections, whereas solid lines would be silver-ink connections in
 paper.</p>
 <figure>
-<img src="https://alxmrs.com/assets/graph-initial-sketch.webp"
+<img src="assets/graph-initial-sketch.webp"
 alt="Representing the problem as a graph." />
 <figcaption aria-hidden="true">Representing the problem as a
 graph.</figcaption>
@@ -466,7 +596,7 @@ graph.</figcaption>
 picture: Each line is associated with a connection “mode.” While alpha
 was connected, beta wasn’t, and visa versa.</p>
 <figure>
-<img src="https://alxmrs.com/assets/graph-alpha-beta.webp"
+<img src="assets/graph-alpha-beta.webp"
 alt="Adding modes to the graph." />
 <figcaption aria-hidden="true">Adding modes to the graph.</figcaption>
 </figure>
@@ -484,7 +614,7 @@ I figured out a configuration that would complete a full circuit for
 each mode with only one battery.
 </p>
 <p>
-<img src="https://alxmrs.com/assets/graph-answer.webp" title="A solution to my simple graph problem">
+<img src="/assets/graph-answer.webp" title="A solution to my simple graph problem">
 </p>
 <p>
 (the trick was to cross the “A” connections)
@@ -497,20 +627,20 @@ planar. Can I fit the one-battery circuit on one page?
 The answer was “yes!” With another sketch, I had v0.1 of my design:
 </p>
 <p>
-<img src="https://alxmrs.com/assets/catcher-v01.webp" title="v0.1 of my electric paper fortune-teller">
+<img src="/assets/catcher-v01.webp" title="v0.1 of my electric paper fortune-teller">
 </p>
 </details>
 <hr />
 <p>Folded together, the circuit would turn on two outer LEDs when “A”
 was pressed together, and the two other LEDs when “B” was pressed.</p>
 <figure>
-<img src="https://alxmrs.com/assets/v01-a-pressed.webp"
+<img src="assets/v01-a-pressed.webp"
 alt="v0.1 of a fortune-teller with the “A” circuit activated." />
 <figcaption aria-hidden="true">v0.1 of a fortune-teller with the “A”
 circuit activated.</figcaption>
 </figure>
 <figure>
-<img src="https://alxmrs.com/assets/v01-b-pressed.webp"
+<img src="assets/v01-b-pressed.webp"
 alt="v0.1 of a fortune-teller with the “B” circuit activated." />
 <figcaption aria-hidden="true">v0.1 of a fortune-teller with the “B”
 circuit activated.</figcaption>
@@ -520,13 +650,13 @@ ink connections remain robust during folding? I did a quick inspect of
 every crease, and to my best estimation, it seems to be the case! – no
 short circuits.</p>
 <figure>
-<img src="https://alxmrs.com/assets/catcher-v01-short-front.webp"
+<img src="assets/catcher-v01-short-front.webp"
 alt="An inspection for shorts of the v0.1 design, front" />
 <figcaption aria-hidden="true">An inspection for shorts of the v0.1
 design, front</figcaption>
 </figure>
 <figure>
-<img src="https://alxmrs.com/assets/catcher-v01-short-back.webp"
+<img src="assets/catcher-v01-short-back.webp"
 alt="An inspection for shorts of the v0.1 design, back" />
 <figcaption aria-hidden="true">An inspection for shorts of the v0.1
 design, back</figcaption>
@@ -575,7 +705,7 @@ make?</p>]]></description>
 <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/proposal/</guid>
 <description><![CDATA[<figure>
-<img src="https://alxmrs.com/assets/my-proposal-ring.webp"
+<img src="assets/my-proposal-ring.webp"
 alt="Me just after I’ve proposed" />
 <figcaption aria-hidden="true">Me just after I’ve proposed</figcaption>
 </figure>
@@ -590,10 +720,10 @@ year holidays. Every year, a few days leading up to Christmas, Camille’s
 family take a trip to the cabins of Yosemite valley. Proposals at
 Yosemite Christmas, in the Cary family, are practically an unofficial
 tradition. Unfortunately for me, the <a
-href="https://alxmrs.com/wedding/ring/">engagement ring</a> I had picked
-out needed more time to be made. And, wouldn’t it be nice to pave my own
-way? While a proposal in front of family is great, I wanted the moment
-to honor the character of our relationship.</p>
+href="wedding/ring.md">engagement ring</a> I had picked out needed more
+time to be made. And, wouldn’t it be nice to pave my own way? While a
+proposal in front of family is great, I wanted the moment to honor the
+character of our relationship.</p>
 <p>Christmas’ day of 2019, I acted super weird. I let on that I was
 giving Camille a Big Gift™, the vibes of which she definitely picked up
 on. I am not a good liar. You should see my total absence of a poker
@@ -603,14 +733,14 @@ giving Camille a trip for Christmas. I gave her a vacation to New
 Orleans for the start of Mardi Gras, over Valentines Day weekend.</p>
 <p>Camille and I love jazz. Since we got together in 2012, music has
 been a cornerstone of our relationship. And, as you can <a
-href="https://alxmrs.com/pesto/">probably guess</a>, Camille and I love
-food. For these reasons (and the allure of gator tours), Cam and I have
-talked about going to New Orleans together for forever.</p>
+href="pesto.md">probably guess</a>, Camille and I love food. For these
+reasons (and the allure of gator tours), Cam and I have talked about
+going to New Orleans together for forever.</p>
 <p>“I was sure that he was going to propose in New Orleans,” Grandma
 Shirley would tell us later. I’m glad I gave off that impression. I had
 something different in mind.</p>
 <figure>
-<img src="https://alxmrs.com/assets/my-proposal-cemetery.webp"
+<img src="assets/my-proposal-cemetery.webp"
 alt="The cemetery by our house" />
 <figcaption aria-hidden="true">The cemetery by our house</figcaption>
 </figure>
@@ -624,8 +754,8 @@ often find ourselves taking a stroll in the cemetery while talking about
 our lives. We would go there with a pad of paper whenever we needed to
 make a big decision, ornate headstones being our preferred backdrop to
 make defining choices. Along the way of figuring out the right <a
-href="https://alxmrs.com/wedding/ring/">engagement ring</a>, I knew that
-I wanted to propose to Camille here.</p>
+href="wedding/ring.md">engagement ring</a>, I knew that I wanted to
+propose to Camille here.</p>
 <p>The day of the proposal was like any other day – except I dressed
 nicer than usual and was very nervous. I had to overcome what felt like
 a bunch of wrenches thrown at me to get the timing just right. It was a
@@ -658,8 +788,7 @@ traditional Friday night activity. I got a reservation at the excellent
 sicilian place on our block. We had an exciting trip to look forward to.
 I got my wish – Cam was surprised.</p>
 <figure>
-<img src="https://alxmrs.com/assets/my-proposal-end.webp"
-alt="Cam and I" />
+<img src="assets/my-proposal-end.webp" alt="Cam and I" />
 <figcaption aria-hidden="true">Cam and I</figcaption>
 </figure>
 <hr />
@@ -682,7 +811,7 @@ the ring had to compliment her style and personality.</p>
 suit her was to talk <a
 href="https://www.instagram.com/briannabanananana/">to</a> <a
 href="https://www.instagram.com/sleepiegirl/">her</a> <a
-href="https://www.instagram.com/ro.riches/">friends</a> . I ended up
+href="https://www.instagram.com/ro.riches/">friends</a>. I ended up
 starting a group chat with a few of her closest gals to gather intel.
 Turns out that they regularly would share what kinds of jewelry / rings
 that they liked. In any case, they had a much better idea of where to
@@ -690,7 +819,7 @@ start looking than I did.</p>
 <p>For Cam, I knew that I wanted to get an environmentally friendly,
 conflict-free diamond. I thought I would go towards the lab-grown
 variety. However, her friends pointed me towards place like <a
-href="https://fiatluxsf.com/">Fiat Lux</a> , <a
+href="https://fiatluxsf.com/">Fiat Lux</a>, <a
 href="http://www.anastassiasel.com/">Anastassia Sel Jewelry</a>, <a
 href="https://www.asraigarden.com/">asrai garden</a>, and <a
 href="https://sofiazakia.com/">Sofia Zakia</a>. Not only do these
@@ -734,11 +863,10 @@ proposal, because Cam was enrolled in a wilderness medicine orientation
 and would be busy the whole time!</li>
 <li>The ring came, like, one week before my trip, on a Wednesday. It was
 just in time for me to propose the way I wanted to. I had the wiggle
-room of two days to <a
-href="https://alxmrs.com/proposal/">propose</a>.</li>
+room of two days to <a href="proposal.md">propose</a>.</li>
 </ul>
 <video height="640" width="364" autoplay loop mute>
-<source src="https://alxmrs.com/assets/engagementring.mp4" type="video/mp4">
+<source src="/assets/engagementring.mp4" type="video/mp4">
 <p>Sorry, your browser does not support the video tag.
 </video></p>]]></description>
 </item>
@@ -759,8 +887,7 @@ href="https://rfcx.org/">“Rainforest Connection”</a>, an app that’s
 fighting climate change and protecting rainforests through mobile audio
 classification.</p>
 <figure>
-<img src="https://alxmrs.com/assets/Web-RFCX.webp"
-alt="Web-Rainforest Connection" />
+<img src="assets/Web-RFCX.webp" alt="Web-Rainforest Connection" />
 <figcaption aria-hidden="true">Web-Rainforest Connection</figcaption>
 </figure>
 <ul>
@@ -802,6 +929,31 @@ solution</a></em> ( documentation to come later)</li>
 questions or comments.</p>]]></description>
 </item>
 <item>
+<title>Lattice</title>
+<pubDate>Sat, 03 Apr 2021 00:00:00 +0000</pubDate>
+<guid>https://alex.merose.com/lattice/</guid>
+<description><![CDATA[<p>A lattice is a partially ordered set, or
+poset.</p>
+<p>Here is a lattice ordered by divisibility:</p>
+<figure>
+<img
+src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Birkhoff120.svg"
+alt="Lattice of 120 ordered by divisibility" />
+<figcaption aria-hidden="true">Lattice of 120 ordered by
+divisibility</figcaption>
+</figure>
+<p><a href="https://en.wikipedia.org/wiki/Lattice_(order)#Examples">See
+other examples</a>.</p>
+<p>Every two elements of a lattice has:<br />
+- a <em>supremum</em>, or least upper bound, or <em>join</em>. e.g. <a
+href="https://en.wikipedia.org/wiki/Least_common_multiple">LCM</a><br />
+- an <em>infimum</em>, or greatest lower bound, or <em>meet</em>.
+e.g. <a
+href="https://en.wikipedia.org/wiki/Greatest_common_divisor">GCD</a> — #
+References</p>
+<p>https://en.wikipedia.org/wiki/Lattice_(order)</p>]]></description>
+</item>
+<item>
 <title>A new meditation</title>
 <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/ice/</guid>
@@ -814,16 +966,15 @@ questions or comments.</p>]]></description>
 <p>Notice when you <em>are</em> chewing, when you</p>
 <p>became lost in a thought. Let the fragments</p>
 <p>return you to the moment.</p>
-<p><a href="https://alxmrs.com/smoothie/">Taste</a> the
-present.</p>]]></description>
+<p><a href="smoothie.md">Taste</a> the present.</p>]]></description>
 </item>
 <item>
 <title>15 minutes of boredom a day</title>
 <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
 <guid>https://alex.merose.com/boredom/</guid>
-<description><![CDATA[<p>A week ago (late 2020), <a
-href="https://alxmrs.com/goals/">I started a new habit</a>: I now try to
-find 15 minutes of boredom a day.</p>
+<description><![CDATA[<p>A week ago (late 2020), <a href="goals.md">I
+started a new habit</a>: I now try to find 15 minutes of boredom a
+day.</p>
 <p>These are uninterrupted periods of no stimulation. I have my phone
 off or in another room. I avoid screens in general. No music plays in
 the background. I just sit there alone with my thoughts and perceptions
@@ -834,13 +985,13 @@ enough, my mind will wonder and I’ll enjoy following its path.</p>
 revision of the <a
 href="https://editor.p5js.org/alxrsngrtn/sketches/8Ndif6Ngl">hex tile
 art</a> I’m working on. I’ll dig into a <a
-href="https://alxmrs.com/zettel/determinism/">joke my wife made about
-me</a> and reflect on what it means. I’ll think of articles I want to
-write. I’ll think about thinking.</p>
-<p>Whereas <a href="https://alxmrs.com/ice/">meditation</a> focuses on
-the absence of thought in favor of presence, 15 minutes of boredom helps
-me form ideas. I find the ritual to be refreshing even when I bear no
-new thoughts. I relish the opportunity for peace and emotional
+href="zettel/determinism.md">joke my wife made about me</a> and reflect
+on what it means. I’ll think of articles I want to write. I’ll think
+about thinking.</p>
+<p>Whereas <a href="ice.md">meditation</a> focuses on the absence of
+thought in favor of presence, 15 minutes of boredom helps me form ideas.
+I find the ritual to be refreshing even when I bear no new thoughts. I
+relish the opportunity for peace and emotional
 reflection.</p>]]></description>
 </item>
 <item>
@@ -854,10 +1005,10 @@ available to receive work messages – when you close your laptop, work
 should be done.</p>
 <p>The hardest part of this separation, for me, is that shutting a
 laptop doesn’t stop the spontaneous flow of ideas. Maybe when your <a
-href="https://alxmrs.com/boredom/">brain is trying to relax</a>, you
-think of a small TODO that will make tomorrow better. Or, you feel
-inspired to create something work related. Maybe you’ve encountered an
-article in your feeds that you’d like to share with a co-worker.</p>
+href="boredom.md">brain is trying to relax</a>, you think of a small
+TODO that will make tomorrow better. Or, you feel inspired to create
+something work related. Maybe you’ve encountered an article in your
+feeds that you’d like to share with a co-worker.</p>
 <p>Just send the thought from your personal to your work email. It’ll be
 waiting for you in your inbox tomorrow. Thereafter, you can resume your
 non-working life.</p>]]></description>
@@ -890,7 +1041,7 @@ involves making monthly check-ins, to see if your actions are aligning
 with your goals. In addition, I have a larger check-in at the end of the
 year, to contemplate annual progress and cast new goals.</p>
 <p>The process gives me the opportunity to reflect on the <a
-href="/zettel/determinism">shape of my life</a>. It feels great to
+href="zettel/determinism.md">shape of my life</a>. It feels great to
 accomplish a goal I’ve set. Better still: it’s a real joy to see how
 your goals change over time.</p>]]></description>
 </item>
@@ -904,15 +1055,15 @@ your goals change over time.</p>]]></description>
 create a newsletter – while this seems fun, the upkeep feels like more
 of a burden than empowered expression. Why not, instead, aim to express
 systems of ideas free of time?</p>
-<p>I have a <a href="https://alxmrs.com/zettel/ideas/">lot of ideas</a>,
-but most of them are small and only make sense in context with other
-thoughts. While I can often coalesce these scattered thoughts into
-coherent essays, this takes time and effort I seldom muster.</p>
-<p><a href="https://alxmrs.com/goals/">Every new years day</a> I
-conceive of a “nice-to-have” resolution to start writing. Visions dance
-before me of emulating great technical blogs that I spend the year
-reading. Alas, it never goes this way, due to a sense of perfectionism
-and habit inertia.</p>
+<p>I have a <a href="zettel/ideas.md">lot of ideas</a>, but most of them
+are small and only make sense in context with other thoughts. While I
+can often coalesce these scattered thoughts into coherent essays, this
+takes time and effort I seldom muster.</p>
+<p><a href="goals.md">Every new years day</a> I conceive of a
+“nice-to-have” resolution to start writing. Visions dance before me of
+emulating great technical blogs that I spend the year reading. Alas, it
+never goes this way, due to a sense of perfectionism and habit
+inertia.</p>
 <p>My dear friend <a href="http://eatbigger.fish">eve</a> mentioned the
 other day that they were getting into this style of hypertext called <a
 href="https://zettelkasten.de/introduction/">Zettelkasten</a>. Parsing
@@ -1044,9 +1195,9 @@ which I thought was worthy of sharing.</p>
 email</h2>
 <p>A crafty use of psychology: sitting down and <em>writing</em> can
 seem like such a drag. Can’t you just briefly <em>explain</em> the idea
-to someone? Why not pretend to (or actually) <a
-href="https://alxmrs.com/emails/">send someone an email</a> where you
-talk about what you’re going to write.</p>
+to someone? Why not pretend to (or actually) <a href="emails.md">send
+someone an email</a> where you talk about what you’re going to
+write.</p>
 <p>Viola! You have your first draft.</p>
 <h2 id="draw-a-diagram-convert-it-to-text">Draw a diagram, convert it to
 text</h2>
@@ -1097,7 +1248,7 @@ the annoying maze I had to get out of to fix it.</p>
 <p>Check out the URL of this domain. Is it secure? How do you know? Let
 me show you how <em>I</em> know it’s not, as of writing:</p>
 <figure>
-<img src="https://alxmrs.com/assets/alex-is-not-secure.webp"
+<img src="assets/alex-is-not-secure.webp"
 title="A URL bar with no HTTPS support"
 alt="My site does not use HTTPS, and therefore is not secure" />
 <figcaption aria-hidden="true">My site does not use HTTPS, and therefore
@@ -1153,7 +1304,7 @@ attempt to log on to Namecheap, which should be easy because I actually
 remember my username and password. I enter those pieces of information.
 Then, I hit the next screen:</p>
 <figure>
-<img src="https://alxmrs.com/assets/namecheap-mfa-masked.webp"
+<img src="assets/namecheap-mfa-masked.webp"
 title="A MFA screen showing my MaskedMe phone number"
 alt="I have to wait on a text to a phone number I don’t control" />
 <figcaption aria-hidden="true">I have to wait on a text to a phone
@@ -1728,14 +1879,13 @@ time to take all the neuroscience classes and ECE classes and their
 per-requisites so that I could better understand the underlying
 machinery of the human (primate) brain.</p>
 <p>The globular bushy cells, for instance, have the biggest axon
-diameters of all the neurons in the auditory system.<br />
-They need to be so thick because they need to transmit signals fast –
-from the cochlea (where hair cells transduce mechanical sound into
-electric signals) to a nucleus all the way on the opposite
-(contralateral) side of the brain. This takes a few hundred
-microseconds, quick enough so that the fibers connecting the cochlea
-from the same (ipsilateral) side of the brain only have time to fire one
-action potential on to that nucleus.</p>
+diameters of all the neurons in the auditory system. They need to be so
+thick because they need to transmit signals fast – from the cochlea
+(where hair cells transduce mechanical sound into electric signals) to a
+nucleus all the way on the opposite (contralateral) side of the brain.
+This takes a few hundred microseconds, quick enough so that the fibers
+connecting the cochlea from the same (ipsilateral) side of the brain
+only have time to fire one action potential on to that nucleus.</p>
 <p>I read an article about a team of bioengineers at Stanford creating
 microchips that simulated 10,000 neurons. I feel like I could join them
 if I had the chance to take computational neurobiology or semiconductor

@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -41,19 +41,20 @@
 
 <p>Though friends call me "Al." I am a wearer of multiple hats.</p>
 <p>One hat I wear is <a
-href="https://github.com/alxmrs"><em>programmer</em></a> (starting soon
+href="/https://github.com/alxmrs"><em>programmer</em></a> (starting soon
 at a company in stealth). Another is <em>traveler</em> (recently from a
-<a href="https://vagabonvivants.com">year+ long adventure</a> with my <a
-href="https://camille.merose.com">wife</a>). Another still is <em>bean
-club member</em> (at <a href="https://www.ranchogordo.com/">Rancho
-Gordo</a>). But my favorite is probably this one brown Stetson I picked
-up from a cowboy store in Wyoming.</p>
-<p>Sometimes I collect <a href="/blog/">thoughts</a>, <a
-href="/faqs/#music">songs</a>, <a href="/zettel/">little notes</a> – or,
-in the most desperate of times, <em><a
-href="https://bsky.app/profile/al.merose.com">posts</a></em>. They can
+<a href="/https://vagabonvivants.com">year+ long adventure</a> with my
+<a href="/https://camille.merose.com">wife</a>). Another still is
+<em>bean club member</em> (at <a
+href="/https://www.ranchogordo.com/">Rancho Gordo</a>). But my favorite
+is probably this one brown Stetson I picked up from a cowboy store in
+Wyoming.</p>
+<p>Sometimes I collect <a href="/blog">thoughts</a>, <a
+href="/faqs">songs</a>, <a href="/a-second-second-brain">little
+notes</a> – or, in the most desperate of times, <em><a
+href="/https://bsky.app/profile/al.merose.com">posts</a></em>. They can
 mostly be found here. Welcome to my <a
-href="/collection/">collection</a>!</p>
+href="/collection">collection</a>!</p>
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>

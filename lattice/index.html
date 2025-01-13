@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="dcterms.date" content="2021-04-03" />
   <title>Alex Merose</title>
   <style>
     code{white-space: pre-wrap;}
@@ -11,8 +12,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +24,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -36,12 +37,29 @@
     </ul>
 </nav>
 
-<h1 id="software-testing">Software Testing</h1>
+<header id="title-block-header">
+<h1 class="title">Lattice</h1>
+<p class="date">2021-04-03</p>
+</header>
+<p>A lattice is a partially ordered set, or poset.</p>
+<p>Here is a lattice ordered by divisibility:</p>
+<p><img
+src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Birkhoff120.svg"
+alt="Lattice of 120 ordered by divisibility" /></p>
+<p><a href="/https://en.wikipedia.org/wiki/Lattice_(order)#Examples">See
+other examples</a>.</p>
+<p>Every two elements of a lattice has:</p>
 <ul>
-<li><a href="/TODO/">TODO</a></li>
-<li>Software is a Complex System. <a href="/TODO/">Complex Systems
-fail</a></li>
+<li>a <em>supremum</em>, or least upper bound, or <em>join</em>. e.g. <a
+href="/https://en.wikipedia.org/wiki/Least_common_multiple">LCM</a></li>
+<li>an <em>infimum</em>, or greatest lower bound, or <em>meet</em>. e.g.
+<a
+href="/https://en.wikipedia.org/wiki/Greatest_common_divisor">GCD</a></li>
 </ul>
+<hr />
+<h1 id="references">References</h1>
+<p><a
+href="/https://en.wikipedia.org/wiki/Lattice_(order)">https://en.wikipedia.org/wiki/Lattice_(order)</a></p>
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>

@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -41,18 +41,19 @@
 <h2 id="undifferentiated-ml-eng-tips">Undifferentiated ML Eng Tips</h2>
 <ul>
 <li><p>use <a
-href="https://en.wikipedia.org/wiki/Dependency_inversion_principle">DI</a>
+href="/https://en.wikipedia.org/wiki/Dependency_inversion_principle">DI</a>
 for model configuration, e.g. <a
-href="https://github.com/google/gin-config">gin</a></p></li>
+href="/https://github.com/google/gin-config">gin</a></p></li>
 <li><p><a
-href="https://humanloop.com/blog/why-you-should-be-using-active-learning/">active
+href="/https://humanloop.com/blog/why-you-should-be-using-active-learning/">active
 learning</a></p></li>
 <li><p><a
-href="https://christophm.github.io/interpretable-ml-book/">interpretability
+href="/https://christophm.github.io/interpretable-ml-book/">interpretability
 techniques</a></p>
 <ul>
-<li><p><a href="https://github.com/marcotcr/anchor">anchors</a></p></li>
-<li><p><a href="https://github.com/slundberg/shap">shap</a></p></li>
+<li><p><a
+href="/https://github.com/marcotcr/anchor">anchors</a></p></li>
+<li><p><a href="/https://github.com/slundberg/shap">shap</a></p></li>
 <li><p>confusion mx to find what to interpret</p></li>
 <li><p>find out why you’re model is wrong, what it’s bounds are</p></li>
 </ul></li>
@@ -60,10 +61,10 @@ techniques</a></p>
 class”</p>
 <ul>
 <li>currency detector (most images it will see are not currency)</li>
-<li><a href="https://rajpurkar.github.io/SQuAD-explorer/">squad 2.0</a>
+<li><a href="/https://rajpurkar.github.io/SQuAD-explorer/">squad 2.0</a>
 <ul>
 <li>e.g. <a
-href="https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously">Colorless
+href="/https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously">Colorless
 green ideas sleep furiously</a> --&gt; "I don't know"</li>
 </ul></li>
 </ul></li>
@@ -71,13 +72,13 @@ green ideas sleep furiously</a> --&gt; "I don't know"</li>
 fine tune the model on in house data</p></li>
 <li><p>TODO(alxr): research: curriculum learning</p></li>
 <li><p><a
-href="https://www.hillelwayne.com/post/metamorphic-testing/">metamorphic
+href="/https://www.hillelwayne.com/post/metamorphic-testing/">metamorphic
 testing</a></p></li>
 <li><p>version control data + models</p>
 <ul>
-<li><a href="https://dvc.org/">dvc</a> vs <a
-href="https://github.com/activeloopai/Hub">hub</a> vs git-lfs vs <a
-href="https://github.com/alxmrs/Electron-Diffraction-CNN">roll your
+<li><a href="/https://dvc.org/">dvc</a> vs <a
+href="/https://github.com/activeloopai/Hub">hub</a> vs git-lfs vs <a
+href="/https://github.com/alxmrs/Electron-Diffraction-CNN">roll your
 own</a></li>
 </ul></li>
 <li><p>the shape of your program should be commensurate to the size of
@@ -86,29 +87,29 @@ your data</p>
 <li><p>fits in memory: jupyter notebook</p></li>
 <li><p>fits on your computer: library w/ scripts</p></li>
 <li><p>fits on the data center: <a
-href="https://beam.apache.org/">beam</a>, <a
-href="https://spark.apache.org/">spark</a></p></li>
+href="/https://beam.apache.org/">beam</a>, <a
+href="/https://spark.apache.org/">spark</a></p></li>
 </ul></li>
 <li><p>when you write code to answer data science questions, package it
 into an API</p></li>
 <li><p>cicd</p>
 <ul>
-<li><a href="https://cml.dev/">cml</a></li>
+<li><a href="/https://cml.dev/">cml</a></li>
 </ul></li>
 </ul>
 <h2 id="principles-at-play">Principles at Play</h2>
 <ul>
 <li><p><a
-href="https://medium.com/@karpathy/software-2-0-a64152b37c35">Software
+href="/https://medium.com/@karpathy/software-2-0-a64152b37c35">Software
 2.0</a></p></li>
-<li><p><a href="https://www.hillelwayne.com/uncle-bob/">Techniques for
+<li><p><a href="/https://www.hillelwayne.com/uncle-bob/">Techniques for
 software correctness</a></p></li>
-<li><p><a href="credit-card/">Machine Learning: The high interest credit
-card of technical debt</a></p></li>
+<li><p><a href="/credit-card/">Machine Learning: The high interest
+credit card of technical debt</a></p></li>
 </ul>
 <h2 id="rough-notes">Rough Notes</h2>
 <p>We're at the beginning of the era of <a
-href="https://medium.com/@karpathy/software-2-0-a64152b37c35">Software
+href="/https://medium.com/@karpathy/software-2-0-a64152b37c35">Software
 2.0</a>.</p>
 <p>How can we adapt techniques from software 1.0 ensure our machine
 learning algorithms are correct?</p>
@@ -118,7 +119,7 @@ process of creating software?</p>
 <p>(test / train split --&gt; labeled data --&gt; training --&gt; model)
 (model --&gt; new data --&gt; prediction)</p>
 <p>Embedded in this process is a huge <a
-href="https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html">search
+href="/https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html">search
 problem</a>:</p>
 <p><img src="https://ai.stanford.edu/~zayd/images/lattice2.png"
 alt="Why Machine Learning is Hard, by S. Z. Enam" /> <img

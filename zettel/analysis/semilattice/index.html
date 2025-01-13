@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -36,24 +36,7 @@
     </ul>
 </nav>
 
-<h1 id="semilattice"><a
-href="https://en.wikipedia.org/wiki/Semilattice">Semilattice</a></h1>
-<p>A semilattice is like a directed <a
-href="/zettel/analysis/lattice/">lattice</a> in either the <em>meet</em>
-(LCM) or <em>join</em> (GCD) direction ("for <em>any</em> nonempty
-finite subset").</p>
-<p><em>Meet</em>-semilattices are "lower semilattices" whereas
-<em>join</em>-semilattices are "upper semilattices."</p>
-<blockquote>
-<p>A set S partially ordered by the binary relation ≤ is a
-meet-semilattice if</p>
-<blockquote>
-<p>For all elements x and y of S, the greatest lower bound of the set
-{x, y} exists.</p>
-</blockquote>
-</blockquote>
-<p>Sometimes, we can think of semilattices as being <a
-href="/zettel/analysis/semilattice/complete/">complete</a> (kinda).</p>
+<meta http-equiv="Refresh" content="0; URL=/semilattice/" />
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>

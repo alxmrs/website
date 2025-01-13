@@ -12,12 +12,18 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -81,12 +87,8 @@
     code span.va { color: #19177c; } /* Variable */
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -105,14 +107,14 @@
 <p class="date">2021-08-13</p>
 </header>
 <p><em>created: 2021-02</em> <em>updated: 2021-08</em></p>
-<p>While building a <a href="https://beam.apache.org/">Beam</a> pipeline
-for work, I found myself surprised to find there was <a
-href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/">no
+<p>While building a <a href="/https://beam.apache.org/">Beam</a>
+pipeline for work, I found myself surprised to find there was <a
+href="/https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/">no
 documentation</a> on how to structure the pipeline as a CLI <a
-href="#1">[1]</a>. I wanted to make running my pipeline as easy as
+href="/#1">[1]</a>. I wanted to make running my pipeline as easy as
 possible. What's easier than installing a python package via pip, and
 invoking a well-documented command? With features like <a
-href="https://pip.pypa.io/en/stable/reference/pip_search/#"><code>pip search</code></a>
+href="/https://pip.pypa.io/en/stable/reference/pip_search/#"><code>pip search</code></a>
 and <code>--help</code> messages, one never needs to leave the
 terminal.</p>
 <p>It's a bit strange to structure a Beam pipeline as a CLI. When I
@@ -123,7 +125,7 @@ offer developers the ability to manipulate whole cloud architectures
 from a CLI. Why not do the same for my ETL job?</p>
 <p>After some trail and error, I ended up figuring out a hack to make it
 work. A full demo of my solution can be found in <a
-href="https://github.com/alxmrs/beam-cli-example">this project on
+href="/https://github.com/alxmrs/beam-cli-example">this project on
 Github</a>.</p>
 <pre><code>.
 ├── LICENSE
@@ -194,7 +196,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a hr
 <span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>        cli([<span class="st">&#39;--extra_package&#39;</span>, pkg_archive])</span></code></pre></div>
 <p>This imports the <code>cli</code> function, an entrypoint to the
 pipeline. The <code>--extra_package</code> is a standard way to <a
-href="https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#local-or-nonpypi">package
+href="/https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/#local-or-nonpypi">package
 non-PyPi dependencies</a> in your pipeline.</p>
 <div class="sourceCode" id="cb3"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># mytool/subtool/__init__.py</span></span>

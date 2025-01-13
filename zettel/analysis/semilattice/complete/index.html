@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -20,9 +23,6 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="/css/main.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <nav>
@@ -36,24 +36,7 @@
     </ul>
 </nav>
 
-<h1 id="complete-semilattice"><a
-href="https://en.wikipedia.org/wiki/Semilattice#Complete_semilattices">Complete
-Semilattice</a></h1>
-<p>Apparently, this term doesn't mean much. Why? Well, if a <a
-href="/zettel/analysis/semilattice/">semilattice</a> is complete (all
-subsets hold the meet / join property), then it will be complete in the
-other direction, making it a <a
-href="/zettel/analysis/lattice/complete/">complete</a> <a
-href="/zettel/analysis/lattice/">lattice</a>:</p>
-<blockquote>
-<p>[A] complete meet-semilattice has all non-empty meets (which is
-equivalent to being bounded complete) and all directed joins. If such a
-structure has also a greatest element (the meet of the empty set), it is
-also a complete lattice.</p>
-</blockquote>
-<p>Why does this term exist? Probably, because we only care about
-completeness for one operation, either just the <em>meet</em> or just
-the <em>join</em>.</p>
+<meta http-equiv="Refresh" content="0; URL=/complete-semilattice/" />
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>
