@@ -7,7 +7,7 @@ date: 2021-08-13
 
 While building a [Beam](https://beam.apache.org/) pipeline for work, I found 
 myself surprised to find there was [no documentation](https://beam.apache.org/documentation/sdks/python-pipeline-dependencies/)
-on how to structure the pipeline as a CLI [[1]](#1). I wanted to make running 
+on how to structure the pipeline as a CLI [^1]. I wanted to make running 
 my pipeline as easy as possible. What's easier than installing a python 
 package via pip, and invoking a well-documented command? With features like
 [`pip search`](https://pip.pypa.io/en/stable/reference/pip_search/#) and  `--help` messages, one never needs to leave the terminal.
@@ -115,8 +115,7 @@ we get the best of both worlds: Beam can install the inner package as a
 library to each remote worker. Users can install the tool using python 
 standards. 
 
----
-<span id="1">**1**</span>: Sure, the docs talk about packaging workers with `setuptools`,
+[^1]: Sure, the docs talk about packaging workers with `setuptools`,
 but this explanation lacks my use case exactly. The workers still
 need to be run from an executor, and I want that executor to be
 installed with pip.
