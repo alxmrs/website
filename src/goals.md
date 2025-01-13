@@ -30,7 +30,7 @@ sense of structure for my life.  It involves making monthly check-ins,
 to see if your actions are aligning with your goals. In addition, I have a larger check-in at
 the end of the year, to contemplate annual progress and cast new goals. 
 
-The process gives me the opportunity to reflect on the [shape of my life](/zettel/determinism).
+The process gives me the opportunity to reflect on the [shape of my life](zettel/determinism.md).
 It feels great to accomplish a goal I've set. 
 Better still: it's a real joy to see how your goals change over time. 
 

@@ -70,7 +70,7 @@ of the pandemic, I started using TikTok, a much more potent content aggregator t
 ## What can I hope for next?
 
 Instead of connecting more with others online, I’m more looking forward for the opportunity to connect more with myself.
-I’d like to spend more time creating in [solitude](https://alxmrs.com/boredom/), including writing. I really
+I’d like to spend more time creating in [solitude](boredom.md), including writing. I really
 like Newport’s recommendation to write more letters to yourself. I do some form of this already, though I do hope to
 make it more of a regular habit.
 

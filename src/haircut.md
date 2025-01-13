@@ -77,7 +77,7 @@ it!
 Later on in the evening, after her hair was dry and we celebrated a successful cut, Cam found a patch of smaller hairs
 near the back of her neck that were longer than her bob. I had given my wife a rat tail. 🤦‍♂️🤦‍♂️🤦‍♂️
 
-![I gave Cam a rat tail](https://alxmrs.com/assets/rat-tail.webp)
+![I gave Cam a rat tail](assets/rat-tail.webp)
 
 We'll fix it tomorrow...
 
@@ -92,7 +92,7 @@ I didn't take immediately after this cut. Here's what I remember about it:
 
 Her haircut was so short that we waited three months until her next haircut.
 
-![Her bob was cut too short](https://alxmrs.com/assets/too-short.webp)
+![Her bob was cut too short](assets/too-short.webp)
 
 _Her hair falls above her chin, not just below it!_
 
@@ -131,7 +131,7 @@ going to her office happy hour. If anything, I appreciated getting to do the cut
 helped build confidence with the razor.
 
 <video width="640" controls muted autoplay>
-  <source src="https://alxmrs.com/assets/cam-bob-silent.mp4" type="video/mp4">
+  <source src="/assets/cam-bob-silent.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
