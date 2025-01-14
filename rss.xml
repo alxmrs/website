@@ -10,6 +10,93 @@
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
 <item>
+<title>Bret Victor – Inventing on Principle</title>
+<pubDate>Mon, 13 Jan 2025 21:35:00 +0000</pubDate>
+<guid>https://alex.merose.com/bret-victor--inventing-on-principle/</guid>
+<description><![CDATA[<ul>
+<li>In your career as a technologist, whenever possible, invent on
+principle. Find principles to guide everything you build. Live by
+them.</li>
+<li>“No Modes”: The guy who invented copy and paste invented on the
+principle that software should not contain modes, or different
+environments to do different things. That directly lead to the invention
+of copy and paste.</li>
+<li>Bret’s principle: when creating an interface, whenever possible,
+remove the friction between the creator and the creation. (<em>my memory
+is fuzzy on this one, I’ll have to re-watch the video</em>).</li>
+</ul>
+<hr />
+<h1 id="references">References</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PUv66718DII?si=hFJqO7qHVQ95Ug79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>]]></description>
+</item>
+<item>
+<title>Marcel Duchamp and the Refusal of Work</title>
+<pubDate>Mon, 13 Jan 2025 20:41:00 +0000</pubDate>
+<guid>https://alex.merose.com/marcel-duchamp-and-the-refusal-of-work/</guid>
+<description><![CDATA[<hr />
+<h1 id="references">References</h1>
+<figure>
+<embed src="Alejandro-Tamayo-Readings.pdf" />
+<figcaption aria-hidden="true">Marcel Duchamp and the Refusal of
+Work</figcaption>
+</figure>]]></description>
+</item>
+<item>
+<title>Jevon’s Paradox</title>
+<pubDate>Mon, 13 Jan 2025 20:17:00 +0000</pubDate>
+<guid>https://alex.merose.com/jevons-paradox/</guid>
+<description><![CDATA[<p>Just because a system or process becomes more
+efficient, doesn’t mean it consumes less energy. In fact, it’s possible
+that when it becomes more efficient, it leads to an <em>increase</em> in
+demand.</p>
+<p>Notable Examples: - Google SERP webpage optimization (pages were more
+lightweight) lead to an <em>increase</em> of server load. Suddenly,
+people from NBU countries were able to access the pages that they
+weren’t able to load before. - Solar/renewable energy has been become
+exponentially cheaper. Thus, energy generation has become substantially
+more efficient. However, the proportion of the energy grid that
+renewables makes up has remained more or less constant for several
+decades because energy demand has also grown at similar rates (via <a
+href="economics-for-the-future--beyond-the-superorganism.md">the
+superorganism paper</a>). - When cars in the US (or, at least,
+California) were mandated to become more efficient — either by fuel
+economy or electrification — they also, more often then not, became
+physically bigger. The electric hummer, for example, has the same carbon
+footprint as a gas-powered sedan. - <a
+href="https://www.goodreads.com/book/show/698373">More Work For Mother:
+The Ironies Of Household Technology From The Open Hearth To The
+Microwave</a>. — # References</p>
+<p>https://en.wikipedia.org/wiki/Jevons_paradox</p>]]></description>
+</item>
+<item>
+<title>Economics for the future – Beyond the superorganism</title>
+<pubDate>Mon, 13 Jan 2025 20:14:00 +0000</pubDate>
+<guid>https://alex.merose.com/economics-for-the-future--beyond-the-superorganism/</guid>
+<description><![CDATA[<ul>
+<li>All productivity, as measured by GDP, leads to hydrocarbon
+consumption.</li>
+<li>Economics as a field of study has a big error by not properly
+accounting for energy. We pay the interest on energy (oil), but not the
+principle (10 million years of heat and pressure).</li>
+<li>We will soon run out of fossil fuels altogether. We hit peak oil in
+the 70s. Since then, we’ve been in the era of “tight oil”. The costs for
+acquiring hydrocarbon energy will soon not be worth the payoff.</li>
+<li>Debt pulls resources from the future into the present. But, we’ve
+been in a 200 year bubble of abundant energy (industrial revolution) and
+will not necessarily be able to pay back that debt.</li>
+<li><h2
+id="all-humans-together-thinking-of-each-person-as-an-atom-behaving-with-simple-rules-to-live-the-best-life-each-one-can-is-acting-like-a-superorganism.-this-superorganism-pursues-infinite-growth.-it-is-like-a-thermodynamic-heat-pump-trying-to-create-as-much-energy-surplus-as-possible-on-a-finite-planet.">All
+humans together, thinking of each person as an atom behaving with simple
+rules to live the best life each one can, is acting like a
+superorganism. This superorganism pursues infinite growth. It is like a
+thermodynamic heat pump trying to create as much energy surplus as
+possible (on a finite planet).</h2>
+<h1 id="references">References</h1></li>
+</ul>
+<p>https://www.sciencedirect.com/science/article/pii/S0921800919310067?ref=pdf_download&amp;fr=RR-2&amp;rr=901acc18df3567eb</p>]]></description>
+</item>
+<item>
 <title>anndata</title>
 <pubDate>Mon, 13 Jan 2025 15:12:00 +0000</pubDate>
 <guid>https://alex.merose.com/anndata/</guid>
@@ -386,9 +473,10 @@ like smoking. Smoking make you feel anxious and big tobacco has
 brainwashed you into thinking that a cigarette will make this go away
 (you are temporarily free from withdrawal pain that cigarettes cause). I
 feel the same effect with my phone: media makes me feel anxious, from
-FOMO or boredom or emotional processing debt, and it offers me the
-ability to kick the can down the road once more. Cal Newport is less
-hypnotizing than Carr, but he is effective nevertheless.</p>
+FOMO or <a href="boredom.md">boredom</a> or emotional processing debt,
+and it offers me the ability to kick the can down the road once more.
+Cal Newport is less hypnotizing than Carr, but he is effective
+nevertheless.</p>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
 I'm only here because I want to find out how Twitter gracefully
