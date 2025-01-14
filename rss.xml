@@ -10,6 +10,90 @@
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
 <item>
+<title>anndata</title>
+<pubDate>Mon, 13 Jan 2025 15:12:00 +0000</pubDate>
+<guid>https://alex.merose.com/anndata/</guid>
+<description><![CDATA[<p><code>anndata</code> i.e. Annotated data is a
+NumFOCUS-supported Python package that handles annotated data matricies
+on memory and disk, and is between Pandas and Xarray.</p>
+<blockquote>
+<p>Without going into every fancy Python-based data structure, we think
+that still today no other alternative really exists that:</p>
+<ul>
+<li>Handles sparsity</li>
+<li>Handles unstructured data</li>
+<li>Handles observation- and feature-level metadata</li>
+<li>Is user-friendly</li>
+</ul>
+</blockquote>
+<p>–<a
+href="https://anndata.readthedocs.io/en/latest/tutorials/notebooks/getting-started.html">Getting
+started guide</a></p>
+<p>It is well integrated with: - Dask - PyTorch - Awkward Arrays - Zarr
+- TileDB?</p>
+<hr />
+<h1 id="references">References</h1>
+<p>https://anndata.readthedocs.io/en/latest/</p>]]></description>
+</item>
+<item>
+<title>Metamorphic Testing for ML</title>
+<pubDate>Mon, 13 Jan 2025 14:30:00 +0000</pubDate>
+<guid>https://alex.merose.com/metamorphic-testing-for-ml/</guid>
+<description><![CDATA[<p><a
+href="metamorphic-testing.md">metamorphic-testing</a> can be used for
+Machine Learning, since ML systems are really hard to test.</p>
+<p>This method reminds me a lot of common [[data augmentation]]
+strategies for model pretraining, such as MAE, or more traditional
+algorithms like [[jitter]].</p>
+<hr />
+<h1 id="references">References</h1>
+<ul>
+<li>https://www.hillelwayne.com/post/metamorphic-testing/</li>
+<li>https://www.cs.hku.hk/data/techreps/document/TR-2017-04.pdf</li>
+<li>https://arxiv.org/abs/1807.10453</li>
+<li>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-24</li>
+</ul>]]></description>
+</item>
+<item>
+<title>Metamorphic Testing</title>
+<pubDate>Mon, 13 Jan 2025 14:14:00 +0000</pubDate>
+<guid>https://alex.merose.com/metamorphic-testing/</guid>
+<description><![CDATA[<p>Property based testing is difficult because
+it’s hard to find good properties. Metamorphic testing is a type of PBT
+under a “metamorphic relation”. Here, we see if the outputs <em>all
+match</em> when many of them have undergone automated mutation (that
+shouldn’t but <em>could</em> affect the output).</p>
+<blockquote>
+<p>For example, if a given soundclip transcibes to
+output <code>out</code>, then we should <em>still</em> get
+output <code>out</code> if we:</p>
+<ul>
+<li>Double the volume, or</li>
+<li>Raise the pitch, or</li>
+<li>Increase the tempo, or</li>
+<li>Add some background static, or</li>
+<li>Add some traffic noises, or</li>
+<li>Do any combination of the above.</li>
+</ul>
+</blockquote>
+<p>… &gt;We could, for example, download an episode of <em>This American
+Life</em>, run the transformations, and see if they all match.<a
+href="https://www.hillelwayne.com/post/metamorphic-testing/#fn:tam">1</a> We
+have useful tests <em>without listening to the voice clip.</em> We can
+now generate complex, deep tests without the use of an oracle!</p>
+<hr />
+<h1 id="references">References</h1>
+<p>https://www.hillelwayne.com/post/metamorphic-testing/</p>]]></description>
+</item>
+<item>
+<title>Arrayloader Benchmarks</title>
+<pubDate>Mon, 13 Jan 2025 12:14:00 +0000</pubDate>
+<guid>https://alex.merose.com/arrayloader-benchmarks/</guid>
+<description><![CDATA[<hr />
+<h1 id="references">References</h1>
+<p>https://blog.lamin.ai/arrayloader-benchmarks</p>]]></description>
+</item>
+<item>
 <title>Complete Lattice</title>
 <pubDate>Sun, 12 Jan 2025 18:17:00 +0000</pubDate>
 <guid>https://alex.merose.com/complete-lattice/</guid>
