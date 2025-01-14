@@ -1,6 +1,9 @@
 ---
 title: Cootie Catchers & Thoughts on Electric Origami
 date: 2021-05-23
+tags:
+  - art
+  - math
 ---
 
 ![Prototypes and thinking about electric origami](assets/catcher-title.webp)
