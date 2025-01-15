@@ -1,4 +1,7 @@
-# I'm Alex!
+---
+title: I'm Alex
+---
+
 
 <img src="/assets/profile.webp" width="270" title="A picture of me, criminally out of date." id="profile" >
 
