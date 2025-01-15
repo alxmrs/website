@@ -1,5 +1,6 @@
-# Blog
-
+---
+title: Blog
+---
 ## 2025
 - [A Second Second-Brain](a-second-second-brain.md)
 
