@@ -1,1 +1,2 @@
-pagetitle: 'Alex Merose'
+header-includes:
+  - <meta property="og:image" content="/assets/kraftwerk.webp">

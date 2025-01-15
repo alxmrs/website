@@ -1,5 +1,6 @@
 ---
 title: Blog
+description-meta: A blog is a blog is a blog.
 ---
 ## 2025
 - [A Second Second-Brain](a-second-second-brain.md)

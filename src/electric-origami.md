@@ -1,6 +1,7 @@
 ---
 title: Cootie Catchers & Thoughts on Electric Origami
 date: 2021-05-23
+description-meta: Sometimes reading hackernews leads to unexpected arts & crafts.
 tags:
   - art
   - math
