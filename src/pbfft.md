@@ -8,9 +8,9 @@ tags:
   - jax
   - ml
 ---
-_Originally drafted Sept, 29, 2023_
+_Originally sketched on September 29, 2023_
 
-I'm incredibly excited about [Cubed](https://cubed-dev.github.io/cubed/). When I first learned about the project from this [Xarray blog post](https://xarray.dev/blog/cubed-xarray) (which is my favorite intro to the project, short of reading the docs), I knew it was a project worth betting on. To be able to perform array computation serverlessly -- without having to worry about managing memory (!!) -- seems like the future of data science in the cloud. 
+I'm incredibly excited about [Cubed](https://cubed-dev.github.io/cubed/). When I first learned about the project via this [Xarray blog post](https://xarray.dev/blog/cubed-xarray) (which is my favorite intro to the project, short of reading the docs), I knew it was a project worth betting on. To be able to perform array computation serverlessly -- without having to worry about managing memory (!!) -- seems like the future of data science in the cloud. 
 
 Maybe the primary source of my excitement was in this project's potential to change array acceleration. Today, performing computation with arrays on GPUs/TPUs is still really difficult, even with the cloud. 
 
