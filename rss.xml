@@ -10,6 +10,41 @@
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
 <item>
+<title>Deprecated vs Not Ready Yet</title>
+<pubDate>Tue, 14 Jan 2025 19:56:00 +0000</pubDate>
+<guid>https://alex.merose.com/deprecated-not-ready-yet/</guid>
+<description><![CDATA[<p><a href="merely-difficult.md">Another</a>
+classic joke about Google’s engineering culture:</p>
+<blockquote>
+<p>Everything is either deprecated or not ready yet.</p>
+</blockquote>
+<p>– Googlers to Nooglers during orientation.</p>
+<figure>
+<img src="https://goomics.net/img/2011-03-16_two_roads.png"
+alt="Goomic: Everything is either deprecated or not ready yet" />
+<figcaption aria-hidden="true">Goomic: Everything is either deprecated
+or not ready yet</figcaption>
+</figure>
+<hr />
+<h1 id="references">References</h1>
+<p>https://goomics.net/50/</p>]]></description>
+</item>
+<item>
+<title>Merely Difficult</title>
+<pubDate>Tue, 14 Jan 2025 19:52:00 +0000</pubDate>
+<guid>https://alex.merose.com/merely-difficult/</guid>
+<description><![CDATA[<p>There’s an old joke about Google’s engineering
+culture that goes like this:</p>
+<blockquote>
+<p>Come work at Google! Where the <em>impossible</em> is merely
+<em>difficult</em>, and the <em>easy</em> is merely
+<em>difficult</em>.</p>
+</blockquote>
+<p>– The L7 TL in Boulder, CO who first told it to me.</p>
+<hr />
+<h1 id="references">References</h1>]]></description>
+</item>
+<item>
 <title>Bret Victor – Inventing on Principle</title>
 <pubDate>Mon, 13 Jan 2025 21:35:00 +0000</pubDate>
 <guid>https://alex.merose.com/bret-victor--inventing-on-principle/</guid>
