@@ -157,7 +157,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a hr
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="dv">214</span>       <span class="fl">28.17</span>   <span class="fl">6.50</span>  Female    Yes  Sat  Dinner     <span class="dv">3</span></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="dv">239</span>       <span class="fl">29.03</span>   <span class="fl">5.92</span>    Male     No  Sat  Dinner     <span class="dv">3</span></span></code></pre></div>
 <p><a
-href="/https://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html#where">(source)</a></p>
+href="https://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html#where">(source)</a></p>
 <p>What if we wanted to extend our query with an arbitrary number of
 conditions?</p>
 <p>Using the standard Pandas syntax, it would look something like
@@ -208,7 +208,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a hr
 <span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="co"># etc...</span></span></code></pre></div>
 <p>Ah! So what's actually going on is we are taking advantage of
 dataframe's capacity for <a
-href="/https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing">boolean
+href="https://pandas.pydata.org/pandas-docs/stable/10min.html#boolean-indexing">boolean
 indexing</a>.</p>
 <p>What if we could use this to abstract away which dataframe we are
 acting on? Certainly, we'd prefer to only focus on the filtering logic
@@ -243,7 +243,7 @@ would like to refer to a dataframe once, mixing in the filter operations
 and I see fit.</p>
 <h2 id="towards-generalization">Towards Generalization</h2>
 <p>Why not use a <a
-href="/https://en.wikipedia.org/wiki/Higher-order_function">higher-order
+href="https://en.wikipedia.org/wiki/Higher-order_function">higher-order
 function</a>? Functions are first class citizens in python, after all.
 Let's abstract away the rote work of calling these filter functions with
 respect to a particular dataframe.</p>
@@ -299,8 +299,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a hr
 <span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="dv">214</span>       <span class="fl">28.17</span>   <span class="fl">6.50</span>  Female    Yes  Sat  Dinner     <span class="dv">3</span></span>
 <span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="dv">239</span>       <span class="fl">29.03</span>   <span class="fl">5.92</span>    Male     No  Sat  Dinner     <span class="dv">3</span></span></code></pre></div>
 <p>(Note: <code>fuzz.ratio()</code> returns an integer representing the
-<a
-href="/https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein
+<a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein
 distance</a> from one string to another)</p>
 <h2 id="how-general-can-we-go">How General Can We Go?</h2>
 <p>Is our intersection general enough? What if we wanted to query our
