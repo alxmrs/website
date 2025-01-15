@@ -18,7 +18,10 @@ def relink(key, value, format, meta):
     # - If `src/` is at the front, remove it
     # - If `.md` is at the end, remove it
     # - Add `/` to the front, so it is a relative link.
-    new_url = f"/{url.removeprefix('src/').removesuffix('.md')}"
+    if url.endswith('.md'):
+      new_url = f"/{url.removeprefix('src/').removesuffix('.md')}"
+    else:
+      new_url = url
 
     updated = value[:-1] + [(new_url, title)]
     return Link(*updated)
