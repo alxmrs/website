@@ -7,10 +7,19 @@ tags:
   - python
   - jax
   - ml
+  - accelerators
+  - oss
+  - programming
+  - systems
 ---
-_Originally sketched on September 29, 2023_
+_Originally sketched on September 29, 2023._
 
-I'm incredibly excited about [Cubed](https://cubed-dev.github.io/cubed/). When I first learned about the project via this [Xarray blog post](https://xarray.dev/blog/cubed-xarray) (which is my favorite intro to the project, short of reading the docs), I knew it was a project worth betting on. To be able to perform array computation serverlessly -- without having to worry about managing memory (!!) -- seems like the future of data science in the cloud. 
+I'm incredibly excited about [Cubed](https://cubed-dev.github.io/cubed/). When I first learned about the project via this [Xarray blog post](https://xarray.dev/blog/cubed-xarray) (which is my favorite intro to the project, short of reading the docs), I knew it was worth betting on. To be able to perform array computation serverlessly -- without having to worry about managing memory (!!) -- seems like the future of data science in the cloud. 
+
+_This slide deck from Tom White, the primary author, do an excellent job of introducing Cubed._
+
+<iframe height="360" width="100%" src="https://cubed-dev.github.io/cubed/cubed-intro.slides.html#/" title="Cubed: An Introduction" loading="lazy"></iframe>
+
 
 Maybe the primary source of my excitement was in this project's potential to change array acceleration. Today, performing computation with arrays on GPUs/TPUs is still really difficult, even with the cloud. 
 
@@ -21,11 +30,50 @@ Particularly difficult, until maybe recently, is working with really, really lar
 
 This become much, much tricker to do when you can't dump all your tf.Examples in memory, or even on disk. This setting is common in the world of frontier LLMs, but more interesting to me, in scientific computing settings. How do you train an ML models when your dataset is over a petabyte in size (or, say, [6 PiBs](https://x.com/shoyer/status/1805735177517416749))?
 
-Worse, still: many modern ML tasks don't only make use of a single dataset, but multiple. Each example is commonly a [jittered](jitter) combination of several data sources. In the geosciences, for example, it's really typically to require combinations of multi-petabyte data sources. Can you imagine pre-caching these windowed combinations as protobufs? It literally could _factorially_ expand the amount of data needed to be stored -- starting from petabytes!!
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:lozmph3nfogiyoi23m4qrxus/app.bsky.feed.post/3leq5wp7z622a" data-bluesky-cid="bafyreid5yz64yt6k3sai2olgihkqutddqcftfwj7hgmj3tavzkpmiw6ati"><p lang="en">And if you really want a challenge, this is probably the biggest singular Zarr dataset in existence (~6PiB):
 
-This, in a nutshell, is why work improving cloud-optimized data loaders is so important. Imagine keeping accelerators busy while creating ML examples just-in-time. Since streaming data into the unit of compute is inevitable when it can only be stored in cloud buckets, data loaders keeps accelerators saturated by navigating the memory hierarchy for you, hopefully with a flexible interface. [xbatcher](https://earthmover.io/blog/cloud-native-dataloader/), pioneered by [EarthMover](https://earthmover.io/) and the [Pangeo collective](https://pangeo.io/), is one such example of this infrastructure. Maybe the one I'm most excited to use soon is [this internal data loader](https://github.com/neuralgcm/neuralgcm/issues/97) developed by the team who created [NeuralGCM](https://research.google/blog/fast-accurate-climate-modeling-with-neuralgcm/). (I figure, the more I keep talking about it, the more likely the good folks at Google will turn it into an open source package 😉). This is also why, I argue, investment spent [benchmarking and optimizing the internal components](https://github.com/earth-mover/icechunk/issues/570) of these data loaders is time well spent. 
+github.com/google-resea...<br><br><a href="https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus/post/3leq5wp7z622a?ref_src=embed">[image or embed]</a></p>&mdash; Al Merose (<a href="https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus?ref_src=embed">@al.merose.com</a>) <a href="https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus/post/3leq5wp7z622a?ref_src=embed">January 1, 2025 at 7:44 PM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 
-Data loading is an important component in effortless array computation in the cloud. Maybe a second critical component is accelerating array computation. 
+Worse, still: many modern ML tasks don't only make use of a single dataset, but multiple. Each example is commonly a windowed, [jittered](jitter) combination of several data sources. In the geosciences, for example, it's really typical to require combinations of multi-petabyte data sources. Can you imagine pre-caching these windowed combinations as protobufs? It literally would _factorially_ expand the amount of data needed to be stored -- starting from petabytes!!
+
+This, in a nutshell, is why work improving cloud-optimized data loaders is so important. Imagine keeping accelerators busy while creating ML examples just-in-time. Since streaming data into the unit of compute is inevitable when it can only be stored in cloud buckets, data loaders keeps accelerators saturated, navigating the memory hierarchy for you, hopefully with a flexible interface. [xbatcher](https://earthmover.io/blog/cloud-native-dataloader/), pioneered by [EarthMover](https://earthmover.io/) and the [Pangeo collective](https://pangeo.io/), is one such example of this infrastructure. Maybe the one I'm most excited to use soon is [this internal data loader](https://github.com/neuralgcm/neuralgcm/issues/97) developed by the team who created [NeuralGCM](https://research.google/blog/fast-accurate-climate-modeling-with-neuralgcm/). (I figure, the more I keep talking about it, the more likely the good folks at Google will turn it into an open source package 😉). This is also why, I argue, investment spent [benchmarking and optimizing the internal components](https://github.com/earth-mover/icechunk/issues/570) of these data loaders is time well spent.
+
+Data loading, however, is only one part of the puzzle. Reshaping data, today, is still quite a big pain, especially for petabyte-scale inputs. Even with SATO cloud-optimized data formats, coalescing source datasets into the appropriate shape for models is data-engineering intensive. Note, for example, [Keenan's experience](https://discourse.pangeo.io/t/shuffling-and-windowing-an-xarray-dataset-for-machine-learning/4790?) just the other day (emphasis mine):
+
+>In my work I’m struggling with providing data from xarray to a machine learning model. I’m aware of tools like xbatcher in this [blog post](https://earthmover.io/blog/cloud-native-dataloader/) and [this other thread](https://discourse.pangeo.io/t/efficiently-slicing-random-windows-for-reduced-xarray-dataset/2447). I run into two main sticking points:
+>
+>1. Randomly shuffling examples is very important. We get vastly different model performance depending on the order data is provided during training (see [notebook](https://github.com/s-kganz/ForestLST/blob/main/notebooks/shuffling.ipynb)).
+>2. **Constructing windowed data with xarray is very memory intensive.** If I want to slice out all non-NA windows of a certain size, I have to iterate through small chunks of the data (this approach was the solution in the thread linked above).
+>
+>**My process now is to write an intermediate dataset for a given window size, drop NAs, shuffle, then train a model. This works, but then every time I want to modify the input data (e.g. try a 5x5 window instead of 3x3) I have to write a new intermediate dataset.**
+
+
+Even with elegant interfaces to express data massaging (Xarray), managing physical resources (memory) takes up a significant amount of developer time in ML modeling. 
+
+Maybe you're like me, and after reading this, you find yourself thinking, "Couldn't we automate this data engineering task, especially given a sufficient Xarray-based specification for what the data should look like?" If so, then you'll likely share my excitement for Cubed, which is a framework perfectly fit to address this problem! 
+
+Cubed, unlike other data engineering systems, is array-aware. Since it also has been designed to respect arbitrary memory constraints, it can automate rechunking ARCO datasets according to the desired output, no matter how arbitrary. Internally, Cubed strategically dumps intermediary arrays as Zarr stores, as has enough understanding of the global operation DAG and underlying compute resources (namely, RAM), that it solves this game of memory whack-a-mole for you. That's the dream of Cubed, as far as I understand it.
+
+If you'll permit me to indulge in a moment of possible science fiction: what fundamentally separates the scheduling happening on the data engineering side from the internals of the ML training or inference? From where I stand, I can't help but notice parallels between the advanced scheduling systems happing in, say, [XLA](https://arxiv.org/abs/2301.13062) or MLIR, from the [scheduling happening within Cubed](https://github.com/cubed-dev/cubed/issues/333). If there are parallels, could we find a way to make them work together? 
+
+I think so. And, for these reasons, I am passionate about investing in finding ways to make Cubed work with accelerators. 
+
+The first milestone that I see worthwhile to pursue is to integrate [Cubed with Jax](https://github.com/cubed-dev/cubed/issues/304). Jax, for the uninitiated, is as simple as numerical/ML libraries can get, but no simpler. This is how Jax was introduced to me: 
+
+> Imagine you were tasked with designing the machine learning framework from the future. What are the most fundamental components of such a framework for you to focus on, given that the goal is to make them run on accelerated hardware? Well, after careful consideration, it should do four specific things: 
+> 
+> 1. It should perform autograd (automatic differentiation).
+> 2. It should offer accessible linear algebra primitives (like NumPy)
+> 3. It should handle randomness (since [randomness on accelerators is non-trivial](https://pytorch-dev-podcast.simplecast.com/episodes/random-number-generators))
+> 4. It should come with standard crypo libraries (for security, and also because this is non-trivial on accelerators).
+> 
+> This, more or less, is [Jax](https://jax.readthedocs.io/en/latest/quickstart.html) .
+
+– _A paraphrase from memory of a talk I heard once at Google._
+
+Jax works, specifically, by providing the four above essential components to Python via a Just-In-Time (JIT) compilation. What this means, more or less, is you can slap a decorator on your function of NumPy-like code, and it will turn it into well optimized MLIR/XLA IR (i.e. intermediate-representation) to run on all sorts of hardware. 
+
+
 
 ---
 _early notes for the post_.
