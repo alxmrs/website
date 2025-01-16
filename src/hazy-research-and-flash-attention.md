@@ -11,10 +11,10 @@ The Hazy Research Lab, creators of Flash Attention, combine both systems softwar
 
 Since so much of ML is driven by the [bitter lesson](bitter-lesson.md), knowing how to make use of hardware as efficiently as possible is incredibly important. In my opinion, a lot of the frontier of ML research and application right now is in software systems. 
 
-In any case, my favorite contribution that Hazy Research has made is their writing on GPU optimization a la _[GPUs Go Brrr](gpus-go-brrr.md)_.
+In any case, my favorite contribution that Hazy Research has made is their writing on GPU optimization a la _[GPUs Go Brrr](ref/gpus-go-brrr.md)_.
 
 ---
 # References
 
-- [GPUs go brrr](gpus-go-brrr.md)
+- [GPUs go brrr](ref/gpus-go-brrr.md)
 - https://www.latent.space/p/flashattention
