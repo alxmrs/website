@@ -81,7 +81,7 @@ The first milestone that I see worthwhile to pursue is to integrate [Cubed with 
 > </br>
 > This, more or less, is [Jax](https://jax.readthedocs.io/en/latest/quickstart.html) .
 
-– _A paraphrase from memory of a talk I heard once at Google._
+– _Paraphrasing a talk I heard once at Google._
 
 Jax works, specifically, by providing these four essential components to Python via a Just-In-Time (JIT) compilation. What this means, more or less, is you can slap a decorator on your function of NumPy-like code, and it will turn it into well optimized MLIR/XLA IR (i.e. intermediate-representation) to run on all sorts of hardware. 
 
