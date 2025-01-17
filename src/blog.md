@@ -3,6 +3,8 @@ title: Blog
 description-meta: A blog is a blog is a blog.
 ---
 ## 2025
+
+- [The Petabyte FFT: Accelerated Cubed](pbfft.md)
 - [A Second Second-Brain](a-second-second-brain.md)
 
 ## 2024
