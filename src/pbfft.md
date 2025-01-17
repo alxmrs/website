@@ -106,7 +106,7 @@ The task of this hand-tuning is known as "kernel lowering." Affordances for lowe
 
 Imagine, if you will, being able to use memory-layout-optimized, kernel-lowered accelerated array operations, without having to spend days and days debugging every layer of the stack? This is the kind of "dual-scheduler" optimization that I hope is possible with Cubed. 
 
-At the core of both [accelerator kernels](https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf) and [managing Zarr datasets](https://zarr.readthedocs.io/en/stable/user-guide/performance.html), is the abstraction of the "chunk." (I think the ML compiler literature might call them "tiles," but they buffer all the same.) What if Cubed could seamlessly manage memory at every level, from Zarr chunks to systolic array tiles? [Are Zarr chunks not merely macro tiles?](https://github.com/cubed-dev/cubed/issues/490)
+At the core of both [accelerator kernels](https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf) and [managing Zarr datasets](https://zarr.readthedocs.io/en/stable/user-guide/performance.html), is the abstraction of the "chunk." (I think the ML compiler literature might call them "tiles," but they buffer all the same.) What if Cubed could seamlessly manage memory at every level, from Zarr chunks to systolic array tiles? [Are Zarr chunks not merely macro tiles?](thunder-kittens-macro-vs-micro-tiles.md)
 
 ![The Triton Paper's Tiling Hierarchy](assets/triton-tiling-hierarchy.jpg)
 ## Towards a real demo

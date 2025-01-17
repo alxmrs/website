@@ -11,7 +11,7 @@ A product of the [hazy-research-and-flash-attention](hazy-research-and-flash-att
 
 This reminds me a lot of this issue I filed in Cubed comparing Triton tiles and Zarr chunks: https://github.com/cubed-dev/cubed/issues/490
 
-![Macro vs Micro tiles in ](https://private-user-images.githubusercontent.com/2322439/342781480-044981cc-5d8f-47a6-8fe4-96505b4139ae.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzY5NjU1NDUsIm5iZiI6MTczNjk2NTI0NSwicGF0aCI6Ii8yMzIyNDM5LzM0Mjc4MTQ4MC0wNDQ5ODFjYy01ZDhmLTQ3YTYtOGZlNC05NjUwNWI0MTM5YWUuanBlZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMTUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTE1VDE4MjA0NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5NTk1ZTJiNDY1OWZmNDI2NzE1OTE4N2E3ZThhNWZkMWRjODQ1YzI4ZjBkMmYzOWM2ZTA4YjdlNmUwMjA4MDImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.tuTKZgQW5ubbM80j0bg0YX8VLePLu7L1sC-vaFkP-8g)
+![Macro vs Micro tiles in ](assets/triton-tiling-hierarchy.jpg)
 ---
 # References
 - [gpus-go-brrr](gpus-go-brrr.md)
