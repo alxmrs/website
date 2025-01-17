@@ -21,13 +21,14 @@ _This slide deck from Tom White, the primary author, do an excellent job of intr
 <iframe height="360" width="100%" src="https://cubed-dev.github.io/cubed/cubed-intro.slides.html#/" title="Cubed: An Introduction" loading="lazy"></iframe>
 
 
+## Big Arrays & Acceleration
+
 Maybe the primary source of my excitement was in this project's potential to change array acceleration. Today, performing computation with arrays on GPUs/TPUs is still really difficult, even with the cloud. 
 
 ![All hope is lost](https://preview.redd.it/explain-please-v0-ma2mz5wxftod1.jpeg?auto=webp&s=2b90dfa3b12e064f54333e1080b3dabbad914f48)
 – _[source](https://www.reddit.com/r/ExplainTheJoke/comments/1fgsbw7/explain_please/)_
 
 Particularly difficult, until maybe recently, is working with really, really large arrays on accelerators. For most ML projects, the standard recommendation is to put as much of the dataset in memory (i.e. RAM) in order to minimize wasted cycles traversing the memory hierarchy (both the CPU and (G/T)PU hierarchies). Most ML data pipelines (e.g. tfds) are designed to efficiently schedule resources (network, disk, RAM, CPUs, etc.) to keep GPUs saturated. ML examples are often written into protobuf (tf.records) or flatbuffers (I assume what pytorch uses?) and then efficiently loaded into memory to keep [accelerator hardware as busy as possible](hazy-research-and-flash-attention.md). 
-
 
 
 This become much, much tricker to do when you can't dump all your tf.Examples in memory, or even on disk. This setting is common in the world of frontier LLMs, but more interesting to me, in scientific computing settings. How do you train an ML models when your dataset is over a petabyte in size (or, say, [6 PiBs](https://x.com/shoyer/status/1805735177517416749))?
@@ -59,6 +60,8 @@ Even with elegant interfaces to express data massaging (Xarray), managing physic
 Maybe you're like me, and after reading this, you find yourself thinking, "Couldn't we automate this data engineering task, especially given a sufficient Xarray-based specification for what the data should look like?" If so, then you'll likely share my excitement for Cubed, which, in my opinion, is a framework perfectly fit to address this problem! 
 
 Cubed, unlike other data engineering systems, is array-aware. Since it has been designed to respect memory constraints, it can automate rechunking ARCO datasets according to the desired output, no matter how arbitrary. Internally, Cubed strategically dumps intermediary arrays as Zarr stores, as has enough understanding of the global operation DAG and underlying compute resources (namely, RAM), that it solves this game of memory whack-a-mole for you. That's the dream of Cubed, as far as I understand it.
+
+## Networked Array Scheduling vs Hardware Array Scheduling
 
 If you'll permit me to indulge in a moment of possible science fiction: what fundamentally separates the scheduling happening on the data engineering side from the internals of the ML training or inference? From where I stand, I can't help but notice parallels between the advanced scheduling systems happing in, say, [XLA](https://arxiv.org/abs/2301.13062) or MLIR, from the [scheduling happening within Cubed](https://github.com/cubed-dev/cubed/issues/333). If there are parallels, could we find a way to make them work together? 
 
@@ -94,7 +97,7 @@ Imagine, if you will, being able to use memory-layout-optimized, kernel-lowered 
 
 At the core of both [accelerator kernes](https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf) and [managing Zarr datasets](https://zarr.readthedocs.io/en/stable/user-guide/performance.html), is the abstraction of the "chunk." (I think the ML compiler literature might call them "tiles," but they buffer all the same.) What if Cubed could seamlessly manage memory at every level, from Zarr chunks to systolic array tiles? [Are Zarr chunks not merely macro tiles?](https://github.com/cubed-dev/cubed/issues/490)
 
-![The Triton Paper's Tiling Hierarchy](triton-tiling-hierarchy.jpg)
+![The Triton Paper's Tiling Hierarchy](assets/triton-tiling-hierarchy.jpg)
 ## Towards a real demo
 
 This vision for Cubed may never be tractable. But, to me, it's something worth fighting for – one patch at a time. It's worthwhile for me to ground my dreaming in terms of particle milestones. I find these help me resolve ambiguities, like what tasks to develop now vs what to put off for later. In that spirit, I have a demo in mind to build around within the topic of Cubed and its relation to accelerators:
@@ -138,41 +141,9 @@ _Above code is based on examples from [ARCO-ERA5](https://github.com/google-rese
 
 </details>
 
+This challenge is very inspired by [this discussion](https://github.com/jax-ml/jax/discussions/13842) in the Jax project inquring how to perform FFTs of >100GB arrays that is currently unsolved. To me, performing FFTs on large arrays is a sort of "word-count" of array-processing frameworks. It's a simple enough problem that once optimized, proves capability of a huge class of problems. 
+
+In the farther future, my hope for Cubed is to become a new type of ML framework, maybe like Anyscale's Ray. With Cubed, I hope that ML developers never have to worry about [OOM errors again](https://github.com/jax-ml/jax/discussions/10131) (why not dream big? Though, there are lots of [opportunites for design](https://github.com/cubed-dev/cubed/issues/518) needed to make this possible).
 
 
-
----
-_early notes for the post_.
-
-
-What would it take to compute an FFT on a Petabyte of data on distributed accelerators? Say, how could we perform an FFT on ARCO-ERA5 across a rig of TPUs s.t. a) it would not run out of memory b) finish in a reasonable amount of time (about a day? an hour? minutes?)?
-
-Specifically, could we mold Cubed to make this effortless?
-
-https://github.com/cubed-dev/cubed/issues/304
-
-
-
-## Why build this?
-
-This could provide a new programming model for scientific supercomputing. It could make ML development across large datasets (e.g. Geospatial, Weather, Microscopy) or even traditional modern ML (LLMs) much easier to implement. 
-
-## What is the right intersection?
-
-- MLIR?
-    - Mojo
-    - Direct via dialect
-- XLA?
-    - Jax
-    - Direct via bindings
-- Triton?
-    - Python bindings
-    - Interesting due to core concept of tiles
-
-What have I done so far? 
-https://github.com/cubed-dev/cubed/issues?q=+is%3Aissue+author%3Aalxmrs+ 
-
----
-# References
-
-- https://github.com/jax-ml/jax/discussions/10131
+Thanks for reading to the end. If this topic interests you, please reach out to me (or file an [issue in Cubed](https://github.com/cubed-dev/cubed/issues) and tag me.)
