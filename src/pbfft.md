@@ -137,7 +137,7 @@ _Above code is based on examples from [ARCO-ERA5](https://github.com/google-rese
 <details>
   <summary>(Umm... are you sure this is a petabyte?)</summary>
   
-  No, I am not sure. Ok, I think you're right. Single variables in ARCO-ERA5 are more like [4 TBs](https://github.com/alxmrs/xarray-sql/issues/36#issuecomment-2024559470). This is where my lack of atmospheric-physics is showing. I'm not sure how to come up with a code example for computing an FFT in Xarray that would be at the petabyte scale, however, I suspect it would be quite possible to come up with an example. Maybe, it would look similar processing the model-view data, which is stored in a [reduced gaussian grid](https://github.com/google-research/arco-era5/blob/main/docs/1-Model-Levels-Walkthrough.ipynb).
+  No, I am not sure. Ok, I think you're right. Single variables in ARCO-ERA5 are more like [4 TBs](https://github.com/alxmrs/xarray-sql/issues/36#issuecomment-2024559470). This is where my lack of atmospheric-physics is showing. I'm not sure how to come up with a code example for computing an FFT in Xarray that would be at the petabyte scale, however, I suspect it would be quite possible to make one up. Maybe, it would look similar processing the model-view data, which is stored in a [reduced gaussian grid](https://github.com/google-research/arco-era5/blob/main/docs/1-Model-Levels-Walkthrough.ipynb).
 
 </details>
 
