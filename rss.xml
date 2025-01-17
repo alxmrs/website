@@ -363,11 +363,10 @@ optimization (i.e. Cubed vs the ML compiler). For example, in the
 accelerator literature, a lot of research effort has been invested in
 optimizing the memory layouts of data placed into accelerator memory. It
 turns out that if you “defrag” the memory layout (i.e. it is
-contiguous), it provides an affordance for you to hand-write highly
-optimal GPU kernels to process arrays much more efficiently. This, in my
-understanding, underlies the <a
-href="https://openai.com/index/triton/">Triton compiler</a> from Harvard
-and OpenAI.</p>
+contiguous), it provides an affordance for you to hand-write GPU kernels
+to process arrays much more efficiently. This, in my understanding,
+underlies the <a href="https://openai.com/index/triton/">Triton
+compiler</a> from Harvard and OpenAI.</p>
 <p>The task of this hand-tuning is known as “kernel lowering.”
 Affordances for lowering have been made available in both <a
 href="https://github.com/triton-lang/triton">PyTorch via Triton</a> as
