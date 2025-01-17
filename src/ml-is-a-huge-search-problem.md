@@ -1,5 +1,5 @@
 ---
-title: ml-is-a-huge-search-problem
+title: Machine Learning is a huge search problem.
 date: 2025-01-16T15:13
 description-meta: 
 status: 
@@ -9,7 +9,7 @@ tags:
   - programming
   - research
 ---
-Embedded in this process is a huge [search problem](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html): 
+Embedded in the ML modeling process is a huge [search problem](https://ai.stanford.edu/~zayd/why-is-machine-learning-hard.html): 
 
 ![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice2.png)
 ![Why Machine Learning is Hard, by S. Z. Enam](https://ai.stanford.edu/~zayd/images/lattice3.png)
