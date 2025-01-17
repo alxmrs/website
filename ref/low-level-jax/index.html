@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Low-level control in Jax with shard_map and Pallas</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="/css/main.css" />
+  <meta property="og:image" content="/assets/kraftwerk.webp">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/talks">Talks</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="javascript:if(window.print)window.print()">🖨️</a></li>
+    </ul>
+</nav>
+
+<header id="title-block-header">
+<h1 class="title">Low-level control in Jax with <code>shard_map</code>
+and Pallas</h1>
+<p class="date">2025-01-17T14:25</p>
+</header>
+<p><em>Notes from the OpenXLA talk:</em> JAX: Low-level control with
+shard_map and Pallas. <em>See references for the full video.</em></p>
+<h2 id="shard-map">Shard-Map</h2>
+<p>"A souped-up parallel map" that parallelizes functions on multiple
+devices, with each device receiving a different shard from the input
+data.</p>
+<p>"shmapped" <img src="/assets/shard-map.png" /></p>
+<h2 id="custom-kernels">Custom Kernels</h2>
+<h3 id="triton_call"><code>triton_call</code></h3>
+<p>Call triton code from Jax</p>
+<h3 id="pallas_call"><code>pallas_call</code></h3>
+<p>Recommended. Expresses Kernes in Jax.</p>
+<p>Custom kernels take in GPU array references (buffers), not arrays.
+Must be loaded before computations can be run. <img
+src="/assets/pallas-kernels-example.png" /> Refs support mutation,
+unlike the rest of Jax!</p>
+<p><img src="/assets/calling-a-pallas-kernel-in-jax.png" /></p>
+<p>Pallas concepts like Grid and Block specs allow us to automatically
+pipeline memory access in TPU and run across multiple async threads in
+GPU.</p>
+<p>Because matmul can be implemented recursively, we can break down a
+big matmul into a smaller one. Then, small kernels can be more
+effectively utilized on the hardware.</p>
+<p><strong>Grids</strong>: specify how many times we exec the kernel,
+and specify which instance of the kernel to execute. The grid, on GPU,
+is executed asynchronously in parallel, and on TPU is executed
+sequentially, pipelined. <img
+src="/assets/matmul-pallas-grids.png" /></p>
+<p><strong>Block shape</strong>: How do we break down the inputs and
+outputs into smaller components to be operated on by the kernel. <img
+src="/assets/matmul-pallas-block-shape.png" /> Pallas will automatically
+care up arrays into the right block shape.</p>
+<p><strong>Index map</strong>: for a particular instance in the kernel
+in teh grid, which blocks should be inputs vs outputs. <img
+src="/assets/matmul-pallas-index-map.png" /></p>
+<h2 id="why-pallas">Why Pallas?</h2>
+<ul>
+<li>Need to express an idea against the wishes of the compiler. Or, it's
+easier to work low level.</li>
+<li>Supports both TPU (Mosaic/MLIR) and GPU (Triton).</li>
+<li>It can sometimes fuse normal JITed code with custom kernel
+code!!</li>
+<li>Don't need to learn new APIs, just use JAX</li>
+<li>Debuggable</li>
+<li>Memory access APIs allow for advanced scheduling optimizations</li>
+<li>TPU Only: remote DMAs (allows custom collective kernels)
+<ul>
+<li>TODO(alxmrs): I need to look this up.</li>
+</ul></li>
+</ul>
+<h2 id="is-there-a-program-model-difference-btw-pallas-and-triton">Is
+there a program model difference btw Pallas and Triton?</h2>
+<p>Main difference: Pallas is higher level wrt memory access. You can
+say up-front what memory you're going to use and it allows for automatic
+scheduling.</p>
+<p>Pallas does not have autotuning like Triton does.</p>
+<hr />
+<h1 id="references">References</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ilr4gcenaA?si=lPJ-jEjwFElzND-Z&amp;start=89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<footer>
+    <ul>
+        <li><a href="mailto:al@merose.com">email</a></li>
+        <li><a href="https://github.com/alxmrs">github</a></li>
+        <li><a href="https://bsky.app/profile/al.merose.com">bsky</a></li>
+        <li><a href="https://scholar.google.com/citations?user=9ic0HRsAAAAJ&hl=en">scholar</a></li>
+        <li><a href="/rss.xml">rss</a></li>
+    </ul>
+</footer>
+<!-- Verification of Mastodon account -->
+<link href="https://hachyderm.io/@al_merose" rel="me">
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "6fc27704d9c24c83a33c91f26a5fdcc4"}'>
+</script>
+<!-- End Cloudflare Web Analytics -->
+</body>
+</html>

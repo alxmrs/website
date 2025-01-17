@@ -299,12 +299,11 @@ compiler</a> from Harvard and OpenAI.</p>
 <p>The task of this hand-tuning is known as "kernel lowering."
 Affordances for lowering have been made available in both <a
 href="https://github.com/triton-lang/triton">PyTorch via Triton</a> as
-well as <a
-href="https://jax.readthedocs.io/en/latest/pallas/index.html">Jax via
-Pallas</a>. In my opinion, optimizations like these are incredibly worth
-it from an accelerator utilization perspective, but seldom invested in
-due to <a href="/ml-is-a-huge-search-problem">classic iteration cycles
-of ML modeling</a>.</p>
+well as <a href="/ref/low-level-jax">Jax via Pallas</a>. In my opinion,
+optimizations like these are incredibly worth it from an accelerator
+utilization perspective, but seldom invested in due to <a
+href="/ml-is-a-huge-search-problem">classic iteration cycles of ML
+modeling</a>.</p>
 <p>Imagine, if you will, being able to use memory-layout-optimized,
 kernel-lowered accelerated array operations, without having to spend
 days and days debugging every layer of the stack? This is the kind of

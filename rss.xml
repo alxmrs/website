@@ -10,6 +10,86 @@
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
 <item>
+<title>Low-level control in Jax with shard_map and Pallas</title>
+<pubDate>Fri, 17 Jan 2025 14:25:00 +0000</pubDate>
+<guid>https://alex.merose.com/low-level-jax/</guid>
+<description><![CDATA[<p><em>Notes from the OpenXLA talk:</em> JAX:
+Low-level control with shard_map and Pallas. <em>See references for the
+full video.</em></p>
+<h2 id="shard-map">Shard-Map</h2>
+<p>“A souped-up parallel map” that parallelizes functions on multiple
+devices, with each device receiving a different shard from the input
+data.</p>
+<p>“shmapped” <img src="assets/shard-map.png" /> ## Custom Kernels</p>
+<h3 id="triton_call"><code>triton_call</code></h3>
+<p>Call triton code from Jax</p>
+<h3 id="pallas_call"><code>pallas_call</code></h3>
+<p>Recommended. Expresses Kernes in Jax.</p>
+<p>Custom kernels take in GPU array references (buffers), not arrays.
+Must be loaded before computations can be run. <img
+src="assets/pallas-kernels-example.png" /> Refs support mutation, unlike
+the rest of Jax!</p>
+<p><img src="assets/calling-a-pallas-kernel-in-jax.png" /></p>
+<p>Pallas concepts like Grid and Block specs allow us to automatically
+pipeline memory access in TPU and run across multiple async threads in
+GPU.</p>
+<p>Because matmul can be implemented recursively, we can break down a
+big matmul into a smaller one. Then, small kernels can be more
+effectively utilized on the hardware.</p>
+<p><strong>Grids</strong>: specify how many times we exec the kernel,
+and specify which instance of the kernel to execute. The grid, on GPU,
+is executed asynchronously in parallel, and on TPU is executed
+sequentially, pipelined. <img
+src="assets/matmul-pallas-grids.png" /></p>
+<p><strong>Block shape</strong>: How do we break down the inputs and
+outputs into smaller components to be operated on by the kernel. <img
+src="assets/matmul-pallas-block-shape.png" /> Pallas will automatically
+care up arrays into the right block shape.</p>
+<p><strong>Index map</strong>: for a particular instance in the kernel
+in teh grid, which blocks should be inputs vs outputs. <img
+src="assets/matmul-pallas-index-map.png" /></p>
+<h2 id="why-pallas">Why Pallas?</h2>
+<ul>
+<li>Need to express an idea against the wishes of the compiler. Or, it’s
+easier to work low level.</li>
+<li>Supports both TPU (Mosaic/MLIR) and GPU (Triton).</li>
+<li>It can sometimes fuse normal JITed code with custom kernel
+code!!</li>
+<li>Don’t need to learn new APIs, just use JAX</li>
+<li>Debuggable</li>
+<li>Memory access APIs allow for advanced scheduling optimizations</li>
+<li>TPU Only: remote DMAs (allows custom collective kernels)
+<ul>
+<li>TODO(alxmrs): I need to look this up.</li>
+</ul></li>
+</ul>
+<h2 id="is-there-a-program-model-difference-btw-pallas-and-triton">Is
+there a program model difference btw Pallas and Triton?</h2>
+<p>Main difference: Pallas is higher level wrt memory access. You can
+say up-front what memory you’re going to use and it allows for automatic
+scheduling.</p>
+<p>Pallas does not have autotuning like Triton does.</p>
+<hr />
+<h1 id="references">References</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ilr4gcenaA?si=lPJ-jEjwFElzND-Z&amp;start=89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>]]></description>
+</item>
+<item>
+<title>GSPMD</title>
+<pubDate>Fri, 17 Jan 2025 14:20:00 +0000</pubDate>
+<guid>https://alex.merose.com/gspmd/</guid>
+<description><![CDATA[<p><strong>AKA: “General and Scalable
+Parallelization for ML Computation Graphs”</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ilr4gcenaA?si=jp19aHvAnyQ_0-_x&amp;start=89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+<hr />
+<h1 id="references">References</h1>
+<ul>
+<li>https://arxiv.org/abs/2105.04663</li>
+<li>https://youtu.be/5ilr4gcenaA?si=jp19aHvAnyQ_0-_x&amp;t=89</li>
+</ul>]]></description>
+</item>
+<item>
 <title>Machine Learning is a huge search problem.</title>
 <pubDate>Thu, 16 Jan 2025 15:13:00 +0000</pubDate>
 <guid>https://alex.merose.com/ml-is-a-huge-search-problem/</guid>
@@ -370,12 +450,11 @@ compiler</a> from Harvard and OpenAI.</p>
 <p>The task of this hand-tuning is known as “kernel lowering.”
 Affordances for lowering have been made available in both <a
 href="https://github.com/triton-lang/triton">PyTorch via Triton</a> as
-well as <a
-href="https://jax.readthedocs.io/en/latest/pallas/index.html">Jax via
-Pallas</a>. In my opinion, optimizations like these are incredibly worth
-it from an accelerator utilization perspective, but seldom invested in
-due to <a href="ml-is-a-huge-search-problem.md">classic iteration cycles
-of ML modeling</a>.</p>
+well as <a href="ref/low-level-jax.md">Jax via Pallas</a>. In my
+opinion, optimizations like these are incredibly worth it from an
+accelerator utilization perspective, but seldom invested in due to <a
+href="ml-is-a-huge-search-problem.md">classic iteration cycles of ML
+modeling</a>.</p>
 <p>Imagine, if you will, being able to use memory-layout-optimized,
 kernel-lowered accelerated array operations, without having to spend
 days and days debugging every layer of the stack? This is the kind of
