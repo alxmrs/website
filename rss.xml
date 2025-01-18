@@ -387,7 +387,7 @@ Array Scheduling vs Hardware Array Scheduling</h2>
 fiction: what fundamentally separates the scheduling happening on the
 data engineering side from the internals of the ML training or
 inference? From where I stand, I can’t help but notice parallels between
-the advanced scheduling systems happing in, say, <a
+the advanced scheduling systems happening in, say, <a
 href="https://arxiv.org/abs/2301.13062">XLA</a> or MLIR, from the <a
 href="https://github.com/cubed-dev/cubed/issues/333">scheduling
 happening within Cubed</a>. If there are parallels, could we find a way
