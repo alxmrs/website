@@ -74,7 +74,7 @@ Cubed, unlike other data engineering systems, is array-aware. Since it has been 
 
 ## Networked Array Scheduling vs Hardware Array Scheduling
 
-If you'll permit me to indulge in a moment of possible science fiction: what fundamentally separates the scheduling happening on the data engineering side from the internals of the ML training or inference? From where I stand, I can't help but notice parallels between the advanced scheduling systems happing in, say, [XLA](https://arxiv.org/abs/2301.13062) or MLIR, from the [scheduling happening within Cubed](https://github.com/cubed-dev/cubed/issues/333). If there are parallels, could we find a way to make them work together? 
+If you'll permit me to indulge in a moment of possible science fiction: what fundamentally separates the scheduling happening on the data engineering side from the internals of the ML training or inference? From where I stand, I can't help but notice parallels between the advanced scheduling systems happening in, say, [XLA](https://arxiv.org/abs/2301.13062) or MLIR, from the [scheduling happening within Cubed](https://github.com/cubed-dev/cubed/issues/333). If there are parallels, could we find a way to make them work together? 
 
 I think so. And, for these reasons, I am passionate about investing in finding ways to make Cubed work with accelerators. 
 
