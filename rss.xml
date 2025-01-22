@@ -331,7 +331,7 @@ singular Zarr dataset in existence (~6PiB):</p>
 <pre><code>github.com/google-resea...&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus/post/3leq5wp7z622a?ref_src=embed&quot;&gt;[image or embed]&lt;/a&gt;&lt;/p&gt;&amp;mdash; Al Merose (&lt;a href=&quot;https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus?ref_src=embed&quot;&gt;@al.merose.com&lt;/a&gt;) &lt;a href=&quot;https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus/post/3leq5wp7z622a?ref_src=embed&quot;&gt;January 1, 2025 at 7:44 PM&lt;/a&gt;</code></pre>
 </blockquote>
 <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
-<p>Worse, still: many modern ML tasks don’t only make use of a single
+<p>Worse still: many modern ML tasks don’t only make use of a single
 dataset, but multiple. Each example is commonly a windowed, jittered
 combination of several data sources. In the geosciences, for example,
 it’s really typical to require combinations of multi-petabyte data
