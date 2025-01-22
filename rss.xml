@@ -331,13 +331,13 @@ singular Zarr dataset in existence (~6PiB):</p>
 <pre><code>github.com/google-resea...&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus/post/3leq5wp7z622a?ref_src=embed&quot;&gt;[image or embed]&lt;/a&gt;&lt;/p&gt;&amp;mdash; Al Merose (&lt;a href=&quot;https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus?ref_src=embed&quot;&gt;@al.merose.com&lt;/a&gt;) &lt;a href=&quot;https://bsky.app/profile/did:plc:lozmph3nfogiyoi23m4qrxus/post/3leq5wp7z622a?ref_src=embed&quot;&gt;January 1, 2025 at 7:44 PM&lt;/a&gt;</code></pre>
 </blockquote>
 <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
-<p>Worse still: many modern ML tasks don’t only make use of a single
-dataset, but multiple. Each example is commonly a windowed, jittered
-combination of several data sources. In the geosciences, for example,
-it’s really typical to require combinations of multi-petabyte data
-sources. Can you imagine pre-caching these windowed combinations as
-protobufs? It literally would <em>factorially</em> expand the amount of
-data needed to be stored — starting from petabytes!!</p>
+<p>Worse still: many modern ML tasks make use of multiple datasets. Each
+example is commonly a windowed, jittered combination of several data
+sources. In the geosciences, for example, it’s typical to require
+combinations of multi-petabyte data sources. Can you imagine pre-caching
+these windowed combinations as protobufs? It would literally expand the
+amount of data needed to be stored <em>factorially</em> — starting from
+petabytes!!</p>
 <p>This, in a nutshell, is why work improving cloud-optimized data
 loaders is so important. Imagine keeping accelerators busy while
 creating ML examples just-in-time. Since streaming data into the unit of
@@ -400,10 +400,10 @@ problem!</p>
 it has been designed to respect memory constraints, it can automate
 rechunking <a
 href="https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2021.782909/full">ARCO
-datasets</a> according to the desired output, no matter how arbitrary.
+datasets</a> according to the desired output no matter how arbitrary.
 Internally, Cubed strategically dumps intermediary arrays as Zarr
-stores, as has enough understanding of the global operation DAG and
-underlying compute resources (namely, RAM), that it solves this game of
+stores, as it has enough understanding of the global operation DAG and
+underlying compute resources (namely, RAM), it solves this game of
 memory whack-a-mole for you. That’s the dream of Cubed, as far as I
 understand it.</p>
 <h2
@@ -446,10 +446,10 @@ href="https://jax.readthedocs.io/en/latest/quickstart.html">Jax</a>
 .</p>
 </blockquote>
 <p>– <em>Paraphrasing a talk I heard once at Google.</em></p>
-<p>Jax works, specifically, by providing these four essential components
-to Python via a Just-In-Time (JIT) compilation. What this means, more or
-less, is you can slap a decorator on your function of NumPy-like code,
-and it will turn it into well optimized MLIR/XLA IR
+<p>Jax works by providing these four essential components to Python via
+a Just-In-Time (JIT) compilation. What this means, more or less, is you
+can slap a decorator on your function of NumPy-like code, and it will
+turn it into well optimized MLIR/XLA IR
 (i.e. intermediate-representation) to run on all sorts of hardware.</p>
 <p>(For the record, I think that PyTorch would also work well as the
 underlying array acceleration framework. It can do pretty much
@@ -459,20 +459,19 @@ path</a>, I think Jax is the better bet.)</p>
 <p>Once this milestone is achieved, I think it will enable really
 interesting stuff. For example, every serverless compute provider
 underlying Cubed, in my understanding, offers serverless GPU support.
-This infrastructure is getting more popular today for ML model
-inference, and thus is becoming a commodity. In practical terms, I
-imagine this would mean non-trivially cutting down the time to perform
-compute-heavy operations — the core array work would all be performed by
-GPUs (or TPUs).</p>
+This infrastructure is getting more popular today for ML model inference
+thus becoming a commodity. In practical terms, I imagine this would mean
+non-trivially cutting down the time to perform compute-heavy operations
+— the core array work would all be performed by GPUs (or TPUs).</p>
 <p>Beyond this, I dream about the potential of “cross-scheduler” systems
 optimization (i.e. Cubed vs the ML compiler). For example, in the
 accelerator literature, a lot of research effort has been invested in
 optimizing the memory layouts of data placed into accelerator memory. It
-turns out that if you “defrag” the memory layout (i.e. it is
-contiguous), it provides an affordance for you to hand-write GPU kernels
-to process arrays much more efficiently. This, in my understanding,
-underlies the <a href="https://openai.com/index/triton/">Triton
-compiler</a> from Harvard and OpenAI.</p>
+turns out that if you “defrag” the memory layout, i.e. it is contiguous,
+it provides an affordance for you to hand-write GPU kernels to process
+arrays much more efficiently. This, in my understanding, underlies the
+<a href="https://openai.com/index/triton/">Triton compiler</a> from
+Harvard and OpenAI.</p>
 <p>The task of this hand-tuning is known as “kernel lowering.”
 Affordances for lowering have been made available in both <a
 href="https://github.com/triton-lang/triton">PyTorch via Triton</a> as
@@ -489,7 +488,7 @@ days and days debugging every layer of the stack? This is the kind of
 href="https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf">accelerator
 kernels</a> and <a
 href="https://zarr.readthedocs.io/en/stable/user-guide/performance.html">managing
-Zarr datasets</a>, is the abstraction of the “chunk.” (I think the ML
+Zarr datasets</a> is the abstraction of the “chunk.” (I think the ML
 compiler literature might call them “tiles,” but they buffer all the
 same.) What if Cubed could seamlessly manage memory at every level, from
 Zarr chunks to systolic array tiles? <a
@@ -561,18 +560,19 @@ gaussian grid</a>.</p>
 </details>
 <p>This challenge is very inspired by <a
 href="https://github.com/jax-ml/jax/discussions/13842">this
-discussion</a> in the Jax project inquring how to perform FFTs of
-&gt;100GB arrays. As of writing, it is currently unsolved. To me,
+discussion</a> in the Jax project inquiring how to perform FFTs of
+&gt;100GB arrays. As of publication, it is currently unsolved. To me,
 performing FFTs on large datasets is a sort of “word-count” of
 array-processing frameworks: It’s a simple enough problem that once
 achieved, proves capability of a huge class of problems.</p>
-<p>In the farther future, my hope for Cubed is to become a new type of
-ML framework, maybe like Anyscale’s Ray. With Cubed, I hope that ML
-developers never have to worry about <a
+<p>In the future, my hope for Cubed is to become a new type of ML
+framework, maybe like Anyscale’s <a
+href="https://github.com/ray-project/ray">Ray</a>. With Cubed, I hope
+that ML developers never have to worry about <a
 href="https://github.com/jax-ml/jax/discussions/10131">OOM errors
 again</a> (why not dream big? Though, there are lots of <a
-href="https://github.com/cubed-dev/cubed/issues/518">opportunites for
-design</a> to make this possible).</p>
+href="https://github.com/cubed-dev/cubed/issues/518">design
+opportunities</a> to make this possible).</p>
 <p>Thanks for reading to the end. If this topic interests you, please
 reach out to me (or file an <a
 href="https://github.com/cubed-dev/cubed/issues">issue in Cubed</a> and
