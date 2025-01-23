@@ -22,6 +22,9 @@ keywords:
   - Cloud
   - Serverless
   - systems
+header-includes:
+  - <meta property="og:image" content="/assets/PbFFT-social-preview.png">
+
 ---
 _Originally sketched on September 29, 2023._
 
