@@ -59,7 +59,7 @@ On NWB vs BIDS
 DANDI's platform requires data uploaders to adhere to data standards. Cellular data is usually NWB; optical physiology uses OME-Zarr for microscopy. Dandisets must adhere to BIDS-like lightweight file tree hierarchy -- as provided by the dandi CLI. BIDS is required for neuroimaging data (like structural MRI, fMRI). Metadata standards follow NIDM. The team helps both NWB and BIDS in developing standards. 
 
 
-They point out this inherent tradeoff between strict and loose adhereance to neuro data strandards: 
+They point out this inherent tradeoff between strict and loose adhereance to neuro data standards: 
 
 > Some archives strictly adhere to standardization protocols, while others offer more flexibility in accepted data formats. Data standards make harmonization less challenging but may limit the amount of collected data. On the other hand, accepting a broader range of formats creates a harmonization hurdle. One solution is to accept formats that can be converted into multiple acceptable data structures (e.g., BIDS or NWB). While indiscriminate acceptance reduces time-consuming conversions by providers, it leaves the harmonization task to users.
 
