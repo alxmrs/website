@@ -11,6 +11,7 @@ tags:
   - oss
   - programming
   - systems
+  - zarr
 description-meta: Towards accelerating FFTs on really big datasets.
 keywords:
   - Cubed
@@ -22,9 +23,9 @@ keywords:
   - Cloud
   - Serverless
   - systems
+  - Zarr
 header-includes:
   - <meta property="og:image" content="/assets/PbFFT-social-preview.png">
-
 ---
 _Originally sketched on September 29, 2023._
 
