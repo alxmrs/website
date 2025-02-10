@@ -20,7 +20,7 @@ It reminds me of what a teacher once said on social media about the ChatGPT-gene
 ---
 # References
 [^1]: [VirtualiZarr Coordination Meeting](https://docs.google.com/document/d/18P_Uk2aL1hfcaJf4PJfYZJzmhvMSJjdmB_AJvjiZOVM/edit?tab=t.0#heading=h.ucu4t39djick)
-[^2]: Like, can I trick a human into believe that I'm an AI?
+[^2]: Like, can I trick a human into believing that I'm an AI?
 [^3]: https://en.wikipedia.org/wiki/Spreading_(debate)
 [^4]: https://www.youtube.com/watch?v=dqBwKCabTXA
 [^5]: [Notes apps are where ideas go to die. And that's good.](https://www.reproof.app/blog/notes-apps-help-us-forget)
