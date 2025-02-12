@@ -10,6 +10,127 @@
 <docs>https://www.rssboard.org/rss-specification</docs>
 <generator>pandoc-rss</generator>
 <item>
+<title>Notes on Torch Datasets &amp; DataLoaders</title>
+<pubDate>Tue, 11 Feb 2025 14:07:00 +0000</pubDate>
+<guid>https://alex.merose.com/torch-datasets/</guid>
+<description><![CDATA[<p>DataLoader vs Dataset: * Dataset: stores
+samples + labels * DataLoader: like an iterable Dataset, provides easy
+access to samples.</p>
+<p>I think it’s worthwhile to look at built-in datasets to see how they
+are structured.</p>
+<p>A custom <em>Dataset</em> must have a constructor,
+<code>__len__</code> and <code>__getitem__</code>. Constructors don’t
+need to call <code>super()</code>. <code>__getitem__</code> returns a
+sample/label pair, i.e <code>X,y</code>.</p>
+<p>A custom <em>DataLoader</em> is like a dataset that is mini-batch
+aware. It assists in data reshuffling and parallelizing data access.
+IMO, much of this should be managed in Xarray via xbatcher, when
+possible. DataLoaders are iterable, and thus, often called with
+<code>next(iter(train_loader))</code>.</p>
+<p>DataLoaders should be compatible with Torch’s <em>Samplers</em>.</p>
+<p>A DataLoader is invoked in train scripts like so:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> train(dataloader, model, loss_fn, optimizer):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    size <span class="op">=</span> <span class="bu">len</span>(dataloader.dataset)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    model.train</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">### Note the iteration pattern! </span><span class="al">###</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> batch, (X, y) <span class="kw">in</span> <span class="bu">enumerate</span>(dataloader):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        X, y <span class="op">=</span> X.to(device), y.to(device)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute prediction error</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        pred <span class="op">=</span> model(X)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> loss_fn(pred, y)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Backpropagation</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        loss.backward()</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        optimizer.step()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        optimizer.zero_grad()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> batch <span class="op">%</span> <span class="dv">100</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            loss, current <span class="op">=</span> loss.item(), (batch <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="bu">len</span>(X)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;loss: </span><span class="sc">{</span>loss<span class="sc">:&gt;7f}</span><span class="ss">  [</span><span class="sc">{</span>current<span class="sc">:&gt;5d}</span><span class="ss">/</span><span class="sc">{</span>size<span class="sc">:&gt;5d}</span><span class="ss">]&quot;</span>)</span></code></pre></div>
+<p>A convention for data loaders is to couple them with
+<em>transforms</em>. <code>transform</code> and
+<code>target_transform</code> modify the data and label, respectively. I
+wonder if <code>xbatcher</code> has specific affordances for these s.t.
+we can write stuff in Xarray’s fluent API before converting the
+underlying numpy arrays to torch Tensors?</p>
+<p>There are two Dataset types made available to DataLoaders: *
+map-style, which is described above (<code>__getitem__</code> and
+<code>__len__</code>). * iterable-style, which are subclasses of
+<code>IterableDataset</code>. This is used when random reads are
+expensive or improbable, where batch size depends on the fetched
+data.</p>
+<p>When using <code>IterableDataset</code>, which is more like the
+Xarray case, replicates of the loader are typically made across multiple
+processes. Thus, the data needs to be configured well to avoid duplicate
+data loading.</p>
+<p>Iterable style datasets naturally lend themselves to chunking where a
+batch is yielded all at once.</p>
+<p>Instead of using the shuffle flag in map-style data loaders, users
+can specify custom Samplers. These yield the next index/key to fetch.
+Samples can also be used to configure batches via the
+<code>batch_sampler</code> arg.</p>
+<p>Sampler cannot be used with iterable-style datasets.</p>
+<p>By default, loaded data is collated into batches. A batch dimension
+is added as the first dimension. This is configurable if you want to get
+single samples or manage this yourself. I believe the collate_fn
+converts numpy arrays to torch tensors, and most of the time adds a
+batch dimension.</p>
+<p>According to <a
+href="https://github.com/pytorch/pytorch/issues/13246#issuecomment-905703662">this
+GH issue</a>, one shouldn’t use dicts and lists inside a
+<code>__getitem__</code> call, but instead use numpy arrays or similar,
+in order to avoid memory exploding from copy-on-write/refcounting
+behavior in python multiprocessing.</p>
+<p>CUDA Tensors should not be used in mulit-processing; Automatic memory
+pinning is faster.</p>
+<h2 id="to-pin-or-not-pin-memory-in-data-loaders">To Pin or Not Pin
+Memory in Data Loaders?</h2>
+<blockquote>
+<p>For data loading, passing <code>pin_memory=True</code> to a <a
+href="https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader"
+title="torch.utils.data.DataLoader"><code>DataLoader</code></a> will
+automatically put the fetched data Tensors in pinned memory, and thus
+enables faster data transfer to CUDA-enabled GPUs.</p>
+</blockquote>
+<p>– memory pinning | data API <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<blockquote>
+<p>In this example, we are transferring many large tensors from the CPU
+to the GPU. This scenario is ideal for utilizing
+multithreaded <code>pin_memory()</code>, which can significantly enhance
+performance. However, if the tensors are small, the overhead associated
+with multithreading may outweigh the benefits. Similarly, if there are
+only a few tensors, the advantages of pinning tensors on separate
+threads become limited.</p>
+</blockquote>
+<p>See references for the full article<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>,
+it’s a complex topic.</p>
+<hr />
+<h1 id="references">References</h1>
+<ul>
+<li>https://pytorch.org/tutorials/beginner/basics/data_tutorial.html</li>
+<li>https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html</li>
+<li></li>
+<li>https://pytorch.org/docs/stable/data.html</li>
+<li></li>
+</ul>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li
+id="fn1"><p>https://pytorch.org/docs/stable/data.html#memory-pinning<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li
+id="fn2"><p>https://pytorch.org/tutorials/intermediate/pinmem_nonblock.html#additional-considerations<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>]]></description>
+</item>
+<item>
 <title>Taking Meeting Notes: Humans vs AI</title>
 <pubDate>Fri, 07 Feb 2025 13:39:00 +0000</pubDate>
 <guid>https://alex.merose.com/meeting-notes/</guid>

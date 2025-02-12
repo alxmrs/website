@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Notes on Torch Datasets &amp; DataLoaders</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="/css/main.css" />
+  <meta property="og:image" content="/assets/kraftwerk.webp">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/talks">Talks</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/cv">CV</a></li>
+        <li><a href="javascript:if(window.print)window.print()">🖨️</a></li>
+    </ul>
+</nav>
+
+<header id="title-block-header">
+<h1 class="title">Notes on Torch Datasets &amp; DataLoaders</h1>
+<p class="date">2025-02-11T14:07</p>
+</header>
+<p>DataLoader vs Dataset:</p>
+<ul>
+<li>Dataset: stores samples + labels</li>
+<li>DataLoader: like an iterable Dataset, provides easy access to
+samples.</li>
+</ul>
+<p>I think it's worthwhile to look at built-in datasets to see how they
+are structured.</p>
+<p>A custom <em>Dataset</em> must have a constructor,
+<code>__len__</code> and <code>__getitem__</code>. Constructors don't
+need to call <code>super()</code>. <code>__getitem__</code> returns a
+sample/label pair, i.e <code>X,y</code>.</p>
+<p>A custom <em>DataLoader</em> is like a dataset that is mini-batch
+aware. It assists in data reshuffling and parallelizing data access.
+IMO, much of this should be managed in Xarray via xbatcher, when
+possible. DataLoaders are iterable, and thus, often called with
+<code>next(iter(train_loader))</code>.</p>
+<p>DataLoaders should be compatible with Torch's <em>Samplers</em>.</p>
+<p>A DataLoader is invoked in train scripts like so:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> train(dataloader, model, loss_fn, optimizer):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    size <span class="op">=</span> <span class="bu">len</span>(dataloader.dataset)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    model.train</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">### Note the iteration pattern! </span><span class="al">###</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> batch, (X, y) <span class="kw">in</span> <span class="bu">enumerate</span>(dataloader):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        X, y <span class="op">=</span> X.to(device), y.to(device)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Compute prediction error</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        pred <span class="op">=</span> model(X)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        loss <span class="op">=</span> loss_fn(pred, y)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Backpropagation</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        loss.backward()</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        optimizer.step()</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        optimizer.zero_grad()</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> batch <span class="op">%</span> <span class="dv">100</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            loss, current <span class="op">=</span> loss.item(), (batch <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> <span class="bu">len</span>(X)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;loss: </span><span class="sc">{</span>loss<span class="sc">:&gt;7f}</span><span class="ss">  [</span><span class="sc">{</span>current<span class="sc">:&gt;5d}</span><span class="ss">/</span><span class="sc">{</span>size<span class="sc">:&gt;5d}</span><span class="ss">]&quot;</span>)</span></code></pre></div>
+<p>A convention for data loaders is to couple them with
+<em>transforms</em>. <code>transform</code> and
+<code>target_transform</code> modify the data and label, respectively. I
+wonder if <code>xbatcher</code> has specific affordances for these s.t.
+we can write stuff in Xarray's fluent API before converting the
+underlying numpy arrays to torch Tensors?</p>
+<p>There are two Dataset types made available to DataLoaders:</p>
+<ul>
+<li>map-style, which is described above (<code>__getitem__</code> and
+<code>__len__</code>).</li>
+<li>iterable-style, which are subclasses of
+<code>IterableDataset</code>. This is used when random reads are
+expensive or improbable, where batch size depends on the fetched
+data.</li>
+</ul>
+<p>When using <code>IterableDataset</code>, which is more like the
+Xarray case, replicates of the loader are typically made across multiple
+processes. Thus, the data needs to be configured well to avoid duplicate
+data loading.</p>
+<p>Iterable style datasets naturally lend themselves to chunking where a
+batch is yielded all at once.</p>
+<p>Instead of using the shuffle flag in map-style data loaders, users
+can specify custom Samplers. These yield the next index/key to fetch.
+Samples can also be used to configure batches via the
+<code>batch_sampler</code> arg.</p>
+<p>Sampler cannot be used with iterable-style datasets.</p>
+<p>By default, loaded data is collated into batches. A batch dimension
+is added as the first dimension. This is configurable if you want to get
+single samples or manage this yourself. I believe the collate_fn
+converts numpy arrays to torch tensors, and most of the time adds a
+batch dimension.</p>
+<p>According to <a
+href="https://github.com/pytorch/pytorch/issues/13246#issuecomment-905703662">this
+GH issue</a>, one shouldn't use dicts and lists inside a
+<code>__getitem__</code> call, but instead use numpy arrays or similar,
+in order to avoid memory exploding from copy-on-write/refcounting
+behavior in python multiprocessing.</p>
+<p>CUDA Tensors should not be used in mulit-processing; Automatic memory
+pinning is faster.</p>
+<h2 id="to-pin-or-not-pin-memory-in-data-loaders">To Pin or Not Pin
+Memory in Data Loaders?</h2>
+<blockquote>
+<p>For data loading, passing <code>pin_memory=True</code> to a <a
+href="https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader"
+title="torch.utils.data.DataLoader"><code>DataLoader</code></a> will
+automatically put the fetched data Tensors in pinned memory, and thus
+enables faster data transfer to CUDA-enabled GPUs.</p>
+</blockquote>
+<p>– memory pinning | data API <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<blockquote>
+<p>In this example, we are transferring many large tensors from the CPU
+to the GPU. This scenario is ideal for utilizing
+multithreaded <code>pin_memory()</code>, which can significantly enhance
+performance. However, if the tensors are small, the overhead associated
+with multithreading may outweigh the benefits. Similarly, if there are
+only a few tensors, the advantages of pinning tensors on separate
+threads become limited.</p>
+</blockquote>
+<p>See references for the full article<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>,
+it's a complex topic.</p>
+<hr />
+<h1 id="references">References</h1>
+<ul>
+<li><a
+href="https://pytorch.org/tutorials/beginner/basics/data_tutorial.html">https://pytorch.org/tutorials/beginner/basics/data_tutorial.html</a></li>
+<li><a
+href="https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html">https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html</a></li>
+<li></li>
+<li><a
+href="https://pytorch.org/docs/stable/data.html">https://pytorch.org/docs/stable/data.html</a></li>
+<li></li>
+</ul>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a
+href="https://pytorch.org/docs/stable/data.html#memory-pinning">https://pytorch.org/docs/stable/data.html#memory-pinning</a><a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a
+href="https://pytorch.org/tutorials/intermediate/pinmem_nonblock.html#additional-considerations">https://pytorch.org/tutorials/intermediate/pinmem_nonblock.html#additional-considerations</a><a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+<footer>
+    <ul>
+        <li><a href="mailto:al@merose.com">email</a></li>
+        <li><a href="https://github.com/alxmrs">github</a></li>
+        <li><a href="https://bsky.app/profile/al.merose.com">bsky</a></li>
+        <li><a href="https://scholar.google.com/citations?user=9ic0HRsAAAAJ&hl=en">scholar</a></li>
+        <li><a href="/rss.xml">rss</a></li>
+    </ul>
+</footer>
+<!-- Verification of Mastodon account -->
+<link href="https://hachyderm.io/@al_merose" rel="me">
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "6fc27704d9c24c83a33c91f26a5fdcc4"}'>
+</script>
+<!-- End Cloudflare Web Analytics -->
+</body>
+</html>
