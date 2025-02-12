@@ -9,6 +9,7 @@ tags:
   - programming
   - notes
   - python
+  - torch
 ---
 DataLoader vs Dataset: 
 * Dataset: stores samples + labels
