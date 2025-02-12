@@ -81,8 +81,7 @@ See references for the full article[^blue], it's a complex topic.
 # References
 * https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
 * https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
-* [^blue]:  https://pytorch.org/tutorials/intermediate/pinmem_nonblock.html#additional-considerations
 * https://pytorch.org/docs/stable/data.html
-* [^red]: https://pytorch.org/docs/stable/data.html#memory-pinning
 
-
+[^blue]:  https://pytorch.org/tutorials/intermediate/pinmem_nonblock.html#additional-considerations
+[^red]: https://pytorch.org/docs/stable/data.html#memory-pinning
