@@ -6,7 +6,6 @@ _updated: 2025-03-04_
 
 **Pangeo is a Database**
 
-
 ![Presenting "Pangeo is a Database" at hytradboi 2025](assets/hytradboi-2025-grab.png)
 
 ([video link](https://www.hytradboi.com/2025/c18b8cdc-fd17-4099-9c03-eb107217f627-pangeo-is-a-database))
