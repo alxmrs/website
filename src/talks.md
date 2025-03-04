@@ -1,6 +1,6 @@
 # Talks
 
-_updated: 2024-04-16_
+_updated: 2025-03-04_
 
 ## HYTRADBOI 2025
 
