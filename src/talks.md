@@ -2,6 +2,18 @@
 
 _updated: 2024-04-16_
 
+## HYTRADBOI 2025
+
+**Pangeo is a Database**
+
+
+![Presenting "Pangeo is a Database" at hytradboi 2025](assets/hytradboi-2025-grab.png)
+
+([video link](https://www.hytradboi.com/2025/c18b8cdc-fd17-4099-9c03-eb107217f627-pangeo-is-a-database))
+
+In this talk, I argue that the Pangeo software collective is not merely an ecosystem for big data geoscience, but
+a new database system. 
+
 ## Geo For Good 2023
 
 **Fundamentals of Earth Engine import & export of satellite data**
