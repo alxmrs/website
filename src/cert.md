@@ -1011,6 +1011,259 @@ Unit summary
 Q: How do we get NarCan? 
 A: foodbank! also, online! need training before you can administer (pub health, safe kids coalition)
 
+## Unit 5: Light Search & Rescue Ops
+
+S&R
+* Consists of 3 ops
+	* 1. size up: using 9-step continue model
+	* 2. search: location survivors, **documenting**
+	* 3. rescue: extracting survivors
+* If you find a diseced people, mark it, but we aren't supposed to move them. 
+	* don't look for ID, don't look through their property, etc. that's the job of the coroner
+*
+Deciding to attempt rescue
+* Risks invovled for rescuer
+* greatest good
+* ...
+
+Goals
+* Rescue greatest people in shortest time
+* get walking wounded out first
+* rescue lightly trapped survivors next
+* keep rescuers safe
+
+Unit objectives
+* ID sizeup reqs
+* describe most common search techniques
+* ...
+
+Unit topics
+- Safety
+
+CERT Sizeup
+1. gather facts
+2. asses dmg
+3. consider probabilities
+4. asses situtation
+5. establish priorities
+6. make decisions
+7. dev plan of action
+8. take action 
+9. eval process
+
+Sizeup - step 1: gather facts
+* Time of event / Day of week
+* construction type/terrain
+* occupancy
+* weather
+	* seems true: when a bad thing happens, the weather also gets bad
+* hazards
+
+Step 2: Asses and communicate damage (dmg)
+* CERT mission changes if dmg is _light_, _moderate_ or _heavy_.
+
+Light dmg
+* Superficial
+* broken windows
+* cracks or breaks to walls
+* minor dmg to the interiors
+* safe to enter and remain 
+
+Moderate dmg
+* Visible signs of dmg
+* decorative work is dmg'd or fallen
+* many visible cracks or breaks in walls
+* major dmg to interior contents
+* Building on foundation (AFAIK)
+* enter only to save lives
+
+Heavy dmg
+* partial or total collapse
+* tilting
+* obvious structural instability
+* building off foundation
+* DO NOT ENTER A BUILDING UNDER ANY CIRCUMSTANCES!
+
+Crimes of opportunity happen during disasters. e.g. palisade fires, people tried sneaking into places to steal things -- one person posed as a firefighter!
+
+Assessing and communicating dmg
+* look at building from all sides
+* consider type and age of construction
+* listen -- groaning or creaking?
+	* lot of noises --> not safe to go in. 
+* Is it a newer build (higher standards)?
+
+```
+   ____ C _____
+B |____  ______| D
+        A
+    street
+```
+e.g. 'the person sounded like they were in the "CD corner"'
+
+Rescue resources
+* personel
+	* FF
+	* police
+	* Nurse, MD
+	* Contractor, 
+* equipment
+	* available
+	* accessible
+	* appropriate
+* tools
+	* crowbars
+	* auto jacks
+	* chainsaws
+	* are the tools working? is it maintained?
+
+Step 5: establish priorities
+* what should be done
+* in what order?
+* how to rescue the most in the least time? 
+
+Step 6: Make decisions
+* keep in mind: 
+	* safety of CERT mems
+	* life of survirors
+	* protect env
+	* protect prop
+
+Step 7: Dev plan
+
+Step 8: Take action
+
+Step 9: eval progress
+* most critical step!
+* maybe, plan on paper is not as good in exec. 
+
+Specific saftey considerations
+* use a buddy system
+* be alert for hazards
+* use safety equipment
+* rotate teams
+	* important: people get overwhelmed
+
+Structural voids
+* If you see collapsed floors or walls, get out!
+* These are high-risk. 
+* potentially, survivors could be there, but we don't have the skills or equipment to get there. 
+* if you see these, get out, don't go in.
+
+Individual voids
+* spaces ppl go for protection
+	* Bathtubs
+	* underneath desks
+	* inside cabinets
+	* under beds
+	* inside closets
+* Kids can hide in really small areas
+	* they also many not come out when we call them --> stranger danger
+
+Search markings
+* Upon entering search area:
+	* make a slash
+	* enter info
+		* date
+		* time in
+		* time out
+		* CERT ID
+* Upon leaving
+	* complete "X"
+	* enter info: end time
+	* add survivors
+```
+.    \ date           /
+      \ in: 2:30    / 
+CERT 23 \out: 2:50 /
+   .     /\. FL 1-2 searched
+       Stairs FL-3 unsafe
+       /2L \
+     /. Moved to 
+     CERT 23 meds
+            ops\
+```
+
+Search methodology
+* Bottom up  top down for mutlistory building
+* Right wall / left wall for a single floor
+* Stop frequently to _<u>listen</u>_
+	* Tapping 
+	* movement
+	* voices
+* Triangulation allows rescuers to view a location from several perspectives
+	* shine a flashlight from different perspectives
+* Keep records of rescued survivors and of those who remain trapped or are dead
+* Report info to emergency services personnel
+
+Exterior Search
+* Set up a grid search
+	* Set distance btw searchers according to visibility and deburs
+	* Overlap pattern for full coverage
+	* Search in as straight a line as possible
+	* mark areas that have been searched
+
+Rescue ops
+* rm objects and debris if possible
+
+Precautions
+* know your limits
+* follow safety procedures
+* proper lifting procedures
+	* And buddy up!
+
+Leveraging and cribbing
+* for heavy lifting
+* performed in tandem
+* fulcrum and lever. 
+
+Two types of removal
+* self removal or assist
+* lifts and drags
+
+Which extraction method? 
+* Gen stability of immediate env
+* num rescuers
+* strength of rescuers
+* conditions of survivor
+
+One-person arm carry
+* Lift around survivors back and under knees
+* lift survivor by keeping your own back straight and lifting with legs
+* This is only really good to do for a small child (<9 yo)
+
+Pack-strap carry
+* Can carry lots of (dead) weight with this method
+
+Two-person carry
+* A bit awkward
+* The pack strap is a bit easier
+* but, at least you're sharing the load
+
+Chair-carry
+* better way
+* good to share the load
+* Ideally: find one on rollers, roll them out
+	* look around for the resources you have!
+
+Blanket Carry
+* it takes a lot of grip strength
+* good if they had handles. --> stretcher
+	* foxtrot
+
+Log rolling
+* 1 person stabilizing head and neck. This person is in charge
+* important to roll as one unit
+
+Blanket drag
+* a lot of people can drag if they can't lift
+
+
+
+
+
+
+
 
 ---
 # References
