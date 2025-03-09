@@ -1258,10 +1258,110 @@ Log rolling
 Blanket drag
 * a lot of people can drag if they can't lift
 
+## Unit 6: CERT Organization
 
+Unit Topics
+* org
+* mobilization
+* documentation
 
+Principles of On-Scene mgmt
+* Maintain safety of workers
+* provide clear leadership and org principles
+* improve effectiveness of rescue efforts
 
+Q: What does "unified command" mean?
+A: Clear chain of cmd even when there is overlapping authority
 
+CERT On-Scene mgmt
+* well defined mgmt structure
+* manageable span of control
+* common terminology
+* effective comms
+* consolidated action plans
+* comprehensive resource mgmt
+* accountability
+
+Objectives for On-scene mgmt
+1. id scope 
+2. determine strategy
+3. deploy resources
+4. document actions and results
+
+Q: How do we know when it's done? What will it look like when we demobilize? 
+A: Anthony will tell you! :)
+
+Incident Command system
+* Icident commander
+	* Ops section chief
+	* logistics section chief
+	* planning section chief
+	* finance admin section chief
+* These could be the same / overlapping ppl
+
+CERT Operations
+* cmd structure
+* CERT incident cmder / team lead
+	* first person is the leader, until they are relived from someone with more skills, experience, training. 
+	* Need a way to recognize who is in charge
+* cmd post
+* expand structure as needed
+	* or reduce it down
+
+Dealing with the media
+* refer media inquiries to CERT IC/TL
+* Do not let media inhibit CERT goals
+* Be careful about info released
+
+NIMS compliance
+* National incident mgmt system
+* Ability to work together
+* IS-100.a: introduction to ICS
+* IS-700.b intro to NIMS
+* https://training.fema.gov/IS/NIMS.asp
+
+In CA we have SEMS (?) Standard Emergency Mgmt System. Equiv of NIMS. this is the structure for resource mgmt and allotment.  CSTI website --> CA Specialized Training Institute. can take class and training for free
+
+CERT Mobilization
+* CERTs take care of themselves, their families, homes, neighbors
+* Proceed to pre-designated staging area
+* IC/TL is established, organizes the group
+* IC/TL prioritizes actions
+* organization is flexible and evolves based on new info
+
+Rescuer Safety
+* Rescuer safety is the first priority
+* heavy dmg --> no rescue
+* mod dmg --> locate, triage, evacuate
+* light dmg --> locate, triage, continue sizeup, and document
+
+Documentation
+* Section chiefs: provide cmd post with info
+* Cmd post: document situation status
+	* incident locations
+	* access routes
+	* id hazards
+	* support locations
+* Keep legible notes!
+* Write it down!
+
+Documentation form
+* dmg assessment
+	* probably, what CERT volunteers will do
+* personnel resources sign in
+* incident assignment tracking log
+* briefing assignment
+* survivor treatment area record
+* communications log
+* equipment inventor
+* general message
+
+Unit Summary
+* ICS provides flexible means of organization
+* "Is it safe to attempt the rescue?"
+* doc and comm info to all CERT lvls
+* provide cmd post with ongoing info
+* command post documents and tracks situation status
 
 
 
