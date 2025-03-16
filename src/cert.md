@@ -1365,6 +1365,374 @@ Unit Summary
 
 
 
+_Day 3: 2024-03-15_
+
+* PASS for fire extinguisher
+* Buddy system: while you look at the fire w/ the extinguisher, your buddy has situational awareness.
+  * Buddy has nice, firm contact on your shoulder. Will warn you of impending issues. 
+
+
+## Unit 8: Terrorism & CERT
+
+Topics
+* What is terrorism
+* Targets
+* Weapons
+* CBRNE Indicators
+* Preparing at home, work, neighborhood
+* CERTs and Terrorist Incidents
+
+Q: Where would you store your cool backpack? 
+A: By your front door, say a closet. Or if you commute a lot (or in a single vehicle) then, in your car.
+If e.g. a bedroom is a saferoom, then you might keep disaster preparedness stuff in that saferoom.
+Hack: During earthquakes, things get rearranged. Power tends to go out. 
+Scenario: night, dark, no power, things rearanged, broken glass --> how do you protect your feet? 
+Lifehack: take older shoes or slippers, ziptie them to your bedframe where you're getting out of bed. Then, you'll be able to find your shoes and protect your feet.
+
+What is terrorism?
+* "Unlawful use for force/violence against person or property to intimidate/corece a gov't, civil pop, etc. in furtherance of political or social objectives."
+
+Terrorist Goals
+* Mass casualties
+* loss of critical resources
+* disrupt vital services (e.g. comms)
+* disrupt economy
+* heighten fear
+
+Terror Targets
+* Seats of gov't
+* Key industries
+* bridges, subways, key transportation fascilities
+* Water supplies & utilities
+
+
+Q: What are targets here? 
+A: roads, utilities, etc.
+
+Drones: They're illegal in stadiums, but not nece a threat. Have to look at the drone and see if it is a threat.
+Does it carry leaflets? (with threats?) White powder? Would any powder cause a stampede? 
+
+Terror threat nearby: cut the comm lines, and shot the hell out of a power station trying to take it down.
+It's not been shared a lot because it's vulnerable and we don't want copy cats.
+
+2 types of terrorism: 1) 9/11, sure. 2) domestic -- we have a _large_ amount of this one! We even have a lot of one in _this_ county, and nearby counties. There are alerts to different agencies that with the new prez, there will be more activity. A lot of these groups blend in on the streets. It is on the rise and projected to grow over the next few years. 
+
+SF: Security guard chases a homeless person on an e-bike, hits two pedestrians, the e-bike gets away. Later, the sec guard shows up to his shift later (after laying low). He then performs suicide-by-cop (pulls a weapon on a cop), and the cops get him. This is scary, but not terrorism.
+
+Situational awareness is key. Trust your spidy sense.
+
+SBC: Targets include critical infra (water) and comms
+
+Terrorist Weapons
+1. Chem
+2. Bio
+3. ...
+
+Chemical Weapons
+1. blister agents
+2. blood agents
+3. choking agents
+4. nerve agents
+5. riot-control agents
+
+If youre ever in a situation where a riot-control agent is applied, it sucks but you will be fine. It feels like you will die, but you won't. 
+
+Bio Weapons
+Routes of exposure: Inhalation, Ingestion, Absorption
+If they're applied to you, then "that's a wrap."
+Q: How would you recognize them? 
+A: There's a lot of dead people or animals. e.g. birds and fish in the water ways. 
+
+Situational awareness: If these are present --> uphill, upwind, upstream. 
+
+Bioweapons are often odorless, colorless, hard to detect.
+
+Radiological Weapons
+* Considered a higher threat because components are easy to obtain
+* Don't need to buy these --> could go to, say, hospitals to get the agents.
+* There are detectors for radioactive material in highways and stadiums, often.
+
+Nuclear Weapons
+* Force from nuke reaction
+* Affected area is larger as contaminated obj spreads
+* Casualties beyond initial attack
+* Long-term effects difficult to monitor and track
+
+High Yield Explosives
+* Weapon of choices for terrorists
+  * Used in 80% of attacks
+* Military munitions (grenades, mortars, missiles)
+* Newer explosives called improvised explosive devices or IEDs
+* What brought down OK city fed building? Ammonium Nitrate from _fertilizer_.
+* A lot of stuff gets stolen!
+
+Across the world, the go-to IED across the world is v-bids (vehicle borne ...). It's a very effective tools, big ROI. Has a large radius and instills fear.
+Now terrorists are starting to change their playbook. There is less "shoot up a place" and more "drive a truck here and blow it up."
+
+Assessing the Risk
+* Types of terrorist weapons in order of greatest risk (least to greatest):
+  *  Nuclear
+  * Chemical 
+  * Radio
+  * Bio
+  * HYExpl
+
+8 signs of terrorism
+1. Surveillance
+   * Drones are often used for surveillance now.
+   * Can be done and no-one will know you're there.
+2. Elicitation --> asking a lot of questions, testing security system.
+3. Test of security
+4. Funding
+   * Sophisticated fundraising: what you donate to may not be what you think.
+   * Former FBI agent: person can go on the watch list bc of surprising things. e.g. sending money to a cousin (overseas, domestic; e.g. for a birthday) who is sketchy can get you on the watch list. 
+5. Acquiring supplies
+6. Impersonation or suspicious people
+   * Why did they get PG&E uniforms?
+7. Rehearsals and dry-runs
+8. Deployment
+
+Attack has occurred or is underway
+* Vapor cloud or mists
+* Unscheduled spraying
+* Materials or equipment unusual for the area
+* Unusual odors or tastes
+* Out of place and unattended packages
+* Leaking packages
+
+
+See  CBRNE indicators?
+* Not touch it
+* move away from object or area
+* report it to authorities _immediately)
+
+Physical sings of chemical/bio attack
+* Sick or dead animals, fish, birds
+* large number of persons seeking med attn
+* multiple survivors exhibiting similar symptoms
+  * Hysteria is very common
+  * if they're dead, they're not faking it
+* multiple casualties w/o obvious signs of trauma
+
+Preparing at home, work, etc.
+* personal and family safety is 1st!
+* CERT members are NOT equipped or trained to respond to terrorists incidents!
+* Terrorism incident scenes are also crime scenes
+
+Shelter-in-place procedures
+* Shut off ventilation systems
+* Go to your shelter-in-place room
+* Use precut plastic sheeting to cover air openings
+* tape sheeting over doors, windows, vents
+* use duct tape to seal other areas
+* listen to battery-powered radio
+* ventilate room once contaminants are gone. 
+
+Protection for radioactive fallout
+* Go deep inside a building
+  * as many layers of protection as possible.
+* stay inside (time) 
+* stay tuned
+
+Basic decontamination procedures
+* leave contaminated area
+* take decontamination action
+  * rm everything
+  * wash hands
+  * flush entire body
+  * blot dry
+* report for decontamination 
+* food safety
+
+Worry about biohazard water later; figure out how to survive first
+
+Treating others
+* Personal safety is priority 1!
+* Take self-protective measures only
+* Do not attempt to treat survivors in contaminated area
+* tell survivors about contaminated area
+
+What pro responders will do: Follow sizeup steps
+* What is going on
+* How bad the situation is, how much worse could it get?
+* what measures can be taken ...
+
+
+## Unit 7: Disaster Psych
+
+Topics
+* Disaster Trauma
+* Team well-being
+* Working w/ Survivor's Trauma
+
+Nobody gets through life unscathed. How we get through past events informs how we'll get thru future events. 
+We'll want to be aware that disaster events can carry trauma. It may have more or less effect on us in the future dep
+on the past. If you have trauma now, take steps to mitigate it so we can be better prepared for the future. 
+
+Psych Truama
+* Your own personal losses
+* working in your neighborhood
+* Assisting neighbors, friends, coworkers who have been injured
+  * The firefighters in paradise or LA helped their neighbors when they lost their own homes.
+* Not feeling safe and secure
+  * In SJC, 10 years ago, there was an arsonist who lit fires at night in people's homes when it was occupied. This cause a lot of trauma for ppl who lived in the neighborhoods. There were ppl in the teacher's CERT classes who still kept that trauma. 
+  * Incident 5 years ago, turning off to Fraisure Lake (sp), the wheel came off the vehicle and came right after the teacher. Scared shitless. Took evasive action, moved out of the way. 
+    * Near or actual traffic collisions are very scary; can lead to trauma
+
+Psych symptoms of trauma
+* irritability/anger
+  * may be ok short-term, but it's a problem after weeks or months; affects total QoL + ability to function in the world
+* self-blaming + blaming others
+* isolation + withdrawal
+* fear of recurrence
+* stunned, numbed, overwhelmed
+  * After major earthquake, grandparents were shut down in carport, did nothing, and had to be pulled out. helpless
+* feeling hopeless
+* mood swings
+* sadness, depression, grief
+* denial
+* concentration + memory problems
+* relationship problems
+* loss of appetite
+* headaches or chest pain
+* diarrhea, stomach pain, nausea
+* hyperactivity
+* increased in drug consumption
+* nightmares
+* insomnia
+* fatigue
+
+Team well-being
+* actions can be taken before, during, and after incident to mgmt emotional impact of disaster response work
+* knowing possible psych and physio symptoms of disaster trauma helps mgmt impact
+* learn to mgmt stress: CERT members for themselves; CERT leaders during response
+
+Q: Can a journal for stress become a legal liability? 
+A: Only if you get involved in criminal activity. 
+
+How you can reduce stress
+* Enough sleep
+* exercise regularly
+* eat a balanced diet
+* balance work/play/rest
+* allow yourself to receive as well as give (grace)
+* connect with others
+* use spiritual resources (family, friends)
+
+Take care of yourself
+* trauma can follow a disaster
+* explain to family members and friends what you need: 
+  * listen when you want to talk
+  * don't force you to talk
+
+If you're not ready to talk, don't feel compelled to talk. It can leak out over time when the time is right.
+
+How Team Leaders Reduce Stress
+* Brief CERT Personnel beforehand
+* remember CERT is a team
+* rest and regroup
+* take breaks away
+* eat properly, stay hydrated
+* arrange for debriefing
+* rotate teams and duties
+* phase out workers gradually
+
+In a mass casualty event, you have to ask yourself if these are things you can live with. You may have to walk away from someone who will then die. At the EOD, this is a volunteer thing. You may see the worst thing you'll see in your entire life. As much as we'd love to have to you volunteer, you have to reckon this with yourself.
+The purpose of CERT is to protect yourself, family, and neighborhood. As such, you're likely to face horrible things happening to people you know and love.
+
+Critical incident stress debriefing
+1. introductions and descriptions
+2. review factual material
+3. sharing of initial thoughts and feelings
+4. sharing of emotional reactions to incidents
+5. instruction about normal stress reactions
+6. review of symptoms
+7. closing and further needs assessment
+
+Phases of Crisis
+* Impact - the event itself
+* Inventory - self-check
+* Rescue - selves or others
+* Recovery - can take hours, days, weeks, months, years
+
+Traumatic crisis
+* actual or potential death
+* serious injury
+* destruction
+* loss of contact w/ family or close friends
+  * With current addition crisis going on, so many people have loss touch with close ones bc of addiction.
+  * People don't often talk about trauma related to this bc of the shame related to addiction. 
+    * Mental health became more OK to talk about; but addiction, not as much.
+
+Effects of traumatic stress
+* cognitive functioning
+* physical health
+* interpersonal relationships
+
+Mediating factors
+* Prior experiences with a similar event
+* Intensity of disruption
+* Individual feelings about event
+* emotional strength of the individual
+* Len of time since the event
+
+Stabilizing Survivors
+* assess survivors for injury or shock
+* gen uninjured people to help
+* provide support by
+  * listening
+  * empathizing
+* help survivors connect with natural support systems
+
+I can't help with everyone's load, but I can help people get back in touch with their support system (or develop one)
+
+How to be an empathetic listener
+* put yourself in your speaker's shoes (get vulnerable)
+* listen for meaning, not just words
+* pay attention to nonverbal comms
+* paraphrase the speaker
+
+It's so important to hold space for the other person
+Ask open-ended questions. ("ORS"?)
+Takes lots of practice
+
+Avoid Saying...
+* "I understand"
+* "Don't feel bad"
+* "You're strong" or "you'll get through this"
+* "Don't cry"
+* "It's god's will"
+* "It could be worse"
+* "At least you still have..."
+* "Everything will be ok"
+
+These things can bring a lot of drama.
+
+
+Managing the Death Scene
+* covert the body; treat it w/ respect
+* move the body to temp morgue
+* follow local laws and protocols
+* talk with local authorities
+
+We don't have a lot of experience with death in our culture. People die in hospitals more than they do at home. People have become more uncomfortable with talking about it.
+
+Probably not going to be touching any dead bodies... Only under direction will we be moving people's remains to a temporary morgue
+
+Informing Family + Friends of a Death (highly unlikely)
+* separate the family member(s) or friends
+* have the person(s) sit down
+* make eye contact
+* "I'm sorry, but your family member has died. I am so sorry."
+* Let the family and friends grieve
+
+Don't lie to people!
+
+
+
+
+
+
 ---
 # References
 
