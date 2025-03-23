@@ -23,7 +23,7 @@ fields of science using machine learning — recently, in weather prediction; pr
 
 ## Writer, vaga • bon • vivants
 
-October 2023 - Present. Remote.
+October 2023 - December 2024. Remote.
 
 </cv-section>
 
