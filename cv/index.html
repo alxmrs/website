@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="description" content="Alexander Merose is a software
+engineer and ML researcher focused on ML4Science." />
   <title>cv</title>
   <style>
     code{white-space: pre-wrap;}
@@ -43,35 +45,68 @@
 <print-only> 
   <ul class="cv-topline">
     <li>SF Bay Area</li>
-    <li><a href="https://alex.merose.com">alex.merose.com</a></li>
+    <li><a href="https://al.merose.com">al.merose.com</a></li>
     <li>al@merose.com</li> 
   </ul>
 </print-only>
 
 </center>
 
-<p>I am a senior software engineer focused on machine learning. I have
-played a critical role in two paradigm shifts in fields of science using
-machine learning — recently, in weather prediction; previously, in
-materials science.</p>
-<h1 id="sabbatical-projects">Sabbatical Projects</h1>
+<p>I am a senior software engineer and machine learning researcher. I
+have played a critical role in two paradigm shifts in fields of science
+using machine learning — recently, in <a
+href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=9ic0HRsAAAAJ&amp;citation_for_view=9ic0HRsAAAAJ:WF5omc3nYNoC">weather
+prediction</a>; previously, in <a
+href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=9ic0HRsAAAAJ&amp;citation_for_view=9ic0HRsAAAAJ:d1gkVwhDpl0C">materials
+science</a>.</p>
+<no-print>
+
+<p><em>(NB: You can get a curated, 3-page version of this CV my printing
+the page.)</em></p>
+</no-print>
+
+<h1 id="experience">Experience</h1>
+<cv-section>
+
+<h2 id="founding-member-of-the-technical-staff-openathena">Founding
+Member of the Technical Staff, <a
+href="https://openathena.ai">OpenAthena</a></h2>
+<p>January 2025 - Present. Remote.</p>
+</cv-section>
+
+<p><em>OpenAthena is a non-profit that helps academic research labs
+build foundation models for science.</em></p>
+<ul>
+<li>Assisting <a
+href="https://m2lines.github.io/">M<sup>2</sup>LInES</a> build better <a
+href="https://github.com/m2lines/Samudra">ocean-physics
+emulators</a>.</li>
+<li><a href="https://alex.merose.com/pbfft">Dreaming</a> about platforms
+for ML and science.</li>
+</ul>
+<cv-section>
+
+<h2 id="sabbatical">Sabbatical</h2>
+<p>October 2023 - January 2025</p>
+</cv-section>
+
+<p><em>I took a gap year with my wife. We traveled the world. Along the
+way, I worked on a few projects.</em></p>
 <no-print>
 
 <cv-section>
 
-<h2 id="writer-vaga--bon--vivants">Writer, vaga • bon • vivants</h2>
-<p>October 2023 - December 2024. Remote.</p>
+<h3 id="writer-vaga--bon--vivants">Writer, vaga • bon • vivants</h3>
+<p>October 2023 - Present. Remote.</p>
 </cv-section>
 
-<p><em>My wife and I have a travel blog! We’re telling the story of our
-gap year, one chapter at a time. <a
+<p><em>We have a travel blog! We’re telling the story of our gap year,
+one chapter at a time. <a
 href="https://vagabonvivants.com/">vagabonvivants.com</a></em></p>
-</no-print>
-
 <cv-section>
 
-<h2 id="contributor-cubed">Contributor, <a
-href="https://cubed-dev.github.io/cubed/">Cubed</a></h2>
+<h3 id="contributor-cubed">Contributor, <a
+href="https://cubed-dev.github.io/cubed/">Cubed</a></h3>
 <p>January 2024 - Present. Remote.</p>
 </cv-section>
 
@@ -85,10 +120,12 @@ how Cubed intersects with accelerators, primarily via JAX.</li>
 (JIT or AOT).</li>
 <li>Adding support for JAX arrays on M1+ hardware via jax-metal.</li>
 </ul>
+</no-print>
+
 <cv-section>
 
-<h2 id="advisor-earthranger">Advisor, <a
-href="https://www.earthranger.com/">EarthRanger</a></h2>
+<h3 id="advisor-earthranger">Advisor, <a
+href="https://www.earthranger.com/">EarthRanger</a></h3>
 <p>January 2024 - June 2024. Remote.</p>
 </cv-section>
 
@@ -104,7 +141,6 @@ href="https://www.youtube.com/watch?v=tH1Dr0iHSxE">SciPy 2024</a>.</li>
 experiment to join raster, vector, and point data by treating pixels as
 tables.</li>
 </ul>
-<h1 id="google-experience">Google Experience</h1>
 <cv-section>
 
 <h2 id="anthromet-team-google-research">Anthromet Team, Google
@@ -119,102 +155,90 @@ forecasts and integrating them into products.</em></p>
 <li><a href="https://github.com/google/Xee">Xee</a>: An Xarray backend
 for Google Earth Engine. <em>(Xarray, Google Earth Engine)</em>
 <ul>
-<li>Created this package, launched as a <a
+<li>Created and launched Xee as a <a
 href="https://x.com/spatialthoughts/status/1711794831499166032">keynote
 feature</a> of <a href="/talks#geo-for-good-2023">Geo for Good
-2023</a>.</li>
-<li>This connects Google Earth Engine to the scientific Python
-ecosystem.</li>
-<li>When integarted with Xarray-Beam, it only takes ~25 lines of code
-and a few hours to export 20 TiBs of data from Google Earth Engine to
-Zarr, saving thousands of LOC and days of debugging quota limits.</li>
-<li>Built to serve an internal weather research platform to build and
-ship new weather models.</li>
-<li>Since launch, the project has <img
+(2023)</a>.</li>
+<li>Part of an internal platform for building AI weather models, this
+connects GEE to the SciPy ecosystem.</li>
+<li>Since launch, the library has had <img
 src="https://static.pepy.tech/badge/xee" alt="PyPI Downloads" /> at <img
 src="https://static.pepy.tech/badge/xee/month"
 alt="PyPI Downloads" />.</li>
 </ul></li>
-<li><a href="https://github.com/google/weather-tools">weather-tools</a>,
-a set of data pipelines to make weather data universally accessible and
-useful. Originally a side project (20% time), I grew the project to a
-team of 8 engineers to serve ~25 research and product teams across
-Google AI, Brain, X, DeepMind and Cloud. <em>(Apache Beam, Xarray,
-Google Earth Engine, Google BigQuery, MetView)</em>:
+<li><a href="https://github.com/google/weather-tools">weather-tools</a>.
+Pipelines to make weather data universally accessible and useful.
+Originally a <a
+href="https://en.wikipedia.org/wiki/Side_project_time#Google_implementation">20%-project</a>,
+I grew weather-tools to a team of 8 engineers serving ~25 research and
+product teams across Alphabet <em>(Apache Beam, Xarray, Google Earth
+Engine, Google BigQuery)</em>:
 <ul>
 <li><a
 href="https://deepmind.google/discover/blog/graphcast-ai-model-for-faster-and-more-accurate-global-weather-forecasting/">GraphCast</a>:
 Enabled DeepMind to ingest and regrid ERA5, the dataset behind their
-autoregressive graph neural network. At the time of publishing, this was
-the SOTA 10 day weather forecast, beating physics based models.
-GraphCast was among <a
+autoregressive graph neural network. This was the first AI model to beat
+physics-based models at predicting the weather. GraphCast was among <a
 href="https://www.science.org/content/article/biggest-science-breakthroughs-2023">2023's
 top-ten biggest breakthroughs</a> published in <em>Science</em>,
 ushering in a new generation of AI-based weather forecasts.</li>
 <li><a
 href="https://blog.research.google/2023/11/metnet-3-state-of-art-neural-weather.html">MetNet
 v3 &amp; Nowcasting in Google Search</a>: MetNet is the world’s leading
-Nowcast, or 24 hour, minute by minute weather forecast at 1-4 km
-resolution. <code>weather-tools</code> created gobal training,
-inference, and validation datasets, enabling our team to ship to
-GSRP.</li>
+Nowcast, or 24 hour, minute-by-minute weather forecast at 1-4 km
+resolution. weather-tools created gobal training, inference, and
+validation datasets, enabling our team to ship to Google Search.</li>
 <li><a href="https://sites.research.google/contrails/">Project
-Contrails</a>. I provided critical weather data and data engineering
-pipelines that made this project possible. This project alone will solve
-1% of anthropogenic climate change by reducing solar irradiance from
+Contrails</a>. I provided critical weather datasets and pipelines that
+made this project possible. Project contrails will help address 1% of
+anthropogenic climate change by reducing solar irradiance from
 airplanes.</li>
-<li><a href="https://github.com/google-research/arco-era5">ARCO-ERA5</a>
-&amp; <a
-href="https://sites.research.google/weatherbench/">Weatherbench2</a>: I
-ingested and published the two biggest datasets in Google Cloud’s Public
-Dataset program. I worked with Cloud to shape weather tools to ingest
-ERA5 into BigQuery.</li>
-<li><a
-href="https://deepmind.google/discover/blog/machine-learning-can-boost-the-value-of-wind-energy/">DeepMind’s
-Wind Energy optimization</a>. By ingesting weather data into Google
-BigQuery, I helped create an ML model with DeepMind and Cloud to make
-wind energy more profitable in the Texas energy grid. This lead to a ~3%
-improvement of mean absolute zero error and ~$7 million more in revenue
-over 8 months from wind power.</li>
 </ul></li>
 <li><a
 href="https://sites.research.google/weatherbench/">Weatherbench2</a>.
-The definitive benchmark to fairly compare AI-based, mid-range weather
-forecasts and a cornerstone for all future ML weather model development.
-<em>(Xarray, Apache Beam, Zarr)</em>
+The definitive benchmark to fairly compare physics and AI, mid-range
+weather forecasts and a cornerstone for all future ML weather model
+development. <em>(Xarray, Apache Beam, Zarr)</em>
 <ul>
-<li>In addition to ingesting the fundamental datasets (see above), I
-made core updates to <a
+<li>I acquired and cloud-optimized the benchmark's <a
+href="https://weatherbench2.readthedocs.io/en/latest/data-guide.html">datasets</a>.</li>
+<li>I improved <a
 href="https://github.com/google/xarray-beam">Xarray-Beam</a>, the
 underlying engine behind the benchmark.</li>
-<li>Contributed code to the benchmark itself, helping ship it to
-production.</li>
+<li>Contributed core benchmark code and helped design the scorecard (a
+Plotly Dash app!).</li>
 </ul></li>
-<li><a href="https://github.com/google-research/arco-era5">ARCO-ERA5</a>
-&amp; <a href="https://pangeo-forge.org/">Pangeo Forge</a>. <em>(Apache
-Beam, Xarray, Dask, Zarr)</em>
+<li><a
+href="https://github.com/google-research/arco-era5">ARCO-ERA5</a>. An
+analysis-ready, cloud-optimized history of weather on Earth.
+<em>(Pangeo-Forge, Apache Beam, Xarray, Zarr)</em>
 <ul>
 <li>ARCO-ERA5 is the biggest dataset in Cloud Public Datasets, at 12+
-petabytes. It represents the most accurate history of weather on Earth
-from 1940 to the present.</li>
-<li>Pangeo Forge is aiming to become the canonical open ecosystem of
-data engineering recipes for producing cloud-optimized, analysis ready
-data, i.e. the conda-forge of scientific datasets.</li>
-<li>I contributed bug fixes and the Beam integration upstream to Pangeo
-Forge to produce ARCO-ERA5.</li>
+petabytes, and likely includes the <a
+href="https://x.com/shoyer/status/1805735177517416749">biggest single
+Zarr ever created</a>.</li>
+<li>The dataset has <a
+href="https://www.openclimatefix.org/post/lazy-loading-making-it-easier-to-access-vast-datasets-of-weather-satellite-data">helped
+accelerate a boom in AI weather forecasting</a>.</li>
+</ul></li>
+<li><a href="https://pangeo-forge.org/">Pangeo Forge</a>. An open
+ecosystem of data engineering recipes for producing cloud-optimized,
+analysis ready data. <em>(Apache Beam, Xarray, Dask, Zarr)</em>
+<ul>
+<li>I was a regular contributor to this data engineering system created
+by the <a href="https://pangeo.io/">Pangeo collective</a>.</li>
 <li><a
 href="https://github.com/pangeo-forge/pangeo-forge-recipes/issues/256#issuecomment-1026428221">I
-was the impetus</a> for Pangeo Forge to transition their data
-engineering system to Apache Beam.</li>
-<li>To support Pangeo Forge, I contributed a Dask runner to Apache Beam
-(<a href="https://m.youtube.com/watch?v=uGEQkws1Low">and presented it at
-PyData</a>).</li>
+was the impetus</a> for Pangeo Forge to adopt Apache Beam, for <a
+href="https://medium.com/pangeo/pangeo-forge-is-all-in-on-apache-beam-d7370299405f">better</a>
+or for <a
+href="https://github.com/pangeo-forge/pangeo-forge-recipes/issues/799#issuecomment-2686467443">worse</a>.</li>
 <li>Pangeo Forge would go on to cloud optimize <a
 href="https://x.com/JuliusBusecke/status/1781429813258932710">over 4,000
 CMIP6 datasets via Apache Beam</a>.</li>
-<li>The ARCO-ERA5 corpus likely includes the <a
-href="https://x.com/shoyer/status/1805735177517416749">biggest single
-Zarr ever created</a>.</li>
+<li>As a part of the project, I contributed a Dask runner to Apache Beam
+(<a href="https://m.youtube.com/watch?v=uGEQkws1Low">and presented it at
+PyData</a>).</li>
 </ul></li>
 <li>Awards and recognition received while on Anthromet:
 <ul>
@@ -222,9 +246,6 @@ Zarr ever created</a>.</li>
 along with my team and partner teams.</li>
 <li>A Greenie award from Anthropocene, an internal grassroots
 organization focused on climate technologies.</li>
-<li>A spot bonus from John Platt, the head of Google Applied Sciences,
-for speeding up a critical data ingestion workflow by a few orders of
-magnitude.</li>
 </ul></li>
 <li>Lead a team of twelve 20%-engineers to make contributions to the
 weather community, including internal changes to Google Earth Engine and
@@ -268,7 +289,6 @@ on the web <em>(Kotlin, Wasm, Bazel)</em>.</li>
 within the Arcs programming model <em>(Typescript, Tensorflow
 JS)</em>.</li>
 </ul>
-<h1 id="pre-google-experience">Pre-Google Experience</h1>
 <cv-section>
 
 <h2 id="machine-learning-engineer-aira-tech-corp">Machine Learning
@@ -459,12 +479,12 @@ Vecchio. <em>Microscopy and Microanalysis</em> 26 (3), 447-457</li>
  <tr>
     <td>Language</td>
     <td>Python, Typescript, JS, Kotlin, Java</td>
-    <td>C, C++, SQL, Wasm</td>
+    <td>C++, C, SQL, Wasm</td>
  </tr>
  <tr>
     <td>Data</td>
-    <td>Tensorflow, Scikit-Learn, XGBoost, OpenCV, Xarray, NumPy, Dask, Pandas, Zarr, Apache Beam, GEE</td>
-    <td>JAX, Apache Spark, GeoPandas, GDAL, Proj, Rasterio, Parquet, BQ, Postgres</td>
+    <td>Tensorflow, Xarray, Zarr, NumPy, Dask, Beam, GEE</td>
+    <td>JAX, PyTorch, Spark, Parquet, BQ, Postgres</td>
  </tr>
  <tr>
     <td>Product</td>
