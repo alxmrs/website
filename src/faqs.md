@@ -5,7 +5,7 @@
 
 <div id="work"></div>
 
-I’m a founding engineer at [OpenAthena](https://openathena.ai). Here, I help build foundation models for various fields of science. The first domain I’m focusing on is neuroscience in a partnership with UCSF. Before this role, I used to work at Google Research. There, I developed machine-learning
+I’m a founding engineer at [OpenAthena](https://openathena.ai). Here, I help build foundation models for various fields of science. The first domain I’m focusing on is ocean physics in a partnership with NYU and MIT. Before this role, I used to work at Google Research. There, I developed machine-learning
 applications for the weather. A lot of the time this meant making [weather data easier to work with](https://github.com/google/weather-tools/), if not [specific datasets](https://github.com/google-research/arco-era5). If you've Googled the weather and saw a bar that told you how soon it was going to rain, you've used my [old team's main product](https://blog.research.google/2023/11/metnet-3-state-of-art-neural-weather.html). I've been lucky so far that a lot of my work involves contributing to [open source](https://github.com/alxmrs). Before joining Google, I've had a [mix of software engineering and machine learning roles](cv.md).
 
 </details>
