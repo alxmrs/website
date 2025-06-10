@@ -1,6 +1,16 @@
 # Talks
 
-_updated: 2025-03-04_
+_updated: 2025-06-10_
+
+## Techs on Texts
+
+**Episode #16: Alex Merose on Convenience Store Woman by Sayaka Murata**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wuG446UDBeA?si=qS3wd_3z1AVA-EgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+([Show Notes](https://techsontexts.net/episodes/2025/05/murata-alex-merose/))
+
+I was a guest on Jed Sundwall's literature podcast, [Techs on Text](https://techsontexts.net/). We covered a lot of ground in our discussion of two texts ([Convenience Store Woman](https://archive.org/details/convenience-store-woman) by Sayaka Murata and [Marcel Duchamp and the Refusal of Work](https://wahc-museum.ca/wp-content/uploads/2019/04/Alejandro-Tamayo-Readings.pdf) by Maurizio Lazzarato), touching on the philosophy of work, hegemonic effects of patriarchy, inadequacy of language, and reality's surprising amount of detail.
 
 ## HYTRADBOI 2025
 
