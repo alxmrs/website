@@ -21,7 +21,7 @@ I lived in Oakland for a few years, then in the Santa Cruz/Monterey area. During
 central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family. 
 Hey, maybe one day I'll end up in Chico or Mt. Shasta. 
 
-Currently, I live in Aromas, CA. (It's about 100 miles south of San Francisco.)
+Currently, I live in [Aromas, CA](https://aromas.town). (It's about two hours south of San Francisco.)
 
 ![A good place to live](assets/a-good-place-to-live.webp)
 
@@ -106,7 +106,7 @@ about you and provide commensurate advice.
 
 <summary>Do you actually get asked these questions frequently?</summary>
 
-Like, not really.
+More than you would think.
 
 </details>
 
