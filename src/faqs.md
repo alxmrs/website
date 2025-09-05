@@ -5,8 +5,16 @@
 
 <div id="work"></div>
 
-I’m a founding engineer at [OpenAthena](https://openathena.ai). Here, I help build foundation models for various fields of science. The first domain I’m focusing on is ocean physics in a partnership with NYU and MIT. Before this role, I used to work at Google Research. There, I developed machine-learning
-applications for the weather. A lot of the time this meant making [weather data easier to work with](https://github.com/google/weather-tools/), if not [specific datasets](https://github.com/google-research/arco-era5). If you've Googled the weather and saw a bar that told you how soon it was going to rain, you've used my [old team's main product](https://blog.research.google/2023/11/metnet-3-state-of-art-neural-weather.html). I've been lucky so far that a lot of my work involves contributing to [open source](https://github.com/alxmrs). Before joining Google, I've had a [mix of software engineering and machine learning roles](cv.md).
+I’m a founding engineer at [OpenAthena](https://openathena.ai). Here, I help build foundation models for various fields
+of science. The first domain I’m focusing on is ocean physics in a partnership with NYU and MIT. Before this role, I
+used to work at Google Research. There, I developed machine-learning
+applications for the weather. A lot of the time this meant
+making [weather data easier to work with](https://github.com/google/weather-tools/), if
+not [specific datasets](https://github.com/google-research/arco-era5). If you've Googled the weather and saw a bar that
+told you how soon it was going to rain, you've used
+my [old team's main product](https://blog.research.google/2023/11/metnet-3-state-of-art-neural-weather.html). I've been
+lucky so far that a lot of my work involves contributing to [open source](https://github.com/alxmrs). Before joining
+Google, I've had a [mix of software engineering and machine learning roles](cv.md).
 
 </details>
 
@@ -18,8 +26,8 @@ applications for the weather. A lot of the time this meant making [weather data 
 
 All over California, really. I grew up in [San Diego](san-diego.md) (north county) and went to college there, too.
 I lived in Oakland for a few years, then in the Santa Cruz/Monterey area. During the pandemic, I found myself in the
-central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family. 
-Hey, maybe one day I'll end up in Chico or Mt. Shasta. 
+central coast near SLO. When things cleared up a bit, Cam and I moved to LA for a year to help support family.
+Hey, maybe one day I'll end up in Chico or Mt. Shasta.
 
 Currently, I live in [Aromas, CA](https://aromas.town). (It's about two hours south of San Francisco.)
 
@@ -31,12 +39,14 @@ Currently, I live in [Aromas, CA](https://aromas.town). (It's about two hours so
 
 <summary>What's your favorite place that you've traveled to?</summary>
 
-Wow, what an impossible question! Well, I have a soft spot for Vietnam. We only visited the [top](https://vagabonvivants.com/chapter-17-good-morning-vietnam) 
-[half](https://vagabonvivants.com/chapter-18-goodnight-vietnam) of the country, but boy does it have it all: natural 
-beauty, rich culture and history, delicious food and, in my opinion, the best coffee in the world. Next on my list is 
-probably Türkiye. There's something really special about that place. 
+Wow, what an impossible question! Well, I have a soft spot for Vietnam. We only visited
+the [top](https://vagabonvivants.com/chapter-17-good-morning-vietnam)
+[half](https://vagabonvivants.com/chapter-18-goodnight-vietnam) of the country, but boy does it have it all: natural
+beauty, rich culture and history, delicious food and, in my opinion, the best coffee in the world. Next on my list is
+probably Türkiye. There's something really special about that place.
 
-We're lucky enough to have spent a good deal of [time](https://www.seat61.com/Vietnam.htm) [on trains](https://www.seat61.com/train-travel-in-turkey.htm) in 
+We're lucky enough to have spent a good deal
+of [time](https://www.seat61.com/Vietnam.htm) [on trains](https://www.seat61.com/train-travel-in-turkey.htm) in
 both countries; I wonder if that has something to do with it.
 
 </details>
@@ -47,20 +57,14 @@ both countries; I wonder if that has something to do with it.
 
 <div id="music"></div>
 
-Why, thank you for asking! In a world of streaming music, it's common to say that one's tastes are eclectic. This
-certainly is true for me, however, it doesn't really speak to the shape of my preferences. Let me show rather than tell
-what I like (with the help of [everynoise.com](https://everynoise.com)):
+When I encounter a new song that I like, I make note of it. I've been doing this since I got a Spotify account in 2016. 
+Collecting music is one of my great joys.
 
-* [Here are all my playlists](https://everynoise.com/playlistprofile.cgi?id=spotify:user:djbokonon). I've been
-  cataloguing all the songs I encounter, saving the ones that are new-to-me in lists organized by month & year (since ~
-  2016).
+You can see what I've been listening to every year and month since
+then – [here are all my playlists](https://everynoise.com/playlistprofile.cgi?id=spotify:user:djbokonon).
 
-* Try clicking on the "tracks" link for a playlist. For
-  example, [here are the tracks](https://everynoise.com/playlistprofile.cgi?id=2h0gMiVpHTnEdgk905lCSR) in my
-  `2022 jan` playlist.
-
-* If a genre seems interesting to you, click the link to explore artists that create music associated with that genre.
-  For example, I listen to a bunch of [art pop](https://everynoise.com/research.cgi?mode=genre&name=art%20pop).
+Reflecting on these ~nine years of cataloging music this way, I can safely say that I listen to a lot of indie sleaze,
+(and indie-sleaze adjacent music). Every year my body ages, but my ears are stuck in 2011.
 
 </details>
 
