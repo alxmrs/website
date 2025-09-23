@@ -2,6 +2,14 @@
 
 _updated: 2025-06-10_
 
+## Cloud Native Geo 2025
+
+**Why Machine Learning People Should Think about Databases**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LNNU33TmBFk?si=OiHPlB0LAiI0Df1e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+In this talk at CNG, I make the provocative claim that foundation models are "just" a database technology. I attempt to coin the term "differential database."
+
 ## Techs on Texts
 
 **Episode #16: Alex Merose on Convenience Store Woman by Sayaka Murata**
