@@ -1,6 +1,6 @@
 # Talks
 
-_updated: 2025-06-10_
+_updated: 2025-09-23_
 
 ## Cloud Native Geo 2025
 
