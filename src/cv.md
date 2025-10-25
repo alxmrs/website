@@ -3,7 +3,7 @@ description-meta: Alexander Merose is a software engineer and ML researcher focu
 ---
 <center>
 
-# Alexander S. Merose
+# Alexander Sky Merose
 
 <print-only> 
   <ul class="cv-topline">
@@ -16,7 +16,7 @@ description-meta: Alexander Merose is a software engineer and ML researcher focu
 </center>
 
 I am a senior software engineer and machine learning researcher. I have played a critical role in two paradigm shifts in
-fields of science using machine learning — recently, in [weather prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9ic0HRsAAAAJ&citation_for_view=9ic0HRsAAAAJ:WF5omc3nYNoC); previously, in [materials science](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9ic0HRsAAAAJ&citation_for_view=9ic0HRsAAAAJ:d1gkVwhDpl0C). 
+fields of science using machine learning — recently, in [weather prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9ic0HRsAAAAJ&citation_for_view=9ic0HRsAAAAJ:WF5omc3nYNoC); previously, in [crystallography](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=9ic0HRsAAAAJ&citation_for_view=9ic0HRsAAAAJ:d1gkVwhDpl0C). 
 
 <no-print>
 
