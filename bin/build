@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 #
-# Invoke pandoc on $SRC, copy $STATIC assets over to $DST.
+# Invoke pandoc on $SRC, copy $ASSETS assets over to $DST.
+# Also, generates an RSS feed from non-index.md files.
 #
 
 set -e
@@ -21,7 +22,7 @@ convert() {
   # Apply the mappings as follows:
   #  src/some/path/webpage.md --> public/some/path/webpage/index.html
   #  src/some/path/index.md   --> public/some/path/index.html
-  # In order words: Let the file name become the slug name
+  # In other words: Let the file name become the slug name
   # and let any index page simply become an index.hml page.
   filename=$(basename "$FROM")
   if echo "$filename" | grep -q 'index\.md$'; then
@@ -36,15 +37,6 @@ convert() {
   pandoc $PANOPTS "$file" --output="$DST$TO" || warn "Failed to create $TO"
 }
 
-copy() {
-  file="$1"
-  FROM=$file
-  TO="$DST${file##"$STATIC"}"
-  echo "${FROM##"$ROOT"} --> ${TO##"$ROOT"}"
-  mkdir -p "$(dirname "$TO")"
-  cp "$FROM" "$TO" || warn "Failed to copy asset $TO"
-}
-
 status "Rendering"
 find "$SRC" -type f -name "*.$SRC_EXT" | while IFS= read -r file; do
   convert "$file" &
@@ -52,10 +44,10 @@ done
 wait
 
 status "Copying over assets"
-find "$STATIC" -type f | while IFS= read -r file; do
-  copy "$file" &
-done
-wait
+cp -r "$ASSETS" "$DST"
+# Copies all non-source files to the destination, mirroring file structure.
+(cd "$SRC" && find . -type f -not -name "*.$SRC_EXT" -print | cpio -pdm "$DST")
+
 
 status "Rendering RSS feed"
 # This does the following:

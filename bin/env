@@ -1,14 +1,14 @@
-#!/bin/sh
+#!/usr/bin/env sh
 #
 # Environment variables, with defaults.
 #
 ROOT=$(dirname "$(dirname "$(realpath "$0")")")
 SRC=${SRC:-"$ROOT/src"}
 DST=${DST:-"$ROOT/public"}
-STATIC=${STATIC:-"$SRC/static"}
-HEADER=${HEADER:-"$SRC/header.html"}
-FOOTER=${FOOTER:-"$SRC/footer.html"}
-CSS=${CSS:-"/css/main.css"}
+ASSETS=${ASSETS:="$ROOT/assets"}
+HEADER=${HEADER:-"$ROOT/template/header.html"}
+FOOTER=${FOOTER:-"$ROOT/template/footer.html"}
+CSS=${CSS:-"/assets/css/main.css"}
 SRC_EXT=${SRC_EXT:-"md"}
 DST_EXT=${DST_EXT:-"html"}
 PANOPTS=${PANOPTS:-"--css $CSS --metadata-file=$ROOT/defaults.yml  --filter $ROOT/bin/relink.py -f gfm+raw_html -t html -B $HEADER -A $FOOTER" -V lang=en-US}
