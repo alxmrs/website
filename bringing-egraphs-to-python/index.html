@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>gpus-go-brrr</title>
+  <title>Bringing E-Graphs to Python</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -37,7 +37,43 @@
     </ul>
 </nav>
 
-<meta http-equiv="Refresh" content="0; URL=/gpus-go-brrr/" />
+<header id="title-block-header">
+<h1 class="title">Bringing E-Graphs to Python</h1>
+<p class="date">2025-01-15T11:34</p>
+</header>
+<p><img src="https://egraphs-good.github.io/assets/egg.svg"
+alt="e-graphs-good" /> <img
+src="https://jupytearth.org/_images/python-stack.png"
+alt="The Scientific Python Ecosystem" /></p>
+<p>Common things I take away from Saul's talk:</p>
+<ul>
+<li>OSS Python could substantially benefit from frontier programming
+language (PL) research</li>
+<li>Talks about the birth of NumPy in 1995</li>
+<li>NumPy is "pointers, strides, dtypes" between Python and C
+arrays.</li>
+<li>History of OSS Python is an ecosystem of collaborative,
+multi-stakeholder, interdependent yet individual projects.</li>
+<li>Terrific overview of the PyData library --&gt; compiler / hardware
+targets, c. 2019 <img
+src="https://egglog-python.readthedocs.io/latest/_images/ecosystem-graph.png"
+alt="&quot;How do we support targets today?&quot;" />
+<ul>
+<li>With new heterogenous hardware environments and heavy industry
+incentives up and down the software/hardware stack, tools seldom
+interoperate anymore. <strong>Now, people have to choose silos in
+Python.</strong></li>
+<li>This talk argues that the entire python ecosystem is a compiler!
+(maybe, one that doesn't interoperate very well.)</li>
+<li>egglog / egraphs make it easier for different libraries to write
+their own piece of the bigger compiler that is PyData</li>
+</ul></li>
+</ul>
+<hr />
+<h1 id="references">References</h1>
+<p><a
+href="https://egglog-python.readthedocs.io/latest/explanation/2023_11_09_portland_state.html">"Bringing
+E-Graphs to Python by <em>Saul Shanabrook</em></a></p>
 <footer>
     <ul>
         <li><a href="mailto:al@merose.com">email</a></li>
