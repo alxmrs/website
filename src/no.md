@@ -1,6 +1,6 @@
 ---
 title: Saying "no"
-description: My new years resolution for 2026 is to say "no" more.
+description-meta: My new years resolution for 2026 is to say "no" more.
 date: 2026-01-01
 tags:
 - goals
