@@ -26,7 +26,7 @@ At work, I often recite a quote attributed to Steve Jobs: “Focus means saying 
 I’ve got a lot of projects going on, personal and professional. Many of these involve things that I’ve committed to. Of these commitments, I have three choices: I can give them my all, do the minimum, or try to get out of my obligation. Here is a scattered list of what I have going on, and how much I want to continue participating. 
 
 - Aromas Day
-  - I am an aromas day planner. I make the event's website, which doesn’t take too much of my time. This past year, I volunteered to manage the next Aromas Day’s vendors. This involves managing a database (read; a google sheet) of vendor applications, curating which ones will be green lit to be invited to sell their wares on the day of the event, and maintaining quick communication between all parties. 
+  - I am an aromas day planner. I make the event's website, which doesn’t take too much of my time. This past year, I volunteered to manage the next Aromas Day’s vendors. This involves managing a database (read: a spreadsheet) of vendor applications, curating which ones will be green lit to be invited to sell their wares on the day of the event, and maintaining quick communication between all parties. 
   - I want to give this commitment my all. The reason is that one of my two values in life is “community,” and I see this role in the event, let alone the existence of the event itself, as one of the best ways that I help foment community where I live.
 - The Aromas Eagles
   - I maintain this community organization’s website, and I regularly go to meetings (once a month, give or take)
