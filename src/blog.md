@@ -2,6 +2,9 @@
 title: Blog
 description-meta: A blog is a blog is a blog.
 ---
+## 2026
+- [Saying "no"](no.md)
+ 
 ## 2025
 
 - [The Petabyte FFT: Accelerated Cubed](pbfft.md)
