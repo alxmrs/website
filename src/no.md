@@ -31,52 +31,52 @@ I’ve got a lot of projects going on, personal and professional. Many of these 
   - I want to give this commitment my all. The reason is that one of my two values in life is “community,” and I see this role in the event, let alone the existence of the event itself, as one of the best ways that I help foment community where I live. 
 - The Aromas Eagles
   - I maintain this community organization’s website, and I regularly go to meetings (once a month, give or take)
-	 - I want to do the minimum here. This means minimal to no volunteering for extra obligations. I will merely participate, and do what I am asked. But, for now, I don’t see myself volunteering to do much beyond this.
-	 - That said, I am more than happy to be plugged in to the goings on in this pillar of my home town. 
-	- The Aromas Grange
-	 - I just won the election for a 3 year executive member for our local community grange. They have a number of community efforts that I believe in, for example, like helping protect our immigrant neighbors. I have grand ideas for projects to start here, like figuring out ways to better support our community with finding health care coverage. These ideas are nascent, and I would need to do a lot of research to find a practical thing that would make a positive material difference. Further, I have some interest in figuring out how to start a community run microgrid (https://www.pge.com/assets/pge/docs/save-energy-and-money/rebate-and-incentives/PGE-MIP-Handbook.pdf) with assistance from my cousin, Meera, a talented electrical engineer. 
-	 - I think my decision is to do the minimum (what I am asked), except to watch for opportunities to make an impact. 
-	   - Related: one of my previous managers gave me the advice to keep having ideas, but to wait for the most strategic time to share them (instead of when they arise). 
-	   - I think I’ll do that with the grange. I know some community members who are working to start something with healthcare and others who want to put solar on the grange. I think I’ll try to be plugged in with this role and look for opportunities to “Yes, And” projects that others want to champion. 
-	- Home improvements 
-	  - We bought a home in 2025! This year, we replaced the roof and added solar panels. That was maybe more than we bargained for. We have lofty visions for what we want to do with our home and other major, but delayable repairs. 
-	  - I hope ( 🤞) that we can get away with planned major improvements and renovations for our home this year. I’ll carve out an exception for gardening and landscaping, which has been very DIY for us so far (championed by my spouse).
-	- Projects at my day job
-	  - I don’t want to spoil the surprise about what I’m working on these days at Open Athena. However, I can say that out of the range of possibilities for what I could work on, my teammate and I are doing our best to narrow scope to essential concerns of our mission. Every day there are so many interesting modeling ideas to explore, that this is non-trivial to do! And yet, it’s probably for the best to have this incentive to regularize. 
-	  - I am fully committed to this one and want to give work my all — insofar as I know which problems are worthy of solving.
-	- Cubed
-	  - This is an open source project I have minorly contributed to (mainly issues, a few PRs), but that I care a lot about. I talk to the maintainer regularly in the Distributed Array Working Group. 
-	  - I wrote a blog post last year about figuring out how to run the framework on accelerators at scale. I haven’t started this project yet, and I haven’t found a need to do so. 
-	  - I will keep my involvement to a minimum, but keep going to array working group meetings. Further, I will try to network as best as I can to help advance the mission of the cubed project. 
-	    - Caveat: it may come to pass that I start to use Cubed in my work. At that point, I’ll let the needs of the priorities of my work determine how much more involved to be. 
-	- arrow-zarr
-	  - I have somewhat volunteered to review PRs and integrate this package into my own project (see below)
-	  - I plan on no longer being involved. 
-	  - Rational: I don’t have enough strength in rust to meaningfully contribute. Further, there are other similar technical bets that are a better fit for me to participate in. 
-	- xarray-sql + zarr-datafusion
-	  - I started xarray-sql, an Xarray as a database experiment. And I closely collaborate with Jayendra, who has developed zarr-datafusion, a related effort in rust. 
-	  - I’m going all in on these two projects, so long as I can maintain them outside of working hours. 
-	  - Rationale: as someone who values community, I think these two tools are likely to bring a lot more people into the climate informatics community. Further, these projects, especially xarray-sql, seem like things that I uniquely can implement — I don’t know if these would exist if I weren’t a part of them.
-	  - Beyond building the libraries themselves, I hope to also invest in writing blog posts and giving conference talks!
-	- Travel
-	  - I remember once saying that Camille and I take every flimsy excuse to travel we get. The usual rationale here is that we’re willing and able to go out of our way to be there for our community.
-	  - This year, I want to be more selective with how we travel. Ideally, we will spend more time at home than we have the last few years. I really love being with my two cats. Further, when we do travel, I want to prioritize domestic travel rather than international. 
-     - This one will be hard, I think, because there are a lot of international conferences related to work happening this year. What good opportunities to practice saying “no.”
-	- Vagabonvivants.com
-	  - Cam and I are still writing our travel blog, albeit very slowly. 
-	  - I say, I’ll make a best effort to continue this, but really on a minimum basis. 
-	- Other writing projects 
-	  - I have a draft of an essay I want to submit somewhere when it is ready and then one I want to collaborate with a lawyer friend on and then some blog posts for work. 
-	  - I honestly hope that I spend more time and effort here than currently! For writing, I’m all in. 
-	- Projects not yet begun
-	  - Become a radio DJ
-	    - I had aspirations to join ksqd and play music that I have curated over the years. 
-	    - I’ll say, “not this year.”
-	  - Start a podcast
-	    - I was thinking about starting a “micro podcast” where I would distribute snippets of thoughts via RSS feed via my personal site. 
-	    - I’ll also say “not right now” to this idea. Maybe one day. 
-	  - Other things I’m forgetting
-	    - You’ve probably guessed it, I’ll default to “no” however I can.
+  - I want to do the minimum here. This means minimal to no volunteering for extra obligations. I will merely participate, and do what I am asked. But, for now, I don’t see myself volunteering to do much beyond this.
+  - That said, I am more than happy to be plugged in to the goings on in this pillar of my home town. 
+- The Aromas Grange
+  - I just won the election for a 3 year executive member for our local community grange. They have a number of community efforts that I believe in, for example, like helping protect our immigrant neighbors. I have grand ideas for projects to start here, like figuring out ways to better support our community with finding health care coverage. These ideas are nascent, and I would need to do a lot of research to find a practical thing that would make a positive material difference. Further, I have some interest in figuring out how to start a community run microgrid (https://www.pge.com/assets/pge/docs/save-energy-and-money/rebate-and-incentives/PGE-MIP-Handbook.pdf) with assistance from my cousin, Meera, a talented electrical engineer. 
+  - I think my decision is to do the minimum (what I am asked), except to watch for opportunities to make an impact. 
+    - Related: one of my previous managers gave me the advice to keep having ideas, but to wait for the most strategic time to share them (instead of when they arise). 
+	  - I think I’ll do that with the grange. I know some community members who are working to start something with healthcare and others who want to put solar on the grange. I think I’ll try to be plugged in with this role and look for opportunities to “Yes, And” projects that others want to champion. 
+- Home improvements 
+  - We bought a home in 2025! This year, we replaced the roof and added solar panels. That was maybe more than we bargained for. We have lofty visions for what we want to do with our home and other major, but delayable repairs. 
+  - I hope ( 🤞) that we can get away with planned major improvements and renovations for our home this year. I’ll carve out an exception for gardening and landscaping, which has been very DIY for us so far (championed by my spouse).
+- Projects at my day job
+  - I don’t want to spoil the surprise about what I’m working on these days at Open Athena. However, I can say that out of the range of possibilities for what I could work on, my teammate and I are doing our best to narrow scope to essential concerns of our mission. Every day there are so many interesting modeling ideas to explore, that this is non-trivial to do! And yet, it’s probably for the best to have this incentive to regularize. 
+  - I am fully committed to this one and want to give work my all — insofar as I know which problems are worthy of solving.
+- Cubed
+  - This is an open source project I have minorly contributed to (mainly issues, a few PRs), but that I care a lot about. I talk to the maintainer regularly in the Distributed Array Working Group. 
+  - I wrote a blog post last year about figuring out how to run the framework on accelerators at scale. I haven’t started this project yet, and I haven’t found a need to do so. 
+  - I will keep my involvement to a minimum, but keep going to array working group meetings. Further, I will try to network as best as I can to help advance the mission of the cubed project. 
+	  - Caveat: it may come to pass that I start to use Cubed in my work. At that point, I’ll let the needs of the priorities of my work determine how much more involved to be. 
+- arrow-zarr
+  - I have somewhat volunteered to review PRs and integrate this package into my own project (see below)
+  - I plan on no longer being involved. 
+  - Rationale: I don’t have enough strength in rust to meaningfully contribute. Further, there are other similar technical bets that are a better fit for me to participate in. 
+- xarray-sql + zarr-datafusion
+  - I started xarray-sql, an Xarray as a database experiment. And I closely collaborate with Jayendra, who has developed zarr-datafusion, a related effort in rust. 
+  - I’m going all in on these two projects, so long as I can maintain them outside of working hours. 
+  - Rationale: as someone who values community, I think these two tools are likely to bring a lot more people into the climate informatics community. Further, these projects, especially xarray-sql, seem like things that I uniquely can implement — I don’t know if these would exist if I weren’t a part of them.
+  - Beyond building the libraries themselves, I hope to also invest in writing blog posts and giving conference talks!
+- Travel
+  - I remember once saying that Camille and I take every flimsy excuse to travel we get. The usual rationale here is that we’re willing and able to go out of our way to be there for our community.
+  - This year, I want to be more selective with how we travel. Ideally, we will spend more time at home than we have the last few years. I really love being with my two cats. Further, when we do travel, I want to prioritize domestic travel rather than international. 
+  - This one will be hard, I think, because there are a lot of international conferences related to work happening this year. What good opportunities to practice saying “no.”
+- Vagabonvivants.com
+  - Cam and I are still writing our travel blog, albeit very slowly. 
+  - I say, I’ll make a best effort to continue this, but really on a minimum basis. 
+- Other writing projects 
+  - I have a draft of an essay I want to submit somewhere when it is ready and then one I want to collaborate with a lawyer friend on and then some blog posts for work. 
+  - I honestly hope that I spend more time and effort here than currently! For writing, I’m all in. 
+- Projects not yet begun
+  - Become a radio DJ
+	  - I had aspirations to join ksqd and play music that I have curated over the years. 
+	  - I’ll say, “not this year.”
+  - Start a podcast
+	  - I was thinking about starting a “micro podcast” where I would distribute snippets of thoughts via RSS feed via my personal site. 
+	  - I’ll also say “not right now” to this idea. Maybe one day. 
+  - Other things I’m forgetting
+	  - You’ve probably guessed it, I’ll default to “no” however I can.
 
 ## Hypothesis: Embodying “no” to update habits
 
