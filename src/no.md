@@ -11,6 +11,8 @@ tags:
 
 I write this from the veterinary hospital. My one-year-old cat Twiggy ate a dozen hair ties last night while we were at a friend’s house celebrating NYE. Alas, what an omen for 2026. I am almost certain that she’ll be ok. She’s always been our little diva, and now I have the vet bill to prove it. 
 
+![Act 1: A stomach of rubber](/assets/xray-1.png )
+
 The waiting room of a vet hospital just so happens to be an excellent place to do this goal setting exercise. As I have [written about before](goals.md), my wife and I have a tradition of setting goals around new years. Every time we perform this ritual, we try to find a therapeutic place outside of our normal surroundings. Maybe, we can better inspect the shape of our life if we momentarily step outside of it. They’re playing calming music here and the seats are comfortable enough. On with the visioning!
 
 For 2025, I earnestly joked that I had no New Year’s resolutions, since I was perfect the way I am. 2025 has been a big year for self acceptance for me. I am proud of the work I’ve done here, to be happy in my own skin. Building on this, I have noticed that there are ways I can grow that are still self-compassionate. Ruminations on the theme have been ringing in the back of my mind. Just in the past few days, I figured out what my 2026 could be for me. I want 2026 to be the year of “no”.
@@ -24,6 +26,8 @@ At work, I often recite a quote attributed to Steve Jobs: “Focus means saying 
 ## Exercise: what obligations really matter to me?
 
 I’ve got a lot of projects going on, personal and professional. Many of these involve things that I’ve committed to. Of these commitments, I have three choices: I can give them my all, do the minimum, or try to get out of my obligation. Here is a scattered list of what I have going on, and how much I want to continue participating. 
+
+![Act 2: A third left](/assets/xray-2.png)
 
 - Aromas Day
   - I am an aromas day planner. I make the event's website, which doesn’t take too much of my time. This past year, I volunteered to manage the next Aromas Day’s vendors. This involves managing a database (read: a spreadsheet) of vendor applications, curating which ones will be green lit to be invited to sell their wares on the day of the event, and maintaining quick communication between all parties. 
@@ -81,6 +85,8 @@ I’ve got a lot of projects going on, personal and professional. Many of these 
 
 I had a realization the other day that the things I’m working on in therapy — namely, learning how to tolerate distress and emotional discomfort — are actually broadly applicable to a range of issues that I initially thought were irrelevant. The realization came about because I spoke with a cousin who just started GLP1 drugs and vividly described what they felt like. I had previously heard about how these drugs work, including talk about turning off “food noise” and reducing “emotional eating” — but it wasn’t until I had heard this relative’s lived experience that I really understood the implications. She noted that the drugs also had been found to be effective at curbing people’s other addictive tendencies, like drinking. If this class of miracle drugs functioned by simply making people more aware of their own bodies, would it be possible to have a similar effect through dedicated practice alone?
 
+![Act 3: Hair tie free](/assets/xray-3.png)
+
 Losing weight is the infamous unachieved new years goal. This checkbox has certainly been on many of my new years resolutions past. There are other [similar aspirations](digital-detox.md) that I’ve had related to my [everyday habits](boredom.md), like reducing social media use. What if the lessons I’ve been practicing this year in therapy — learning to embrace the feelings of stress and discomfort related to certain triggers instead of falling prey to bad reactions — could be used to more generally shape my habits? What if feeling your feelings could be a powerful, all encompassing tool?
 
 I’m entering the new year trying a new experiment: what if I said “no” to many of the habits I currently have that I want to change and instead say “yes” to the negative feelings that not doing them brings up? As an example, this holiday season, there have been so many cookies at my house. Pretty much any time I pass the box of chocolate chip wonders that my wife bakes annually, I eat one. So far in this experiment, I’ve been saying no to this instinct, and instead paying attention to the subtle signs of “food noise” that I had not previously noticed. Without getting too much in my head about it, I am starting to gain a distinction for really desiring a sweet versus merely the minorly compelling force of a positive experience from consuming one. What’s funny is that this practice of feeling my feelings as they relate to food has been excellent “cross training” for the things I’m working on in therapy. Weird how that goes sometimes. 
@@ -96,3 +102,5 @@ In the early years, like the mid 2010s when I was just exiting college, my goals
 My wife, meanwhile, always took a different approach. Right from the beginning, she framed her goals as a set of things she would stop doing, start doing, or keep doing. Camille has always been one of the most confident people that I know, and her self love I find to be infectious. This is the way to set goals if they don’t come from an impulse to be someone different than who you are. I get it now. A checkbox can get you moving to somewhere else with gusto, but it can’t answer if that’s the right direction to go. The Kurt Vonnegut line always hits: “We are what we pretend to be, so we must be careful about what we pretend to be.” 
 
 I have a much better sense of who I am pretending to be. The one thing that I wish for myself is to focus on that, to simply do less. And for this reason, I am resolved to make this a year of saying “no.”
+
+![Home, home again.](/assets/twiggy-after.png)
