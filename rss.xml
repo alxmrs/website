@@ -180,9 +180,9 @@ better fit for me to participate in.</li>
 </ul></li>
 <li>xarray-sql + zarr-datafusion
 <ul>
-<li>I started xarray-sql, an Xarray as a database experiment. And I
-closely collaborate with Jayendra, who has developed zarr-datafusion, a
-related effort in rust.</li>
+<li>I started xarray-sql, an Xarray as a database experiment. In
+addition, I closely collaborate with Jayendra, who has developed
+zarr-datafusion, a related effort in rust.</li>
 <li>I’m going all in on these two projects, so long as I can maintain
 them outside of working hours.</li>
 <li>Rationale: as someone who values community, I think these two tools
