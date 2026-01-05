@@ -5,6 +5,8 @@ date: 2026-01-01
 tags:
 - goals
 - habits
+header-includes:
+  - <meta property="og:image" content="/assets/xray-1.png">
 ---
 
 ![](/assets/twiggy.png "my stupid cat")
