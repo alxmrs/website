@@ -54,7 +54,7 @@ _Act 2: A third remains_
 - Cubed
   - This is an open source project I have minorly contributed to (mainly issues, a few PRs), but that I care a lot about. I talk to the maintainer regularly in the Distributed Array Working Group.
   - I wrote a blog post last year about figuring out how to run the framework on accelerators at scale. I haven’t started this project yet, and I haven’t found a need to do so.
-  - I will keep my involvement to a minimum, but keep going to array working group meetings. Further, I will try to network as best as I can to help advance the mission of the cubed project.
+  - I will keep my involvement to a minimum, but keep going to array working group meetings. Further, I will try to network as best as I can to help advance the mission of the Cubed project.
 	  - Caveat: it may come to pass that I start to use Cubed in my work. At that point, I’ll let the needs of the priorities of my work determine how much more involved to be.
 - arrow-zarr
   - I have somewhat volunteered to review PRs and integrate this package into my own project (see below)
