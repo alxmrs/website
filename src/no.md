@@ -61,7 +61,7 @@ _Act 2: A third remains_
   - I plan on no longer being involved.
   - Rationale: I don’t have enough strength in rust to meaningfully contribute. Further, there are other similar technical bets that are a better fit for me to participate in.
 - xarray-sql + zarr-datafusion
-  - I started xarray-sql, an Xarray as a database experiment. And I closely collaborate with Jayendra, who has developed zarr-datafusion, a related effort in rust.
+  - I started xarray-sql, an Xarray as a database experiment. In addition, I closely collaborate with Jayendra, who has developed zarr-datafusion, a related effort in rust.
   - I’m going all in on these two projects, so long as I can maintain them outside of working hours.
   - Rationale: as someone who values community, I think these two tools are likely to bring a lot more people into the climate informatics community. Further, these projects, especially xarray-sql, seem like things that I uniquely can implement — I don’t know if these would exist if I weren’t a part of them.
   - Beyond building the libraries themselves, I hope to also invest in writing blog posts and giving conference talks!
